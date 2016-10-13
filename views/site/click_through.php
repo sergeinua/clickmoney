@@ -53,12 +53,12 @@ $this->registerJsFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootst
             <div class="col-md-1 col-xs-2 logWhite"><a href=""><img class="img-responsive" src="/images/register/logoWhiteL.png"></a></div>
             <div class="col-md-7">
                 <ul class="fnavigation">
-                    <li><a href="pagesForFooter/govermentDisclaimer.html" target="_blank">Government Disclaimer</a></li>
-                    <li><a href="pagesForFooter/privacyPolicy.html" target="_blank">Privacy Policy</a></li>
-                    <li><a href="pagesForFooter/terms.html" target="_blank">Terms</a></li>
-                    <li><a href="pagesForFooter/earningsDisclaimer.html" target="_blank">Earnings Disclaimer</a></li>
-                    <li><a href="pagesForFooter/spamPolicy.html" target="_blank">Spam Policy</a></li>
-                    <li><a href="pagesForFooter/Support.html" target="_blank">Support</a></li>
+                    <li><a href="<?= Url::toRoute(['site/disclaimer']); ?>" target="_blank">Government Disclaimer</a></li>
+                    <li><a href="<?= Url::toRoute(['site/privacy-policy']); ?>" target="_blank">Privacy Policy</a></li>
+                    <li><a href="<?= Url::toRoute(['site/terms']); ?>" target="_blank">Terms</a></li>
+                    <li><a href="<?= Url::toRoute(['site/earnings-disclaimer']); ?>" target="_blank">Earnings Disclaimer</a></li>
+                    <li><a href="<?= Url::toRoute(['site/spam-policy']); ?>" target="_blank">Spam Policy</a></li>
+                    <li><a href="mailto: <?= Yii::$app->params['support_email']; ?>">Support</a></li>
                 </ul>
             </div>
             <div class="col-md-4 copyright1">
