@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Loading Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script scr="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+</head>
+<body>
+    <div class="depPopup thank-you" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
+        <div class="modal-dialog modal-thanks-form">
+            <div class="modal-content video-content thanks-letters">
+                <div class="modal-body video-body">
+                    <div class="modal-thanks-text1">
+                        YOU'RE ALMOST THERE!
+                    </div>
+                            <div class="arrows-for-thanks3">
+                                <img src="images/thankYou/backAr3a.png">
+                                <img src="images/thankYou/backAr3a.png">
+                                <img src="images/thankYou/backAr3a.png">
+                            </div>
+                            <div class="modal-thanks-text2">
+                                <h4>THANK YOU!</h4>
+                            </div>
+                            <div class="modal-thanks-text3">
+                                Just one moment while we verify your <br> private E-Mail and IP Address now.
+                             </div>
+                </div>
+            </div>
+         </div>
+     </div>
+    <script type="text/javascript">
+        var angle = 0;
+        $(function(){
+            var rt = function() {
+                $(".arrows-for-thanks3").addClass('rotated');
+                setTimeout(function(){
+                    $(".arrows-for-thanks3").removeClass('rotated');
+                }, 4000);
+            };
+            rt();
+            setInterval(rt,4200);
+        });
+    </script>
+</body>
+</html>

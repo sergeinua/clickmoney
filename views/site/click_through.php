@@ -43,7 +43,7 @@ $this->registerJsFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootst
                     </div>
                     <img src="/images/arrow-for-throu.png" class="img-responsive arr1">
                 </div>
-                <button type="submit" class="button1 button02">CLICK HERE TO PROCEED<img class="button-arrow" src="/images/arr.png" onclick="window.location.href='<?= Url::toRoute(['/site/members']); ?>';"></button>
+                <button type="submit" class="button1 button02" onclick="window.location='/members'">CLICK HERE TO PROCEED<img class="button-arrow" src="/images/arr.png"></button>
                 <div class="button2 col-md-10 col-xs-12"><span class="button20">REMINDER:</span> <span class="orange"><span class="big-number" style="font-size: 14px;">1</span> LICENSE LEFT</span></div>
             </div>
         </div>
