@@ -1,0 +1,978 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select.select-register:focus {
+    border: 2px solid #21c0ac;
+    outline: none;
+    color: #21c0ac;
+    border-radius: 0;
+}
+
+.glyphicon1 {
+    padding: 10px 35px !important;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.nav>li>a:hover {
+    background-color: #2d7968;
+    color: white;
+}
+
+.table>thead>tr>th {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.dashboard-container {
+    width: 100%;
+    margin: 0;
+}
+
+.alert-info .alert-link {
+    color: #7f8886;
+}
+
+.alert .alert-link {
+    font-weight: 100;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.caret {
+    margin-left: 115px !important;
+    color: #a7a7a7;
+}
+.navbar-default {
+    border: none;
+}
+
+.ClickMoney, .clickthrough {
+    background: url(../images/bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+
+/**********************login block*****************************/
+.loginPopup {
+    min-height: 1100px;
+}
+
+.login-header {
+    padding-top: 20px;
+}
+.login-header0 {
+    font-size: 30px;
+    padding-top: 60px;
+}
+.login-header1 {
+    font-weight: 700;
+    border-bottom: 2px dashed #e4e4e4;
+}
+
+.log-name-pas {
+    margin-top: 20px;
+}
+
+.login {
+    padding-top: 0;
+}
+
+.forgot-password {
+    color: #878787;
+}
+
+.log-name-pas1 {
+    margin: 1% 8%;
+}
+.loginButton {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.logo-for-login-page {
+    position: absolute;
+    top: 3%;
+    left: 47%;
+    width: 7%;
+}
+
+.login-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.login-content {
+    position: relative;
+}
+
+.depPopup {
+    background-color: #06b6a4;
+    min-height: 1100px;
+    padding: 60px;
+}
+
+/**************************end login block********************/
+
+
+/*mobile tablets*/
+@media (min-width: 300px) and (max-width: 415px) {
+
+    /*thanks form*/
+    .modal-thanks-form {
+        width: 100%;
+    }
+
+    .modal-thanks-text3 {
+        position: absolute;
+        top: 47%;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .modal-thanks-text2 h4 {
+        font-size: 10px;
+    }
+
+    .col-xs-7 {
+        width: 100%;
+    }
+
+    .button1 {
+        margin: 2% 15%;
+    }
+
+    .nameFE20, .emailFE20 {
+        width: 50%;
+    }
+
+    .btnFE2 {
+        width: 82%;
+    }
+
+    .proceed span {
+        font-size: 8px;
+    }
+
+    .FE2icons{
+        margin-left: 6%;
+    }
+
+    .logWhite {
+        width: 10%;
+        margin-left: 2%;
+    }
+
+    .copyright1 {
+        float: right;
+        width: 70%;
+    }
+
+    .arfe2 {
+        top: -5px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    /*thanks form*/
+    .modal-thanks-form {
+        width: 100%;
+    }
+
+    .modal-thanks-text3 {
+        position: absolute;
+        top: 47%;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .modal-thanks-text2 h4 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .stop {
+        margin: 4% 23%;
+        width: 55%;
+    }
+
+    .caret {
+        margin-left: 450px !important;
+    }
+
+    .button1 {
+        margin: 0 auto;
+        display: block;
+        width: 45%;
+    }
+
+    .button2 {
+        margin-top: 10%;
+        margin-left: 0;
+    }
+
+    .welkOrange {
+        margin: 3% auto;
+    }
+
+    .clickbt1 {
+        margin-top: 1%;
+        text-align: left;
+    }
+
+    .icons {
+        margin-top: 3%;
+    }
+
+    .button11 {
+        width: 75%;
+        margin-top: 3%;
+    }
+
+    .fe1del {
+        text-align: left;
+    }
+
+    .button4 {
+        margin: 4% 25%;
+    }
+
+    .blockIconsMob {
+        float: right;
+    }
+
+    .smileBox {
+        left: 10px;
+    }
+
+    .blockText {
+        display: none;
+    }
+
+    .proceed {
+        padding-left: 0;
+    }
+
+    .proceed span {
+        font-size: 10px;
+    }
+
+    .fnavigation {
+        padding-top: 15%;
+    }
+
+    .logWhite {
+        margin-top: 4%;
+    }
+
+    .fnavigation li a {
+        font-size: 8px;
+    }
+
+    .initial {
+        margin: 3% 9%;
+    }
+
+    .nameFE20, .emailFE20 {
+        text-align: left;
+    }
+
+    .FE2icons {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .arfe2 {
+        position: absolute;
+        top: -70px;
+        right: -30px;
+        width: 10%;
+    }
+
+    .exitDown {
+        margin-left: 19%;
+    }
+
+    .fex-text {
+        padding-top: 20px;
+    }
+
+    .arfe3 {
+        top: 1000px;
+        right: 20px;
+        position: absolute;
+    }
+
+    .fnavigation1 {
+        padding-top: 1%;
+    }
+
+    .logo1 {
+        width: 110px;
+    }
+
+    /*regiser mobile*/
+    .email-reg-name, .email-reg-bestem, .email-reg-email, .email-reg-coundtry, .email-reg-phone, .email-reg-email, .email-reg-coundtry, .email-reg-pass {
+        padding: 3% 4%;
+    }
+
+    .email-Reg0, .email-Reg0 button {
+        font-size: 14px;
+    }
+
+    .img-left-block1 {
+        height: auto;
+    }
+
+    .play-button {
+        width: 15%;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .lic {
+        margin-left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2%;
+        right: 0;
+    }
+
+    .arfe3 {
+        top: 650px;
+        right: 0;
+    }
+
+    .register-button {
+        margin: 0 13%;
+    }
+
+    .register-button span {
+        font-size: 13px;
+    }
+
+    .register-icons {
+        margin-left: 8%;
+    }
+
+    .reg-fnavigation {
+        padding-top: 0;
+    }
+
+    .logWhiteR {
+        margin-top: 0;
+    }
+
+    /*header mobile*/
+    .header-block {
+        background-repeat: repeat-y;
+    }
+
+    .header-logo1 {
+        background-color: white;
+        top: -5px;
+    }
+
+    .footer .logo, footer .menu, co {
+        text-align: center;
+    }
+
+    /*fe-2*/
+    .left_block {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    .right_block {
+        background-color: white;
+        width: 100%;
+    }
+
+
+    .ClickMoney, .clickthrough {
+        background: url(../images/register/backgroundRegister.png) no-repeat;
+        background-size: cover;
+        height:auto;
+    }
+
+    .logWhite {
+        margin-top: 0;
+    }
+
+    .fnavigation {
+        padding-top: 0;
+    }
+
+    /*footer*/
+    .footer .col-xs-12 {
+        text-align: center;
+    }
+
+    .register-header {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .register-header span {
+        height: 30px;
+    }
+
+    .register-header a span.licenceLeft {
+        font-size: 7px;
+    }
+
+    .register-header span.licenceRight {
+        font-size: 7px !important;
+    }
+
+    .gaff button .row {
+        margin: 20px 0;
+    }
+
+    .arfe4 {
+        width: 12%;
+        top: 30px;
+        right: 1px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+
+    .ClickMoney, .clickthrough {
+        background-size: cover;
+    }
+
+    .content, .header, .footer {
+        width: 930px;
+    }
+
+    p.welkOrange1 {
+        width: 40%;
+    }
+
+    .clickbtFE2 {
+        font-size: 14px;
+    }
+
+    .nameFE20, .emailFE20, .nameFE2, .emailFE2 {
+        font-size: 10px;
+    }
+
+    .btnFE2 {
+        font-size: 8px;
+    }
+
+    .blockImg {
+        width: 7%;
+    }
+
+    .blockText {
+        font-size: 6.5px;
+        padding-left: 0;
+        padding-bottom: 2%;
+    }
+
+    .arfe2 {
+        top: -35px;
+        right: -18px;
+        width: 12%;
+    }
+
+    .fe-2-under-buttom {
+        margin-left: 14%;
+    }
+
+    .FE2icons {
+        margin-top: 5%;
+        margin-left: 4%;
+    }
+
+    .button1 {
+        font-size: 8px;
+        margin: 12px 2px 0 12px;
+        padding: 9px 10px;
+    }
+
+    .button-arrow {
+        width: 8%;
+    }
+
+    .licenceLeft {
+        padding: 3px 5px;
+    }
+
+    .lic {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        padding-left: 0;
+        width: 36%;
+        margin-left: 51%;
+    }
+
+    .logo1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 13%;
+    }
+
+    .welkGreen {
+        width: 50%;
+        margin: 30px auto 30px;
+    }
+
+    p.clickbt {
+        font-size: 16px;
+    }
+
+    p.secure {
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 20px;
+        width: 83%;
+        line-height: 22px;
+    }
+
+    .email-Reg0 {
+        font-size: 11px;
+    }
+
+    .stop_do_not_ex1 {
+        margin-bottom: 0;
+    }
+
+    .stop {
+        padding: 5px 15px;
+        width: 80%;
+        margin: 4% 9%;
+    }
+
+    .arr1 {
+        width: 14%;
+        top: -30px;
+        left: -30px;
+    }
+
+    .button1 {
+        width: 60%;
+        margin: 12px 2px 0 80px;
+    }
+
+    .button2 {
+        margin-left: 35px;
+        font-size: 9px;
+    }
+
+    .stop_do_not_ex {
+        font-size: 11px;
+    }
+
+    .big-number {
+        font-size: 12px;
+    }
+
+    .left_block1 {
+        height: 400px;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .register-header {
+        position: absolute;
+        top: 6%;
+        right: 0;
+        width: 66%;
+    }
+
+    .arfe4 {
+        top: 30px;
+        right: -35px;
+        width: 20%;
+    }
+
+    .gaff .text-center {
+        padding-right: 0;
+    }
+
+    .gaff button .row {
+        margin: 15px 0;
+    }
+
+    .register-last-row {
+        margin-bottom: 5%;
+    }
+
+    .icons-block {
+        width: 250px;
+        margin: 0 auto 0 auto;
+    }
+
+    .register-right-text {
+        margin-top: 3%;
+    }
+
+    .reg-bold {
+        font-size: 20px;
+    }
+
+    .vtop {
+        width: 25%;
+    }
+
+    .gaff .form-group {
+        margin-bottom: 10px;
+    }
+
+    .register-last-row {
+        margin-bottom: 3%;
+    }
+
+    .register-right-text {
+        margin-bottom: 5%;
+    }
+
+    .icons-block img.m {
+        width: 50px;
+    }
+
+    .icons-block img.t {
+        width: 50px;
+    }
+
+    .icons-block img.v {
+        width: 40px;
+    }
+
+    .icons-block img.n {
+        width: 45px;
+    }
+
+    .footer ul > li > a {
+        font-size: 11px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
+
+    .vcenter {
+        padding-left: 0;
+    }
+
+    .footer .menu {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1799px) {
+    p.welkOrange1 {
+        width: 37%;
+    }
+
+    .clickbtFE2 {
+        font-size: 15px;
+    }
+
+    .nameFE20, .emailFE20 {
+        font-size: 11px;
+    }
+
+    .blockImg {
+        width: 6%;
+    }
+
+    .fe-2-under-buttom {
+        margin-left: 12%;
+    }
+
+    .blockText {
+        font-size: 8px;
+    }
+
+    .lic {
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    .register-header {
+        width: 55%;
+        margin-left: 35.5%;
+    }
+
+    .button1 {
+        font-size: 12px;
+        margin: 9% 10% 0 6%;
+        width: 99%;
+    }
+
+    .button12 {
+        margin: 2% 10% 0 6%;
+    }
+
+    .reg-bold {
+        font-size: 22px;
+    }
+
+    .arfe3 {
+        top: 155px;
+        right: 170px;
+        width: 4%;
+    }
+
+    .arfe4 {
+        top: 10px;
+        right: -45px;
+        width: 20%;
+    }
+
+    .img-left-block1 {
+        height: auto;
+    }
+
+    .welkGreen {
+        width: 40%;
+        margin: 20px auto 20px;
+        font-size: 9px;
+    }
+
+    p.clickbt {
+        font-size: 14px;
+    }
+
+    p.secure {
+        font-size: 18px;
+        width: 75%;
+    }
+
+    .stop_do_not_ex {
+        font-size: 12px;
+    }
+
+    .stop_do_not_ex1 {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .button02 {
+        font-size: 12px;
+        margin: 0% 10% 0 20%;
+        width: 65%;
+    }
+
+    .stop {
+        padding: 5px 15px;
+    }
+
+    .button2 {
+        margin: 8px 55px;
+        font-size: 8px;
+    }
+
+    .big-number {
+        font-size: 10px !important;
+    }
+
+    .arr1 {
+        width: 17%;
+    }
+
+    .gaff button .row {
+        margin: 20px 0;
+    }
+
+
+    .gaff .text-center {
+        margin-left: 0;
+    }
+
+    .icons-block {
+        margin: 8px auto 8px auto;
+    }
+
+    .icons-block img.m {
+        width: 50px;
+    }
+
+    .icons-block img.t {
+        width: 75px;
+    }
+
+    .icons-block img.v {
+        width: 50px;
+    }
+
+    .icons-block img.n {
+        width: 55px;
+    }
+
+}
+
+@media (min-width: 1800px) {
+
+    .content, .header, .footer, .header-container {
+        width: 1600px;
+    }
+
+    .fnavigation {
+        margin-top: 10px;
+    }
+
+    .copyright1 {
+        padding-top: 15px;
+    }
+
+    .licenceRight {
+        padding: 9px 10px;
+    }
+
+    .licenceLeft {
+        padding: 6px 10px;
+    }
+
+    p.welkOrange1 {
+        width: 30.3%;
+        margin: 4% auto;
+        padding: 1.5% 1%;
+        font-size: 12px;
+    }
+
+    .licenceRight {
+        width: 25%;
+    }
+
+    .licenceLeft {
+        width: 8%;
+    }
+
+    .licenceLeft{
+        font-size: 16px;
+    }
+
+    .licenceRight {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .clickbtFE2 {
+        font-size: 25px;
+    }
+
+    .nameFE20, .emailFE20, .nameFE2, .emailFE2 {
+        font-size: 15px;
+    }
+
+    .button1 {
+        margin: 9% 10% 0 10%;
+        width: 93%;
+        padding: 20px 12px;
+    }
+
+    .button12 {
+        margin: 5% 10% 1%;
+        width: 87%;
+        padding: 20px 12px;
+    }
+
+    .button02 {
+        margin: 0;
+        width: 50%;
+        padding: 25px 20px;
+        margin: 0 27%;
+    }
+
+    .blockText {
+        font-size: 0.9em;
+        margin-left: 12%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    .blockImg {
+        width: 4.5%;
+    }
+
+    .btnFE2 {
+        font-size: 14px;
+        padding-left: 10%;
+    }
+
+    .fe-2-under-buttom {
+        margin-left: 70px;
+    }
+
+    .arfe2 {
+        position: absolute;
+        top: -80px;
+        right: -30px;
+        width: 14%;
+    }
+
+    .FE2icons {
+        margin-top: 8%;
+    }
+
+    /*header block*/
+
+    .gaff button {
+        width: 380px;
+    }
+
+    .gaff button {
+        background-repeat: no-repeat;
+        background-position: inherit;
+        background-attachment: inherit;
+        letter-spacing: 0.2em;
+        font-size: 1em;
+    }
+
+    .gaff button .row .arrow img {
+        width: auto;
+    }
+
+    .gaff .text-center {
+        padding-right: 0;
+        margin-left: 3px;
+    }
+
+    .gaff button .row .arrow {
+        right: 20px;
+    }
+
+    .icons-block {
+        width: 445px;
+    }
+}
