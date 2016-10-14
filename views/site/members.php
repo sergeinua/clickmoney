@@ -1,8 +1,41 @@
 <?php
+use yii\web\JqueryAsset;
 
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/_style.css');
 $this->registerCssFile('https://fonts.googleapis.com/css?family=Montserrat');
+$this->registerJsFile('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', ['depends' => [JqueryAsset::className()]]);
+$this->registerJsFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', ['integrity' => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", 'crossorigin' => "anonymous", 'depends' => [JqueryAsset::className()]]);
 
+$script = <<< JS
+    $(document).ready(function () {
+       $('.membship5 li').on('click', function(){
+           var item_class = $(this).data('class');
+           $('.membship5 .content div.active').removeClass('active');
+           $('.membship5 .' + item_class).addClass('active');
+           $('.membship5 .' + item_class + ' h3').text($(this).text());
+       });
+       $('.panel-default a').on('click', function () {
+           if ($(this).attr('aria-expanded') == 'true') {
+               $(this).parent().next().remove();
+           } else {
+               $('.arrow-img').remove();
+               $(this).parent().parent().append('<img class="arrow-img-active" src="/images/down.png">');
+           }
+       });
+       $('.panel-default a').hover(
+           function () {
+               if ($(this).parent().next().hasClass('arrow-img-active') == false) {
+                   $(this).parent().parent().append('<img class="arrow-img" src="/images/down.png">');
+               }
+           },
+           function () {
+               $('.arrow-img').remove();
+           }
+       );
+   });
+JS;
+
+$this->registerJs($script, yii\web\View::POS_READY);
 ?>
 
 <div class="row membship1">
@@ -445,32 +478,138 @@ $this->registerCssFile('https://fonts.googleapis.com/css?family=Montserrat');
 </div>
 <div class="row membship5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <h3>FAQ</h3>
-                <ul>
-                    <li class="active">What is clickmoney?</li>
-                    <li>How much does it cost?</li>
-                    <li>What if I already have account?</li>
-                    <li>What is the success rate fo ClickMoney?</li>
-                    <li>How much money can I earn per day?</li>
-                    <li>How many people have found success so far?</li>
-                </ul>
+        <div class="hidden-sm hidden-xs">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3>FAQ</h3>
+                    <ul>
+                        <li class="active" data-class="item-1">What is ClickMoney?</li>
+                        <li data-class="item-2">How much does it cost?</li>
+                        <li data-class="item-3">What if I already have account?</li>
+                        <li data-class="item-4">What is the success rate fo ClickMoney?</li>
+                        <li data-class="item-5">How much money can I earn per day?</li>
+                        <li data-class="item-6">How many people have found success so far?</li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <div class="content">
+                        <div class="item-1 active">
+                            <h3>What is ClickMoney?</h3>
+                            <p>It is a state-of-the-art cash generating system that legally taps into a 50 Billion dollar
+                                global market and leverages it to make millions for its users.</p>
+                        </div>
+                        <div class="item-2">
+                            <h3></h3>
+                            <p>You will need to open a new account and fund it in order to get free access to the ClickMoney
+                                software.</p>
+                        </div>
+                        <div class="item-3">
+                            <h3></h3>
+                            <p>ClickMoney software needs to validate your account and its done automatically after
+                                you’ve funded your trading account with one of the recommended brokers.</p>
+                        </div>
+                        <div class="item-4">
+                            <h3></h3>
+                            <p>The average success rate for ClickMoney members is 99%.</p>
+                        </div>
+                        <div class="item-5">
+                            <h3></h3>
+                            <p>On average, ClickMoney users make $10,000 per day. Some members make more some make less.
+                                The longer the software is on and running, the more money you can make! The best part is
+                                ClickMoney does all the work for you. All you need to do is push a few buttons to make on
+                                average, $10,000 a day.
+                                Disclaimer: If you don’t follow our instructions exactly you could make zero dollars</p>
+                        </div>
+                        <div class="item-6">
+                            <h3></h3>
+                            <p>Millions.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-7">
-                <div class="content">
-                    <h3>The most advanced binary trading program</h3>
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-                        and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot
-                        foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail
-                        in their duty through weakness of will, which is the same as saying through shrinking from toil
-                        and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our
-                        power of choice is untrammelled and when nothing prevents our being able to do what we like
-                        best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances
-                        and owing to the claims of duty or the obligations of business it will frequently occur that
-                        pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds
-                        in these matters to this principle of selection: he rejects pleasures to secure other greater
-                        pleasures, or else he endures pains to avoid worse pains.</p>
+        </div>
+        <div class="hidden-lg hidden-md">
+            <div class="hidden-lg hidden-md">
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapseOne">What is ClickMoney?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>It is a state-of-the-art cash generating system that legally taps into a 50 Billion dollar
+                                    global market and leverages it to make millions for its users.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapseTwo">How much does it cost?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>You will need to open a new account and fund it in order to get free access to the ClickMoney
+                                    software.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapseThree">What if I already have account?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>ClickMoney software needs to validate your account and its done automatically after
+                                    you’ve funded your trading account with one of the recommended brokers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapseFour">What is the success rate fo ClickMoney?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>The average success rate for ClickMoney members is 99%.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapseFive">How much money can I earn per day?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>On average, ClickMoney users make $10,000 per day. Some members make more some make less.
+                                    The longer the software is on and running, the more money you can make! The best part is
+                                    ClickMoney does all the work for you. All you need to do is push a few buttons to make on
+                                    average, $10,000 a day.
+                                    Disclaimer: If you don’t follow our instructions exactly you could make zero dollars</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapseSix">How many people have found success so far?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Millions</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

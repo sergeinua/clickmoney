@@ -1045,6 +1045,23 @@ p.register-text {
     margin-top: 50px;
 }
 
+.membship5 .content div.active {
+    display: block;
+}
+
+.membship5 .content div {
+    display: none;
+}
+
+.arrow-img-active {
+    transform: rotate(180deg);
+}
+
+.panel-heading img {
+    float: right;
+    margin-top: -15px;
+}
+
 li.active {
     /*border-bottom: 3px dashed white;*/
     text-decoration-style: dashed;
