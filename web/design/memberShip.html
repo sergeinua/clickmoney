@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/_style.css" >
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://gaff.s3.amazonaws.com/js/gaff.js"></script>
 </head>
 <body>
 <div class="row membship1">
@@ -19,213 +22,170 @@
             <div class="row">
                 <div class="welcHead1 col-lg-12"><h2>This is the CLICKMONEY Biz Members Area</h2></div>
             </div>
-            <div class="row">
-                <div class="col-md-2 col-xs-12 logo1">
+            <div class="row header-last-mrow">
+                <div class="col-md-1 col-xs-12 logo1">
                     <img src="images/ClickMoneyLogo/Logo-yellow.svg">
                 </div>
-                <div class="col-md-8 col-xs-12">
+                <div class="col-md-10 col-xs-12">
                     Please Watch The <span class="text-dashed">Video Below</span> For Further Instructions
                 </div>
                 <div class="col-md-2 col-xs-12 boxIcon">
-                    <div class="row">
                         <div class="col-md-2 elOne0">
                             <img src="images/elipsOne.png">
                         </div>
-                        <div class="col-md-10 row">
+                        <div class="col-md-11 row elOne01">
                             <div class="col-lg-12 textHeadMemb0">LICENCE LEFT</div>
                             <div class="col-lg-12 textHeadMemb1">UPDATED SEP 20 2016</div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="container content">
-            <div class="row">
+
+        <div class="container content ">
+            <div class="row content0">
                 <div class="col-md-7 left_block">
-                    <!--<iframe class="embed-responsive-item video_through" src="http://www.youtube.com/embed/ePbKGoIGAXY" poster="images/imagineForVideo.png"></iframe>-->
-                    <div class="embed-responsive-item video_through">
-                        <img class="play-button" src="images/play.png">
-                    </div>
-                    <div class="text-for-video">
-                        <span>Watch the Video Now! Expires in: 00h:03m:27s</span>
-                    </div>
-                    <div class="arrow-for-video">
-                        <img src="images/yellowArrow1.png">
-                    </div>
+                    <img class="img-responsive img-membership1" src="images/imagineForVideoLarge1.jpg">
+                    <img class="img-responsive play-button" src="images/play.png">
+                    <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
+                    <p >Watch Video Now! Expires in: 00h:03m:27s</p>
                 </div>
-                <div class="col-md-5 right_block">
-                    <h2 class="register_text">Please <b class="stripped_underline">register</b> your Clickmoney biz below</h2>
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-10 col-xs-12">
+                <div class="col-md-5 right_block conFE2">
+                    <h2 class="clickbtFE2 register-right-text">Please <span class="reg-bold">register</span> your clickmoney biz below</h2>
+                    <div id="gaff" class="gaff">
+                        <script src="https://s3.amazonaws.com/caff/js/formhelpers.min.js"></script>
+                        <input id="brokerName" type="hidden" value="brokenName">
+                        <form method="post" id="caffForm" action="http://ap.valaffiliates.com/Forms/ProcForm">
+                            <input type="hidden" name="sub" value="222">
+                            <input type="hidden" name="rd" value="3">
+                            <input type="hidden" name="token" value="14893170%%2cxxmiyylu">
+                            <input type="hidden" name="wl" value="90">
+                            <input type="hidden" name="lg" value="'en'">
+                            <input type="hidden" name="so" value="">
+                            <input type="hidden" name="phone" id="phone" value="">
+                            <input type="hidden" name="prefix" id="prefix" value="248">
                             <div class="row">
-                                <div class="left_item col-md-6">
-                                    <span>First Name</span>
+                                <div class="col-xs-6 form-group">
+                                    <label class="register-label">First Name</label>
+                                    <input type="text" name="firstname" class="form-control email-reg-name email-Reg0 email-Reg1 " placeholder="First Name" value="" required pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" title="Please enter 3-15 characters (alphabets only)">
                                 </div>
-                                <div class="right_item col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" value="Shishev">
-                                    </div>
+                                <div class="col-xs-6 form-group">
+                                    <label class="register-label">Last Name</label>
+                                    <input  type="text" name="lastname" class="form-control email-reg-name email-Reg0 email-Reg2" placeholder="Last Name" value="" required pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" title="Please enter 3-15 characters (alphabets only)" >
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-10 col-xs-12">
                             <div class="row">
-
-                                <div class="left_item_not_stripped col-md-6">
-                                    <button class="col-xs-12 dropdown-toggle email-reg-coundtry " type="button" data-toggle="dropdown">Bulgaria <i class="caret"></i><br>
+                                <div class="col-xs-6 form-group">
+                                    <label class="register-label">Country</label>
+                                    <select name="countryabbr" id="countryData_gaff" class="form-control bfh-countries select-register email-reg-name email-Reg0 email-Reg3" data-country="UA" required>
+                                        <option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="CI">Côte d'Ivoire</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chadddd</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of the Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="TP">East Timor</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FO">Faeroe Islands</option><option value="FK">Falkland Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="MK">Former Yugoslav Republic of Macedonia</option><option value="FR">France</option><option value="FX">France, Metropolitan</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard and Mc Donald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macau</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="KP">North Korea</option><option value="MP">Northern Marianas</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestine</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Islands</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russia</option><option value="RW">Rwanda</option><option value="ST">Sao Tome and Principe</option><option value="SH">Saint Helena</option><option value="PM">St. Pierre and Miquelon</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen Islands</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="BS">The Bahamas</option><option value="GM">The Gambia</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="VI">US Virgin Islands</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatican City</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="WF">Wallis and Futuna Islands</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6 form-group">
+                                    <label class="register-label">Phone</label>
+                                    <input id="phoneOrig_gaff" type="text" class="form-control bfh-phone email-reg-name email-Reg0 email-Reg4" data-country="countryData_gaff" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="You have to use a VALID number in order to continue." pattern=".{9,20}" required="">
+                                </div>
+                            </div>
+                            <div class="row register-last-row">
+                                <div class="col-xs-6 form-group">
+                                    <label class="register-label">Email</label>
+                                    <input type="email" name="email" class="form-control email-Reg0 email-Reg5 email-reg-bestem" value="" placeholder="Your Best Email" required data-error="Bruh, that email address is invalid">
+                                </div>
+                                <div class="col-xs-6 form-group">
+                                    <label class="register-label">Password</label>
+                                    <input type="password" name="password" class="col-xs-12  form-control email-Reg0 email-Reg6 email-reg-name" value="" placeholder="Password" required pattern=".{6,12}" title="Please enter 6-12 characters">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <button type="submit">
+                                        <div class="row">
+                                            <div class="arrow">
+                                                <img src="images/Layer18.png" />
+                                            </div>
+                                            <div class="col-md-12 col-xs-9">
+                                                UNLOCK MY PERSONAL ACCOUNT NOW
+                                            </div>
+                                        </div>
                                     </button>
                                 </div>
-
-
-
-                                <div class="right_item col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" value="+359 878 542611">
-                                    </div>
-                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <div class="row">
-                        <div class="col-md-offset-1 col-md-10 col-xs-12">
-                            <div class="row">
-                                <div class="left_item col-md-6">
-                                    <span>Your Best Email</span>
-                                </div>
-                                <div class="right_item validation_failded col-md-6">
-                                    <div class="form-group">
-                                        <input class="email_text" type="text" value="*** include at least 1 number!">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-11 col-md-offset-2 col-xs-12 blockText blockText1 ">
+                            <img class="blockImg" src="images/block.png">Guaranteed Secure Access Ensured by Trusted Companies
                         </div>
                     </div>
-                    <a href="#">
-                        <div class="button1 button_left_align col-md-12 col-xs-6">
-                            <div class="row">
-                                <div class="col-md-1 col-xs-1">
-                                    <img src="images/memb/Layer18.png">
-                                </div>
-                                <div class="col-md-11 col-xs-11 proceed">
-                                    <span>unlock my personal account now</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="row">
-                        <div class="row blockMob">
-                            <div class="col-md-10 col-md-offset-1 licence">
-                                <div><img class="blockImg" src="images/block.png">Guaranteed Secure Access Ensured by Trusted Companies</div>
-                            </div>
-                        </div>
+                    <div class="row icons-block text-center">
+                        <div class="col-xs-3 vtop">
+                            <a href="#"><img class="m" src="images/mcafee.png"></a>
+                        </div><!--
+                    --><div class="col-xs-3 vtop">
+                        <a href="#"><img class="t" src="images/truste.png"></a>
+                    </div><!--
+                    --><div class="col-xs-3 vtop">
+                        <a href="#"><img class="v" src="images/red.png"></a>
+                    </div><!--
+                    --><div class="col-xs-3 vtop">
+                        <a href="#"><img class="n" src="images/norton.png"></a>
                     </div>
-
-                    <div class="col-md-10 col-md-offset-1 col-xs-12 blockIconsMob">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-3 col-sm-3">
-                                <a href="#"><img src="images/mcafee.png"></a>
-                            </div>
-                            <div class="col-xs-12 col-md-3 col-sm-3">
-                                <a href="#"><img src="images/truste.png"></a>
-                            </div>
-                            <div class="col-xs-12 col-md-3 col-sm-3">
-                                <a href="#"><img src="images/red.png"></a>
-                            </div>
-                            <div class="col-xs-12 col-md-3 col-sm-3">
-                                <a href="#"><img src="images/norton.png"></a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
     </div>
 </div>
 <div class="row membship2">
     <div class="memebership_content">
-        <p><span class="green">3</span> Quick and Easy Steps</p>
+        <p class="text1"><span class="green">3</span> Quick and Easy Steps</p>
         <p class="text">TO START YOUR BUSINESS</p>
     </div>
 </div>
-<div class="container">
+<div class="container membership02">
     <div class="row">
-        <div class="col-md-3">
-            <div class="row">
-                <div class="col-md-5">
+        <div class="col-md-4 ">
+                <div class="col-md-4 member-arrows">
                     <img class="first-arrow" src="images/arrowGreen.png">
                     <img class="first-arrow-add" src="images/memb/Ellipse3green.png">
                     <div class="first-num">1</div>
                 </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12">
+                <div class="col-md-8 you-here">
                             <p class="grey">YOU'RE HERE!</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
                             <p class="green">Register</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="green register-label">Sign up to the system, choose a username and a password</p>
-                        </div>
-                    </div>
+                            <p class="green green-little-text">Sign up to the system, choose<br> a username and a password</p>
                 </div>
+                <img class="arrow arrow1 arrow111 hidden-xs hidden-sm" src="images/arrowLittleGreen.png">
+        </div>
 
+
+        <div class="col-md-4 ">
+            <div class="col-md-4 member-arrows">
+                <img class="second-arrow" src="images/memb/arrGrey.png">
+                <img class="second-arrow-add" src="images/memb/Ellipse3copy.png">
+                <div class="second-num">2</div>
+            </div>
+            <div class="col-md-8 you-here">
+                <p class="steps-title">Deposit</p>
+                <p class="grey-small-text">Find your trading account with a <br>minimum investment of $250</p>
+            </div>
+            <img class="arrow arrow1 hidden-xs hidden-sm" src="images/arrowLittleGreen.png">
+        </div>
+
+        <div class="col-md-4 ">
+            <div class="col-md-4 member-arrows">
+                <img class="third-arrow" class="third-arrow arrow-transform-right" src="images/memb/arrGrey.png">
+                <img class="third-arrow-add" src="images/memb/Ellipse3copy.png">
+                <div class="third-num">3</div>
+            </div>
+            <div class="col-md-8 you-here">
+                <p class="steps-title">Profit!</p>
+                <p class="grey-small-text">Open a bottle of champagne and watch the money rain!</p>
             </div>
         </div>
-        <div class="col-md-1 arrow hidden-xs hidden-sm">
-            <img src="images/arrowLittleGreen.png">
-        </div>
-        <div class="col-md-3">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="second-arrow" src="images/memb/arrGrey.png">
-                    <img class="second-arrow-add" src="images/memb/Ellipse3copy.png">
-                    <div class="second-num">2</div>
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="steps-title">Deposit</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="grey-small-text">Find your trading account with minimum investment of $250</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-1 arrow hidden-xs hidden-sm">
-            <img src="images/arrowLittleGreen.png">
-        </div>
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="third-arrow" class="third-arrow arrow-transform-right" src="images/memb/arrGrey.png">
-                    <img class="third-arrow-add" src="images/memb/Ellipse3copy.png">
-                    <div class="third-num">3</div>
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="steps-title">Profit!</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="grey-small-text">Open a bottle of champagne and watch the money rain!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 <div class="row membship3">
@@ -233,19 +193,22 @@
         <div class="text-center text-days">180 DAYS</div>
         <div class="text-center text-lower">SEE WHAT CLICKMONEY CAN DO IN JUST</div>
     </div>
-    <div class="container">
+    <div class="container membership-text1">
         <div class="row">
             <div class="col-md-4 single-item">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item video_through" src="http://www.youtube.com/embed/ePbKGoIGAXY" poster="images/imagineForVideo.png"></iframe>
+                        <img class="img-responsive" src="images/girl.jpg">
+                        <img class="img-responsive play-button" src="images/play.png">
+                        <h5>JOAN KOWALOWSKY</h5>
+                        <p>TESTIMONIAL</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 video-item">
-                        <p>See How Joan Made</p>
-                        <p><span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></p>
-                        <p class="small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
+                        <h4>See How Joan Made
+                        <span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></h4>
+                        <p class="grey-small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
                             Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed</p>
                     </div>
                 </div>
@@ -253,14 +216,17 @@
             <div class="col-md-4 single-item">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item video_through" src="http://www.youtube.com/embed/ePbKGoIGAXY" poster="images/imagineForVideo.png"></iframe>
+                        <img class="img-responsive" src="images/girl.jpg">
+                        <img class="img-responsive play-button" src="images/play.png">
+                        <h5>JOAN KOWALOWSKY</h5>
+                        <p>TESTIMONIAL</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 video-item">
-                        <p>See How Joan Made</p>
-                        <p><span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></p>
-                        <p class="small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
+                        <h4>See How Joan Made
+                            <span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></h4>
+                        <p class="grey-small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
                             Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed</p>
                     </div>
                 </div>
@@ -268,14 +234,17 @@
             <div class="col-md-4 single-item">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item video_through" src="http://www.youtube.com/embed/ePbKGoIGAXY" poster="images/imagineForVideo.png"></iframe>
+                        <img class="img-responsive" src="images/girl.jpg">
+                        <img class="img-responsive play-button" src="images/play.png">
+                        <h5>JOAN KOWALOWSKY</h5>
+                        <p>TESTIMONIAL</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 video-item">
-                        <p>See How Joan Made</p>
-                        <p><span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></p>
-                        <p class="small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
+                        <h4>See How Joan Made
+                            <span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></h4>
+                        <p class="grey-small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
                             Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed</p>
                     </div>
                 </div>
@@ -285,14 +254,17 @@
             <div class="col-md-4 single-item">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item video_through" src="http://www.youtube.com/embed/ePbKGoIGAXY" poster="images/imagineForVideo.png"></iframe>
+                        <img class="img-responsive" src="images/girl.jpg">
+                        <img class="img-responsive play-button" src="images/play.png">
+                        <h5>JOAN KOWALOWSKY</h5>
+                        <p>TESTIMONIAL</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 video-item">
-                        <p>See How Joan Made</p>
-                        <p><span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></p>
-                        <p class="small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
+                        <h4>See How Joan Made
+                            <span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></h4>
+                        <p class="grey-small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
                             Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed</p>
                     </div>
                 </div>
@@ -300,22 +272,28 @@
             <div class="col-md-4 single-item">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item video_through" src="http://www.youtube.com/embed/ePbKGoIGAXY" poster="images/imagineForVideo.png"></iframe>
+                        <img class="img-responsive" src="images/girl.jpg">
+                        <img class="img-responsive play-button" src="images/play.png">
+                        <h5>JOAN KOWALOWSKY</h5>
+                        <p>TESTIMONIAL</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 video-item">
-                        <p>See How Joan Made</p>
-                        <p><span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></p>
-                        <p class="small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
+                        <h4>See How Joan Made
+                            <span class="green-small-text">$1,344,521</span> in <span class="green-small-text">87 days</span></h4>
+                        <p class="grey-small-text">Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed.
                             Clickmoney was a lifechanger for Joan. Watch her testimonial and prepare to be amazed</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 single-item">
                 <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item video_through" src="http://www.youtube.com/embed/ePbKGoIGAXY" poster="images/imagineForVideo.png"></iframe>
+                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10">
+                        <img class="img-responsive" src="images/greenGirl.jpg">
+                        <img class="img-responsive play-button" src="images/white-smile.png">
+                        <h5>THIS COULD BE YOUR SPOT</h5>
+                        <p>AMD YOUR SUCCESS STORY</p>
                     </div>
                 </div>
                 <div class="row">
@@ -501,6 +479,10 @@
 </div>
 <footer>
 </footer>
-<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
 </body>
 </html>
