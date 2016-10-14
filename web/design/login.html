@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script scr="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/styleLoginPopup.css" >
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://gaff.s3.amazonaws.com/js/gaff.js"></script>
 </head>
 <body>
-<img class="logo-for-login-page" src="images/register/logoWhiteL.png">
-<div class="depPopup loginPopup" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
+<a href="#modal" role="button" class="btn" data-toggle="modal" data-target="#modal">Click Me</a>
+<div class="depPopup hide loginPopup" id="modal" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
+    <img class="logo-for-login-page" src="images/Logo-white.svg">
     <div class="modal-dialog">
         <div class="modal-content video-content login-content">
             <a href=""><img class="login-close" src="images/ex.png"></a>
@@ -51,7 +55,36 @@
                         </div>
                      </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <img class="logo-for-login-page" src="images/Logo-white.svg">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer forgot-password">
+                Forgot your password?
             </div>
         </div>
     </div>

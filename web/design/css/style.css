@@ -1219,7 +1219,8 @@ p.welkOrange1 {
 }
 
 .modal-thanks-form {
-    margin-top: 100px;
+    margin-top: 150px;
+    width: 60%; /"width: 1100px;*/
 }
 
 .modal-body {
@@ -1235,11 +1236,14 @@ p.welkOrange1 {
     top: 6%;
     left: 50%;
     transform: translateX(-50%);
-    width: 102px;
-    height: 102px;
+    width: 112px;
+    height: 112px;
+}
 
-    width: 60px;
-    height: 60px;
+.modal-thanks-text2 h4 {
+    font-size: 1.625em;
+    letter-spacing: 6px;
+    font-weight: bold;
 }
 
 .arrows-for-thanks3 img {
@@ -1296,7 +1300,8 @@ p.welkOrange1 {
     position: absolute;
     left: 50%;
     color:white;
-    font-size: 9px;
+    font-size: 0.75em;
+    font-family: 'Open Sans', sans-serif;
     top: 0;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -1307,10 +1312,10 @@ p.welkOrange1 {
 
 .modal-thanks-text2 {
     position: absolute;
-    top: 28%;
+    top: 33%;
     left: 50%;
     border: 4px solid white;
-    padding: 0 20px;
+    padding: 7px 33px;
     color: white;
     letter-spacing: 3px;
     font-size: 14px;
@@ -1323,16 +1328,20 @@ p.welkOrange1 {
 
 .modal-thanks-text3 {
     position: absolute;
-    top: 43%;
+    top: 46%;
     left: 50%;
     text-align: center;
     color: white;
-    font-size: 10px;
+    font-size: 0.9375em;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.modal-thanks-text3 span {
+    font-weight: bold;
 }
 
 /*footer pages*/
@@ -1358,12 +1367,27 @@ p.welkOrange1 {
     color: black;
 }
 /*mobile tablets*/
-@media (min-width: 300px) and (max-width: 415px) {
+@media (max-width: 415px) {
 
     /*thanks form*/
     .modal-thanks-form {
         width: 100%;
+        margin-top: 100px;
     }
+
+    .modal-thanks-text1 {
+        font-size: 0.50em;
+    }
+
+    .modal-thanks-text2 {
+        padding: 0 10px !important;
+        top: 20% !important;
+    }
+
+     .arrows-for-thanks3 {
+         width: 30px !important;
+         height: 30px !important;
+      }
 
     .modal-thanks-text3 {
         position: absolute;
@@ -1373,7 +1397,8 @@ p.welkOrange1 {
     }
 
     .modal-thanks-text2 h4 {
-        font-size: 10px;
+        font-size: 0.6em !important;
+        text-align: center;
     }
 
     .col-xs-7 {
@@ -1415,8 +1440,8 @@ p.welkOrange1 {
     }
 }
 
+@media (max-width: 991px) {
 
-@media (max-width: 767px) {
     /*thanks form*/
     .modal-thanks-form {
         width: 100%;
@@ -1424,17 +1449,26 @@ p.welkOrange1 {
 
     .modal-thanks-text3 {
         position: absolute;
-        top: 47%;
+        top: 38%;
         text-align: center;
         font-size: 8px;
     }
 
-    .modal-thanks-text2 h4 {
-        font-size: 10px;
-    }
-}
 
-@media (max-width: 991px) {
+    .modal-thanks-text2 {
+        top: 25%;
+        border: 2px solid white;
+        padding: 0 10px;
+    }
+
+    .modal-thanks-text2 h4 {
+        font-size: 0.60em;
+    }
+
+    .arrows-for-thanks3 {
+        width: 50px;
+        height: 50px;
+    }
 
     .stop {
         margin: 4% 23%;
@@ -1660,6 +1694,30 @@ p.welkOrange1 {
         background-size: cover;
     }
 
+
+    .modal-thanks-text2 {
+        position: absolute;
+        top: 29%;
+        left: 50%;
+        border: 3px solid white;
+        padding: 3px 25px;
+        color: white;
+        letter-spacing: 3px;
+        font-size: 0.70em;
+    }
+
+    .modal-thanks-text3 {
+        position: absolute;
+        top: 43%;
+        font-size: 0.70em;
+        -webkit-transform: translateX(-50%);
+    }
+
+    .arrows-for-thanks3 {
+        width: 60px;
+        height: 60px;
+    }
+
     .content, .header, .footer {
         width: 930px;
     }
@@ -1791,6 +1849,22 @@ p.welkOrange1 {
 }
 
 @media (min-width: 1400px) and (max-width: 1799px) {
+    .arrows-for-thanks3 {
+        position: absolute;
+        top: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 90px;
+    }
+    .modal-thanks-text2 {
+        top: 32%;
+    }
+
+    .modal-thanks-text2 h4 {
+        font-size: 1.5em;
+    }
+
     p.welkOrange1 {
         width: 37%;
     }
