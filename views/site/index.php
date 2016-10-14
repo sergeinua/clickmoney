@@ -22,6 +22,12 @@ $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 $script = <<< JS
 (function($) {
     $('body').addClass('fe1');
+
+    $(".join-popup .close-btn a").click(function(e){
+        $(".join-popup").removeClass('showed');
+        sessionStorage.setItem('show_joined_popup', 'false');
+        return false;
+    });
     
     // if (top.location != self.location)
     // {

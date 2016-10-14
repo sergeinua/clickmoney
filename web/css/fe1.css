@@ -265,10 +265,10 @@ body.fe1, body.fe2 {
     transition-timing-function: ease-in;
 
     /* Quick on the way out */
-    transition: 0.2s;
+    transition: 0.4s;
 
     background-color: white;
-    position: absolute;
+    position: fixed;
     padding-top: 20px;
     padding-bottom: 20px;
     z-index: 1000;
@@ -284,6 +284,10 @@ body.fe1, body.fe2 {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
+
+    -webkit-box-shadow: 0px 6px 18px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 6px 18px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 6px 18px 1px rgba(0,0,0,0.3);
 }
 
 .join-popup.showed {
@@ -291,7 +295,7 @@ body.fe1, body.fe2 {
     transition-timing-function: ease-out;
 
     /* A litttttle slower on the way in */
-    transition: 0.3s;
+    transition: 0.5s;
 
     top: 15px;
 }
@@ -604,13 +608,23 @@ body.fe1, body.fe2 {
     .join-popup {
         width: 375px;
         top: 320px;
-        left: -380px;
+        bottom: -375px;
+        right: 20px;
+        top: auto;
+        left: auto;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
     }
 
     .join-popup.showed {
+        top: auto;
         width: 375px;
-        top: 320px;
-        left: 20px;
+        bottom: 20px;
+        right: 20px;
+        left: auto;
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);

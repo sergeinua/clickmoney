@@ -6,14 +6,15 @@ $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/thank-you.css', ['d
 
 $script = <<< JS
     $(function(){
-        var rt_arrow = function() {
-            $(".arrow").addClass('rotated');
+        (function rotate () {
+            $(".thank-you .arrow").addClass('rotated');
             setTimeout(function(){
-                $(".arrow").removeClass('rotated');
+                $(".thank-you .arrow").removeClass('rotated');
+                setTimeout(function() {
+                    rotate();
+                }, 200);
             }, 4000);
-        };
-        rt_arrow();
-        setInterval(rt_arrow, 4200);
+        })();
     });
 JS;
 
