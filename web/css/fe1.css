@@ -75,6 +75,19 @@ body.fe1, body.fe2 {
     background-color: white;
 }
 
+.modal .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    -o-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+}
+
 .fe2 .header {
     margin-bottom: 30px;
 }
@@ -728,46 +741,4 @@ body.fe1, body.fe2 {
         padding-top: 12px;
         padding-bottom: 12px;
     }
-}
-
-#loading-sec .modal-body {
-    background: none;
-    height: 100%;
-}
-
-#loading-sec .modal-dialog, #loading-sec .modal-content {
-    background: transparent;
-    height: 400px;
-    margin-top: 200px;
-}
-
-#loading-sec.fade.in ~ .modal-backdrop.fade.in {
-    background-color: #06b6a4;
-    background: linear-gradient(to right, #27b378 0%, #06b6a4 100%);
-    opacity: 0.95;
-}
-
-/*#loading-sec, #loading-sec .modal-dialog, #loading-sec .modal-dialog .modal-content!*, #loading-sec .modal-body*! {*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-    /*margin: 0;*/
-/*}*/
-
-#loading-sec .modal-header {
-    border: none;
-}
-
-#loading-sec .close {
-    display: none;
-}
-
-#loading-sec .modal-body {
-    background: url("../images/thankYou/backgroundLetters.png") no-repeat;
-    height: 250px;
-    background-size: 100% auto;
-}
-
-#loading-sec .modal-content {
-    box-shadow: none;
-    border: none;
 }

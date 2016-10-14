@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <title>Register Loading Bar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script scr="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/style.css" >
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+    <link rel="stylesheet" href="css/thank-you.css" >
 </head>
 <body>
-    <div class="depPopup thank-you" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
-        <div class="modal-dialog modal-thanks-form">
-            <div class="modal-content video-content thanks-letters">
-                <div class="modal-body video-body">
-                    <div class="modal-thanks-text1">
+    <div id="loading-sec" class="thank-you modal" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="header-text">
                         YOU'RE ALMOST THERE!
-                    </div>
-                            <div class="arrows-for-thanks3">
-                                <img src="images/thankYou/backAr3a.png">
-                                <img src="images/thankYou/backAr3a.png">
-                                <img src="images/thankYou/backAr3a.png">
-                            </div>
-                            <div class="modal-thanks-text2">
-                                <h4>THANK YOU!</h4>
-                            </div>
-                            <div class="modal-thanks-text3">
-                                Just one moment while we verify your <br> <span>private E-Mail</span> and <span>IP Address</span> now.
-                             </div>
+                    </p>
+                    <p class="arrow">
+                        <img src="images/thankYou/backAr3a.png">
+                        <img src="images/thankYou/backAr3a.png">
+                        <img src="images/thankYou/backAr3a.png">
+                    </p>
+                    <p class="thank-you-block">
+                        <span>THANK YOU!</span>
+                    </p>
+                    <p class="footer-text">
+                        Just one moment while we verify your<br/><strong>private E-Mail</strong> and <strong>IP Address</strong> now.
+                    </p>
                 </div>
             </div>
          </div>
      </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        var angle = 0;
+        jQuery('#loading-sec').modal({"show":true, backdrop: 'static'});
         $(function(){
             var rt = function() {
                 $(".arrows-for-thanks3").addClass('rotated');

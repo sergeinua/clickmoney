@@ -1,11 +1,10 @@
 <?php
 use yii\bootstrap\Modal;
 use yii\helpers\Url;
+use yii\bootstrap\BootstrapAsset;
 
-//$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/fe1.css');
-$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/style_fe_exit.css');
-//$this->registerCssFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', ['integrity' => "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", 'crossorigin' => "anonymous"]);
-//$this->registerCssFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', ['integrity' => "sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp", 'crossorigin' => "anonymous"]);
+//$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/style_fe_exit.css', ['depends' => [BootstrapAsset::className()]]);
+
 $script = <<< JS
     
 JS;

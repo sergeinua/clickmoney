@@ -223,7 +223,6 @@ function widget_earning_html() {
         var randname = myArrayname[rand_arr_index];
         if(randname.length > 6){
             var rand_arr_index = Math.floor(Math.random() * myArrayemail.length) +1;
-            console.log(" rand_arr_index is : "+rand_arr_index);
             var randemail = myArrayemail[rand_arr_index];
             var randname = myArrayname[rand_arr_index];
         }

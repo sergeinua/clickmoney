@@ -8,15 +8,65 @@ use yii\bootstrap\BootstrapAsset;
 
 /* @var $this yii\web\View */
 
-$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/bootstrap.min.css');
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/fe1.css', ['depends' => [BootstrapAsset::className()]]);
 $this->registerCssFile('https://fonts.googleapis.com/css?family=Montserrat');
 $this->registerCssFile('https://fonts.googleapis.com/css?family=Open+Sans');
-$this->registerJsFile('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js');
-$this->registerJsFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', ['integrity' => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", 'crossorigin' => "anonymous"]);
 $this->registerJsFile('https://s3.amazonaws.com/caff/js/formhelpers.min.js');
+
+$script_init = <<< JS
+    var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
+    var exitsplashpage = '/site/exit';
+JS;
+$this->registerJs($script_init, yii\web\View::POS_BEGIN);
+
 $script = <<< JS
+(function($) {
     $('body').addClass('fe1');
+    
+    // if (top.location != self.location)
+    // {
+    //     top.location.replace(self.location);
+    //     window.stop();
+    // }
+
+    /* #vid_hl old logic */
+    // var hl_index = test_index = 0;
+    // var total_time_passed = 0
+    // var hl_arr = [33,53,78,52,73,182,38,841,153,293,49,19];
+    //
+    // var hl_text = [];
+    // hl_text[0] = "This Is The First And Only Time We Are Allowing The General Public To Get Free Access.";
+    // hl_text[1] = "Time Is Limited And There’s A lot Of Money At Stake. Please Turn Off All Distractions And Get Ready To Go On An Exciting Trip With Us.";
+    // hl_text[2] = "After Watching This Video Until The End You Will Feel Like You Won The Lottery And The Amount Of Money You Won Is Unlimited For Life!";
+    // hl_text[3] = "";
+    // hl_text[4] = "";
+    // hl_text[5] = "You Just Landed On The One Page That Has A Secret Back Door To A Multi-Billion Dollar Market.";
+    // hl_text[6] = "";
+    // hl_text[7] = "";
+    // hl_text[8] = "Please Put Your Best Email In The Form Below To Proceed To The Next Step";
+    // hl_text[9] = "";
+    // hl_text[10] = "";
+    // hl_text[11] = "Enter Your Best Email And Click The ​Button​ On This Page. Your Money Is Waiting For You!";
+    //
+    // function updateHL()
+    // {
+    //     if(hl_index < 13)
+    //     {
+    //         if(hl_text[hl_index-1]!='')
+    //         {
+    //             $("#vid_hl").html(hl_text[hl_index-1]);
+    //         }
+    //         setTimeout(function(){updateHL();}, (hl_arr[hl_index++]*1000));
+    //
+    //         total_time_passed = total_time_passed + hl_arr[test_index++];
+    //         if(total_time_passed > 59)
+    //         {
+    //             min = total_time_passed /60;
+    //             sec = total_time_passed %60;
+    //         }
+    //     }
+    // }
+})(jQuery);
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
 
@@ -142,55 +192,6 @@ if ($rendering_forms) {
 } ?>
 
 <script src="/site/validate"></script>
-
-<script type="text/javascript">
-    if (top.location != self.location)
-    {
-        top.location.replace(self.location);
-        window.stop();
-    }
-
-    var hl_index = test_index = 0;
-    var total_time_passed = 0
-    var hl_arr = [33,53,78,52,73,182,38,841,153,293,49,19];
-
-    var hl_text = [];
-    hl_text[0] = "This Is The First And Only Time We Are Allowing The General Public To Get Free Access.";
-    hl_text[1] = "Time Is Limited And There’s A lot Of Money At Stake. Please Turn Off All Distractions And Get Ready To Go On An Exciting Trip With Us.";
-    hl_text[2] = "After Watching This Video Until The End You Will Feel Like You Won The Lottery And The Amount Of Money You Won Is Unlimited For Life!";
-    hl_text[3] = "";
-    hl_text[4] = "";
-    hl_text[5] = "You Just Landed On The One Page That Has A Secret Back Door To A Multi-Billion Dollar Market.";
-    hl_text[6] = "";
-    hl_text[7] = "";
-    hl_text[8] = "Please Put Your Best Email In The Form Below To Proceed To The Next Step";
-    hl_text[9] = "";
-    hl_text[10] = "";
-    hl_text[11] = "Enter Your Best Email And Click The ​Button​ On This Page. Your Money Is Waiting For You!";
-
-    function updateHL()
-    {
-        if(hl_index < 13)
-        {
-            if(hl_text[hl_index-1]!='')
-            {
-                $("#vid_hl").html(hl_text[hl_index-1]);
-            }
-            setTimeout(function(){updateHL();}, (hl_arr[hl_index++]*1000));
-
-            total_time_passed = total_time_passed + hl_arr[test_index++];
-            if(total_time_passed > 59)
-            {
-                min = total_time_passed /60;
-                sec = total_time_passed %60;
-            }
-        }
-    }
-
-    var exitsplashmessage = '***************************************\n W A I T   B E F O R E   Y O U   G O !\n\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\n     TO STAY GET THE EXACT METHOD THAT\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\n\n     >> STAY ON THIS PAGE <<\n\n***************************************';
-    var exitsplashpage = '/site/exit';
-
-</script>
 
 <?= \Yii::$app->view->renderFile('@app/views/site/exit.php'); ?>
 
