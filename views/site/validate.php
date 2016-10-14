@@ -59,8 +59,7 @@ function processnow(semail, from_page, fname)
     <?php endfor; ?>
 
     var mt = setTimeout(function(){
-        //var mem_rdirect = "/click-through";
-        var mem_rdirect = "";
+        var mem_rdirect = "/click-through";
         top.location.href = mem_rdirect;
     },<?= 3000 * ($quantity == 0 ? '1' : $quantity); ?>);
 
