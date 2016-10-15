@@ -27,42 +27,68 @@ function validateEmail(email_value, from_page, fname)
     return false;
 }
 
+<?php if ($esp_forms): ?>
 function processnow(semail, from_page, fname)
 {
-    $('#loading-sec').modal({backdrop: 'static', keyboard: false});
-    $('#loading-sec').modal('show');
-    var number = 1; // Get the number from paragraph
-    var set_interval = 100/9;
-    set_interval = 1000/set_interval;
-    // Called the function in each second
-    var interval = setInterval(function () {
-        number++; // Update the value in paragraph
-        if(number <= 100){
-            $(".t_progress").width(number+"%");
-            $(".t_progress_span").text(number+"%");
-        }
-    }, set_interval);
+    $('.modal').modal('hide');
+    $('#loading_sec').modal('show');
 
-    <?php for($i=1; $i <= $quantity; $i++) : ?>
+    <?php $time = 1000; ?>
+    <?php $step = 3000; ?>
+    <?php for($i=1; $i <= sizeof($esp_forms); $i++) : ?>
 
         var mt = setTimeout(function(){
             var email = semail;
             var ufame = fname;
             if(!ufame)
-                ufame = 'pmafriend';
+                ufame = 'cmfriend';
 
             jQuery('#squeeze_form<?= $i; ?>_email').val(email);
             jQuery('#squeeze_form<?= $i; ?>_fname').val(ufame);
             jQuery('#squeeze_form<?= $i; ?>').submit();
-        },<?= ($i == 1) ? 1000 * $i : 3000 * ($i - 1) ; ?>);
+        },<?= $time; ?>);
+    <?php $time += $step; ?>
 
     <?php endfor; ?>
 
     var mt = setTimeout(function(){
         var mem_rdirect = "/click-through";
         top.location.href = mem_rdirect;
-    },<?= 3000 * ($quantity == 0 ? '1' : $quantity); ?>);
+    },<?= $time; ?>);
 
     return false;
 }
+<?php endif; ?>
 
+<?php if ($esp_forms_exit): ?>
+function process_overlay(semail, from_page, fname)
+{
+    $('.modal').modal('hide');
+    $('#loading_sec').modal('show');
+
+    <?php $time = 1000; ?>
+    <?php $step = 3000; ?>
+    <?php for($i=1; $i <= sizeof($esp_forms_exit); $i++) : ?>
+
+        var mt = setTimeout(function(){
+            var email = semail;
+            var ufame = fname;
+            if(!ufame)
+                ufame = 'cmoverlayfriend';
+
+            jQuery('#squeeze_form<?= $i; ?>_exit_email').val(email);
+            jQuery('#squeeze_form<?= $i; ?>_exit_fname').val(ufame);
+            jQuery('#squeeze_form<?= $i; ?>_exit').submit();
+        }, <?= $time; ?>);
+        <?php $time += $step; ?>
+
+    <?php endfor; ?>
+
+    var mt = setTimeout(function(){
+        var mem_rdirect = "/click-through";
+        top.location.href = mem_rdirect;
+    }, <?= $time; ?>);
+
+    return false;
+    }
+<?php endif; ?>

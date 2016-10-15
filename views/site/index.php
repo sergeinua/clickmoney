@@ -11,11 +11,10 @@ use yii\bootstrap\BootstrapAsset;
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/fe1.css', ['depends' => [BootstrapAsset::className()]]);
 $this->registerCssFile('https://fonts.googleapis.com/css?family=Montserrat');
 $this->registerCssFile('https://fonts.googleapis.com/css?family=Open+Sans');
-$this->registerJsFile('https://s3.amazonaws.com/caff/js/formhelpers.min.js');
 
 $script_init = <<< JS
     var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
-    var exitsplashpage = '/site/exit';
+    var exitsplashpage = '/exit';
 JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
@@ -189,16 +188,23 @@ $this->title = 'Front End 1 page';
     </div>
 
 <?php
-if ($rendering_forms) {
+if ($esp_forms) {
     $i = 0;
-    foreach ($rendering_forms as $key => $value) {
+    foreach ($esp_forms as $key => $value) {
         echo \Yii::$app->view->renderFile('@app/views/site/forms/form_' . $key . '.php', ['item' => $i + 1, 'params' => $value]);
+        $i++;
+    }
+}
+if ($esp_forms_exit) {
+    $i = 0;
+    foreach ($esp_forms_exit as $key => $value) {
+        echo \Yii::$app->view->renderFile('@app/views/site/forms/form_' . $key . '.php', ['item' => ($i + 1).'_exit', 'params' => $value]);
         $i++;
     }
 } ?>
 
-<script src="/site/validate"></script>
-
-<?= \Yii::$app->view->renderFile('@app/views/site/exit.php'); ?>
+<?php Modal::begin(['id' => 'exitpopup']); ?>
+    Exit Under Construction
+<?php Modal::end(); ?>
 
 <?= \Yii::$app->view->renderFile('@app/views/site/thank_you.php'); ?>

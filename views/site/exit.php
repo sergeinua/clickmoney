@@ -3,7 +3,7 @@ use yii\bootstrap\Modal;
 use yii\helpers\Url;
 use yii\bootstrap\BootstrapAsset;
 
-//$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/style_fe_exit.css', ['depends' => [BootstrapAsset::className()]]);
+$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/exit.css', ['depends' => [BootstrapAsset::className()]]);
 
 $script = <<< JS
     
@@ -12,7 +12,6 @@ JS;
 ?>
 
 
-    <?php Modal::begin(['id' => 'myModal']); ?>
 
         <div class="clickthrough">
             <div class="fe-exit">
@@ -104,4 +103,3 @@ JS;
             </div>
         </div>
 
-    <?php Modal::end(); ?>

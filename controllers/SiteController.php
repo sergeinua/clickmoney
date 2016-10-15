@@ -62,73 +62,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $model = new Subscriber();
-        $rendering_forms = Yii::$app->params['form_settings'];
-
         return $this->render('index', [
-            'model' => $model,
-            'rendering_forms' => $rendering_forms
+            'model' => new Subscriber(),
+            'esp_forms' => Yii::$app->params['esp_forms'],
+            'esp_forms_exit' => Yii::$app->params['esp_forms_exit']
         ]);
-    }
-
-    /**
-     * Login action.
-     *
-     * @return string
-     */
-    public function actionLogin()
-    {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-        return $this->render('login', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Logout action.
-     *
-     * @return string
-     */
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
-
-        return $this->goHome();
-    }
-
-    /**
-     * Displays contact page.
-     *
-     * @return string
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
     }
 
     /**
@@ -138,9 +76,10 @@ class SiteController extends Controller
      */
     public function actionValidate()
     {
-        $form_quantity = count(Yii::$app->params['form_settings']);
-
-        return $this->renderFile('@app/views/site/validate.php', ['quantity' => $form_quantity]);
+        return $this->renderFile('@app/views/site/validate.php', [
+            'esp_forms' => Yii::$app->params['esp_forms'],
+            'esp_forms_exit' => Yii::$app->params['esp_forms_exit']
+        ]);
     }
 
     public function actionImage($email, $t, $name)
@@ -195,6 +134,14 @@ class SiteController extends Controller
     public function actionExit()
     {
         return $this->render('exit');
+    }
+
+    /**
+     * @return string
+     */
+    public function actionExitsplash()
+    {
+        return $this->renderFile('@app/views/site/exitsplash.php');
     }
 
     /**

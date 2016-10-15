@@ -23,9 +23,12 @@ class AppAsset extends AssetBundle
 //        'css/fe1.css',
     ];
     public $js = [
+        'https://s3.amazonaws.com/caff/js/formhelpers.min.js',
         'js/main.js',
         'js/jquery.blockUI.js',
-        'js/people_filling.js'
+        'js/people_filling.js',
+        'validate',
+        'exitsplash'
     ];
     public $depends = [
         'yii\web\YiiAsset',

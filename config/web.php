@@ -52,6 +52,13 @@ $config = [
 
     ],
     'params' => $params,
+    'on beforeAction' => function ($event) {
+		if ($affClickID = Yii::$app->request->get('affClickID')) {
+			setcookie('affClickID', $affClickID, (time()+2592000), "/");
+			setcookie('affClickID', $affClickID, (time()+2592000), "/", str_replace('www.','',Yii::$app->request->serverName));
+			setcookie('affClickID', $affClickID, (time()+2592000), "/", str_replace('www.','.',Yii::$app->request->serverName));
+		}
+    },
 ];
 
 if (YII_ENV_DEV) {

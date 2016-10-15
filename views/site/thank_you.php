@@ -23,7 +23,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
 ?>
     <?php Modal::begin([
         'options' => [
-            'id' => 'loading-sec',
+            'id' => 'loading_sec',
             'class' => 'thank-you',
             'tabindex' => "-1",
             'role' => "dialog",
@@ -33,7 +33,8 @@ $this->registerJs($script, yii\web\View::POS_READY);
         'size' => Modal::SIZE_LARGE,
         'clientOptions' => [
 //            'show' => true,
-            'backdrop' => 'static'
+            'backdrop' => 'static',
+            'keyboard' => 'false'
         ]
     ]); ?>
 
