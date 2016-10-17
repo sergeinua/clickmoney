@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styleRegister.css" >
+    <link rel="stylesheet" href="css/styleLoginPopup.css" >
+    <link rel="stylesheet" href="css/thank-you.css" >
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,7 +21,7 @@
                 <img src="images/Logo-white.svg">
             </div>
             <div class="col-md-5 col-xs-8 lic register-header">
-                <a href="" data-toggle="modal"><span class="licenceLeft regist1"><img src="images/key.png"></span>
+                <a data-toggle="modal" data-target="#myModal" href=""><span class="licenceLeft regist1"><img src="images/key.png"></span>
                 <span class="licenceRight regist2">LOGIN NOW</span></a>
                 <span class="licenceRight regist3">ALREADY A MEMBER?</span>
             </div>
@@ -36,7 +38,7 @@
                   <div id="gaff" class="gaff">
                       <script src="https://s3.amazonaws.com/caff/js/formhelpers.min.js"></script>
                       <input id="brokerName" type="hidden" value="brokenName">
-                      <form method="post" id="caffForm" action="http://ap.valaffiliates.com/Forms/ProcForm">
+                      <form method="post" id="caffForm" data-toggle="validator" action="http://ap.valaffiliates.com/Forms/ProcForm">
                               <input type="hidden" name="sub" value="222">
                               <input type="hidden" name="rd" value="3">
                               <input type="hidden" name="token" value="14893170%%2cxxmiyylu">
@@ -48,7 +50,7 @@
                             <div class="row">
                                 <div class="col-xs-6 form-group">
                                    <label class="register-label">First Name</label>
-                                   <input type="text" name="firstname" class="form-control email-reg-name email-Reg0 email-Reg1 " placeholder="First Name" value="" required pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" title="Please enter 3-15 characters (alphabets only)">
+                                   <input id="regFirstName" type="text" name="firstname" class="form-control email-reg-name email-Reg0 email-Reg1 " placeholder="First Name" value="" required pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" title="Please enter 3-15 characters (alphabets only)">
                                 </div>
                                 <div class="col-xs-6 form-group">
                                     <label class="register-label">Last Name</label>
@@ -79,7 +81,7 @@
                             </div>
                              <div class="row">
                                 <div class="col-xs-12 text-center">
-                                    <button type="submit">
+                                  <button type="submit" data-toggle="modal" data-target="#loading_sec">
                                       <div class="row">
                                           <div class="col-md-11 col-xs-9">
                                               REGISTER MY ACCOUNT NOW
@@ -137,10 +139,94 @@
         </div>
     </div>
 </div>
+
+<div id="myModal"  class="modal fade login-popup"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <img class="login-logo" src="images/Logo-white.svg">
+            <img class="login-lower-arrow" src="images/login-arrow-1.png">
+            <img class="login-upper-arrow" src="images/login-arrow-2.png">
+            <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close"><img src="images/ex.png"></a>
+            <p>
+                <span>LOGIN</span> TO YOUR<br> MEMBERS AREA
+            </p>
+            <form method="post" action="" class="login-form">
+                <div class="form-fields">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 vcenter">
+                            <input type="text" id="login" name="login" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Your login" title="Please enter 3-15 characters (alphabets only)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 vcenter">
+                            <input type="password" id="password" name="password" required placeholder="Your password">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <button type="submit">
+                            <div class="row">
+                                <div class="arrow">
+                                    <img src="images/key.png" />
+                                </div>
+                                <div class="col-xs-12">
+                                    LOGIN NOW
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <p class="forgot-password">
+                <a href="">Forgot your password?</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="loading_sec" class="thank-you modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="header-text">
+                    YOU'RE ALMOST THERE!
+                </p>
+                <p class="arrow">
+                    <img src="images/thankYou/backAr3a.png">
+                    <img src="images/thankYou/backAr3a.png">
+                    <img src="images/thankYou/backAr3a.png">
+                </p>
+                <p class="thank-you-block">
+                    <span>THANK YOU!</span>
+                </p>
+                <p class="footer-text">
+                    Just one moment while we verify your<br/><strong>private E-Mail</strong> and <strong>IP Address</strong> now.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     $(document).ready(function(){
         $('[data-toggle="popover"]').popover();
     });
+
+</script>
+<script type="text/javascript">
+    //jQuery('#loading_sec').modal({"show":true, backdrop: 'static'});
+    $(function(){
+        (function rotate () {
+            $(".thank-you .arrow").addClass('rotated');
+            setTimeout(function(){
+                $(".thank-you .arrow").removeClass('rotated');
+                setTimeout(function() {
+                    rotate();
+                }, 200);
+            }, 4000);
+        })();
+    });
+
 </script>
 </body>
 </html>

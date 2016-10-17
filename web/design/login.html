@@ -13,52 +13,55 @@
     <script src="https://gaff.s3.amazonaws.com/js/gaff.js"></script>
 </head>
 <body>
-<a href="#modal" role="button" class="btn" data-toggle="modal" data-target="#modal">Click Me</a>
-<div class="depPopup hide loginPopup" id="modal" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
-    <img class="logo-for-login-page" src="images/Logo-white.svg">
-    <div class="modal-dialog">
-        <div class="modal-content video-content login-content">
-            <a href=""><img class="login-close" src="images/ex.png"></a>
-            <div class="modal-header video-header login-header">
-                <div class="col-xs-12">
-                    <div class="col-xs-4"><img src="images/login-arrow.png"></div>
-                    <div class="col-xs-8 login-header0">
-                        <p><span class="login-header1">LOGIN</span> TO YOUR MEMBERS AREA</p>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Click here to see login popup
+</button>
+
+<div id="myModal"  class="modal fade login-popup"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <img class="login-logo" src="images/Logo-white.svg">
+            <img class="login-lower-arrow" src="images/login-arrow-1.png">
+            <img class="login-upper-arrow" src="images/login-arrow-2.png">
+            <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close"><img src="images/ex.png"></a>
+            <p>
+                <span>LOGIN</span> TO YOUR<br> MEMBERS AREA
+            </p>
+            <form method="post" action="" class="login-form">
+                    <div class="form-fields">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 vcenter">
+                                <input type="text" id="login" name="login" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Your login" title="Please enter 3-15 characters (alphabets only)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 vcenter">
+                                <input type="password" id="password" name="password" required placeholder="Your password">
+                            </div>
+                        </div>
                     </div>
-                 </div>
-            </div>
-            <div class="modal-body login-body">
-                <div class="container  log-name-pas ">
-                    <div class="col-md-4 col-xs-7 log-name-pas1">
-                        <div class="row">
-                            <div class="col-xs-12 email-Reg0">
-                                <input class ="col-xs-12 email-reg-email" value="Shishev">
-                            </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <button type="submit">
+                                <div class="row">
+                                    <div class="arrow">
+                                        <img src="images/key.png" />
+                                    </div>
+                                    <div class="col-xs-12">
+                                        LOGIN NOW
+                                    </div>
+                                </div>
+                            </button>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-12 email-Reg0">
-                                <input class ="col-xs-12 email-reg-name" value="Your Password">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-7 col-xs-7 button1 loginButton">
-                                  <div class="col-md-1 col-xs-3">
-                                        <img src="images/key.png">
-                                  </div>
-                                  <div class="col-xs-9 proceed proceed1 login col-xs-8">
-                                      <span>LOGIN NOW</span>
-                                   </div>
-                            </div>
-                            <div class="col-xs-9 forgot-password">
-                                Forgot your password?
-                            </div>
-                        </div>
-                     </div>
-                </div>
-            </div>
+                    </div>
+            </form>
+            <p class="forgot-password">
+                <a href="">Forgot your password?</a>
+            </p>
         </div>
     </div>
 </div>
-
 </body>
 </html>

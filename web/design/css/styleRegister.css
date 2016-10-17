@@ -10,6 +10,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     border-radius: 0;
 }
 
+.register-header a:focus {
+    outline: none;
+}
+
 .glyphicon1 {
     padding: 10px 35px !important;
 }
@@ -422,8 +426,7 @@ span.button20 {
 
 /************************************register page ***************************************/
 .regist1 {
-     background-color: #189b7a;
-    width: 6% !important;
+    background-color: #189b7a;
     padding: 1% !important;
  }
 
@@ -896,11 +899,14 @@ button {
     /*footer*/
     .footer .col-xs-12 {
         text-align: center;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .register-header {
         width: 80%;
-        margin-top: 50px;
+        margin-top: 42px;
+
     }
 
     .register-header span {
@@ -920,17 +926,24 @@ button {
     }
 
     .arfe4 {
-        width: 12%;
-        top: 30px;
+        width: 9%;
+        top: 35px;
         right: 1px;
     }
 
+    .register-header {
+        width: 95%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1400px) {
 
     .ClickMoney, .clickthrough {
         background-size: cover;
+    }
+
+    .clickthrough {
+        height: 800px;
     }
 
     .content, .header, .footer {
@@ -961,6 +974,7 @@ button {
         font-size: 0.40625em;
         padding-left: 0;
         padding-bottom: 2%;
+        width: 85%;
     }
 
     .arfe2 {
@@ -1078,9 +1092,9 @@ button {
     }
 
     .arfe4 {
-        top: 30px;
-        right: -35px;
-        width: 20%;
+        top: 10px;
+        right: -20px;
+        width: 16%;
     }
 
     .gaff .text-center {
@@ -1160,6 +1174,10 @@ button {
 @media (min-width: 1400px) and (max-width: 1799px) {
     p.welkOrange1 {
         width: 37%;
+    }
+
+    .clickthrough {
+        height: 780px;
     }
 
     .clickbtFE2 {
@@ -1273,7 +1291,6 @@ button {
         margin: 20px 0;
     }
 
-
     .gaff .text-center {
         margin-left: 0;
     }
@@ -1304,6 +1321,12 @@ button {
 
     .content, .header, .footer, .header-container {
         width: 1600px;
+    }
+
+    .ClickMoney, .clickthrough {
+        background: url(../images/bg.png) no-repeat center center;
+        background-size: cover;
+        height: 1080px;
     }
 
     .fnavigation {
