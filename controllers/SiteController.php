@@ -131,9 +131,9 @@ class SiteController extends Controller
     /**
      * @return string
      */
-    public function actionExit()
+    public function actionFreereport()
     {
-        return $this->render('exit');
+        return $this->render('freereport');
     }
 
     /**
