@@ -1,0 +1,73 @@
+body {
+    background: url(../images/bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.container.content.row {
+    margin: auto;
+}
+
+.feExitWar {
+    color: #fd442b;
+}
+
+.notifExit {
+    color: #878787;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.feExitWar0 {
+    margin-top: 7%;
+    text-transform: capitalize;
+}
+.clickbtFE2 {
+    font-size: 29px;
+    color: #3e3e3e;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.col-xs-12.col-sm-8.vcenter input#name {
+    border: none;
+    background: #c0c0c0;
+}
+
+.col-xs-12.text-center button {
+    background:  #e75e32;
+}
+
+.exitDown {
+    border: 2px dashed #c0c0c0;
+    font-size: 14px;
+    padding: 3% 4%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 2%;
+}
+
+.exitDown span {
+    color: #e75e32;
+}
+
+.text-white {
+    color: white;
+}
+
+.feExitRed {
+    background-color: #fd442b;
+}
+
+.exit-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 30px;
+    background-color: rgba(253, 68, 43, 0.7);
+}

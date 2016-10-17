@@ -343,8 +343,8 @@ body.fe1, body.fe2 {
 
 .fe2 .action-form input[type=text], .fe2 .action-form input[type=email] {
     font-family: 'Open Sans', sans-serif;
-    color: #b0b0b0;
-    border: 2px dashed #e4e4e4;
+    color: red;
+    /*border: 2px dashed #e4e4e4;*/
 }
 
 .fe2 .action-form input#email {
@@ -357,8 +357,8 @@ body.fe1, body.fe2 {
 }
 
 .fe2 .action-form input#name:focus, .fe2 .action-form input#email:focus {
-    border: 2px solid #21c0ac;
-    color: #21c0ac;
+    /*border: 2px solid #21c0ac;*/
+    color: red;
 }
 
 .warranty-text {
@@ -511,7 +511,7 @@ body.fe1, body.fe2 {
 
     .fe2 .action-form .form-fields label {
         width: 90%;
-        /*margin-right: 10px;*/
+        margin-right: 10px;
     }
 
     .fe2 .action-form .form-fields input {
@@ -558,7 +558,7 @@ body.fe1, body.fe2 {
 
     .fe2 .content .right_block {
         background-color: white;
-        width: 32%;
+        /*width: 100%;*/
         padding-right: 0;
         padding-left: 0;
     }
@@ -566,17 +566,16 @@ body.fe1, body.fe2 {
     .fe2 .content .left_block {
         padding-right:0;
         padding-left:0;
-        width: 68%;
+        /*width: 68%;*/
         position: relative;
     }
 
     .fe2 .main-arrow {
         display: inherit;
         position: absolute;
-        /*top: -65px;*/
-        right: -40px;
+        right: -60px;
         height: 97px;
-        top: -97px
+        top: 17px
     }
 
     .fe2 .action-form {
@@ -648,7 +647,7 @@ body.fe1, body.fe2 {
     }
 
     .fe2 .action-form .form-fields {
-        font-size: 1.1em;
+        font-size: 0.96em;
     }
 
     .action-form input#name {
@@ -670,7 +669,7 @@ body.fe1, body.fe2 {
     }
 
     .fe2 .action-form button {
-        width: 410px;
+        /*width: 410px;*/
     }
 
     .action-form button .row .arrow {
