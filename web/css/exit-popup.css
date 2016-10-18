@@ -27,7 +27,6 @@ body {
     color: #3e3e3e;
     text-align: center;
     margin: 0 auto;
-    /*line-height: 1.5;*/
     font-weight: 900;
     margin-top: 10px;
 }
@@ -83,7 +82,6 @@ body {
 
 /* Exit popup */
 #exitpopup .modal-dialog {
-    /*margin-top: 390px;*/
     width: 100%;
 }
 
@@ -98,20 +96,23 @@ body {
 
 #exitpopup .feExitRed {
     background-color: #fd442b;
+    color: white;
+    padding: 0 5px;
 }
 
-#exitpopup .header .lic span.licenceLeft {
+#exitpopup span.licenceLeft {
     display: inline-block;
     background-color: #fd842b;
     color: white;
     font-size: 1.2em;
     text-align: center;
     font-weight: bold;
-    padding: 5px 7px;
+    padding: 5px 13px;
     vertical-align: middle;
+    border-radius: 50%;
 }
 
-#exitpopup .header .lic span.licenceRight {
+#exitpopup span.licenceRight {
     display: inline-block;
     background-color: white;
     font-weight: bold;
@@ -119,7 +120,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.35em;
     line-height: 1.8em;
-    font-size: 8px;
+    font-size: 9px;
     text-align: center;
     padding: 10px 8px 9px 8px;
     vertical-align: middle;
@@ -169,12 +170,10 @@ body {
 
 #exitpopup .nameExit {
     color: #fd442b;
-    /*background-color: #f5f5f5;*/
     border: none;
 }
 
 #exitpopup .nameFE2, #exitpopup .emailFE2 {
-    /*padding: 2% 2%;*/
     text-align: left;
     color: #c0c0c0;
     margin-top: 2%;
@@ -212,7 +211,7 @@ body {
     border: 2px dashed #c0c0c0;
     font-size: 11px;
     padding: 3% 4%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 8%;
     margin-bottom: 5%;
 }
@@ -220,12 +219,13 @@ body {
 #exitpopup .exitDown span {
     color: #e75e32;
     font-weight: 900;
+    white-space: nowrap;
 }
 
 #exitpopup .container.content {
     width: 32%;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
 }
 
 #exitpopup .close-btn-block {
@@ -335,10 +335,6 @@ body {
     text-align: right;
 }
 
-#exitpopup .warranty-text {
-    margin-top: 20px;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
     #exitpopup .container.content {
         width: 90%;
@@ -365,16 +361,44 @@ body {
     #exitpopup .container.content {
         width: 50%;
     }
+
+    #exitpopup .exitDown {
+        font-size: 11px;
+    }
 }
 
-@media (min-width: 980px) and (max-width: 1280px) {
+@media (min-width: 980px) and (max-width: 1279px) {
     #exitpopup .container.content {
         width: 50%;
     }
+
+    #exitpopup .exitDown {
+        font-size: 12px;
+    }
 }
 
-@media (min-width: 1281px) and (max-width: 1450px) {
+@media (min-width: 1280px) and (max-width: 1450px) {
     #exitpopup .container.content {
         width: 40%;
     }
+}
+
+@media (min-width: 1280px) {
+    #exitpopup .exitDown {
+        font-size: 12px;
+    }
+}
+
+#exitpopup .modal-content {
+    box-shadow: none;
+    border: none;
+}
+
+.block-current-people {
+    font-size: 12px;
+    padding: 0px 25px 15px 25px;
+}
+
+#exitpopup .block-current-people img {
+    height: 20px;
 }

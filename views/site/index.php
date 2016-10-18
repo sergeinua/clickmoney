@@ -25,7 +25,6 @@ $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 $script = <<< JS
 (function($) {
     $('body').addClass('fe1');
-
     $(".join-popup .close-btn a").click(function(e){
         $(".join-popup").removeClass('showed');
         sessionStorage.setItem('show_joined_popup', 'false');
@@ -168,33 +167,12 @@ if ($esp_forms_exit) {
 <?php Modal::begin(['id' => 'exitpopup']); ?>
 
     <div class="row">
-        <div class="container header col-lg-10 col-lg-offset-1">
-            <div class="row">
-                <div class="col-md-2 col-xs-6 logo col-sm-3">
-                    <img src="/images/ClickMoneyLogo/Logo-white.svg">
-                </div>
-                <div class="col-md-2 col-xs-6 lic text-right vcenter col-sm-3 pull-right">
-                    <span class="licenceLeft">1</span><span class="licenceRight">Report Left</span>
-                </div>
-                <div class="col-xs-12 col-md-8 col-sm-6 text-white row">
-                    <div class="col-lg-2 col-md-12">
-                        <img src="images/nn.png">There are currently
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <span class="feExitRed" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Report</span> Right Now. <span class="feExitBold">Act Quickly!</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="row">
         <div class="container content">
             <div class="row close-btn-block">
-                <div class="col-md-11 col-xs-10 close-btn-text">
+                <div class="col-md-5 col-xs-8 col-sm-6">
+                    <span class="licenceLeft">1</span><span class="licenceRight">Report Left</span>
+                </div>
+                <div class="col-md-6 close-btn-text hidden-xs hidden-sm">
                     Click here To Close Sign Up Form
                 </div>
                 <div class="col-md-1">
@@ -255,26 +233,11 @@ if ($esp_forms_exit) {
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="container footer">
             <div class="row">
-                <div class="col-xs-12 col-md-1 vcenter logo">
-                    <a href=""><img src="/images/ClickMoneyLogo/Logo-white.svg"></a>
-                </div><!--
-                --><div class="col-xs-12 col-md-7 vcenter menu">
-                    <ul>
-                        <li><a href="<?= Url::toRoute(['site/disclaimer']); ?>" target="_blank">Government Disclaimer</a></li>
-                        <li><a href="<?= Url::toRoute(['site/privacy-policy']); ?>" target="_blank">Privacy Policy</a></li>
-                        <li><a href="<?= Url::toRoute(['site/terms']); ?>" target="_blank">Terms</a></li>
-                        <li><a href="<?= Url::toRoute(['site/earnings-disclaimer']); ?>" target="_blank">Earnings Disclaimer</a></li>
-                        <li><a href="<?= Url::toRoute(['site/spam-policy']); ?>" target="_blank">Spam Policy</a></li>
-                        <li><a href="mailto: <?= Yii::$app->params['support_email']; ?>">Support</a></li>
-                    </ul>
-                </div><!--
-                --><div class="col-md-4 col-xs-12 text-right vcenter copyright">
-                    &copy; <?= date('Y'); ?> ClickMoney. All Rights Reserved.
+                <div class="col-lg-10 col-lg-offset-1 block-current-people text-center">
+                    <img src="images/orangeStop.png">There are currently
+                    <span class="feExitRed" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.
+                    <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Report</span> Right Now. <span class="feExitBold">Act Quickly!</span>
                 </div>
             </div>
         </div>
