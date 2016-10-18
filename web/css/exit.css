@@ -1,73 +1,134 @@
-body {
-    background: url(../images/bg.png) no-repeat center center;
-    background-size: cover;
+.freereport .image-background {
+    padding: 0 !important;
+    height: 100%;
 }
 
-.container.content.row {
-    margin: auto;
+.freereport .image-background .bg {
+    padding: 30px 0;
+    min-height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e74c32+0,e75e32+100 */
+    background: rgb(231,76,50,0.7); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(231,76,50,0.7) 0%, rgba(231,94,50,0.7) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(231,76,50,0.7) 0%,rgba(231,94,50,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(231,76,50,0.7) 0%,rgba(231,94,50,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74c32', endColorstr='#e75e32',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.feExitWar {
-    color: #fd442b;
-}
 
-.notifExit {
-    color: #878787;
-    font-size: 11px;
-    text-align: center;
-    margin-top: 3%;
-}
-
-.feExitWar0 {
-    margin-top: 7%;
-    text-transform: capitalize;
-}
-.clickbtFE2 {
-    font-size: 29px;
-    color: #3e3e3e;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 1.5;
-    font-weight: 900;
-}
-
-.col-xs-12.col-sm-8.vcenter input#name {
-    border: none;
-    background: #c0c0c0;
-}
-
-.col-xs-12.text-center button {
-    background:  #e75e32;
-}
-
-.exitDown {
-    border: 2px dashed #c0c0c0;
-    font-size: 14px;
-    padding: 3% 4%;
-    margin-bottom: 2%;
-    text-align: center;
-    font-weight: 900;
-    margin-top: 2%;
-}
-
-.exitDown span {
+.freereport .action-form input#name:focus, .fe2 .action-form input#email:focus,
+.freereport .action-form input#name.filled, .freereport .action-form input#email.filled {
+    border: 2px solid #e75e32;
     color: #e75e32;
 }
 
-.text-white {
-    color: white;
+.freereport .header .logo, .freereport .header .lic {
+    text-align: center;
 }
 
-.feExitRed {
+.freereport .header .lic span.licenceLeft {
     background-color: #fd442b;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.exit-background {
+.freereport .text-white {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0;
+}
+.freereport .feExitRed {
+    background-color: #fd442b;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.freereport .exitWarning {
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: 2.1em;
+    color: #3e3e3e;
+    text-align: center;
+    font-weight: normal;
+}
+
+.freereport .exitWarning span {
+    color: #fd442b;
+    font-weight: bold;
+}
+
+.freereport .exitNotification {
+    color: #878787;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.freereport .action-form button {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e74c32+0,e75e32+100 */
+    background: rgb(231,76,50); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(231,76,50,1) 0%, rgba(231,94,50,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(231,76,50,1) 0%,rgba(231,94,50,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(231,76,50,1) 0%,rgba(231,94,50,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74c32', endColorstr='#e75e32',GradientType=1 ); /* IE6-9 */
+}
+
+.freereport .main-arrow {
+    display: inherit;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 30px;
-    background-color: rgba(253, 68, 43, 0.7);
+    right: -60px;
+    height: 97px;
+    top: -97px
+}
+
+.freereport .exitDown {
+    border: 2px dashed #c0c0c0;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.freereport .exitDown span {
+    color: #e75e32;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* lg */
+@media (min-width: 1200px) {
+    .freereport .header .logo {
+        text-align: left;
+    }
+
+    .freereport .header .text-white {
+        text-align: right;
+    }
+
+    .freereport .header .lic {
+        text-align: right;
+    }
+}
+
+/* FullHD and higher */
+@media (min-width: 1800px) {
+    .freereport .header .logo {
+        width: 10%;
+    }
+
+    .freereport .header .text-white {
+        width: 77%;
+    }
+
+    .freereport .header .lic {
+        width: 13%;
+    }
+
+    .freereport .action-form button {
+        width: 442px;
+    }
+
+    .freereport .main-arrow {
+        right: -40px;
+    }
 }

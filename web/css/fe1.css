@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -57,18 +61,20 @@ input[type=text], input[type=email] {
     float: none;
 }
 
-body.fe1 {
+body.fe1 .image-background {
     padding: 60px 0;
 }
 
-body.fe2 {
+body.fe2 .image-background {
     padding: 30px 0;
 }
 
-body.fe1, body.fe2 {
+body.fe1 .image-background, body.fe2 .image-background {
     background: url(../images/bg.png) no-repeat center center;
     background-size: cover;
+    min-height: 100%;
 }
+
 
 .content {
     box-shadow: 0 15px 45px 15px rgba(0, 0, 0, .3);
@@ -285,9 +291,9 @@ body.fe1, body.fe2 {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 
-    -webkit-box-shadow: 0px 6px 18px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 6px 18px 1px rgba(0,0,0,0.3);
-    box-shadow: 0px 6px 18px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
 }
 
 .join-popup.showed {
@@ -343,8 +349,8 @@ body.fe1, body.fe2 {
 
 .fe2 .action-form input[type=text], .fe2 .action-form input[type=email] {
     font-family: 'Open Sans', sans-serif;
-    color: red;
-    /*border: 2px dashed #e4e4e4;*/
+    color: #b0b0b0;
+    border: 2px dashed #e4e4e4;
 }
 
 .fe2 .action-form input#email {
@@ -357,8 +363,8 @@ body.fe1, body.fe2 {
 }
 
 .fe2 .action-form input#name:focus, .fe2 .action-form input#email:focus {
-    /*border: 2px solid #21c0ac;*/
-    color: red;
+    border: 2px solid #21c0ac;
+    color: #21c0ac;
 }
 
 .warranty-text {
@@ -398,7 +404,6 @@ body.fe1, body.fe2 {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: left;
 }
 
 .footer ul > li {
@@ -511,7 +516,7 @@ body.fe1, body.fe2 {
 
     .fe2 .action-form .form-fields label {
         width: 90%;
-        margin-right: 10px;
+        /*margin-right: 10px;*/
     }
 
     .fe2 .action-form .form-fields input {
@@ -558,7 +563,7 @@ body.fe1, body.fe2 {
 
     .fe2 .content .right_block {
         background-color: white;
-        /*width: 100%;*/
+        width: 32%;
         padding-right: 0;
         padding-left: 0;
     }
@@ -566,16 +571,17 @@ body.fe1, body.fe2 {
     .fe2 .content .left_block {
         padding-right:0;
         padding-left:0;
-        /*width: 68%;*/
+        width: 68%;
         position: relative;
     }
 
     .fe2 .main-arrow {
         display: inherit;
         position: absolute;
-        right: -60px;
+        /*top: -65px;*/
+        right: -40px;
         height: 97px;
-        top: 17px
+        top: -97px
     }
 
     .fe2 .action-form {
@@ -606,7 +612,6 @@ body.fe1, body.fe2 {
 
     .join-popup {
         width: 375px;
-        top: 320px;
         bottom: -375px;
         right: 20px;
         top: auto;
@@ -647,7 +652,7 @@ body.fe1, body.fe2 {
     }
 
     .fe2 .action-form .form-fields {
-        font-size: 0.96em;
+        font-size: 1.1em;
     }
 
     .action-form input#name {
@@ -669,7 +674,7 @@ body.fe1, body.fe2 {
     }
 
     .fe2 .action-form button {
-        /*width: 410px;*/
+        width: 410px;
     }
 
     .action-form button .row .arrow {
