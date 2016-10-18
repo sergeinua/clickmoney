@@ -1,13 +1,19 @@
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url(../fonts/Montserrat-Bold.ttf);
-}
-
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select.select-register:focus {
     border: 2px solid #21c0ac;
     outline: none;
     color: #21c0ac;
     border-radius: 0;
+}
+
+@-moz-document url-prefix() {
+    select.form-control {
+        padding-right: 25px;
+        background-image: url("../images/select.png");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 7px) 50%;
+        -moz-appearance: none;
+        appearance: none;
+    }
 }
 
 .register-header a:focus {
@@ -58,11 +64,17 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 body {
     font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .ClickMoney, .clickthrough {
     background: url(../images/bg.png) no-repeat center center;
     background-size: cover;
+    min-height: 100%;
 }
 
 .vcenter {
@@ -98,7 +110,6 @@ body {
 
 .licenceRight, .licenceLeft {
     float: right;
-    padding: 10px;
 }
 
 .lic{
@@ -127,7 +138,7 @@ body {
     font-size: 0.875em;
     text-align: center;
     font-weight: bold;
-    padding: 3px 10px;
+    padding-bottom: 1.2%;
 }
 
 .video_through {
@@ -427,15 +438,15 @@ span.button20 {
 /************************************register page ***************************************/
 .regist1 {
     background-color: #189b7a;
-    padding: 1% !important;
  }
 
 .regist2{
     background-color: #23bfa8;
     width: 20% !important;
-    padding: 1.5% !important;
-    font-size: 0.625em !important;
+    padding: 1.7% !important;
+    font-size: 0.75em !important;
     letter-spacing: 3px !important;
+
 }
 
 .regist2 a {
@@ -443,27 +454,27 @@ span.button20 {
 }
 
 .regist3 {
-    font-size: 0.625em !important;
+    font-size: 0.75em !important;
     letter-spacing: 3px !important;
-    padding: 1.5% !important;
-    width: 30% !important;
+    padding: 1.7% !important;
+    width: 31% !important;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, .2);
 }
 
 .reg-bold {
     font-weight: bold;
     border-bottom: 2px dashed #e4e4e4;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.625em;
 }
 
 .register-right-text {
     width: 80%;
-    margin-top: 6%;
+    margin-top: 8%;
     margin-bottom: 6%;
 }
 
 .gaff {
-    padding: 0 10% 1% 5%;
+    padding: 0 5% 1% 5%;
 }
 
 .gaff button {
@@ -519,7 +530,7 @@ button {
 }
 
 .gaff button .row {
-    margin: 25px 0;
+    margin: 23px 0;
     position: relative;
 }
 
@@ -547,11 +558,15 @@ button {
 }
 
 .email-Reg0 {
-    font-size: 0.75em;
+    font-size: 0.9em;
     margin-left: 5%;
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.email-Reg2, .email-Reg4, .email-Reg6 {
+    margin-left:0;
 }
 
 .register-label {
@@ -567,8 +582,8 @@ button {
 }
 
 .arfe4 {
-    top: 30px;
-    right: -50px;
+    top: 50px;
+    right: -60px;
     position: absolute;
 }
 
@@ -600,9 +615,13 @@ button {
     color: white;
 }
 
+.button-align {
+    padding-left: 0;
+}
+
 
 /*mobile tablets*/
-@media (min-width: 300px) and (max-width: 415px) {
+@media (max-width: 450px) {
 
     /*thanks form*/
     .modal-thanks-form {
@@ -657,6 +676,12 @@ button {
     .arfe2 {
         top: -5px;
     }
+
+    .regist1 {
+        height: 28px;
+        padding-top: 1.5% !important;
+        padding-bottom: 0;
+    }
 }
 
 
@@ -679,6 +704,11 @@ button {
 }
 
 @media (max-width: 991px) {
+
+    .licenceLeft {
+        padding-top: 1%;
+        padding: 1% 1% 1.2% 1%;
+    }
 
     .stop {
         margin: 4% 23%;
@@ -881,13 +911,6 @@ button {
         width: 100%;
     }
 
-
-    .ClickMoney, .clickthrough {
-        background: url(../images/register/backgroundRegister.png) no-repeat;
-        background-size: cover;
-        height:auto;
-    }
-
     .logWhite {
         margin-top: 0;
     }
@@ -909,8 +932,8 @@ button {
 
     }
 
-    .register-header span {
-        height: 30px;
+    .regist1 img {
+        width: 90%;
     }
 
     .register-header a span.licenceLeft {
@@ -926,9 +949,11 @@ button {
     }
 
     .arfe4 {
-        width: 9%;
-        top: 35px;
-        right: 1px;
+        display: none;
+    }
+
+    .gaff .text-center {
+         margin-left: 3px;
     }
 
     .register-header {
@@ -975,6 +1000,7 @@ button {
         padding-left: 0;
         padding-bottom: 2%;
         width: 85%;
+        margin-left: 24%;
     }
 
     .arfe2 {
@@ -1003,7 +1029,7 @@ button {
     }
 
     .licenceLeft {
-        padding: 3px 5px;
+        padding: 1.1% 1% ;
     }
 
     .lic {
@@ -1018,6 +1044,11 @@ button {
         margin-top: 30px;
         margin-bottom: 30px;
         width: 13%;
+    }
+
+    .gaff button {
+        width: 80%;
+        font-size: 0.7em;
     }
 
     .welkGreen {
@@ -1093,7 +1124,7 @@ button {
 
     .arfe4 {
         top: 10px;
-        right: -20px;
+        right: -30px;
         width: 16%;
     }
 
@@ -1169,6 +1200,10 @@ button {
     .footer .menu {
         padding-left: 20px;
     }
+
+    .regist3, .regist2 {
+        font-size: 0.6em !important;
+    }
 }
 
 @media (min-width: 1400px) and (max-width: 1799px) {
@@ -1176,12 +1211,8 @@ button {
         width: 37%;
     }
 
-    .clickthrough {
-        height: 780px;
-    }
-
     .clickbtFE2 {
-        font-size: 0.9375em;
+        font-size: 1.1em;
     }
 
     .nameFE20, .emailFE20 {
@@ -1197,7 +1228,7 @@ button {
     }
 
     .blockText {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
 
     .lic {
@@ -1220,10 +1251,6 @@ button {
         margin: 2% 10% 0 6%;
     }
 
-    .reg-bold {
-        font-size: 1.375em;
-    }
-
     .arfe3 {
         top: 155px;
         right: 170px;
@@ -1232,7 +1259,7 @@ button {
 
     .arfe4 {
         top: 10px;
-        right: -45px;
+        right: -55px;
         width: 20%;
     }
 
@@ -1304,7 +1331,7 @@ button {
     }
 
     .icons-block img.t {
-        width: 75px;
+        width: 70px;
     }
 
     .icons-block img.v {
@@ -1313,6 +1340,14 @@ button {
 
     .icons-block img.n {
         width: 55px;
+    }
+
+    .regist1 {
+        padding: 1.4%;
+    }
+
+    .register-last-row {
+        margin-bottom: 2%;
     }
 
 }
@@ -1326,7 +1361,6 @@ button {
     .ClickMoney, .clickthrough {
         background: url(../images/bg.png) no-repeat center center;
         background-size: cover;
-        height: 1080px;
     }
 
     .fnavigation {
@@ -1342,7 +1376,10 @@ button {
     }
 
     .licenceLeft {
-        padding: 6px 10px;
+        padding-bottom: 1.2%;
+        width: 5.5%;
+        font-size: 1.48em;
+        padding-top: 0.4%;
     }
 
     p.welkOrange1 {
@@ -1356,21 +1393,13 @@ button {
         width: 25%;
     }
 
-    .licenceLeft {
-        width: 8%;
-    }
-
-    .licenceLeft{
-        font-size: 1em;
-    }
-
     .licenceRight {
         font-size: 0.6875em;
         letter-spacing: 2px;
     }
 
     .clickbtFE2 {
-        font-size: 1.5625em;
+        font-size: 1.8625em;
     }
 
     .nameFE20, .emailFE20, .nameFE2, .emailFE2 {
@@ -1397,7 +1426,7 @@ button {
 
     .blockText {
         font-size: 0.9em;
-        margin-left: 12%;
+        margin-left: 15%;
         margin-top: 1%;
         margin-bottom: 3%;
     }
@@ -1454,6 +1483,6 @@ button {
     }
 
     .icons-block {
-        width: 445px;
+        width: 380px;
     }
 }
