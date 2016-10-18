@@ -1,0 +1,380 @@
+body {
+    background: url(../images/bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.container.content.row {
+    margin: auto;
+}
+
+.feExitWar {
+    color: #fd442b;
+}
+
+.notifExit {
+    color: #878787;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.feExitWar0 {
+    margin-top: 7%;
+    text-transform: capitalize;
+}
+.clickbtFE2 {
+    font-size: 25px;
+    color: #3e3e3e;
+    text-align: center;
+    margin: 0 auto;
+    /*line-height: 1.5;*/
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.col-xs-12.col-sm-8.vcenter input#name {
+    border: none;
+    background: #c0c0c0;
+}
+
+.col-xs-12.text-center button {
+    background:  #e75e32;
+}
+
+.exitDown {
+    border: 2px dashed #c0c0c0;
+    font-size: 14px;
+    padding: 3% 4%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 2%;
+}
+
+.exitDown span {
+    color: #e75e32;
+}
+
+.text-white {
+    color: white;
+}
+
+.feExitRed {
+    background-color: #fd442b;
+}
+
+.exit-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 30px;
+    background-color: rgba(253, 68, 43, 0.7);
+}
+
+.video-through.vcenter.text-center.left_block .img-responsive {
+    height: 475px;
+}
+
+.exit-background .container.header, .exit-background .container.footer {
+    width: 1170px;
+}
+
+/* Exit popup */
+#exitpopup .modal-dialog {
+    /*margin-top: 390px;*/
+    width: 100%;
+}
+
+#exitpopup .modal-dialog, #exitpopup .modal-content, #exitpopup .modal-body {
+    background: transparent;
+}
+
+#exitpopup .fex-text {
+    color: white;
+    font-size: 11px;
+}
+
+#exitpopup .feExitRed {
+    background-color: #fd442b;
+}
+
+#exitpopup .header .lic span.licenceLeft {
+    display: inline-block;
+    background-color: #fd842b;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 7px;
+    vertical-align: middle;
+}
+
+#exitpopup .header .lic span.licenceRight {
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+    color: #858585;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    line-height: 1.8em;
+    font-size: 8px;
+    text-align: center;
+    padding: 10px 8px 9px 8px;
+    vertical-align: middle;
+}
+
+#exitpopup .modal-dialog {
+    position: relative;
+    transform: none;
+}
+
+#exitpopup .close-btn-text {
+    text-align: right;
+    color: #858585;
+    font-size: 11px;
+    padding-top: 4px;
+}
+
+#exitpopup .close {
+    font-weight: 100;
+    font-size: 25px;
+    text-align: center;
+    border-left: 2px solid #cbc4c4;
+    padding-left: 10px;
+}
+
+#exitpopup .feExitWar {
+    color: #fd442b;
+}
+
+#exitpopup .clickbtFE2.feExitWar0 {
+    font-size: 21px;
+}
+
+#exitpopup .notifExit {
+    color: #878787;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#exitpopup .nameFE20, #exitpopup .emailFE20 {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 4%;
+    font-size: 12px;
+}
+
+#exitpopup .nameExit {
+    color: #fd442b;
+    /*background-color: #f5f5f5;*/
+    border: none;
+}
+
+#exitpopup .nameFE2, #exitpopup .emailFE2 {
+    /*padding: 2% 2%;*/
+    text-align: left;
+    color: #c0c0c0;
+    margin-top: 2%;
+    font-size: 15px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+#exitpopup .action-form input[type="text"] {
+    border: none;
+    background: #f5f5f5;
+    color: #fd442b;
+}
+
+#exitpopup .action-form input#name:focus {
+    color: #fd442b;
+}
+
+#exitpopup .action-form input#email {
+    border: 2px dashed #c0c0c0;
+}
+
+#exitpopup #exit-send-btn {
+    background: #e75e32;
+    padding: 0 10px;
+    width: 90%;
+    margin: auto;
+    height: 50px;
+}
+
+#exitpopup .warranty-text {
+    font-size: 0.7em;
+}
+
+#exitpopup .exitDown {
+    border: 2px dashed #c0c0c0;
+    font-size: 11px;
+    padding: 3% 4%;
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+
+#exitpopup .exitDown span {
+    color: #e75e32;
+    font-weight: 900;
+}
+
+#exitpopup .container.content {
+    width: 32%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#exitpopup .close-btn-block {
+    margin-top: 10px;
+}
+
+#exitpopup .vcenter.email {
+    text-align: right;
+    margin-top: 10px;
+}
+
+#exitpopup .vcenter.email input#email {
+    border: none;
+    padding: 10px;
+    border: 2px dashed #c0c0c0;
+}
+
+#exitpopup .vcenter.email input#email:focus {
+    color: #878787;
+}
+
+#exitpopup .vcenter.nameFE2.nameExit #name {
+    text-align: left;
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 10px;
+}
+
+#exitpopup .vcenter.email #email {
+    text-align: left;
+    width: 100%;
+}
+
+#exitpopup .vcenter.nameFE20, #exitpopup .col-xs-12.col-sm-5.vcenter {
+    font-size: 14px;
+}
+
+#exitpopup .vcenter label {
+    margin-right: 0;
+}
+
+#exitpopup .main-arrow {
+    position: absolute;
+    right: -60px;
+    width: 70px;
+    top: 45px;
+}
+
+#exitpopup #exit-send-btn {
+    letter-spacing: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#exitpopup .exitDown {
+    text-align: center;
+    font-size: 11px;
+}
+
+#exitpopup .modal-header {
+    border: none;
+}
+
+#exitpopup .col-md-2.col-xs-6.logo.col-sm-3 {
+    width: 150px;
+}
+
+#exitpopup .modal-dialog {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translate(-50%, 0) !important;
+    -moz-transform: translate(-50%, 0) !important;
+    -ms-transform: translate(-50%, 0) !important;
+    -o-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important;
+}
+
+#exitpopup .text-white {
+    color: white;
+    font-size: 11px;
+}
+
+#exitpopup .text-white .col-lg-4.col-md-12, #exitpopup .text-white .col-lg-6.col-md-12 {
+    padding-top: 5px;
+}
+
+#exitpopup.modal.fade.in {
+    background-color: rgba(253, 68, 43, 0.7);
+}
+
+#exitpopup .modal-header {
+    display: none;
+}
+
+.exit-background #warning-img {
+    height: 19px;
+}
+
+#exitpopup #exit-send-btn {
+    font-size: 12px;
+}
+
+#exitpopup .col-xs-12.col-sm-5.vcenter {
+    text-align: right;
+}
+
+#exitpopup .warranty-text {
+    margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #exitpopup .container.content {
+        width: 90%;
+    }
+
+    #exitpopup .col-xs-12.col-sm-5.vcenter.nameFE20, #exitpopup .col-xs-12.col-sm-5.vcenter {
+        text-align: center;
+    }
+
+    #exitpopup #exit-send-btn {
+        font-size: 9px;
+    }
+
+    #exitpopup .modal-dialog {
+        margin: 0;
+    }
+
+    #exitpopup .main-arrow {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    #exitpopup .container.content {
+        width: 50%;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1280px) {
+    #exitpopup .container.content {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1450px) {
+    #exitpopup .container.content {
+        width: 40%;
+    }
+}
