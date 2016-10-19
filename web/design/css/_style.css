@@ -10,12 +10,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     border-radius: 0;
 }
 
-.glyphicon1 {
-    padding: 10px 35px !important;
-}
-
-.btn {
-    border-radius: 0;
+.embed-responsive-16by9 {
+    padding-bottom: 66.25%;
 }
 
 .nav>li>a:hover {
@@ -23,175 +19,28 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     color: white;
 }
 
-.table>thead>tr>th {
-    border-bottom: 1px solid #f1f1f1;
-}
-
-.dashboard-container {
-    width: 100%;
-    margin: 0;
-}
-
-.alert-info .alert-link {
-    color: #7f8886;
-}
-
-.alert .alert-link {
-    font-weight: 100;
-}
-
-.table {
-    margin-bottom: 0;
-}
-
 .caret {
     margin-left: 115px !important;
     color: #a7a7a7;
-}
-.navbar-default {
-    border: none;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.ClickMoney, .clickthrough {
-    background: url(../images/bg.png) no-repeat center center;
-    background-size: cover;
+.green{
+    color: #2bbc98;
+    font-size: 34px;
+    font-weight: bold;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-
-.clickbtFE2 {
-    text-transform: uppercase;
-    font-size: 1.5625em;
-    color: #3e3e3e;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 1.5;
+.grey{
+    color: #cfcfcf;
     font-family: 'Open Sans', sans-serif;
-}
-
-.register-right-text {
-    width: 80%;
-    margin-top: 3%;
-    margin-bottom: 4%;
-}
-
-.reg-bold {
-    font-weight: bold;
-    border-bottom: 2px dashed #e4e4e4;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-}
-
-.gaff {
-    padding: 0 7% 1% 7%;
-}
-
-.embed-responsive-16by9 h5 {
-    position: absolute;
-    bottom: 13%;
-    left: 30%;
-    font-weight: bold;
-    color: white;
+    text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.embed-responsive-16by10 h5 {
-    left: 20%;
-}
-
-.embed-responsive-16by9 p {
-    position: absolute;
-    bottom: 5%;
-    left: 38%;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 12px;
-}
-
-.embed-responsive-16by10 p {
-    left: 25%;
-}
-
-.you-here {
-    padding-left: 0;
-}
-
-.member-arrows {
-    padding-top: 10px;
-}
-
-.arrow1 {
-    position: absolute;
-    right: 5%;
-    top: 35%;
-}
-
-.arrow111 {
-top:40px;
-}
-
-.memebership_content .text1 {
     margin-bottom: 0;
-}
-
-.membership02 {
-    margin-bottom: 110px;
-    padding-right: 3%;
-    padding-left: 5%;
-}
-
-.vtop {
-    display: inline-block;
-    vertical-align: top;
-    float: none;
-}
-
-.icons-block {
-    margin: 15px auto 15px auto;
-}
-
-.email-Reg0 {
-    font-size: 0.75em;
-    margin-left: 5%;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.email-reg-name, .email-reg-bestem {
-    border: 2px dashed #e4e4e4;
-    padding: 6%;
-    height: auto !important;
-    color: #a7a7a7;
-}
-
-.register-last-row {
-    margin-bottom: 5%;
-}
-
-.gaff button {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background: #06b6a4;
-    background: -webkit-linear-gradient(left, #06b6a4 0%,#27b378 100%);
-    background: -moz-linear-gradient(left, #06b6a4 0%, #27b378 100%);
-    background: linear-gradient(to right, #06b6a4 0%,#27b378 100%);
-    color: white;
-    font-weight: bold;
-    margin: 0 auto;
-    width: 90%;
-    font-size: 0.8em;
-    display: inline-block;
-    outline: none;
+    font-size: 14px;
 }
 
 button {
@@ -210,6 +59,183 @@ button {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+}
+
+/********************header******************************/
+.membership-header{
+    background: url("../images/memberShip.png") no-repeat;
+    background-size: cover;
+    background-position: 60% 0;
+    background-size: auto;
+    height: 600px;
+}
+
+.membership-wrapper .header {
+    margin-bottom: 1%;
+}
+
+.membership-wrapper .membership-logo {
+    padding-left: 0;
+    width: 9%;
+}
+
+.header-last-mrow {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.header-last-mrow .text-dashed {
+    border-bottom: 2px dashed #72c9b2;
+}
+
+.membership-wrapper{
+    background-color: rgba(70, 194, 160, 0.8);
+    height: 600px;
+}
+
+.membership-welcome{
+    color: #fffa69;
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.membership-biz-area h2 {
+    font-weight: 900;
+    font-size: 3em;
+    margin-bottom: 0;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.membership-logo + div {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.membership-boxIcon {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    padding-right: 0;
+    width: 190px;
+}
+
+.membership-right-box {
+    padding-right: 0;
+    width: 160px;
+}
+
+.membership-licence-left {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.27em;
+    font-size: 0.81em;
+    padding-right: 0;
+    text-align: right;
+}
+
+.membership-updated{
+    text-transform: uppercase;
+    color: #a8e9e8;
+    font-size: 0.75em;
+    text-align: right;
+    padding-right: 0;
+    line-height: 1;
+}
+
+.membership-header .left_block{
+    padding-right: 0;
+    padding-left: 0;
+    width: 61.5%;
+    position: relative;
+}
+
+.membership-header .left_block p {
+    color: white;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 25%;
+    right: 30%;
+    padding: 1% 2%;
+}
+
+.membership-header .yellow-arrow {
+    position: absolute;
+    top: -6%;
+    right: 14%;
+}
+
+.left-right-container {
+    -webkit-box-shadow: 12px 16px 41px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 16px 41px -20px rgba(0,0,0,0.75);
+    box-shadow: 12px 16px 41px -20px rgba(0,0,0,0.75);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 11%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.membership-header .right_block {
+    background-color: white;
+    width: 38.5%;
+    padding: 1% 2%;
+}
+
+.register-right-text {
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    text-transform: uppercase;
+    font-size: 1.5625em;
+    color: #3e3e3e;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.reg-bold {
+    font-weight: bold;
+    border-bottom: 2px dashed #e4e4e4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+
+.gaff {
+    padding: 0 7% 1% 7%;
+}
+
+.gaff button {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #06b6a4;
+    background: -webkit-linear-gradient(left, #06b6a4 0%,#27b378 100%);
+    background: -moz-linear-gradient(left, #06b6a4 0%, #27b378 100%);
+    background: linear-gradient(to right, #06b6a4 0%,#27b378 100%);
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 0.8em;
+    display: inline-block;
+    outline: none;
 }
 
 .gaff button .row {
@@ -238,485 +264,130 @@ button {
     width: 60%;
 }
 
-.membship0 .header {
-    margin-bottom: 1%;
+.register-label {
+    font-size: 12px;
+    display: none;
 }
 
-
-.licenceRight{
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color:#858585;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-    text-align: center;
-    height: 40px;
-    overflow: hidden;
+.blockImg {
+    padding-right: 1%;
+    padding-bottom: 1%;
 }
 
-.licenceLeft{
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-    font-size: 14px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.row.membship2 .licence {
-    color: #7d7979;
-}
-
-.caret {
-    color: #2bbc98;
-}
-
-.logo1 + div {
-    color: white;
-    font-size: 1.8em;
-    text-align: center;
+.membership-block-text {
+    color: #b0b0b0;
     font-family: 'Open Sans', sans-serif;
 }
 
-.membship0 .logo1 {
-    padding-left: 0;
-    width: 9.5%;
+.email-reg-name, .email-reg-bestem {
+    border: 2px dashed #e4e4e4;
+    padding: 6%;
+    height: auto !important;
+    color: #a7a7a7;
 }
 
-
-.video_through{
-    width:100%;
-    height: 560px;
-    border:0px;
-}
-
-.has-background {
-    background-image: url("../images/Untitled-4.png");
-    background-position: 200px;
-}
-
-.has-background .row.membship2 {
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 45%, rgba(255,255,255,0.5) 100%);
-}
-
-/*content*/
-.content{
-    box-shadow:  6px 5px 30px -11px rgba(0, 0, 0, .3);
-    background-color: white;
-    margin-bottom: 20px;
-}
-
-
-/*righ block*/
-.licenceLeft{
-    background-color: #fd842b;
-}
-.welkGreen{
-    color:#0eb598;
-    border: 2px solid #0eb598;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    margin: 40px auto;
-    width: 60%;
-    padding: 5px;
-}
-
-.right_block {
-    background-color: white;
-    width: 40%;
-    padding: 1% 2%;
+.email-Reg0 {
+    font-size: 0.85em;
+    margin-left: 5%;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .email-Reg2, .email-Reg4, .email-Reg6 {
     margin-left: 0;
 }
 
-.left_block{
-    padding-right:0;
-    padding-left:0;
-    width: 60%;
-    position: relative;
+.register-last-row {
+    margin-bottom: 5%;
 }
-.stop{
-    color:#979797;
-    border: 2px dotted #979797;
-    margin: 50px;
-    padding:15px;
-    position: relative;
-}
-h2.clickbt{
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+
+.right-block .arrow {
     text-align: center;
-    font-size: 20px;
-    margin-top:45px;
-    border-bottom:2px dotted #e4e4e4;
-    padding-bottom: 10px;
 }
-h1.secure{
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 22px;
-    margin: 0;
+
+.icons-block {
+    margin: 15px auto 15px auto;
 }
-.orange{
-    color:#fd842b;
+
+
+.vtop {
+    display: inline-block;
+    vertical-align: top;
 }
-.stop_do_not_ex{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 15px;
+
+
+/**************quick and easy***************/
+
+.quick-and-easy {
+    padding-top: 270px;
+    padding-bottom: 30px;
 }
-.img_stop{
+
+.quick-and-easy .row {
     margin-top: 10px;
 }
-.red{
-    color:#fd572b;
-}
-.stop_do_not_ex1{
-    color:#979797;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 10px;
-}
-.do_not_ex0{
-    padding: 0;
-}
-.arr1{
-    position: absolute;
-    top: -50px;
-    left: -50px;
-}
-.button1{
-    background: url(../images/RoundedRectangle.png) no-repeat;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius:3px;
-    border-radius: 3px;
-    padding: 20px 10px;
-    color:white;
-    font-weight: bold;
-    margin: 0 auto;
-    background-size: cover;
-    width: 80%;
-    margin-left: 10%;
-}
-.proceed{
-    padding: 0 0 0 50px;
-}
 
-.button2{
-    margin: 0 auto;
-    color:#858585;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+.quick-and-easy .licence {
     text-align: center;
-    letter-spacing:2px;
-    font-size: 11px;
-    margin-top:30px;
-    margin-left:30px;
+    margin-left: 23%;
 }
 
-.left_block p {
-    color: white;
-    border: 2px solid yellow;
-    position: absolute;
-    top: 25%;
-    right: 30%;
-    padding: 1% 2%;
-}
-
-.left_block .yellow-arrow {
-    position: absolute;
-    top: -6%;
-    right: 18%;
-
-}
-
-
-/***********register form***********/
-
-
-
-
-
-
-
-/***********end of register form***********/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*footer*/
-.fnavigation li a{
-    color:white;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-}
-.fnavigation li{
-    display:inline;
-}
-.fnavigation{
-    padding-top:10px;
-    padding-left: 0px;
-}
-.copyright1{
-    padding-top:12px;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-}
-
-/*popup*/
-.videoP{
-    width:100%;
-}
-.video-header{
-    padding: 0;
-    border:none;
-}
-.video-content{
-    border-radius: 0;
-}
-.modal-box{
-    background-color: #19b48b;
-    opacity: 0.7;
-    font-family: 'Montserrat', sans-serif;
-}
-.RoundedRectangle2{
-    background: url(../images/RoundedRectangle2.jpg) no-repeat;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius:3px;
-    border-radius: 3px;
-    padding: 7px 0px;
-}
-.RoundedRectangle3{
-    background: url(../images/RoundedRectangle3.jpg) no-repeat;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius:3px;
-    border-radius: 3px;
-    padding: 7px 0px;
-}
-.greyLine{
-    background: url("../images/line.png") repeat-x;
-    background-position: center, center;
-}
-.video-body{
-    padding:80px;
-}
-.popupRow3{
-    margin:0 auto;
-}
-.white{
-    color:white;
-}
-.blBold, .blBoldB{
-    font-weight: 300;
-    font-size:12px;
-    font-weight: 600;
-    font-size: 18px;
-}
-.blBoldB{
-    font-size:20px;
-}
-.green{
-    color: #2bbc98;
-    font-size: 24px;
-    font-weight: bold;
-}
-.grey{
-    color: #cfcfcf;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-    font-size: 12px;
-}
-
-.popupRow2{
-    margin-top:30px;
-}
-.profPerD{
-    margin-left:120px;
-}
-.button3{
-    margin-left:100px;
-}
-.proceed1{
-    padding-left: 25px;
-    padding-top: 5px;
-}
-.video_through1{
-    height: 300px;
-}
-
-
-
-/*member area*/
-.left_item {
-    height: 45px;
-    width: 43%;
-    float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 2px dashed #e4e4e4;
-    text-align: left;
-    margin-left: 5%;
-    margin-bottom: 20px;
-}
-
-.embed-responsive-item.video_through {
-    background: url('/images/imagineForVideo.png');
-    background-size: cover;
-}
-
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 11%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.left_item_not_stripped {
-    height: 45px;
-    width: 43%;
-    float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    text-align: left;
-    margin-left: 5%;
-    margin-bottom: 20px;
-    border: 2px solid #2bbc98;
-    color: #2bbc98;
-}
-
-button {
-    border: none;
-    background: none;
-}
-
-.left_item span {
-    height: 20px;
-    text-align: center;
-    font-size: 14px;
-}
-
-.right_item {
-    height: 45px;
-    width: 43%;
-    float: right;
-    border: 2px solid hsl(172, 71%, 44%);
-    margin-right: 5%;
-    margin-bottom: 20px;
-}
-
-.right_item input {
-    border: none;
-    width: 100%;
+.quick-and-easy{
+    background-color: white;
     height: auto;
-    height: 40px;
-    font-size: 14px;
-    padding-left: 2%;
-}
-
-.register_text {
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-.stripped_underline {
-    border-bottom: 2px dashed #e4e4e4;
-}
-
-.select {
-    border: none;
-    background: none;
-    width: 100%;
-}
-
-.email_text {
-    color: #FF4273;
-}
-
-.validation_failded {
-    height: 45px;
-    width: 43%;
-    float: right;
-    border: 2px solid #FF4273;
-    margin-right: 5%;
-    margin-bottom: 20px;
-    padding-left: 2%;
-}
-
-.validation_failded input {
-    font-size: 10px;
-    padding-left: 2%;
-    background: transparent;
 }
 
 .memebership_content {
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
 }
 
-p.text {
+.memebership_content .text1 {
+    margin-bottom: 0;
+}
+
+.memebership_content .text {
+    font-size: 17px;
+    text-transform: uppercase;
     color: #ababab;
-    font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 1px
 }
 
-span.green {
-    font-size: 30px;
-}
-.arrow {
-    text-align: center;
+.you-here .green{
+    font-size: 26px;
 }
 
-.first-arrow {
-    position: absolute;
-    left: -10px;
-    top: 15px;
+.you-here .grey {
+    font-size: 14px;
+}
+
+
+
+/*************regiter deposit profit*************/
+
+.register-deposit-profit {
+    margin-bottom: 110px;
+    padding-right: 3%;
+    padding-left: 5%;
+}
+
+.register-deposit-profit .col-md-6 {
+    padding-right: 0;
+}
+
+.register-deposit-profit {
+    margin-bottom: 110px;
 }
 
 .member-arrows {
     padding-top: 10px;
+}
+
+.first-arrow {
+    position: absolute;
+    left: 10px;
+    top: 15px;
 }
 
 .first-arrow-add {
@@ -725,15 +396,30 @@ span.green {
 
 .first-num {
     position: absolute;
-    top: 35px;
+    top: 44px;
     font-size: 30px;
     color: white;
-    left: 54px;
+    left: 75px;
     font-weight: bolder;
 }
 
-.membership02 .col-md-6 {
-    padding-right: 0;
+.you-here {
+    padding-left: 0;
+}
+
+.green-little-text {
+    font-size: 14px !important;
+    font-family: 'Open Sans', sans-serif
+}
+
+.arrow1 {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+
+.arrow111 {
+top:40px;
 }
 
 .second-arrow {
@@ -750,17 +436,19 @@ span.green {
     position: absolute;
     font-size: 30px;
     color: #686868;
-    top: 25px;
-    left: 60px;
+    top: 32px;
+    left: 65px;
 }
 
-.register-label {
-    font-size: 12px;
-    display: none;
+.steps-title {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+    font-size: 26px;
 }
 
-.green-little-text {
-    font-size: 13px;
+.grey-small-text {
+    font-size: 14px;
+    color: #ababab;
 }
 
 .arrow-transform-left {
@@ -794,38 +482,88 @@ span.green {
     position: absolute;
     font-size: 30px;
     color: #686868;
-    top: 25px;
-    left: 45px;
+    top: 38px;
+    left: 60px;
 }
 
-.grey-small-text {
-    font-size: 13px;
-    color: #ababab;
-}
 
+/****************days**************/
+.days{
+    background-image: url("../images/membeshipGreen.png");
+    height: auto;
+    padding-bottom: 90px;
+}
 
 .membership-text {
-    margin: 5%;
     text-align: center;
-    min-height: 230px;
+    min-height: 345px;
 }
 
 .text-days {
     position: absolute;
-    left: 460px;
+    left: 50%;
+    top: 50%;
     color: #289E80;
     font-weight: bold;
-    font-size: 166px;
+    font-size: 180px;
+    transform: translate(-50%, -50%);
 }
 
 .text-lower {
     position: absolute;
-    left: 450px;
-    top: 100px;
-    font-size: 33px;
+    left: 50%;
+    top: 50%;
+    font-size: 38px;
     letter-spacing: 4px;
+    transform: translate(-50%, -50%);
     color: white;
     font-family: 'Open Sans', sans-serif;
+}
+
+.single-item .row {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.single-item {
+    margin-bottom: 135px;
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 480px;
+}
+
+.embed-responsive-16by9 h5 {
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    transform: translate(-50%);
+    font-size: 18px;
+}
+
+.embed-responsive-16by10 h5 {
+    left: 20%;
+}
+
+.embed-responsive-16by10 p {
+    left: 25%;
+}
+
+.embed-responsive-16by9 p {
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transform: translate(-50%);
+}
+
+.join-member-club {
+    height: 250px;
 }
 
 .video-item {
@@ -855,46 +593,6 @@ span.green {
     font-size: 12px;
 }
 
-.small-text {
-    font-size: 14px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.membership02 {
-    margin-bottom: 110px;
-}
-
-.proceed {
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-.licence {
-    margin-top: 100px;
-    font-size: 10px;
-    color: #e4e4e4;
-    text-align: center;
-}
-
-.membship2 {
-    margin-top: 200px;
-    margin-bottom: 20px;
-}
-
-.single-item .row {
-    padding: 0;
-    margin: 0;
-    background-color: white;
-}
-
-.single-item {
-    margin-bottom: 35px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-
 .blank-text {
     font-size: 20px;
 }
@@ -919,44 +617,58 @@ span.green {
     margin: 15px 15px 0 0;
 }
 
+
+/*****************last chance register*************/
+
+.last-chace-register .qick-and-easy {
+    padding-top: 150px;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.96) 72%,rgba(255,255,255,0.93) 79%,rgba(255,255,255,0.85) 100%);
+}
+
+.qick-and-easy .grey {
+    font-family: 'OpenSansLight', sans-serif;
+    color: #c2c2c2;
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.last-chace-register .icons-block {
+    width: 35%;
+}
+
+.last-chace-register {
+    background-image: url("../images/Untitled-4.png");
+    background-position: 200px;
+}
+
+.last-chace-register .row.quick-and-easy {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 45%, rgba(255,255,255,0.5) 100%);
+}
+
+.last-chace-register .container {
+    width: 100%;
+}
+
 .count-down {
-    width: auto;
-    border: 2px solid #e4e4e4;
-    padding: 10px 10px 10px 10px;
-    margin-left: 10px;
-    border-radius: 5px;
-    color: #0eb598;
+    color: #3cb982;
+    border: 1px solid #c2c2c2;
+    border-radius: 3px;
+    padding: 5px 3px;
+    text-transform: initial;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 p.register-text {
     font-size: 30px;
 }
 
-/*.membship2 .left_item, .membship2 .left_item_not_stripped {*/
-    /*margin-left: 0;*/
-    /*width: 200px;*/
-    /*margin-right:50px;*/
-/*}*/
-
-/*.membship2 select {*/
-    /*width: 170px;*/
-/*}*/
-
-/*.membship2 .right_item {*/
-    /*margin-left: 0;*/
-    /*width: 200px;*/
-    /*float: left;*/
-/*}*/
-
-.right_item .form-group {
-    color: #0eb598;
-}
-
-.arrow-reversed {
-    -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
-    float: right;
+.middle-form button {
+    width: 30% !important;
 }
 
 .mem-first-arrow-right {
@@ -968,15 +680,20 @@ p.register-text {
 
 .mem-first-arrow-left {
     margin-top: -45px;
-    padding-left: 130px;
+    text-align: right;
 }
 
 .mem-second-arrow-left {
-    padding-left: 175px;
+    text-align: right;
+}
+
+.qick-and-easy .green {
+    font-size: 36px;
+    color: #3cb982;
 }
 
 .mem-second-arrow-right {
-    padding-right: 245px;
+    text-align: left;
 }
 
 .mem-third-arrow-left img {
@@ -986,7 +703,7 @@ p.register-text {
 }
 
 .mem-third-arrow-left {
-    padding-left: 135px;
+    text-align: right;
 }
 
 .mem-third-arrow-right img {
@@ -995,49 +712,91 @@ p.register-text {
     transform: rotate(150deg);
 }
 
-.membship2 .row {
-    margin-top: 10px;
+.arrow-reversed {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
 }
 
-.membship2 .licence {
-    text-align: center;
-    margin-left: 23%;
+.last-chace-register .gaff {
+    padding: 0 10% 1% 10%;
 }
 
-.lowest-btn {
-    width: 100%;
-}
+/***********footer*******************/
 
-.membship5 ul {
+.membership-footer ul {
     list-style-type: none;
     text-align: right;
     color: white;
 }
 
-.membship5 li {
+.membership-footer li {
     margin-bottom: 15px;
 }
 
-.membship5 h3 {
+.membership-footer h3 {
     text-align: right;
     color: white;
     margin-bottom: 20px;
 }
 
-.membship5 .content h3 {
+.membership-footer .content h3 {
     color: #878787;
-    text-align: center;
+    text-align: left;
     padding-top: 30px;
 }
 
-.membship5 .content p {
+.membership-footer .content p {
     color: #878787;
     font-size: 14px;
-    padding: 60px;
 }
 
-.membship5 .container {
-    margin-top: 50px;
+.membership-footer .container {
+    padding-top: 50px;
+}
+
+.membership-footer {
+    background: linear-gradient(45deg, rgb(30,192,177) 0%,rgb(39,191,164) 69%,rgb(58,189,138) 100%);
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.membership-footer .content {
+    background-color: white;
+    padding: 80px 80px 92px;
+    color: #878787;
+    box-shadow: 0 16px 30px 6px rgba(0, 0, 0, .2);
+    font-family: 'OpenSansLight', sans-serif;
+}
+
+.membership-footer .container {
+    width: 100%;
+}
+
+.membership-footer .col-md-5 {
+    width: 30%;
+}
+
+.membership-footer .col-md-5 h3 {
+    margin-top: 20%;
+    padding: 41px 0 10px;
+    color: #fff;
+    font-size: 37px;
+    margin: 10px;
+}
+
+.membership-footer .active a {
+    color: #fff;
+    border-bottom: 2px dashed #b0ffed;
+    padding-bottom: 6px;
+}
+
+.membership-footer a {
+    padding: 3px 0;
+    font-size: 20px;
+    font-family: 'MontserratLight', sans-serif;
+    margin: 1.2em 11px 1.2em 0;
+    color: white;
 }
 
 li.active {
@@ -1046,126 +805,43 @@ li.active {
     text-decoration-line: underline;
 }
 
+/*footer*/
+.fnavigation li a{
+    color:white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.fnavigation li{
+    display:inline;
+}
+.fnavigation{
+    padding-top:10px;
+    padding-left: 0px;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.copyright p {
+    text-align: left;
+}
+
+.copyright1{
+    padding-top:12px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+
 .footer {
     color: white;
     margin-top: 70px;
 }
 
-.steps-title {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 15px;
-    font-size: 22px;
-}
 
-/*membership*/
-.membship1{
-    background: url("../images/memberShip.png") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-size: auto;
-    height: 600px;
-}
 
-.membship2{
-    background-color: white;
-    height: auto;
-}
-
-.membship3{
-    background-image: url("../images/membeshipGreen.png");
-    height: auto;
-    padding-bottom: 90px;
-}
-
-.membship4{
-    height: 400px;
-    background-image: url("../images/Untitled-4.png");
-    background-size: cover;
-    background-position: 50% 50%;
-    background-color: #7f7367;
-}
-
-.membship5 {
-    background-image: url("../images/membeshipGreen.png");
-    height: auto;
-    padding-bottom: 20px;
-}
-
-/*.elOne0{*/
-    /*padding-right:0;*/
-/*}*/
-
-.textHeadMemb0 {
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 0.27em;
-    font-size: 0.7em;
-    padding-right: 0;
-    text-align: right;
-    padding-top: 2%;
-}
-
-.textHeadMemb1{
-    text-transform: uppercase;
-    color:#a8e9e8;
-    font-size:9px;
-    text-align: right;
-    padding-right: 0;
-}
-
-.welcHead{
-    color:#fffa69;
-    margin-top: 3%;
-    text-transform: uppercase;
-    font-size: 1.8em;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 4px;
-    text-align: center;
-}
-
-.welcHead1 h2 {
-    font-weight: 900;
-    font-size: 2.7em;
-    margin-bottom: 0;
-}
-
-.welcHead1{
-    color:white;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.header-last-mrow {
-    position: relative;
-}
-
-.boxIcon {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    padding-right: 0;
-    width: 170px;
-}
-
-.elOne01 {
-    padding-right: 0;
-    width:140px;
-}
-
-.img-membership1 {
-    height: 520px;
-}
-
-.membship0{
-    background-color: rgba(6, 182, 164, 0.8);
-    height: 600px;
-}
-
-.button1.lowest-btn .row .col-md-11.col-xs-11 {
-    text-align: center;
-}
-
-/*mobile*/
+/**********************************************mobile/tablets/media screens***********************************************/
 @media (min-width: 300px) and (max-width: 991px) {
 
     .button2{
@@ -1251,17 +927,9 @@ li.active {
         margin: 0;
     }
 
-    /*.membship2 .left_item, .membship2 .right_item {*/
-        /*margin-left: 5%;*/
-    /*}*/
-
     .licence {
         margin-top: 200px;
         margin-left: -50px;
-    }
-
-    .welcHead, .welcHead1, .logo1 {
-        /*padding-left: 10%;*/
     }
 
     .button1.button_left_align div.row {
@@ -1277,7 +945,7 @@ li.active {
         margin-top: -415px;
     }
 
-    .membship1 .blockMob .licence div {
+    .membership-header .blockMob .licence div {
         margin-top: 0;
     }
 
@@ -1286,21 +954,26 @@ li.active {
     }
 
 }
+
 @media screen and (max-width:767px) {
 
     .button2{
         margin-top:4%;
     }
-    /*.proceed{*/
-        /*padding-left: 4%;*/
-    /*}*/
+
     .welkOrange{
         margin:0;
     }
 }
 
 @media (min-width: 320px) and (max-width: 359px) {
-    .logo1 {
+
+    /*******header*************/
+    .membership-wrapper .proceed {
+        margin-top: -35px;
+    }
+
+    .membership-logo {
         text-align: center;
     }
 
@@ -1310,17 +983,17 @@ li.active {
         font-size: 23px;
     }
 
-    .text-for-video {
-        left: 10%;
-        width: 80%;
-    }
-
-    .boxIcon div.row {
+    .membership-boxIcon div.row {
         text-align: center;
     }
 
-    .membship0 .proceed {
-        margin-top: -35px;
+    .quick-and-easy + .container .row {
+        text-align: center;
+    }
+
+    .text-for-video {
+        left: 10%;
+        width: 80%;
     }
 
     .text-days {
@@ -1336,15 +1009,6 @@ li.active {
     .membership-text {
         min-height: 120px;
     }
-
-    .membship2 + .container .row {
-        text-align: center;
-    }
-
-    /*.first-arrow-add {*/
-        /*position: absolute;*/
-        /*left: 35%;*/
-    /*}*/
 
     .first-arrow {
         position: absolute;
@@ -1384,17 +1048,6 @@ li.active {
         left: 40%;
     }
 
-    /*.membship2 .left_item {*/
-        /*float: left;*/
-        /*margin: 0;*/
-        /*width: 50%;*/
-    /*}*/
-
-    /*.membship2 .right_item {*/
-        /*float: right;*/
-        /*margin: 0;*/
-        /*width: 50%;*/
-    /*}*/
     .button1.lowest-btn .row .col-md-11.col-xs-11 {
         float: right;
         margin-top: -20px;
@@ -1410,7 +1063,8 @@ li.active {
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
-    .logo1 {
+    /**********header*************/
+    .membership-logo {
         text-align: center;
     }
 
@@ -1420,17 +1074,18 @@ li.active {
         font-size: 27px;
     }
 
-    .right_block {
+    .membership-boxIcon div.row {
+        text-align: center;
+    }
+
+    .membership-header .right_block {
         min-height: 490px;
     }
+
 
     .text-for-video {
         left: 10%;
         width: 80%;
-    }
-
-    .boxIcon div.row {
-        text-align: center;
     }
 
     .text-days {
@@ -1447,9 +1102,10 @@ li.active {
         min-height: 120px;
     }
 
-    .membship2 + .container .row {
+    .quick-and-easy + .container .row {
         text-align: center;
     }
+
 
     .first-arrow-add {
         position: absolute;
@@ -1496,7 +1152,8 @@ li.active {
 }
 
 @media (min-width: 768px) and (max-width: 799px) {
-    .logo1 {
+    /*****************header*********************/
+    .membership-logo {
         text-align: center;
     }
 
@@ -1506,12 +1163,12 @@ li.active {
         font-size: 50px;
     }
 
-    span.green {
-        font-size: 50px;
+    .membership-boxIcon div.row {
+        text-align: center;
     }
 
-    .boxIcon div.row {
-        text-align: center;
+    span.green {
+        font-size: 50px;
     }
 
     .button1.button_left_align {
@@ -1543,11 +1200,7 @@ li.active {
         min-height: 120px;
     }
 
-    /*.membship1 .button1 {*/
-        /*margin-left: 25%;*/
-    /*}*/
-
-    .membship2 + .container .row {
+    .quick-and-easy + .container .row {
         text-align: center;
     }
 
@@ -1600,18 +1253,19 @@ li.active {
         padding-left: 4%;
     }
 
-    .row.membship2 .row .col-md-10.col-md-offset-1 {
+    .row.quick-and-easy .row .col-md-10.col-md-offset-1 {
         margin-top: 45px;
     }
 
-    .row.membship2 .licence div {
+    .row.quick-and-easy .licence div {
         margin-top: -430px;
         margin-left: -80px;
     }
 }
 
 @media (min-width: 800px) and (max-width: 979px) {
-    .logo1 {
+    /*********header***************/
+    .membership-logo {
         text-align: center;
     }
 
@@ -1621,13 +1275,16 @@ li.active {
         font-size: 50px;
     }
 
-    span.green {
-        font-size: 50px;
+    .membership-boxIcon div.row {
+        text-align: center;
     }
 
-
-    .boxIcon div.row {
+    .quick-and-easy + .container .row {
         text-align: center;
+    }
+
+    span.green {
+        font-size: 50px;
     }
 
     .blockIconsMob {
@@ -1643,10 +1300,6 @@ li.active {
     .text-days {
         font-size: 70px;
         position: static;
-    }
-
-    .membship2 + .container .row {
-        text-align: center;
     }
 
     .text-lower {
@@ -1701,17 +1354,18 @@ li.active {
         left: 45%;
     }
 
-    .row.membship2 .row .col-md-10.col-md-offset-1 {
+    .row.quick-and-easy .row .col-md-10.col-md-offset-1 {
         margin-top: 45px;
     }
 
-    .row.membship2 .licence div {
+    .row.quick-and-easy .licence div {
         margin-top: -450px;
     }
 }
 
 @media (min-width: 980px) and (max-width: 1279px) {
-    .logo1 {
+    /*********************heaser********/
+    .membership-logo {
         text-align: center;
     }
 
@@ -1721,22 +1375,21 @@ li.active {
         font-size: 50px;
     }
 
-    .right_block {
+    .membership-header .right_block {
         min-height: 490px;
     }
 
-    .membship1 .blockMob .licence {
+    .membership-header .blockMob .licence {
         padding-bottom: 20px;
         margin-top: 40px;
     }
 
+    .membership-boxIcon div.row {
+        text-align: center;
+    }    
+
     span.green {
         font-size: 50px;
-    }
-
-
-    .boxIcon div.row {
-        text-align: center;
     }
 
     .text-days {
@@ -1753,7 +1406,7 @@ li.active {
         min-height: 120px;
     }
 
-    .membship2 + .container .row {
+    .quick-and-easy + .container .row {
         text-align: center;
     }
 
@@ -1814,11 +1467,11 @@ li.active {
         padding-bottom: 20px;
     }
 
-    .membship1 .blockMob .licence div {
+    .membership-header .blockMob .licence div {
         margin-top: -20px;
     }
 
-    .right_block {
+    .membership-header .right_block {
         min-height: 475px;
     }
 
@@ -1849,7 +1502,7 @@ li.active {
         left: 30%;
     }
 
-    .membship1 .blockMob .licence {
+    .membership-header .blockMob .licence {
         padding-bottom: 20px;
         margin-top: 40px;
     }
@@ -1865,14 +1518,14 @@ li.active {
         min-height: 120px;
     }
 
-    .membship2 .container .right_item {
+    .quick-and-easy .container .right_item {
         width: auto;
         float: left;
         margin-right: 3%;
         width: 200px;
     }
 
-    .membship2 .container .left_item {
+    .quick-and-easy .container .left_item {
         margin-left: 0;
         width: auto;
         width: 200px;
@@ -1881,10 +1534,9 @@ li.active {
 
     .mem-first-arrow-left {
         padding-left: 15%;
-        margin-left: 3%;
     }
 
-    .membship2 .container .left_item_not_stripped {
+    .quick-and-easy .container .left_item_not_stripped {
         width: 200px;
         margin: 0 3% 1% 6%;
     }
@@ -1895,10 +1547,9 @@ li.active {
 
     .mem-third-arrow-left {
         padding-left: 17%;
-        margin-left: 3%;
     }
 
-    .membship2 .button1 {
+    .quick-and-easy .button1 {
         margin-left: 0;
     }
 
@@ -1916,26 +1567,27 @@ li.active {
 }
 
 @media (min-width: 1800px) {
-    .content, .header, .footer, .header-container, .membership02, .membership-text1 {
-        width: 1440px;
+    .membership-header .container, .footer, .header-container, .register-deposit-profit .container, .membership-text1 {
+        width: 1600px;
     }
 
-    .clickbtFE2 {
-        font-size: 1.7em;
-    }
+    .register-right-text {
+            font-size: 1.9em;
+     }
 
     .gaff .text-center {
         margin-left: 3px;
+        padding-right: 0;
+        padding-left: 0;
     }
-
 
     .gaff button {
         background-repeat: no-repeat;
         background-position: inherit;
         background-attachment: inherit;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.25em;
         font-size: 0.9em;
-        width: 440px;
+        width: 470px;
     }
 
     .gaff button .row .arrow {
@@ -1947,62 +1599,59 @@ li.active {
         width: auto;
     }
 
-
-    .blockText {
+    .membership-block-text {
         font-size: 0.9em;
-        margin-left: 15%;
+        /* margin-left: 15%; */
         margin-top: 1%;
         margin-bottom: 3%;
-    }
-
-    .membership02 {
-        margin-bottom: 110px;
-        padding-right: 3%;
-        padding-left: 5%;
-    }
-
-    .blockImg {
-        width: 4.2%;
+        text-align: center;
     }
 
     .icons-block {
         width: 390px;
     }
 
-    .membship2 .container .right_item {
+    .register-deposit-profit {
+        margin-bottom: 110px;
+        padding-right: 3%;
+        padding-left: 5%;
+    }
+
+    .blockImg {
+        padding-right: 1%;
+    }
+
+
+
+    .quick-and-easy .container .right_item {
         width: auto;
         float: left;
         margin-right: 3%;
         width: 200px;
     }
 
-    .membship2 .container .left_item {
+    .quick-and-easy .container .left_item {
         margin-left: 0;
         width: auto;
         width: 200px;
         margin: 0 3% 1% 3%;
     }
 
-    .mem-first-arrow-left {
-        padding-left: 15%;
-        margin-left: 3%;
-    }
 
-    .membship2 .container .left_item_not_stripped {
+
+    .quick-and-easy .container .left_item_not_stripped {
         width: 200px;
         margin: 0 3% 1% 6%;
     }
 
     .mem-second-arrow-left {
-        padding-left: 22%;
+
     }
 
     .mem-third-arrow-left {
-        padding-left: 17%;
-        margin-left: 3%;
     }
 
-    .membship2 .button1 {
+    .quick-and-easy .button1 {
         margin-left: 20%;
     }
 
@@ -2014,7 +1663,7 @@ li.active {
         margin-left: 25%;
     }
 
-    .row.membship2 .blockMob .licence div {
+    .row.quick-and-easy .blockMob .licence div {
         margin-left: 25px;
     }
 }
