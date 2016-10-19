@@ -36,10 +36,6 @@ body {
     background: #c0c0c0;
 }
 
-.col-xs-12.text-center button {
-    background:  #e75e32;
-}
-
 .exitDown {
     border: 2px dashed #c0c0c0;
     font-size: 14px;
