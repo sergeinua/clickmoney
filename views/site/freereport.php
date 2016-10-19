@@ -196,7 +196,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     </div><!--
                     --><div class="row action-form">
                         <div class="col-xs-12">
-                            <form method="post" action="">
+                            <form method="post" id="freereport-form" action="javascript:;">
                                 <div class="form-fields">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4 vcenter">
@@ -246,19 +246,20 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div><!--
                 --><div class="col-xs-12 col-md-7 vcenter menu">
                     <ul>
-                        <li><a href="#">Government</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Earnings Disclaimer</a></li>
-                        <li><a href="#">Spam Policy</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="<?= Url::toRoute(['site/disclaimer']); ?>" target="_blank">Government Disclaimer</a></li>
+                        <li><a href="<?= Url::toRoute(['site/privacy-policy']); ?>" target="_blank">Privacy Policy</a></li>
+                        <li><a href="<?= Url::toRoute(['site/terms']); ?>" target="_blank">Terms</a></li>
+                        <li><a href="<?= Url::toRoute(['site/earnings-disclaimer']); ?>" target="_blank">Earnings Disclaimer</a></li>
+                        <li><a href="<?= Url::toRoute(['site/spam-policy']); ?>" target="_blank">Spam Policy</a></li>
+                        <li><a href="mailto: <?= Yii::$app->params['support_email']; ?>">Support</a></li>
                     </ul>
                 </div><!--
                 --><div class="col-md-4 col-xs-12 text-right vcenter copyright">
-                    &copy; 2016 ClickMoney. All Rights Reserved.
+                    &copy; <?= date('Y'); ?> ClickMoney. All Rights Reserved.
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<?= \Yii::$app->view->renderFile('@app/views/site/thank_you.php'); ?>

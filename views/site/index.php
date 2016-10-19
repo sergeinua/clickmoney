@@ -193,7 +193,7 @@ if ($esp_forms_exit) {
                     </div><!--
                     --><div class="row action-form">
                         <div class="col-xs-12">
-                            <form method="post" action="">
+                            <form method="post" action="javascript:;" id="exit-popup-form">
                                 <div class="form-fields col-md-10 col-md-offset-1">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-5 vcenter nameFE20">

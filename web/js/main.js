@@ -5,17 +5,23 @@ $(document).ready(function(){
             from_page = 'fp';
         }
         var fname = $('#name').val();
-        $('body').append('<img id="menia_src" style="display: none">');
         validateEmail(email_value, from_page, fname);
         window.onbeforeunload = null;
     });
 
-    $('#modal-submit').on('click', function () {
-        $('#email').val($('#modal-email').val());
-        $('#name').val($('#modal-name').val());
-        from_page = 'exit';
-        $('#main-form').trigger('submit');
-        $(this).parents('.modal').modal('hide');
+    $('#freereport-form').on('submit', function () {
+        var email = $('#freereport-form #email').val(),
+            name = $('#freereport-form #name').val(),
+            from_page = 'exit';
+        validateEmail(email, from_page, name);
+        window.onbeforeunload = null;
+    });
+
+    $('#exit-popup-form').on('submit', function () {
+        var name = $('#exitpopup #name').val(),
+            email = $('#exitpopup #email').val(),
+            from_page = "overlay";
+        validateEmail(email, from_page, name);
         window.onbeforeunload = null;
     });
 
