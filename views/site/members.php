@@ -52,7 +52,7 @@ if ($mob->isDesctop() || $mob->isMobile()) {
 
 <?php
 $rd = 3;
-$gi = 2805;
+$gi = 409;
 
 ?>
 <script>
