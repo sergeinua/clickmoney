@@ -1,8 +1,13 @@
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url(../fonts/Montserrat-Bold.ttf);
+@-moz-document url-prefix() {
+    select.form-control {
+        padding-right: 25px;
+        background-image: url("../images/select.png");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 7px) 50%;
+        -moz-appearance: none;
+        appearance: none;
+    }
 }
-
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select.select-register:focus {
     border: 2px solid #21c0ac;
     outline: none;
@@ -61,13 +66,69 @@ button {
     -ms-user-select: none;
 }
 
+/*modal*/
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%, -50%) !important;
+}
+
+.video-popup h5 {
+     position: absolute;
+     top: -18%;
+    left: 50%;
+     color: white;
+    text-align: center;
+    transform: translate(-50%);
+    font-size: 26px;
+    letter-spacing: 1px;
+ }
+
+.video-popup p {
+     position: absolute;
+     top: -10%;
+     color: white;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    letter-spacing: 2px;
+ }
+
+.video-popup a {
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+
+.video-popup {
+    background: rgba(0,0,0,.7);
+}
+
+.video-popup .play-button {
+    width: 7%;
+}
+
 /********************header******************************/
 .membership-header{
     background: url("../images/memberShip.png") no-repeat;
-    background-size: cover;
     background-position: 60% 0;
     background-size: auto;
-    height: 600px;
 }
 
 .membership-wrapper .header {
@@ -91,6 +152,7 @@ button {
 .membership-wrapper{
     background-color: rgba(70, 194, 160, 0.8);
     height: 600px;
+    margin-bottom: 250px;
 }
 
 .membership-welcome{
@@ -270,13 +332,24 @@ button {
 }
 
 .blockImg {
-    padding-right: 1%;
-    padding-bottom: 1%;
+     padding-right: 1%;
+     padding-bottom: 1%;
+ }
+
+.last-chace-register .blockImg {
+    padding-right: 5px;
+    padding-bottom: 8px;
 }
 
 .membership-block-text {
     color: #b0b0b0;
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+.last-chace-register .membership-block-text {
+    margin-left: 0;
+    text-align: center;
 }
 
 .email-reg-name, .email-reg-bestem {
@@ -320,7 +393,6 @@ button {
 /**************quick and easy***************/
 
 .quick-and-easy {
-    padding-top: 270px;
     padding-bottom: 30px;
 }
 
@@ -436,8 +508,8 @@ top:40px;
     position: absolute;
     font-size: 30px;
     color: #686868;
-    top: 32px;
-    left: 65px;
+    top: 28px;
+    left: 63px;
 }
 
 .steps-title {
@@ -482,14 +554,15 @@ top:40px;
     position: absolute;
     font-size: 30px;
     color: #686868;
-    top: 38px;
-    left: 60px;
+    top: 40px;
+    left: 57px;
+
 }
 
 
 /****************days**************/
 .days{
-    background-image: url("../images/membeshipGreen.png");
+    background: linear-gradient(45deg, rgb(30,192,177) 0%,rgb(39,191,164) 69%,rgb(58,189,138) 100%);
     height: auto;
     padding-bottom: 90px;
 }
@@ -527,10 +600,15 @@ top:40px;
 }
 
 .single-item {
-    margin-bottom: 135px;
-    padding-right: 25px;
-    padding-left: 25px;
-    height: 480px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 30%;
+    height: 560px;
+    cursor: pointer;
+    box-shadow: 0 16px 30px 6px rgba(0, 0, 0, .2);
 }
 
 .embed-responsive-16by9 h5 {
@@ -545,7 +623,8 @@ top:40px;
 }
 
 .embed-responsive-16by10 h5 {
-    left: 20%;
+    width: 100%;
+    text-align: center;
 }
 
 .embed-responsive-16by10 p {
@@ -560,6 +639,8 @@ top:40px;
     letter-spacing: 2px;
     font-size: 14px;
     transform: translate(-50%);
+    width: 100%;
+    text-align: center;
 }
 
 .join-member-club {
@@ -617,6 +698,25 @@ top:40px;
     margin: 15px 15px 0 0;
 }
 
+.hover-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.single-item:hover .hover-video {  opacity:1; z-index:10;
+    -webkit-animation-duration:1s; animation-duration:1s;
+    -webkit-animation-fill-mode:both; animation-fill-mode:both; }
+
+
 
 /*****************last chance register*************/
 
@@ -628,16 +728,20 @@ top:40px;
 .qick-and-easy .grey {
     font-family: 'OpenSansLight', sans-serif;
     color: #c2c2c2;
-    font-size: 21px;
+    font-size: 19px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
     line-height: 1.6;
 }
 
-.last-chace-register .icons-block {
-    width: 35%;
+    .last-chace-register .icons-block {
+        width: 20%;
 }
+
+    .last-chace-register .icons-block {
+        margin: 15px auto 180px auto;
+ }
 
 .last-chace-register {
     background-image: url("../images/Untitled-4.png");
@@ -656,15 +760,16 @@ top:40px;
     color: #3cb982;
     border: 1px solid #c2c2c2;
     border-radius: 3px;
-    padding: 5px 3px;
+    padding: 8px 3px;
     text-transform: initial;
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 5px;
     margin-left: 5px;
 }
 
 p.register-text {
-    font-size: 30px;
+    font-size: 34px;
+    line-height: 25px;
 }
 
 .middle-form button {
@@ -674,22 +779,26 @@ p.register-text {
 .mem-first-arrow-right {
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
+    transform: rotate(120deg);
     margin-top: -35px;
+    margin-left: 50px;
 }
 
 .mem-first-arrow-left {
     margin-top: -45px;
     text-align: right;
+    right: 40px;
 }
 
 .mem-second-arrow-left {
     text-align: right;
+    right: 20px;
 }
 
 .qick-and-easy .green {
     font-size: 36px;
     color: #3cb982;
+    font-weight: 100;
 }
 
 .mem-second-arrow-right {
@@ -704,6 +813,7 @@ p.register-text {
 
 .mem-third-arrow-left {
     text-align: right;
+    right: 20px;
 }
 
 .mem-third-arrow-right img {
@@ -715,12 +825,18 @@ p.register-text {
 .arrow-reversed {
     -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
+    transform: rotate(190deg);
+    margin-left: 30px;
 }
 
 .last-chace-register .gaff {
-    padding: 0 10% 1% 10%;
+    padding: 1% 10% 1% 10%;
 }
+
+.mem-third-arrow-right {
+    left: 50px;
+}
+
 
 /***********footer*******************/
 
@@ -743,16 +859,16 @@ p.register-text {
 .membership-footer .content h3 {
     color: #878787;
     text-align: left;
-    padding-top: 30px;
 }
 
 .membership-footer .content p {
     color: #878787;
     font-size: 14px;
+    line-height: 2;
 }
 
 .membership-footer .container {
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .membership-footer {
@@ -767,14 +883,21 @@ p.register-text {
     color: #878787;
     box-shadow: 0 16px 30px 6px rgba(0, 0, 0, .2);
     font-family: 'OpenSansLight', sans-serif;
+    width: 65%;
 }
 
 .membership-footer .container {
     width: 100%;
 }
 
+.membership-footer .footer {
+    padding-top: 50px;
+    font-size: 12px;
+    color:#bffff4;
+}
+
 .membership-footer .col-md-5 {
-    width: 30%;
+    width: 40%;
 }
 
 .membership-footer .col-md-5 h3 {
@@ -795,8 +918,8 @@ p.register-text {
     padding: 3px 0;
     font-size: 20px;
     font-family: 'MontserratLight', sans-serif;
-    margin: 1.2em 11px 1.2em 0;
-    color: white;
+    margin: 1.2em 0 1.2em 0;
+    color: #bffff4;
 }
 
 li.active {
@@ -824,7 +947,7 @@ li.active {
 }
 
 .copyright p {
-    text-align: left;
+    text-align: center;
 }
 
 .copyright1{
@@ -839,541 +962,299 @@ li.active {
     margin-top: 70px;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
+.footer ul > li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.copyright ul li a{
+    font-size: 12px;
+}
+
+.footer ul > li:after {
+    content: ' | ';
+    color: #bffff4;;
+}
+
+.footer ul > li:last-child:after {
+    content: '';
+}
 
 /**********************************************mobile/tablets/media screens***********************************************/
-@media (min-width: 300px) and (max-width: 991px) {
 
-    .button2{
-        margin-top:10%;
+@media (min-width: 591px) and (max-width: 990px) {
+.video-poster {
+    height: 410px;
+}
+    .single-item {
+        height: 660px !important;
+    }
+}
+
+@media (max-width: 991px) {
+ .membership-header .left_block, .membership-header .right_block {
+    width: 100%;
+}
+    .membership-block-text {
+        text-align: right;
+        width: 89%;
     }
 
-    .copyright1{
-        float: right;
+    .membership-footer li {
+        text-align: center;
     }
 
-    .welkOrange{
-        margin:3% auto;
+    .membership-footer .col-md-5 h3 {
+        text-align: center;
+        font-size: 30px;
     }
 
-    .clickbt1{
-        margin-top: 1%;
-        text-align: left;
+    .membership-footer .content {
+        padding: 80px 10px 92px;
     }
 
-    .icons{
-        margin-top:3%;
+    .membership-footer a {
+        padding: 3px 0;
+        font-size: 17px;
     }
 
-    .fe1del{
-        text-align: left;
-    }
-
-    .button4{
-        margin: 4% 25%;
-    }
-
-    .blockIconsMob{
-        float:right;
-    }
-
-    .button4{
-        position: relative;
-    }
-
-    .blockMob{
-        position:absolute;
-        top:260px;
-        left:200px;
-    }
-
-    .container p.grey {
-        margin-bottom: 10px;
-        padding-top: 125px;
-    }
-
-    .container .row .col-md-3 .row .col-md-5 {
-        margin-top: 100px;
-    }
-
-    .steps-title {
-        margin-top: 100px;
-    }
-
-    .arrow + .col-md-3 .row .col-md-4 {
-        margin-top: 100px;
-        margin-left: 20px;
-    }
-
-    .arrow + .col-md-4 {
-        margin-top: 100px;
-    }
-
-    .arrow + .col-md-4 .row .col-md-4 {
-        margin-left: 25px;
-    }
-
-    .first-arrow-add {
-        left: 35%;
-    }
-
-    .proceed {
-        font-size: 12px;
-        float: right;
-    }
-
-    p.register-text {
-        padding: 5px 30px 30px 30px;
-        margin: 0;
-    }
-
-    .licence {
-        margin-top: 200px;
-        margin-left: -50px;
-    }
-
-    .button1.button_left_align div.row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .button1.lowest-btn {
-        margin-left: 0;
-    }
-
-    .blockMob .licence div {
-        margin-top: -415px;
-    }
-
-    .membership-header .blockMob .licence div {
-        margin-top: 0;
+    .membership-footer .content p {
+        text-align: justify;
     }
 
     .copyright {
-        padding: 0 40px 0 40px;
-    }
-
-}
-
-@media screen and (max-width:767px) {
-
-    .button2{
-        margin-top:4%;
-    }
-
-    .welkOrange{
-        margin:0;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 359px) {
-
-    /*******header*************/
-    .membership-wrapper .proceed {
-        margin-top: -35px;
-    }
-
-    .membership-logo {
+        width: 100%;
         text-align: center;
     }
 
-    .memebership_content {
-        margin-top: 287%;
-        text-align: center;
-        font-size: 23px;
-    }
-
-    .membership-boxIcon div.row {
+    .embed-responsive-16by9 h5 {
+        width: 100%;
         text-align: center;
     }
 
-    .quick-and-easy + .container .row {
-        text-align: center;
+    .last-chace-register .qick-and-easy {
+        padding-top: 50px;
     }
 
-    .text-for-video {
-        left: 10%;
+    .middle-form button {
+        width: 100% !important;
+    }
+
+    p.register-text {
+        font-size: 30px;
+    }
+
+    .email-Reg0 {
+        margin-left: 0;
+    }
+
+    .last-chace-register .icons-block {
+        margin: 15px auto 30px auto;
         width: 80%;
     }
 
-    .text-days {
-        font-size: 50px;
-        position: static;
+    .last-chace-register .membership-block-text {
+        text-align: right;
+        width: 89%;
     }
 
-    .text-lower {
-        position: static;
-        font-size: 13px;
+    button .col-xs-9 {
+        width: 100%;
+        text-align: center;
     }
 
-    .membership-text {
-        min-height: 120px;
+    .you-here {
+        width: 100%;
+        padding-left: 70px;
+        text-align: center;
     }
 
-    .first-arrow {
-        position: absolute;
-        left: 30%;
-        top: 4px;
-    }
-
-    .first-num {
+    .membership-header .left_block p {
+        width: 70%;
+        top: 25%;
         left: 50%;
+        padding: 1% 2%;
+        transform: translate(-50%);
     }
 
-    .arrow img {
-        left: 45%;
+    .membership-footer .content {
+        width: 100%;
     }
-
-    .second-arrow {
-        left: 30%;
-    }
-
-    .second-arrow-add {
-        left: 35%;
-    }
-
-    .second-num {
-        left: 45%;
-    }
-
-    .third-arrow {
-        left: 30%;
-    }
-
-    .third-arrow-add {
-        left: 30%;
-    }
-
-    .third-num {
-        left: 40%;
-    }
-
-    .button1.lowest-btn .row .col-md-11.col-xs-11 {
-        float: right;
-        margin-top: -20px;
-    }
-
-    .button1.lowest-btn {
-        font-size: 13px;
-    }
-
-    .proceed {
-        font-size: 11px;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 767px) {
-    /**********header*************/
-    .membership-logo {
-        text-align: center;
-    }
-
-    .memebership_content {
-        margin-top:  990px;
-        text-align: center;
-        font-size: 27px;
-    }
-
-    .membership-boxIcon div.row {
-        text-align: center;
-    }
-
-    .membership-header .right_block {
-        min-height: 490px;
-    }
-
-
-    .text-for-video {
-        left: 10%;
-        width: 80%;
-    }
-
-    .text-days {
-        font-size: 50px;
-        position: static;
-    }
-
-    .text-lower {
-        position: static;
-        font-size: 13px;
-    }
-
-    .membership-text {
-        min-height: 120px;
-    }
-
-    .quick-and-easy + .container .row {
-        text-align: center;
-    }
-
-
-    .first-arrow-add {
-        position: absolute;
-        left: 35%;
-    }
-
-    .first-arrow {
-        position: absolute;
-        left: 30%;
-        top: 4px;
-    }
-
-    .first-num {
-        left: 48%;
-    }
-
-    .arrow img {
-        left: 45%;
-    }
-
-    .second-arrow {
-        left: 30%;
-    }
-
-    .second-arrow-add {
-        left: 35%;
-    }
-
-    .second-num {
-        left: 45%;
-    }
-
-    .third-arrow {
-        left: 30%;
-    }
-
-    .third-arrow-add {
-        left: 30%;
-    }
-
-    .third-num {
-        left: 40%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 799px) {
-    /*****************header*********************/
-    .membership-logo {
-        text-align: center;
-    }
-
-    .memebership_content {
-        margin-top: 990px;
-        text-align: center;
-        font-size: 50px;
-    }
-
-    .membership-boxIcon div.row {
-        text-align: center;
-    }
-
-    span.green {
-        font-size: 50px;
-    }
-
-    .button1.button_left_align {
-        /*margin-left: 23%;*/
-        margin-bottom: 110px;
-    }
-
-    .licence {
-        margin-top: 135px;
-        text-align: center;
-        margin-left: 5%;
-    }
-
-    .blockIconsMob {
-        margin-top: -30px;
+    .membership-footer .col-md-5 {
+        width: 100%;
     }
 
     .text-days {
         font-size: 70px;
-        position: static;
+        width: 100%;
     }
 
-    .text-lower {
-        position: static;
-        font-size: 20px;
+    .middle-form button {
+        margin-top: 20px;
     }
 
-    .membership-text {
-        min-height: 120px;
-    }
-
-    .quick-and-easy + .container .row {
+    .steps-title {
         text-align: center;
     }
 
-    .first-arrow-add {
-        position: absolute;
-        left: 45%;
+    .membership-wrapper {
+        background-color: rgba(70, 194, 160, 0.8);
+        height: 1100px;
+        margin-bottom: 20px;
     }
 
-    .first-arrow {
-        position: absolute;
-        left: 41%;
-        top: 4px;
+    .text-lower {
+        font-size: 16px;
+        width: 100%;
     }
 
-    .first-num {
+    .membership-text {
+        min-height: 150px;
+    }
+
+    .single-item {
+        width: 90%;
+        height: 530px;
+        box-shadow: none;
+    }
+
+    .membership-biz-area h2 {
+        font-size: 1.2em;
+        margin-top: 5px;
+    }
+
+    .membership-welcome {
+        font-size: 1.2em;
+    }
+
+    .membership-logo + div {
+        font-size: 0.8em;
+        width: 60%;
+    }
+
+    .header-last-mrow {
+        margin-bottom: 20px;
+    }
+
+    .membership-wrapper .membership-logo {
+        width: 20%;
+    }
+
+    .membership-boxIcon {
+        width: 140px;
+    }
+
+
+    .membership-updated {
+        font-size: 0.45em;
+    }
+
+    .membership-licence-left {
+        font-size: 0.50em;
+    }
+
+    .membership-right-box {
+        width: 110px;
+    }
+
+    .membership-header .left_block p {
+        right: 20%;
+    }
+
+    .membership-boxIcon {
+        top: 15px;
+    }
+
+    .membership-boxIcon {
+        display: none;
+    }
+
+    .video-popup .modal-dialog {
+        width: 80%;
+    }
+
+    .video-popup h5 {
+        position: absolute;
+        top: -25%;
         left: 50%;
+        color: white;
+        text-align: center;
+        transform: translate(-50%);
+        font-size: 20px;
+        width: 100%;
+        letter-spacing: 1px;
     }
 
-    .arrow img {
-        left: 48%;
+    .video-popup p {
+        font-size: 12px;
     }
 
-    .second-arrow {
-        left: 40%;
+    .video-popup a {
+        top: -14%;
     }
 
-    .second-arrow-add {
-        left: 43%;
+    .video-popup a img{
+        width: 80%;
     }
 
-    .second-num {
-        left: 47%;
+    .membership-footer .content {
+        background-color: inherit;
+        box-shadow: none;
     }
 
-    .third-arrow {
-        left: 40%;
+    .membership-footer .container {
+        padding-top: 0;
+        margin-top: 0;
     }
 
-    .third-arrow-add {
-        left: 40%;
-    }
 
-    .third-num {
-        left: 45%;
-    }
+}
 
-    .button1 {
-        padding-top: 2%;
-        padding-bottom: 5%;
-        padding-left: 4%;
-    }
-
-    .row.quick-and-easy .row .col-md-10.col-md-offset-1 {
-        margin-top: 45px;
-    }
-
-    .row.quick-and-easy .licence div {
-        margin-top: -430px;
-        margin-left: -80px;
+@media (min-width: 992px) and (max-width: 1096px) {
+    .membership-header {
+        margin-bottom: 80px !important;
     }
 }
 
-@media (min-width: 800px) and (max-width: 979px) {
-    /*********header***************/
+@media (min-width: 992px) and (max-width: 1399px) {
+
+    /*********************header********/
     .membership-logo {
         text-align: center;
     }
 
     .memebership_content {
-        margin-top: 990px;
         text-align: center;
         font-size: 50px;
     }
 
-    .membership-boxIcon div.row {
-        text-align: center;
+    .membership-block-text {
+        font-size: 0.7em;
+        margin-left: 35px;
     }
 
-    .quick-and-easy + .container .row {
-        text-align: center;
-    }
+    .membership-header {
+        height: 500px;
+        margin-bottom: 210px;
+     }
 
-    span.green {
-        font-size: 50px;
-    }
-
-    .blockIconsMob {
-        margin-top: 95px;
-        text-align: center;
-    }
-
-    .licence {
-        margin-top: 140px;
-        margin-left: 0 !important;
-    }
-
-    .text-days {
-        font-size: 70px;
-        position: static;
-    }
-
-    .text-lower {
-        position: static;
-        font-size: 20px;
-    }
-
-    .membership-text {
-        min-height: 120px;
-    }
-
-    .first-arrow-add {
-        position: absolute;
-        left: 45%;
-    }
-
-    .first-arrow {
-        position: absolute;
-        left: 41%;
-        top: 4px;
-    }
-
-    .first-num {
-        left: 50%;
-    }
-
-    .arrow img {
-        left: 48%;
-    }
-
-    .second-arrow {
-        left: 40%;
-    }
-
-    .second-arrow-add {
-        left: 43%;
-    }
-
-    .second-num {
-        left: 47%;
-    }
-
-    .third-arrow {
-        left: 40%;
-    }
-
-    .third-arrow-add {
-        left: 40%;
-    }
-
-    .third-num {
-        left: 45%;
-    }
-
-    .row.quick-and-easy .row .col-md-10.col-md-offset-1 {
-        margin-top: 45px;
-    }
-
-    .row.quick-and-easy .licence div {
-        margin-top: -450px;
-    }
-}
-
-@media (min-width: 980px) and (max-width: 1279px) {
-    /*********************heaser********/
-    .membership-logo {
-        text-align: center;
-    }
-
-    .memebership_content {
-        margin-top: 510px;
-        text-align: center;
-        font-size: 50px;
-    }
+     .membership-wrapper {
+        height: 500px;
+     }
 
     .membership-header .right_block {
         min-height: 490px;
@@ -1386,37 +1267,131 @@ li.active {
 
     .membership-boxIcon div.row {
         text-align: center;
-    }    
+    } 
+
+    .membership-welcome {
+    font-size: 1.5em;
+    }
+
+    .membership-biz-area h2 {
+    font-size: 1.9em;
+    }  
+
+    .membership-header .container {
+        width: 98%;
+    }
+
+    .membership-wrapper .membership-logo {
+        width: 12%;
+    }
+
+    .membership-logo + div {
+        font-size: 1.6em;
+    }
+
+    .left-right-container {
+        background-color: white;
+    }
+
+    .register-right-text {
+        font-size: 1.4em;
+        line-height: 20px;
+    }
+
+    .email-Reg0 {
+        font-size: 0.8em;
+        padding: 5.5%;
+    }
+
+    .gaff button {
+        width: 97%;
+        font-size: 0.45em;
+    }
+
+    .gaff button .row {
+         margin: 15px 0;
+    }
 
     span.green {
-        font-size: 50px;
+        font-size: 25px;
+    }
+
+    .second-arrow, .third-arrow-add {
+        width:80%;
+    }
+
+    .first-arrow {
+        width: 100%;
     }
 
     .text-days {
-        font-size: 70px;
-        position: static;
-    }
-
-    .text-lower {
-        position: static;
-        font-size: 20px;
+        font-size: 90px;
     }
 
     .membership-text {
         min-height: 120px;
+    }
+
+    .register-last-row {
+        margin-bottom: 0; 
+    }
+
+    .mem-third-arrow-left {
+        top: -25px;
+    }
+
+    .mem-third-arrow-right {
+        top: -10px;
+    }
+
+     .middle-form .membership-block-text {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .blockImg {
+        width: 1.6%;
+    }
+
+    .m, .t, .v, .n {
+        width: 50px;
+    }
+
+    .icons-block {
+        margin: 3% auto 1% auto;
+    }
+
+    .last-chace-register .icons-block {
+        margin: 15px auto 100px auto;
+    }
+
+    .membership-footer .footer {
+        font-size: 11px;
+    }
+
+    .membership-header .right_block {
+        min-height: 0;
     }
 
     .quick-and-easy + .container .row {
         text-align: center;
     }
 
+    .quick-and-easy {
+        padding-top: 10px;
+    }
+
+    .memebership_content {
+    font-size: 35px;
+    }
+
     .text-lower {
-        position: static;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .membership-text {
-        min-height: 120px;
+        min-height: 160px;
+        top: 14px
     }
 
     .first-arrow-add {
@@ -1431,7 +1406,8 @@ li.active {
     }
 
     .first-num {
-        left: 30%;
+        left: 20%;
+        top: 18px;
     }
 
     .arrow img {
@@ -1444,10 +1420,12 @@ li.active {
 
     .second-arrow-add {
         left: 5%;
+        top: 30px;
     }
 
     .second-num {
-        left: 47%;
+        left: 30%;
+        top: 24px;
     }
 
     .third-arrow {
@@ -1459,7 +1437,16 @@ li.active {
     }
 
     .third-num {
-        left: 45%;
+        left: 48%;
+        top: 30px;
+    }
+
+    .arrow111 {
+        top: 50px;
+    }
+
+    .register-deposit-profit {
+    margin-bottom: 50px;
     }
 
     .blockIconsMob {
@@ -1469,10 +1456,6 @@ li.active {
 
     .membership-header .blockMob .licence div {
         margin-top: -20px;
-    }
-
-    .membership-header .right_block {
-        min-height: 475px;
     }
 
     .licence {
@@ -1494,81 +1477,205 @@ li.active {
     div.col-md-offset-3:nth-child(2) {
         margin-top: 50px;
     }
-}
 
-@media (min-width: 1280px) and (max-width: 1799px) {
-    .text-days {
-        font-size: 100px;
-        left: 30%;
+    .single-item {
+        width: 44%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 60px;
+        box-shadow: 0 16px 30px 6px rgba(0, 0, 0, .2);
+        height: 520px;
+   }
+
+    .embed-responsive-16by9 h5 {
+        width: 100%;
+        text-align: center;
     }
 
-    .membership-header .blockMob .licence {
-        padding-bottom: 20px;
-        margin-top: 40px;
+   .embed-responsive-16by9 h5 {
+        width: 70%;
+   }
+
+   .embed-responsive-16by10 h5 {
+        left: 50%;
+        width: 80% !important;
+        transform: translate(-50%);
+   }
+
+    .embed-responsive-16by10 p {
+        bottom: 12%;
+        width: 70%;
+   }
+
+    .last-chace-register .icons-block {
+        width: 27%;
+    }
+
+   .last-chace-register .qick-and-easy {
+        padding-top: 80px;
+        padding-bottom: 0;
+   }
+
+   .qick-and-easy .grey {
+        margin-bottom: 10px;
+        font-size: 15px;
+
+   }
+
+   p.register-text {
+        font-size: 25px;
+        line-height: 1;
+   }
+
+   .qick-and-easy .green {
+        font-size: 25px;
+        color: #3cb982;
+   }
+
+   .middle-form .vtop {
+        width: 15%;
+   }
+
+   .membership-footer .content {
+        padding: 30px 80px 92px;
+        width: 80%;
+    }
+
+    .membership-footer .content p {
+        font-size: 12px;
+        line-height: 2.2;
+    }
+    .membership-footer h3 {
+         margin-bottom: 30px;
+    }
+
+    .membership-footer a {
+         font-size: 15px;
+    }
+
+    .membership-footer .col-md-5 h3 {
+        font-size: 23px;
+    }
+
+    .register-deposit-profit .container {
+        width: 920px;
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 1799px) {
+
+    .text-days {
+        font-size: 130px;
     }
 
     .text-lower {
-        /*position: static;*/
-        font-size: 25px;
-        left: 29%;
-        top: 60px;
+        font-size: 26px;
     }
 
     .membership-text {
-        min-height: 120px;
+        min-height: 245px;
     }
 
-    .quick-and-easy .container .right_item {
-        width: auto;
-        float: left;
-        margin-right: 3%;
-        width: 200px;
+    .gaff button .row {
+        margin: 20px 0;
     }
 
-    .quick-and-easy .container .left_item {
-        margin-left: 0;
-        width: auto;
-        width: 200px;
-        margin: 0 3% 1% 3%;
+    .gaff button {
+        width: 98%;
     }
 
-    .mem-first-arrow-left {
-        padding-left: 15%;
+    .membership-block-text {
+        color: #b0b0b0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8em;
+        margin-left: 35px;
     }
 
-    .quick-and-easy .container .left_item_not_stripped {
-        width: 200px;
-        margin: 0 3% 1% 6%;
+    .register-last-row {
+        margin-bottom: 1%;
     }
 
-    .mem-second-arrow-left {
-        padding-left: 22%;
+    .register-right-text {
+        font-size: 1.5em;
+        line-height: 1.2;
     }
 
-    .mem-third-arrow-left {
-        padding-left: 17%;
+    .icons-block {
+        margin: 15px auto 0 auto;
     }
 
-    .quick-and-easy .button1 {
-        margin-left: 0;
+    .membership-wrapper {
+        height: 500px;
+        margin-bottom: 180px;
     }
 
-    .lowest-btn .col-xs-10 {
-        margin-left: -30px;
+    .first-arrow {
+        left: -10px;
     }
 
-    .lowest-btn .col-xs-2 img {
-        margin-left: 25%;
+    .you-here .grey {
+        font-size: 13px;
     }
 
-    .third-arrow {
-        left: -15%;
+    .you-here .green {
+        font-size: 25px;
     }
+
+    .green-little-text {
+        font-size: 13px !important;
+    }
+
+    .steps-title {
+        font-size: 25px;
+    }
+
+    .grey-small-text {
+        font-size: 13px;
+    }
+
+    .arrow1 {
+        right: 0;
+    }
+
+    .first-num {
+        left: 60px;
+    }
+
+    .single-item {
+        width: 28%;
+        height: 460px;
+    }
+
+    .video-item {
+        padding-top: 0;
+    }
+
+    .embed-responsive-16by9 h5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .join-member-club .register-btn p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .last-chace-register .qick-and-easy {
+        padding-top: 100px;
+    }
+
+
 }
 
 @media (min-width: 1800px) {
     .membership-header .container, .footer, .header-container, .register-deposit-profit .container, .membership-text1 {
         width: 1600px;
+    }
+
+    .embed-responsive-16by10 {
+        background-color: inherit;
     }
 
     .register-right-text {
@@ -1599,12 +1706,13 @@ li.active {
         width: auto;
     }
 
-    .membership-block-text {
-        font-size: 0.9em;
-        /* margin-left: 15%; */
-        margin-top: 1%;
-        margin-bottom: 3%;
+    .last-chace-register .membership-block-text {
         text-align: center;
+    }
+
+    .last-chace-register .blockImg {
+        padding-right: 5px;
+        padding-bottom: 8px;
     }
 
     .icons-block {
@@ -1621,8 +1729,6 @@ li.active {
         padding-right: 1%;
     }
 
-
-
     .quick-and-easy .container .right_item {
         width: auto;
         float: left;
@@ -1636,8 +1742,6 @@ li.active {
         width: 200px;
         margin: 0 3% 1% 3%;
     }
-
-
 
     .quick-and-easy .container .left_item_not_stripped {
         width: 200px;
