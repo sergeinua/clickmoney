@@ -9,7 +9,7 @@ $this->registerJsFile('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery
 $this->registerJsFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', ['integrity' => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", 'crossorigin' => "anonymous"]);
 
 $mob = new Mobile_Detect();
-if ($mob->isDesctop() || $mob->isMobile()) {
+if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
 }
 ?>

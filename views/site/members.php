@@ -40,7 +40,7 @@ JS;
 $this->registerJs($script, yii\web\View::POS_READY);
 
 $mob = new Mobile_Detect();
-if ($mob->isDesctop() || $mob->isMobile()) {
+if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
 }
 ?>
