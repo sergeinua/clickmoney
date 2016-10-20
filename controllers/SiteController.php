@@ -62,10 +62,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $forms[] = ['forms' => Yii::$app->params['esp_forms']];
+        $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
         return $this->render('index', [
             'model' => new Subscriber(),
-            'esp_forms' => Yii::$app->params['esp_forms'],
-            'esp_forms_exit' => Yii::$app->params['esp_forms_exit']
+            'forms' => $forms
         ]);
     }
 
@@ -74,11 +75,17 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionValidate()
+    public function actionValidate($form)
     {
+        if ($form == 'index') {
+            $forms[] = ['forms' => Yii::$app->params['esp_forms']];
+            $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
+        } else if ($form == 'freereport') {
+            $forms[] = ['prefix' => 'exit', 'forms' => Yii::$app->params['esp_forms_exit']];
+        }
+
         return $this->renderFile('@app/views/site/validate.php', [
-            'esp_forms' => Yii::$app->params['esp_forms'],
-            'esp_forms_exit' => Yii::$app->params['esp_forms_exit']
+            'forms' => $forms
         ]);
     }
 
@@ -133,7 +140,10 @@ class SiteController extends Controller
      */
     public function actionFreereport()
     {
-        return $this->render('freereport');
+        $forms[] = ['prefix' => 'exit', 'forms' => Yii::$app->params['esp_forms_exit']];
+        return $this->render('freereport', [
+            'forms' => $forms
+        ]);
     }
 
     /**

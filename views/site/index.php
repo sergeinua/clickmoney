@@ -6,8 +6,10 @@ use yii\helpers\Url;
 use yii\bootstrap\Modal;
 use yii\bootstrap\BootstrapAsset;
 use yii\web\JqueryAsset;
+use Mobile_Detect;
 
 /* @var $this yii\web\View */
+Yii::$app->params['bodyClass'] = 'fe1';
 
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/fe1.css', ['depends' => [BootstrapAsset::className()]]);
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/exit-popup.css', ['depends' => [BootstrapAsset::className()]]);
@@ -24,7 +26,6 @@ $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
 $script = <<< JS
 (function($) {
-    $('body').addClass('fe1');
     $(".join-popup .close-btn a").click(function(e){
         $(".join-popup").removeClass('showed');
         sessionStorage.setItem('show_joined_popup', 'false');
@@ -35,7 +36,19 @@ JS;
 $this->registerJs($script, yii\web\View::POS_READY);
 
 $this->title = 'Front End 1 page';
+
+
+$mob = new Mobile_Detect();
+if ($mob->isDesctop() || $mob->isMobile()) {
+    $from_page = 'mobile';
+    $is_mobile = true;
+}
 ?>
+<script>
+    <?php if (isset($from_page)) : ?>
+        var from_page = '<?= $from_page; ?>';
+    <?php endif; ?>
+</script>
 
     <div class="image-background">
         <div class="container content">
@@ -149,20 +162,14 @@ $this->title = 'Front End 1 page';
     </div>
 
 <?php
-if ($esp_forms) {
+foreach ($forms as $form) {
     $i = 0;
-    foreach ($esp_forms as $key => $value) {
-        echo \Yii::$app->view->renderFile('@app/views/site/forms/form_' . $key . '.php', ['item' => $i + 1, 'params' => $value]);
+    foreach ($form['forms'] as $key => $value) {
+        echo \Yii::$app->view->renderFile('@app/views/site/forms/form_' . $key . '.php', ['item' => ($i + 1) . (empty($form['prefix']) ? '' : '_' . $form['prefix']), 'params' => $value]);
         $i++;
     }
 }
-if ($esp_forms_exit) {
-    $i = 0;
-    foreach ($esp_forms_exit as $key => $value) {
-        echo \Yii::$app->view->renderFile('@app/views/site/forms/form_' . $key . '.php', ['item' => ($i + 1).'_exit', 'params' => $value]);
-        $i++;
-    }
-} ?>
+?>
 
 <?php Modal::begin(['id' => 'exitpopup']); ?>
 

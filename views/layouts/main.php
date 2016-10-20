@@ -2,6 +2,7 @@
 
 /* @var $this \yii\web\View */
 /* @var $content string */
+/* @var $body_class string */
 
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
@@ -21,14 +22,12 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body<?= empty(Yii::$app->params['bodyClass']) ? '' : ' class="' . Yii::$app->params['bodyClass'] . '"' ?>>
 <?php $this->beginBody() ?>
 
     <?= $content ?>
 
     <footer class="footer">
-    <!--    <script src="js/jquery-3.1.1.min.js"></script>-->
-    <!--    <script type="text/javascript" src="js/bootstrap.min.js"></script>-->
     </footer>
 
 <?php $this->endBody() ?>

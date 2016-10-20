@@ -22,16 +22,23 @@ class AppAsset extends AssetBundle
 //        'css/bootstrap.min.css',
 //        'css/fe1.css',
     ];
-    public $js = [
-        'https://s3.amazonaws.com/caff/js/formhelpers.min.js',
-        'js/main.js',
-        'js/jquery.blockUI.js',
-        'js/people_filling.js',
-        'validate',
-        'exitsplash'
-    ];
+    public $js;
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
+
+    public function init()
+    {
+        $this->js = [
+            'https://s3.amazonaws.com/caff/js/formhelpers.min.js',
+            'js/main.js',
+            'js/jquery.blockUI.js',
+            'js/people_filling.js',
+            'validate?form=' . \Yii::$app->controller->action->id,
+            'exitsplash'
+        ];
+
+        parent::init();
+    }
 }

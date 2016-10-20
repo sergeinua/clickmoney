@@ -15,81 +15,71 @@ function validateEmail(email_value, from_page, fname)
     }
 
     if(!from_page)
-    from_page = 'fe';
+        from_page = 'fe';
 
     $('body').append('<img id="menia_src" style="display: none">');
     var backgroundImage = '/site/image?email='+email_value+'&t='+from_page+'&name='+fname;
     jQuery("#menia_src").attr('src', backgroundImage);
 
-    if(from_page == 'overlay')
-        process_overlay(email_value, from_page, fname);
-    else
-        processnow(email_value, from_page, fname);
-    return false;
-}
-
-<?php if ($esp_forms): ?>
-function processnow(semail, from_page, fname)
-{
-    $('.modal').modal('hide');
-    $('#loading_sec').modal('show');
-
-    <?php $time = 1000; ?>
-    <?php $step = 3000; ?>
-    <?php for($i=1; $i <= sizeof($esp_forms); $i++) : ?>
-
-        var mt = setTimeout(function(){
-            var email = semail;
-            var ufame = fname;
-            if(!ufame)
-                ufame = 'cmfriend';
-
-            jQuery('#squeeze_form<?= $i; ?>_email').val(email);
-            jQuery('#squeeze_form<?= $i; ?>_fname').val(ufame);
-            jQuery('#squeeze_form<?= $i; ?>').submit();
-        },<?= $time; ?>);
-    <?php $time += $step; ?>
-
-    <?php endfor; ?>
-
-    var mt = setTimeout(function(){
-        var mem_rdirect = "/click-through";
-        top.location.href = mem_rdirect;
-    },<?= $time; ?>);
-
-    return false;
-}
-<?php endif; ?>
-
-<?php if ($esp_forms_exit): ?>
-function process_overlay(semail, from_page, fname)
-{
-    $('.modal').modal('hide');
-    $('#loading_sec').modal('show');
-
-    <?php $time = 1000; ?>
-    <?php $step = 3000; ?>
-    <?php for($i=1; $i <= sizeof($esp_forms_exit); $i++) : ?>
-
-        var mt = setTimeout(function(){
-            var email = semail;
-            var ufame = fname;
-            if(!ufame)
-                ufame = 'cmoverlayfriend';
-
-            jQuery('#squeeze_form<?= $i; ?>_exit_email').val(email);
-            jQuery('#squeeze_form<?= $i; ?>_exit_fname').val(ufame);
-            jQuery('#squeeze_form<?= $i; ?>_exit').submit();
-        }, <?= $time; ?>);
-        <?php $time += $step; ?>
-
-    <?php endfor; ?>
-
-    var mt = setTimeout(function(){
-        var mem_rdirect = "/click-through";
-        top.location.href = mem_rdirect;
-    }, <?= $time; ?>);
-
-    return false;
+    switch (from_page) {
+        case 'fe':
+        case 'fe_mobile':
+            prefix = '';
+            break;
+        case 'overlay':
+        case 'overlay_mobile':
+            prefix = 'overlay';
+            break;
+        case 'exit':
+        case 'exit_mobile':
+            prefix = 'exit';
+            break;
+        default:
+            prefix = '';
+            break;
     }
-<?php endif; ?>
+
+    processnow(email_value, prefix, fname);
+    return false;
+}
+
+function processnow(semail, prefix, fname)
+{
+    $('.modal').modal('hide');
+    $('#loading_sec').modal('show');
+
+    <?php foreach ($forms as $form) : ?>
+
+        <?php $prefix = (empty($form['prefix']) ? '' : $form['prefix']); ?>
+        <?php $i = 1; ?>
+        <?php $time = 1000; ?>
+        <?php $step = 3000; ?>
+        if (prefix == '<?= $prefix; ?>') {
+
+            <?php foreach ($form['forms'] as $key => $value) : ?>
+
+                    var mt = setTimeout(function(){
+                        var email = semail;
+                        var ufame = fname;
+                        if(!ufame)
+                        ufame = 'cmfriend';
+
+                        jQuery('#squeeze_form<?= $i; ?><?= $prefix ? '_'.$prefix : ''; ?>_email').val(email);
+                        jQuery('#squeeze_form<?= $i; ?><?= $prefix ? '_'.$prefix : ''; ?>_fname').val(ufame);
+                        jQuery('#squeeze_form<?= $i; ?><?= $prefix ? '_'.$prefix : ''; ?>').submit();
+                        },<?= $time; ?>);
+                    <?php $time += $step; ?>
+                <?php $i++; ?>
+
+            <?php endforeach; ?>
+
+            var mt = setTimeout(function(){
+                var mem_rdirect = "/click-through";
+                top.location.href = mem_rdirect;
+            }, <?= $time; ?>);
+
+            return false;
+        }
+
+    <?php endforeach; ?>
+}

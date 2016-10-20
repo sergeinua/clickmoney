@@ -3,6 +3,9 @@ use yii\bootstrap\Modal;
 use yii\helpers\Url;
 use yii\bootstrap\BootstrapAsset;
 use yii\web\JqueryAsset;
+use Mobile_Detect;
+
+Yii::$app->params['bodyClass'] = 'fe2 freereport';
 
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/fe1.css', ['depends' => [BootstrapAsset::className()]]);
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/exit.css', ['depends' => [BootstrapAsset::className()]]);
@@ -16,7 +19,6 @@ $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
 $script = <<< JS
 (function ($) {
-    $('body').addClass('fe2 freereport');
     function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
         setInterval(function () {
@@ -157,8 +159,18 @@ $script = <<< JS
 })(jQuery);
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
-?>
 
+$mob = new Mobile_Detect();
+if ($mob->isDesctop() || $mob->isMobile()) {
+    $from_page = 'mobile';
+    $is_mobile = true;
+}
+?>
+<script>
+    <?php if (isset($from_page)) : ?>
+    var from_page = '<?= $from_page; ?>';
+    <?php endif; ?>
+</script>
 <div class="image-background">
     <div class="bg">
         <div class="container header">
@@ -261,5 +273,15 @@ $this->registerJs($script, yii\web\View::POS_READY);
         </div>
     </div>
 </div>
+
+<?php
+foreach ($forms as $form) {
+    $i = 0;
+    foreach ($form['forms'] as $key => $value) {
+        echo \Yii::$app->view->renderFile('@app/views/site/forms/form_' . $key . '.php', ['item' => ($i + 1) . (empty($form['prefix']) ? '' : '_' . $form['prefix']), 'params' => $value]);
+        $i++;
+    }
+}
+?>
 
 <?= \Yii::$app->view->renderFile('@app/views/site/thank_you.php'); ?>
