@@ -5,6 +5,7 @@ $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/_style.css');
 $this->registerCssFile('https://fonts.googleapis.com/css?family=Montserrat');
 $this->registerJsFile('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', ['depends' => [JqueryAsset::className()]]);
 $this->registerJsFile('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', ['integrity' => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", 'crossorigin' => "anonymous", 'depends' => [JqueryAsset::className()]]);
+$this->registerJsFile(Yii::$app->request->baseUrl.'/web/js/jquery.cookie.js', ['depends' => [JqueryAsset::className()]]);
 
 $script = <<< JS
     $(document).ready(function () {
@@ -37,6 +38,18 @@ JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);
 ?>
+
+<?= \Yii::$app->view->renderFile('@app/views/site/getip.php'); ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<!--<script src="https://s3-eu-west-1.amazonaws.com/gaff/js/gaff.js"></script>-->
+<script src="https://gaff.s3.amazonaws.com/js/gaff.js"></script>
+
+
+
+<div id="gaff" class="gaff"></div>
 
 <div class="row membship1">
     <div class ="membship0">
