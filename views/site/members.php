@@ -1,5 +1,6 @@
 <?php
 use yii\web\JqueryAsset;
+use Mobile_Detect;
 
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/_style.css');
 $this->registerCssFile('https://fonts.googleapis.com/css?family=Montserrat');
@@ -37,12 +38,26 @@ $script = <<< JS
 JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);
+
+$mob = new Mobile_Detect();
+if ($mob->isDesctop() || $mob->isMobile()) {
+    $is_mobile = true;
+}
 ?>
 
 <?= \Yii::$app->view->renderFile('@app/views/site/getip.php'); ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+
+<?php
+$rd = 3;
+$gi = 2805;
+
+?>
+<script>
+    var gvars = {'gi': <?php echo $gi?>, 'wl': 90,'rd': <?php echo $rd?>, 'sb': 0};
+</script>
 
 <!--<script src="https://s3-eu-west-1.amazonaws.com/gaff/js/gaff.js"></script>-->
 <script src="https://gaff.s3.amazonaws.com/js/gaff.js"></script>
