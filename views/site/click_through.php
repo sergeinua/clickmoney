@@ -5,13 +5,20 @@ use yii\helpers\Url;
 use app\assets\AppAsset;
 
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/style_click_through.css', ['depends' => [AppAsset::className()]]);
+$this->registerJsFile('/exitsplash', ['depends' => [AppAsset::className()]]);
+
+$script_init = <<< JS
+    var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
+    var exitsplashpage = '/members';
+JS;
+$this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
 }
-?>
 
+?>
 <div class="image-background clickthrough">
     <div class="bg">
         <div class="container header">
@@ -64,7 +71,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                     </ul>
                 </div>
                 <div class="col-md-4 copyright1">
-                    <span class="copyright">© 2016 ClickMoney. All Rights Reserved.</span>
+                    <span class="copyright">© <?= date('Y'); ?> ClickMoney. All Rights Reserved.</span>
                 </div>
             </div>
         </div>

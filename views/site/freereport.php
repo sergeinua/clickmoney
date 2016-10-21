@@ -19,6 +19,14 @@ $script_init = <<< JS
 JS;
     $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 }
+$script_init = <<< JS
+    if(top.location != self.location)
+    {
+        top.location.assign(self.location);
+        window.stop();
+    }
+JS;
+$this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
 $script = <<< JS
 (function ($) {
