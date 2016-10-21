@@ -18,7 +18,8 @@ class LaststepAsset extends AssetBundle
     ];
     public $js;
     public $depends = [
-        'app\assets\AppAsset'
+        'app\assets\AppAsset',
+        'app\assets\CaffAsset'
     ];
 
     public function init()
@@ -26,8 +27,6 @@ class LaststepAsset extends AssetBundle
         $this->js = [
             'js/jquery.animateNumber.min.js',
             'js/jquery.cookie.js',
-            'https://gaff.s3.amazonaws.com/js/gaff.js',
-            'https://s3.amazonaws.com/caff/js/formhelpers.min.js',
             'js/counter.js',
         ];
 

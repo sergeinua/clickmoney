@@ -11,8 +11,7 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
-$this->registerCssFile('https://fonts.googleapis.com/css?family=Montserrat');
-$this->registerCssFile('https://fonts.googleapis.com/css?family=Open+Sans');
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
