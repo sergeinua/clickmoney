@@ -52,7 +52,7 @@ input[type="text"]:focus, input[type="email"]:focus {
 }
 
 .image-background {
-    background: url(../images/bg.png) no-repeat center center;
+    background: url(../images/bg.jpg) no-repeat center center;
     background-size: cover;
     min-height: 100%;
 }
