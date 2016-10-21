@@ -1,21 +1,24 @@
 <?php
-use yii\bootstrap\Modal;
-use yii\helpers\Url;
-use yii\bootstrap\BootstrapAsset;
-use yii\web\JqueryAsset;
 use Mobile_Detect;
+
+use yii\helpers\Url;
+use app\assets\ExitAsset;
+
+ExitAsset::register($this);
 
 Yii::$app->params['bodyClass'] = 'fe2 freereport';
 
-$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/fe1.css', ['depends' => [BootstrapAsset::className()]]);
-$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/exit.css', ['depends' => [BootstrapAsset::className()]]);
-$this->registerJsFile(Yii::$app->request->baseUrl.'/web/js/jquery.animateNumber.min.js', ['depends' => [JqueryAsset::className()]]);
-
+$mob = new Mobile_Detect();
+if ($mob->isTablet() || $mob->isMobile()) {
+    $from_page = 'mobile';
+    $is_mobile = true;
+}
+if (isset($from_page)) {
 $script_init = <<< JS
-//    var exitsplashmessage = false;
-//    var exitsplashpage = false;
+    var from_page = '$from_page';
 JS;
-$this->registerJs($script_init, yii\web\View::POS_BEGIN);
+    $this->registerJs($script_init, yii\web\View::POS_BEGIN);
+}
 
 $script = <<< JS
 (function ($) {
@@ -159,18 +162,7 @@ $script = <<< JS
 })(jQuery);
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
-
-$mob = new Mobile_Detect();
-if ($mob->isTablet() || $mob->isMobile()) {
-    $from_page = 'mobile';
-    $is_mobile = true;
-}
 ?>
-<script>
-    <?php if (isset($from_page)) : ?>
-    var from_page = '<?= $from_page; ?>';
-    <?php endif; ?>
-</script>
 <div class="image-background">
     <div class="bg">
         <div class="container header">

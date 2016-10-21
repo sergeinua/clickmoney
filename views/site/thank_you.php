@@ -1,8 +1,8 @@
 <?php
 use yii\bootstrap\Modal;
-use yii\bootstrap\BootstrapAsset;
+use app\assets\AppAsset;
 
-$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/thank-you.css', ['depends' => [BootstrapAsset::className()]]);
+$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/thank-you.css', ['depends' => [AppAsset::className()]]);
 
 $script = <<< JS
     $(function(){
