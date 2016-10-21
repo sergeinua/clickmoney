@@ -1,11 +1,5 @@
-.freereport .image-background {
-    padding: 0 !important;
-    height: 100%;
-}
-
 body.freereport .image-background .bg {
     padding: 30px 0;
-    min-height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e74c32+0,e75e32+100 */
     background: rgb(231,76,50,0.7); /* Old browsers */
     background: -moz-linear-gradient(45deg,  rgba(231,76,50,0.7) 0%, rgba(231,94,50,0.7) 100%); /* FF3.6-15 */
