@@ -380,7 +380,7 @@ button {
 }
 
 .icons-block {
-    margin: 15px auto 15px auto;
+    margin: 50px auto 15px auto;
 }
 
 
@@ -996,7 +996,60 @@ li.active {
 
 /**********************************************mobile/tablets/media screens***********************************************/
 
-@media (min-width: 591px) and (max-width: 990px) {
+@media (max-width: 365px) {
+    .m, .t, .v, .n {
+        width: 35px;
+    }
+
+    .membership-block-text {
+        text-align: center;
+        width: 100% !important;
+        font-size: 10px;
+    }
+    .member-arrows {
+        display: none;
+    }
+
+    .membership-header .left_block p {
+        width: 100% !important;
+    }
+
+    .gaff button {
+        font-size: 0.5em;
+        width: 100%;
+    }
+
+    .register-right-text {
+        font-size: 1.4625em;
+    }
+
+    .email-Reg0 {
+        font-size: 0.7em;
+    }
+
+    .right_block form .col-xs-6 {
+        width: 100%;
+    }
+
+    .you-here {
+        padding-left: 0 !important;
+    }
+
+    .single-item {
+        background-color: white;
+    }
+
+    .membership-text1 {
+        padding-left: 0;
+    }
+
+    .membership-footer ul {
+        padding-left: 0;
+    }
+
+}
+
+@media (min-width: 591px) and (max-width: 991px) {
 .video-poster {
     height: 410px;
 }
@@ -1010,8 +1063,17 @@ li.active {
     width: 100%;
 }
     .membership-block-text {
-        text-align: right;
-        width: 89%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .right_block {
+        padding: 0;
+    }
+
+    .register-deposit-profit {
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .membership-footer li {
@@ -1065,11 +1127,6 @@ li.active {
     .last-chace-register .icons-block {
         margin: 15px auto 30px auto;
         width: 80%;
-    }
-
-    .last-chace-register .membership-block-text {
-        text-align: right;
-        width: 89%;
     }
 
     button .col-xs-9 {
@@ -1221,6 +1278,11 @@ li.active {
         margin-top: 0;
     }
 
+    .membership-footer .col-md-7 {
+        background-color: white;
+        margin-top: 350px;
+    }
+
 
 }
 
@@ -1350,6 +1412,10 @@ li.active {
     }
 
     .blockImg {
+        width: 3%;
+    }
+
+    .last-chace-register .blockImg {
         width: 1.6%;
     }
 
@@ -1482,7 +1548,7 @@ li.active {
         width: 44%;
         padding-right: 0;
         padding-left: 0;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
         box-shadow: 0 16px 30px 6px rgba(0, 0, 0, .2);
         height: 520px;
    }
@@ -1559,6 +1625,10 @@ li.active {
 
     .register-deposit-profit .container {
         width: 920px;
+    }
+
+    .video-poster {
+        height: 380px;
     }
 
 }
