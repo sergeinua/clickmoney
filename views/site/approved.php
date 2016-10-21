@@ -111,7 +111,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <img class="img-responsive img-membership1" src="images/imagineForVideoLarge1.jpg">
                     <img class="img-responsive play-button" src="images/play.png">
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
-                    <p>Watch Video Now! Expires in: <span id="time-exit">00h:03m:27s</span></p>
+                    <p>Watch Video Now! Expires in: <span id="time-exit">00h : 05m : 00s</span></p>
                 </div>
                 <div class="col-md-5 right_block">
                     <h2 class="register-right-text">Please
@@ -2276,7 +2276,6 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div>
             </div>
         </div>
-
     </div>
     <div class="container footer">
         <div class="col-md-4 col-xs-6 copyright">
@@ -2294,7 +2293,6 @@ $this->registerJs($script, yii\web\View::POS_READY);
         </div>
     </div>
 </section>
-
 <!-- Modal -->
 <div id="myVideo" class="modal fade video-popup" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
     <div class="modal-dialog modal-lg">

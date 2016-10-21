@@ -7,11 +7,6 @@ function addLoadEvent(func) {
             if (oldonload) {
                 oldonload();
             }
-//            if(top.location != self.location)
-//            {
-//                top.location.assign(self.location);
-//                window.stop();
-//            }
             func();
         }
     }

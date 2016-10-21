@@ -16,13 +16,6 @@ if ($mob->isTablet() || $mob->isMobile()) {
 }
 
 $script_init = <<< JS
-    var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
-    var exitsplashpage = '/laststep';
-    if(top.location != self.location)
-    {
-        top.location.assign(self.location);
-        window.stop();
-    }
     var gvars = {'gi': $gi, 'wl': 90,'rd': $rd, 'sb': 0};
 JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
@@ -112,7 +105,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <img class="img-responsive img-membership1" src="images/imagineForVideoLarge1.jpg">
                     <img class="img-responsive play-button" src="images/play.png">
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
-                    <p>Watch Video Now! Expires in: <span id="time-exit">00h:03m:27s</span></p>
+                    <p>Watch Video Now! Expires in: <span id="time-exit">00h : 05m : 00s</span></p>
                 </div>
                 <div class="col-md-5 right_block">
                     <h2 class="register-right-text">DON'T MISS YOUR CHANCE<br>

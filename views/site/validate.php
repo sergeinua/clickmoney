@@ -74,7 +74,7 @@ function processnow(semail, prefix, fname)
             <?php endforeach; ?>
 
             var mt = setTimeout(function(){
-                var mem_rdirect = "/click-through";
+                var mem_rdirect = "/accessapproved";
                 top.location.href = mem_rdirect;
             }, <?= $time; ?>);
 

@@ -115,21 +115,21 @@ class SiteController extends Controller
     }
 
     /**
-     * ClickTrough page
+     * Accessapproved page
      * @return string
      */
-    public function actionClickThrough()
+    public function actionAccessapproved()
     {
-        return $this->render('click_through');
+        return $this->render('accessapproved');
     }
 
     /**
      * Members page
      * @return string
      */
-    public function actionMembers()
+    public function actionApproved()
     {
-        return $this->render('members', [
+        return $this->render('approved', [
             'email' => Yii::$app->session->get('email'),
             'fname' => Yii::$app->session->get('fname')
         ]);

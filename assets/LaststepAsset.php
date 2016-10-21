@@ -29,7 +29,6 @@ class LaststepAsset extends AssetBundle
             'https://gaff.s3.amazonaws.com/js/gaff.js',
             'https://s3.amazonaws.com/caff/js/formhelpers.min.js',
             'js/counter.js',
-            'exitsplash'
         ];
 
         parent::init();
