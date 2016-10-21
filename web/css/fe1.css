@@ -61,20 +61,28 @@ input[type=text], input[type=email] {
     float: none;
 }
 
-body.fe1 .image-background {
-    padding: 60px 0;
-}
-
-body.fe2 .image-background {
-    padding: 30px 0;
-}
-
 body.fe1 .image-background, body.fe2 .image-background {
     background: url(../images/bg.png) no-repeat center center;
     background-size: cover;
     min-height: 100%;
 }
 
+body.fe1 .image-background .bg, body.fe2 .image-background .bg {
+    min-height: 100%;
+    background: rgb(45,168,115); /* Old browsers */
+    background: -webkit-linear-gradient(45deg,  rgba(45,168,115,0.3) 0%,rgba(15,170,156,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(45deg,  rgba(45,168,115,0.3) 0%, rgba(15,170,156,0.3) 100%); /* FF3.6-15 */
+    background: linear-gradient(45deg,  rgba(45,168,115,0.3) 0%,rgba(15,170,156,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2da873', endColorstr='#0faa9c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+body.fe1 .image-background .bg {
+    padding: 60px 0;
+}
+
+body.fe2 .image-background .bg {
+    padding: 30px 0;
+}
 
 .content {
     box-shadow: 0 15px 45px 15px rgba(0, 0, 0, .3);

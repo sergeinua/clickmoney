@@ -1,6 +1,6 @@
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url(../fonts/Montserrat-Bold.ttf);
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 input[type="text"]:focus, input[type="email"]:focus {
@@ -51,10 +51,19 @@ input[type="text"]:focus, input[type="email"]:focus {
     border: none;
 }
 
-.ClickMoney, .clickthrough {
-    background: url(../images/register/backgroundRegister.jpg) no-repeat;
-    background-size: 100% auto;
-    height: 760px;
+.image-background {
+    background: url(../images/bg.png) no-repeat center center;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.image-background .bg {
+    min-height: 100%;
+    background: rgb(45,168,115); /* Old browsers */
+    background: -webkit-linear-gradient(45deg,  rgba(45,168,115,0.3) 0%,rgba(15,170,156,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(45deg,  rgba(45,168,115,0.3) 0%, rgba(15,170,156,0.3) 100%); /* FF3.6-15 */
+    background: linear-gradient(45deg,  rgba(45,168,115,0.3) 0%,rgba(15,170,156,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2da873', endColorstr='#0faa9c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 body {
@@ -673,16 +682,16 @@ span.button20 {
 
 .dbTb {
     border-right:1px solid #f1f1f1;
-    border-bottom:1 solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
 }
 
 .dbTB1 {
     border-left:1px solid #f1f1f1;
-    border-bottom:1 solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
 }
 
 .dbTb2{
-    border-bottom:1 solid #f1f1f1;
+    border-bottom:1px solid #f1f1f1;
 }
 
 .buttonInTable {
