@@ -64,7 +64,7 @@
     margin-top: 15px;
 }
 
-.freereport .action-form button {
+body.freereport .action-form button {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e74c32+0,e75e32+100 */
     background: rgb(231,76,50); /* Old browsers */
     background: -moz-linear-gradient(left,  rgba(231,76,50,1) 0%, rgba(231,94,50,1) 100%); /* FF3.6-15 */
