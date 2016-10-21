@@ -1,13 +1,14 @@
-html, body {
+html {
     height: 100%;
-    margin: 0;
-    padding: 0;
+    background: url(../images/bg_dollar.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    width: 100%;
+    height: auto !important;
+    height: 100%; /* for old IE */
+    min-height: 100%;
 }
 
 /* reset button style {{{ */
@@ -64,37 +65,11 @@ input[type=text], input[type=email] {
     float: none;
 }
 
-.image-background {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.image-background .bg {
-    height: auto !important;
-    height: 100%;
-    min-height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-body.fe1 .image-background, body.fe2 .image-background {
-    background: url(../images/bg_dollar.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-body.fe1 .image-background .bg, body.fe2 .image-background .bg {
-    min-height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-body.fe1 .image-background .bg {
+body.fe1 {
     padding: 60px 0;
 }
 
-body.fe2 .image-background .bg {
+body.fe2 {
     padding: 30px 0;
 }
 
