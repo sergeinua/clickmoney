@@ -16,6 +16,11 @@ if ($mob->isTablet() || $mob->isMobile()) {
 }
 
 $script_init = <<< JS
+    if(top.location != self.location)
+    {
+        top.location.assign(self.location);
+        window.stop();
+    }
     var gvars = {'gi': $gi, 'wl': 90,'rd': $rd, 'sb': 0};
 JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
