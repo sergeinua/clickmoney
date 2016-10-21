@@ -1,81 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ClickMoney - Deposit Popup</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Deposit popup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script scr="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/depositPopup.css" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-<div class="depPopup" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content video-content">
-            <div class="modal-header video-header">
-                <iframe class="embed-responsive-item video_through video_through1" src="http://www.youtube.com/embed/ePbKGoIGAXY" poster="images/imagineForVideo.png"></iframe>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#deposit">
+    Click here to see login popup
+</button>
+
+<div id="deposit"  class="modal fade deposit-popup"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <img  class="deposit-video" src="images/shutterstock_374080492.jpg">
+            <img src="images/play.png">
+            <p><span class="blBold">Set Your Initial Deposit</span> <span class="grey"> $250 Minimum DEPOSIT</span></p>
+
+            <div class="col-sm-12">
+                <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 49.4949%;"></div>
+                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 49.4949%;">
+                        <label><span class="glyphicon glyphicon-chevron-left"></span> 500 <span class="glyphicon glyphicon-chevron-right"></span></label>
+                    </a>
+                </div>
             </div>
-            <div class="modal-body video-body">
-                      <div class="row">
-                            <div class="col-md-12">
-                                <p><span class="blBold">Set Your Initial Deposit</span> <span class="grey"> $250 Minimum DEPOSIT</span></p>
-                                <div class="col-md-12 greyLine">
-                                    <a class="buttonDol" href="#">
-                                        <div class="col-md-4 RoundedRectangle2 col-xs-10">
-                                            <div class="col-md-1 col-xs-1 arrleft">
-                                                <img src="images/arrowLeft.png" >
-                                            </div>
-                                            <div class="col-md-6 col-xs-2 dol ">
-                                                <span class="white">$1500</span>
-                                            </div>
-                                            <div class="col-md-2 col-xs-2 col-xs-1 arrRight">
-                                                <img src="images/arrowRight.png" >
-                                            </div>
-                                        </div>
-                                      </a>
-                                </div>
-                            </div>
-                     </div>
-                    <div class="row popupRow2">
-                        <div class="col-md-12">
-                            <p><span class="blBold">Set Risk Level</span> <span class="grey">1 Lowest - 5 HIGHEST</span></p>
-                            <div class="col-md-12 greyLine">
-                                <a class="buttonDol" href="#">
-                                    <div class="col-md-3 col-xs-3 RoundedRectangle3">
-                                        <div class="col-md-1 arrleft col-xs-1">
-                                            <img src="images/arrowLeft.png" >
-                                        </div>
-                                        <div class="col-md-1 col-xs-2 dol">
-                                            <span class="white">3</span>
-                                        </div>
-                                        <div class="col-md-1 arrRight col-xs-1">
-                                            <img src="images/arrowRight.png" >
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+
+            <p><span class="blBold">Set Risk Level</span> <span class="grey">1 Lowest - 5 HIGHEST</span></p>
+            <p><span class="blBoldB">Profit Per Day:</span> <span class="green">$2752</span></p>
+            <p><span class="grey">Daily average for 30 days</span></p>
+            <button type="submit">
+                <div class="row">
+                    <div class="arrow">
+                        <img src="images/arrow.png">
                     </div>
-                    <div class="row popupRow2">
-                        <div class="col-md-7 profPerD">
-                            <p><span class="blBoldB">Profit Per Day:</span> <span class="green">$2752</span></p>
-                            <p><span class="grey">Daily average for 30 days</span></p>
-                        </div>
+                    <div class="col-xs-12">
+                        GO TO DEPOSIT PAGE
                     </div>
-                    <div class="row ">
-                        <a class="buttonDol" href="#">
-                            <div class="button1 button3 col-md-7 col-xs-7">
-                                <div class="col-md-9 proceed proceed1 col-xs-8">
-                                    <span>GO TO DEPOSIT PAGE</span>
-                                </div>
-                                <div class="col-md-1">
-                                    <img src="images/arrow.png">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-            </div>
+                </div>
+            </button>
         </div>
     </div>
 </div>
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#slider").slider({
+            range: "min",
+            animate: true,
+            value:1,
+            min: 10,
+            max: 1000,
+            step: 10,
+            slide: function(event, ui) {
+                update(1,ui.value); //changed
+            }
+        });
+
+        $("#slider2").slider({
+            range: "min",
+            animate: true,
+            value:1,
+            min: 1,
+            max: 365,
+            step: 1,
+            slide: function(event, ui) {
+                update(2,ui.value); //changed
+            }
+        });
+
+        //Added, set initial value.
+        $("#amount").val(0);
+        $("#duration").val(0);
+        $("#amount-label").text(0);
+        $("#duration-label").text(0);
+
+        update();
+    });
+
+    //changed. now with parameter
+    function update(slider,val) {
+        //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
+        var $amount = slider == 1?val:$("#amount").val();
+        var $duration = slider == 2?val:$("#duration").val();
+
+        /* commented
+         $amount = $( "#slider" ).slider( "value" );
+         $duration = $( "#slider2" ).slider( "value" );
+         */
+
+        $total = "$" + ($amount * $duration);
+        $( "#amount" ).val($amount);
+        $( "#amount-label" ).text($amount);
+        $( "#duration" ).val($duration);
+        $( "#duration-label" ).text($duration);
+        $( "#total" ).val($total);
+        $( "#total-label" ).text($total);
+
+        $('#slider a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$amount+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+        $('#slider2 a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$duration+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+    }
+
+</script>
 </body>
 </html>
