@@ -21,6 +21,32 @@
         startTimer(fiveMinutes, display);
     });
 
+    function timerForMembers(duration, min_field, sec_field)
+    {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10)
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            min_field.text(minutes + "m");
+            sec_field.text(seconds + "s");
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+    jQuery(function ($) {
+        var fiveMinutes = 60 * 5,
+            min_field = $('#minutes-mem'),
+            sec_field = $('#seconds-mem');
+        timerForMembers(fiveMinutes, min_field, sec_field);
+    });
+
+
     function changeFSize()
     {
         var fsize = (parseInt($("#people_filling").css('font-size')) - 2);
