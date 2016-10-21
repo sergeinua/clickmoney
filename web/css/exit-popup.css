@@ -1,12 +1,3 @@
-/* Exit popup */
-#exitpopup .modal-dialog {
-    width: 100%;
-}
-
-#exitpopup .modal-dialog, #exitpopup .modal-content, #exitpopup .modal-body {
-    background: transparent;
-}
-
 #exitpopup .fex-text {
     color: white;
     font-size: 11px;
@@ -44,16 +35,16 @@
     vertical-align: middle;
 }
 
-#exitpopup .modal-dialog {
-    position: relative;
-    transform: none;
-}
-
 #exitpopup .close-btn-text {
     text-align: right;
     color: #858585;
     font-size: 11px;
-    padding-top: 4px;
+    /*padding-top: 4px;*/
+}
+
+#exitpopup a {
+    color: #cbc4c4;
+    font-size: 11px;
 }
 
 #exitpopup .close {
@@ -140,16 +131,6 @@
     white-space: nowrap;
 }
 
-#exitpopup .container.content {
-    width: 32%;
-    margin-top: 10%;
-    margin-bottom: 4%;
-}
-
-#exitpopup .close-btn-block {
-    margin-top: 10px;
-}
-
 #exitpopup .vcenter.email {
     text-align: right;
     margin-top: 10px;
@@ -211,19 +192,6 @@
     width: 150px;
 }
 
-#exitpopup .modal-dialog {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    bottom: auto;
-    right: auto;
-    -webkit-transform: translate(-50%, 0) !important;
-    -moz-transform: translate(-50%, 0) !important;
-    -ms-transform: translate(-50%, 0) !important;
-    -o-transform: translate(-50%, 0) !important;
-    transform: translate(-50%, 0) !important;
-}
-
 #exitpopup .text-white {
     color: white;
     font-size: 11px;
@@ -235,10 +203,6 @@
 
 #exitpopup.modal.fade.in {
     background-color: rgba(253, 68, 43, 0.7);
-}
-
-#exitpopup .modal-header {
-    display: none;
 }
 
 .exit-background #warning-img {
@@ -254,10 +218,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    #exitpopup .container.content {
-        width: 90%;
-    }
-
     #exitpopup .col-xs-12.col-sm-5.vcenter.nameFE20, #exitpopup .col-xs-12.col-sm-5.vcenter {
         text-align: center;
     }
@@ -276,28 +236,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-    #exitpopup .container.content {
-        width: 50%;
-    }
-
     #exitpopup .exitDown {
         font-size: 11px;
     }
 }
 
 @media (min-width: 980px) and (max-width: 1279px) {
-    #exitpopup .container.content {
-        width: 50%;
-    }
-
     #exitpopup .exitDown {
         font-size: 12px;
-    }
-}
-
-@media (min-width: 1280px) and (max-width: 1450px) {
-    #exitpopup .container.content {
-        width: 40%;
     }
 }
 
