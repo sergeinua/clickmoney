@@ -197,10 +197,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <!--<img class="play_gd" src="images/gd_corner_fe1.png" />-->
                     <!--<img class="play_logo" src="images/ClickMoneyLogo/Logo-green.svg" />-->
                 </div><!--
-                --><div class="col-md-5 col-xs-12 vtop right_block">
+                --><div class="col-md-5 col-xs-12 vcenter right_block">
                     <div class="row text-center">
                         <div class="col-xs-12">
-                            <h2 class="exitWarning"><span>WARNING:</span> Download Your<br/><strong>Free ClickMoney Report</strong> Before<br/>This Exclusive Offer Expires!</h2>
+                            <h2 class="exitWarning"><span>WARNING:</span> Download Your <strong>Free ClickMoney Report</strong> Before This Exclusive Offer Expires!</h2>
                         </div>
                         <div class="col-xs-12">
                             <p class="exitNotification">Enter your first name and best email address below to proceed:</p>
@@ -211,18 +211,18 @@ $this->registerJs($script, yii\web\View::POS_READY);
                             <form method="post" id="freereport-form" action="javascript:;">
                                 <div class="form-fields">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-4 vcenter">
+                                        <div class="col-xs-12">
                                             <label for="name">My name's</label>
                                         </div><!--
-                                    --><div class="col-xs-12 col-sm-8 vcenter">
+                                        --><div class="col-xs-12">
                                             <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Enter your name here" title="Please enter 3-15 characters (alphabets only)">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-4 vcenter">
+                                        <div class="col-xs-12">
                                             <label for="email">My best email is</label>
                                         </div><!--
-                                    --><div class="col-xs-12 col-sm-8 vcenter">
+                                        --><div class="col-xs-12">
                                             <input type="email" id="email" name="email" required placeholder="Enter your email here">
                                         </div>
                                     </div>

@@ -15,6 +15,10 @@ body.freereport {
     color: #e75e32;
 }
 
+.freereport .content > .row {
+    background: #000;
+}
+
 .freereport .header .logo, .freereport .header .lic {
     text-align: center;
 }
@@ -38,9 +42,9 @@ body.freereport {
 }
 
 .freereport .exitWarning {
-    margin-top: 30px;
+    margin: 0 15px;
     text-transform: capitalize;
-    font-size: 2.1em;
+    font-size: 1.8em;
     color: #3e3e3e;
     text-align: center;
     font-weight: normal;
@@ -55,7 +59,7 @@ body.freereport {
     color: #878787;
     font-size: 1em;
     text-align: center;
-    margin-top: 15px;
+    margin: 15px 15px 0 15px;
 }
 
 .freereport .action-form button {
