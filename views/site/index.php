@@ -173,7 +173,7 @@ foreach ($forms as $form) {
             --><div class="col-md-6 close-btn-text hidden-xs hidden-sm vcenter">
                 <a href="javascript:void(0);" data-dismiss="modal" aria-hidden="true">Click here To Close Sign Up Form</a>
             </div><!--
-            --><div class="col-md-1 vcenter">
+            --><div class="col-md-1 col-xs-4 col-sm-6 vcenter">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
         </div>
