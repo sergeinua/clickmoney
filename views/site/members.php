@@ -7,8 +7,6 @@ use app\assets\MembersAsset;
 /* @var $this yii\web\View */
 MembersAsset::register($this);
 
-//Yii::$app->params['bodyClass'] = 'fe1';
-
 $rd = 3;
 $gi = 409;
 
@@ -52,13 +50,19 @@ $script = <<< JS
                $('.arrow-img').remove();
            }
        );
+       $('.membership-header #gaff.gaff form#caffForm').on('submit', function() {
+            $('#loading_sec').modal('show');
+       });
+       $('.last-chace-register #gaff.gaff.middle-form form#caffForm').on('submit', function() {
+            $('#loading_sec').modal('show');
+       });
    });
 JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);
 ?>
 
-<?= \Yii::$app->view->renderFile('@app/views/site/getip.php'); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <header class="membership-header">
     <div class="membership-wrapper">
@@ -102,7 +106,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <img class="img-responsive img-membership1" src="images/imagineForVideoLarge1.jpg">
                     <img class="img-responsive play-button" src="images/play.png">
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
-                    <p>Watch Video Now! Expires in: 00h:03m:27s</p>
+                    <p>Watch Video Now! Expires in: <span id="time-exit">00h:03m:27s</span></p>
                 </div>
                 <div class="col-md-5 right_block">
                     <h2 class="register-right-text">Please

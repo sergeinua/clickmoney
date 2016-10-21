@@ -58,6 +58,10 @@ $config = [
 			setcookie('affClickID', $affClickID, (time()+2592000), "/", str_replace('www.','',Yii::$app->request->serverName));
 			setcookie('affClickID', $affClickID, (time()+2592000), "/", str_replace('www.','.',Yii::$app->request->serverName));
 		}
+		$location_data = \app\helpers\GetIp::getIpAddr();
+        \Yii::$app->params['UCOUNTRY'] = $location_data['UCOUNTRY'];
+        \Yii::$app->params['UCITY'] = $location_data['UCITY'];
+
     },
 ];
 

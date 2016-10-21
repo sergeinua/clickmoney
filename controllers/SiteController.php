@@ -77,7 +77,7 @@ class SiteController extends Controller
      */
     public function actionValidate($form)
     {
-        if ($form == 'index') {
+        if ($form == 'index' || $form == 'main') {
             $forms[] = ['forms' => Yii::$app->params['esp_forms']];
             $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
         } else if ($form == 'freereport') {
@@ -215,5 +215,28 @@ class SiteController extends Controller
     public function actionThank()
     {
         return $this->render('thank_you');
+    }
+
+    /**
+     * Exit page for the members page
+     * @return string
+     */
+    public function actionLaststep()
+    {
+        return $this->render('laststep');
+    }
+
+    /**
+     * FE2 page
+     * @return string
+     */
+    public function actionMain()
+    {
+        $forms[] = ['forms' => Yii::$app->params['esp_forms']];
+        $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
+
+        return $this->render('main', [
+            'forms' => $forms
+        ]);
     }
 }

@@ -14,8 +14,7 @@ class MembersAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/fe1.css',
-        'css/exit-popup.css'
+        'css/style_members.css',
     ];
     public $js;
     public $depends = [
@@ -28,6 +27,7 @@ class MembersAsset extends AssetBundle
             'js/jquery.animateNumber.min.js',
             'js/jquery.cookie.js',
             'https://gaff.s3.amazonaws.com/js/gaff.js',
+            'https://s3.amazonaws.com/caff/js/formhelpers.min.js',
             'js/counter.js',
             'exitsplash'
         ];

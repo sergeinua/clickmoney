@@ -38,6 +38,21 @@ $(document).ready(function(){
         window.onbeforeunload = null;
     });
 
+    $('#fe-2-form').on('submit', function () {
+        var name = $('#fe-2-form #name').val(),
+            email = $('#fe-2-form #email').val();
+        if (typeof from_page == 'undefined') {
+            from_page = 'fe';
+        }
+        if (from_page == 'mobile') {
+            from_page = 'fe_mobile';
+        }
+        validateEmail(email, from_page, name);
+        window.onbeforeunload = null;
+    });
+
+
+
     var is_shown = false;
     //
     // window.onbeforeunload = function () {
