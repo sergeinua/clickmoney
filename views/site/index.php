@@ -27,7 +27,7 @@ $script = <<< JS
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
 
-$this->title = 'Front End 1 page';
+$this->title = 'ClickMoney.com';
 
 
 $mob = new Mobile_Detect();
@@ -42,94 +42,92 @@ if ($mob->isTablet() || $mob->isMobile()) {
     <?php endif; ?>
 </script>
 
-    <div class="image-background">
-        <div class="bg">
-            <div class="container content">
-                <div class="row">
-                    <div class="col-xs-12 video-through vcenter text-center">
-                        <img class="img-responsive" src="/images/fe-1-video.jpg" />
-                        <img class="play" src="/images/play.png" />
-                        <img class="play_gd" src="/images/gd_corner_fe1.png" />
-                        <img class="play_logo" src="/images/ClickMoneyLogo/Logo-green.svg" />
-                    </div>
-                </div>
-                <div class="row background-white main-block">
+
+    <div class="container content">
+        <div class="row">
+            <div class="col-xs-12 video-through vcenter text-center">
+                <img class="img-responsive" src="/images/fe-1-video.jpg" />
+                <img class="play" src="/images/play.png" />
+                <img class="play_gd" src="/images/gd_corner_fe1.png" />
+                <img class="play_logo" src="/images/ClickMoneyLogo/Logo-green.svg" />
+            </div>
+        </div>
+        <div class="row background-white main-block">
+            <div class="col-xs-12">
+                <div class="row text-uppercase text-center">
                     <div class="col-xs-12">
-                        <div class="row text-uppercase text-center">
-                            <div class="col-xs-12">
-                                <span class="main-text">
-                                    <span class="limited-spots">LIMITED SPOTS</span>
-                                    Enter your <u><strong>first name</strong></u> and <u><strong>best email address</strong></u>
-                                    below to proceed
-                                </span>
-                            </div>
-                        </div>
-                        <div class="row action-form">
-                            <form method="post" id="main-form" action="javascript:;">
-                                <div class="col-md-6 col-xs-12  text-center">
-                                    <div class="form-fields">
-                                        <label for="name">My name’s</label>
-                                        <input name="name" id="name" type="text" placeholder="John" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" required title="Please enter 3-15 characters (alphabets only)"/>
-                                        <label for="email">and my best email is</label>
-                                        <input name="email" id="email" type="email" placeholder="john@example.com" required title="Please enter your email here"/>
-                                    </div>
-                                </div><!--
-                                --><div class="col-md-4 col-xs-12 text-center">
-                                    <button type="submit">
-                                        <div class="row">
-                                            <div class="col-md-11 col-xs-10">
-                                                OPEN MY CLICKMONEY ACCOUNT
-                                            </div>
-                                            <div class="arrow">
-                                                <img src="/images/arrow-fe-1.png" />
-                                            </div>
-                                        </div>
-                                    </button>
-                                    <div class="warranty-text"><img src="/images/block.png" /> <span>Guaranteed Secure Access Ensured by Trusted Companies</span></div>
-                                </div>
-                            </form><!--
-                                --><div class="col-md-2 col-xs-12 icons-block">
-                                <div class="row">
-                                    <div class="col-md-4 col-xs-3">
-                                        <a href="#"><img class="m" src="/images/m-seal.png"></a>
-                                    </div><!--
-                                        --><div class="col-md-8 col-xs-3">
-                                        <a href="#"><img class="t" src="/images/t-seal.jpg"></a>
-                                    </div><!--
-                                        --><div class="col-md-4 col-xs-3">
-                                        <a href="#"><img class="v" src="/images/v-seal.png"></a>
-                                    </div><!--
-                                        --><div class="col-md-8 col-xs-3">
-                                        <a href="#"><img class="n" src="/images/n-seal.png"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    <span class="main-text">
+                                        <span class="limited-spots">LIMITED SPOTS</span>
+                                        Enter your <u><strong>first name</strong></u> and <u><strong>best email address</strong></u>
+                                        below to proceed
+                                    </span>
                     </div>
                 </div>
-                <div class="container-fluid footer">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-1 vcenter logo">
-                            <a href=""><img src="/images/ClickMoneyLogo/Logo-gray.svg"></a>
+                <div class="row action-form">
+                    <form method="post" id="main-form" action="javascript:;">
+                        <div class="col-md-6 col-xs-12  text-center">
+                            <div class="form-fields">
+                                <label for="name">My name’s</label>
+                                <input name="name" id="name" type="text" placeholder="John" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" required title="Please enter 3-15 characters (alphabets only)"/>
+                                <label for="email">and my best email is</label>
+                                <input name="email" id="email" type="email" placeholder="john@example.com" required title="Please enter your email here"/>
+                            </div>
                         </div><!--
-                            --><div class="col-xs-12 col-md-7 vcenter menu">
-                            <ul>
-                                <li><a href="<?= Url::toRoute(['site/disclaimer']); ?>" target="_blank">Government Disclaimer</a></li>
-                                <li><a href="<?= Url::toRoute(['site/privacy-policy']); ?>" target="_blank">Privacy Policy</a></li>
-                                <li><a href="<?= Url::toRoute(['site/terms']); ?>" target="_blank">Terms</a></li>
-                                <li><a href="<?= Url::toRoute(['site/earnings-disclaimer']); ?>" target="_blank">Earnings Disclaimer</a></li>
-                                <li><a href="<?= Url::toRoute(['site/spam-policy']); ?>" target="_blank">Spam Policy</a></li>
-                                <li><a href="mailto: <?= Yii::$app->params['support_email']; ?>">Support</a></li>
-                            </ul>
-                        </div><!--
-                            --><div class="col-md-4 col-xs-12 text-right vcenter copyright">
-                            &copy; <?= date('Y'); ?> ClickMoney. All Rights Reserved.
+                                    --><div class="col-md-4 col-xs-12 text-center">
+                            <button type="submit">
+                                <div class="row">
+                                    <div class="col-md-11 col-xs-10">
+                                        OPEN MY CLICKMONEY ACCOUNT
+                                    </div>
+                                    <div class="arrow">
+                                        <img src="/images/arrow-fe-1.png" />
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="warranty-text"><img src="/images/block.png" /> <span>Guaranteed Secure Access Ensured by Trusted Companies</span></div>
+                        </div>
+                    </form><!--
+                                    --><div class="col-md-2 col-xs-12 icons-block">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-3">
+                                <a href="#"><img class="m" src="/images/m-seal.png"></a>
+                            </div><!--
+                                            --><div class="col-md-8 col-xs-3">
+                                <a href="#"><img class="t" src="/images/t-seal.jpg"></a>
+                            </div><!--
+                                            --><div class="col-md-4 col-xs-3">
+                                <a href="#"><img class="v" src="/images/v-seal.png"></a>
+                            </div><!--
+                                            --><div class="col-md-8 col-xs-3">
+                                <a href="#"><img class="n" src="/images/n-seal.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-xs-12 col-md-1 vcenter logo">
+                    <a href=""><img src="/images/ClickMoneyLogo/Logo-gray.svg"></a>
+                </div><!--
+                                --><div class="col-xs-12 col-md-7 vcenter menu">
+                    <ul>
+                        <li><a href="<?= Url::toRoute(['site/disclaimer']); ?>" target="_blank">Government Disclaimer</a></li>
+                        <li><a href="<?= Url::toRoute(['site/privacy-policy']); ?>" target="_blank">Privacy Policy</a></li>
+                        <li><a href="<?= Url::toRoute(['site/terms']); ?>" target="_blank">Terms</a></li>
+                        <li><a href="<?= Url::toRoute(['site/earnings-disclaimer']); ?>" target="_blank">Earnings Disclaimer</a></li>
+                        <li><a href="<?= Url::toRoute(['site/spam-policy']); ?>" target="_blank">Spam Policy</a></li>
+                        <li><a href="mailto: <?= Yii::$app->params['support_email']; ?>">Support</a></li>
+                    </ul>
+                </div><!--
+                                --><div class="col-md-4 col-xs-12 text-right vcenter copyright">
+                    &copy; <?= date('Y'); ?> ClickMoney. All Rights Reserved.
+                </div>
+            </div>
+        </div>
     </div>
+
     <!-- Just joined popup -->
     <div class="join-popup">
         <div class="container-fluid">

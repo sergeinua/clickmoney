@@ -8,6 +8,8 @@ ExitAsset::register($this);
 
 Yii::$app->params['bodyClass'] = 'fe2 freereport';
 
+$this->title = 'ClickMoney.com';
+
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {
     $from_page = 'mobile';

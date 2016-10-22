@@ -15,6 +15,8 @@ if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
 }
 
+$this->title = 'ClickMoney.com';
+
 $script_init = <<< JS
     if(top.location != self.location)
     {

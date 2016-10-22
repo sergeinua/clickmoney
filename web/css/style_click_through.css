@@ -1,6 +1,15 @@
 html, body {
     height: 100%;
-    margin: 0;
+    background: url(../images/bg_dollar.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: auto !important;
+    height: 100%; /* for old IE */
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 input[type="text"]:focus, input[type="email"]:focus {
@@ -49,25 +58,6 @@ input[type="text"]:focus, input[type="email"]:focus {
 }
 .navbar-default {
     border: none;
-}
-
-.image-background {
-    background: url(../images/bg.jpg) no-repeat center center;
-    background-size: cover;
-    min-height: 100%;
-}
-
-.image-background .bg {
-    min-height: 100%;
-    background: rgb(45,168,115); /* Old browsers */
-    background: -webkit-linear-gradient(45deg,  rgba(45,168,115,0.3) 0%,rgba(15,170,156,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: -moz-linear-gradient(45deg,  rgba(45,168,115,0.3) 0%, rgba(15,170,156,0.3) 100%); /* FF3.6-15 */
-    background: linear-gradient(45deg,  rgba(45,168,115,0.3) 0%,rgba(15,170,156,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2da873', endColorstr='#0faa9c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
 }
 
 /*header*/
@@ -694,10 +684,6 @@ span.button20 {
     border-bottom:1px solid #f1f1f1;
 }
 
-.buttonInTable {
-    background-image: url(images/bg.jpg);
-}
-
 .alertDashb {
     background-color:white;
     border:none;
@@ -833,8 +819,7 @@ span.button20 {
 /*membership*/
 .membship1 {
     background: url("../images/memberShip.png") no-repeat;
-    background-size: cover;
-    background-position: 50% 50%
+    background-position: 50% 50%;
     background-size: auto;
     height:500px;
 }
@@ -851,10 +836,8 @@ span.button20 {
 
 .membship4 {
     height: 400px;
-    background-image: url("../images/Untitled-4.png");
     background-size: cover;
-    background-position: 50% 50%
-    background-color: #7f7367;
+    background: #7f7367 url("../images/Untitled-4.png") 50% 50%;
 }
 
 .elOne0 {
