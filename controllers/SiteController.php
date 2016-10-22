@@ -209,15 +209,6 @@ class SiteController extends Controller
     }
 
     /**
-     * Testing page for modal
-     * @return string
-     */
-    public function actionThank()
-    {
-        return $this->render('thank_you');
-    }
-
-    /**
      * Exit page for the members page
      * @return string
      */

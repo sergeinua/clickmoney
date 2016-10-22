@@ -244,9 +244,11 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                 </div>
                             </form>
                         </div>
-                    </div>
-                    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 exitDown">
-                        <span>HURRY!</span> Download Link Expires in: <span id="time-exit">00h : 03m : 27s</span>
+                    </div><!--
+                    --><div class="row">
+                        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 exitDown">
+                            <span>HURRY!</span> Download Link Expires in: <span id="time-exit">00h : 03m : 27s</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,4 +286,4 @@ foreach ($forms as $form) {
 }
 ?>
 
-<?= \Yii::$app->view->renderFile('@app/views/site/thank_you.php'); ?>
+<?= \Yii::$app->view->renderFile('@app/views/site/popups/thankYou.php'); ?>

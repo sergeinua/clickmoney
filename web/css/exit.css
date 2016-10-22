@@ -9,7 +9,7 @@ body.freereport {
 }
 
 
-.freereport .action-form input#name:focus, .fe2 .action-form input#email:focus,
+.freereport .action-form input#name:focus, .freereport .action-form input#email:focus,
 .freereport .action-form input#name.filled, .freereport .action-form input#email.filled {
     border: 2px solid #e75e32;
     color: #e75e32;

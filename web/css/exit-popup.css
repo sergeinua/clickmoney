@@ -1,15 +1,27 @@
-#exitpopup .fex-text {
-    color: white;
-    font-size: 11px;
+.freereport .modal-header {
+    border: none;
+    padding-bottom: 0;
 }
 
-#exitpopup .feExitRed {
-    background-color: #fd442b;
-    color: white;
-    padding: 0 5px;
+.freereport .block-current-people {
+    font-size: 12px;
+    padding: 0 25px 15px 25px;
 }
 
-#exitpopup span.licenceLeft {
+.freereport .block-current-people img {
+    height: 20px;
+}
+
+.freereport .close-btn-block button {
+    width: auto;
+    outline: none;
+}
+.freereport .close-btn-block button span {
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+
+.freereport span.licenceLeft {
     display: inline-block;
     background-color: #fd842b;
     color: white;
@@ -21,7 +33,7 @@
     border-radius: 50%;
 }
 
-#exitpopup span.licenceRight {
+.freereport span.licenceRight {
     display: inline-block;
     background-color: white;
     font-weight: bold;
@@ -35,234 +47,127 @@
     vertical-align: middle;
 }
 
-#exitpopup .close-btn-text {
-    text-align: right;
-    color: #858585;
-    font-size: 11px;
-    /*padding-top: 4px;*/
+.freereport .action-form input {
+    width: 100% !important;
+    margin: 0 !important;
+    font-size: 0.9em !important;
 }
 
-#exitpopup a {
-    color: #cbc4c4;
-    font-size: 11px;
-}
-
-#exitpopup .close {
-    font-weight: 100;
-    font-size: 25px;
-    text-align: center;
-    border-left: 2px solid #cbc4c4;
-    padding-left: 10px;
-}
-
-#exitpopup .feExitWar {
-    color: #fd442b;
-}
-
-#exitpopup .clickbtFE2.feExitWar0 {
-    font-size: 21px;
-}
-
-#exitpopup .notifExit {
-    color: #878787;
-    font-size: 10px;
-    text-align: center;
-    margin-top: 3%;
-}
-
-#exitpopup .nameFE20, #exitpopup .emailFE20 {
-    text-align: right;
-    font-weight: bold;
-    margin-top: 4%;
-    font-size: 12px;
-}
-
-#exitpopup .nameExit {
-    color: #fd442b;
-    border: none;
-}
-
-#exitpopup .nameFE2, #exitpopup .emailFE2 {
-    text-align: left;
-    color: #c0c0c0;
-    margin-top: 2%;
-    font-size: 15px;
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-}
-
-#exitpopup .action-form input[type="text"] {
-    border: none;
-    background: #f5f5f5;
-    color: #fd442b;
-}
-
-#exitpopup .action-form input#name:focus {
-    color: #fd442b;
-}
-
-#exitpopup .action-form input#email {
-    border: 2px dashed #c0c0c0;
-}
-
-#exitpopup #exit-send-btn {
-    background: #e75e32;
-    padding: 0 10px;
-    width: 90%;
-    margin: auto;
-    height: 50px;
-}
-
-#exitpopup .warranty-text {
-    font-size: 0.7em;
-}
-
-#exitpopup .exitDown {
-    border: 2px dashed #c0c0c0;
-    font-size: 11px;
-    padding: 3% 4%;
-    margin-top: 3%;
-    margin-left: 8%;
-    margin-bottom: 5%;
-}
-
-#exitpopup .exitDown span {
+.freereport .action-form input#name:focus, .freereport .action-form input#email:focus,
+.freereport .action-form input#name.filled, .freereport .action-form input#email.filled {
+    border: 2px solid #e75e32;
     color: #e75e32;
-    font-weight: 900;
-    white-space: nowrap;
 }
 
-#exitpopup .vcenter.email {
-    text-align: right;
-    margin-top: 10px;
+.freereport .feExitRed {
+    background-color: #fd442b;
+    font-weight: bold;
+    padding: 0 3px;
+    color: #fff;
 }
 
-#exitpopup .vcenter.email input#email {
-    border: none;
-    padding: 10px;
-    border: 2px dashed #c0c0c0;
+.freereport .exitWarning {
+    margin: 0 15px;
+    text-transform: capitalize;
+    font-size: 1.8em;
+    color: #3e3e3e;
+    text-align: center;
+    font-weight: normal;
 }
 
-#exitpopup .vcenter.email input#email:focus {
+.freereport .exitWarning span {
+    color: #fd442b;
+    font-weight: bold;
+}
+
+.freereport .exitNotification {
     color: #878787;
+    font-size: 1em;
+    text-align: center;
+    margin: 15px 15px 0 15px;
 }
 
-#exitpopup .vcenter.nameFE2.nameExit #name {
-    text-align: left;
-    background-color: #f5f5f5;
-    width: 100%;
-    padding: 10px;
+.freereport .action-form button {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e74c32+0,e75e32+100 */
+    background: rgb(231,76,50); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(231,76,50,1) 0%, rgba(231,94,50,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(231,76,50,1) 0%,rgba(231,94,50,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(231,76,50,1) 0%,rgba(231,94,50,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74c32', endColorstr='#e75e32',GradientType=1 ); /* IE6-9 */
 }
 
-#exitpopup .vcenter.email #email {
-    text-align: left;
-    width: 100%;
-}
-
-#exitpopup .vcenter.nameFE20, #exitpopup .col-xs-12.col-sm-5.vcenter {
-    font-size: 14px;
-}
-
-#exitpopup .vcenter label {
-    margin-right: 0;
-}
-
-#exitpopup .main-arrow {
+.freereport .main-arrow {
+    display: inherit;
     position: absolute;
     right: -60px;
-    width: 70px;
-    top: 45px;
+    height: 97px;
+    top: -97px
 }
 
-#exitpopup #exit-send-btn {
-    letter-spacing: normal;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-#exitpopup .exitDown {
+.freereport .exitDown {
+    border: 2px dashed #c0c0c0;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    margin-bottom: 15px;
     text-align: center;
-    font-size: 11px;
 }
 
-#exitpopup .modal-header {
-    border: none;
+.freereport .exitDown span {
+    color: #e75e32;
+    font-weight: bold;
+    white-space: nowrap;
 }
-
-#exitpopup .col-md-2.col-xs-6.logo.col-sm-3 {
-    width: 150px;
+/* md */
+@media (min-width: 992px) {
+    .freereport .action-form .form-fields label {
+        text-align: left !important;
+    }
 }
-
-#exitpopup .text-white {
-    color: white;
-    font-size: 11px;
-}
-
-#exitpopup .text-white .col-lg-4.col-md-12, #exitpopup .text-white .col-lg-6.col-md-12 {
-    padding-top: 5px;
-}
-
-#exitpopup.modal.fade.in {
-    background-color: rgba(253, 68, 43, 0.7);
-}
-
-.exit-background #warning-img {
-    height: 19px;
-}
-
-#exitpopup #exit-send-btn {
-    font-size: 12px;
-}
-
-#exitpopup .col-xs-12.col-sm-5.vcenter {
-    text-align: right;
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-    #exitpopup .col-xs-12.col-sm-5.vcenter.nameFE20, #exitpopup .col-xs-12.col-sm-5.vcenter {
-        text-align: center;
+/* lg */
+@media (min-width: 1200px) {
+    .freereport .header .logo {
+        text-align: left;
     }
 
-    #exitpopup #exit-send-btn {
-        font-size: 9px;
+    .freereport .header .text-white {
+        text-align: right;
     }
 
+    .freereport .header .lic {
+        text-align: right;
+    }
+}
+
+/* FullHD and higher */
+@media (min-width: 1800px) {
+    .freereport .header .logo {
+        width: 10%;
+    }
+
+    .freereport .header .text-white {
+        width: 77%;
+    }
+
+    .freereport .header .lic {
+        width: 13%;
+    }
+
+    .freereport .action-form button {
+        width: 442px;
+    }
+
+    .freereport .main-arrow {
+        right: -40px;
+    }
+}
+
+/* before sm */
+@media (max-width: 767px) {
     #exitpopup .modal-dialog {
+        top: 0;
+        transform: translate(-50%, 0) !important;
+        width: 98%;
         margin: 0;
     }
-
-    #exitpopup .main-arrow {
-        display: none;
-    }
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-    #exitpopup .exitDown {
-        font-size: 11px;
-    }
-}
-
-@media (min-width: 980px) and (max-width: 1279px) {
-    #exitpopup .exitDown {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 1280px) {
-    #exitpopup .exitDown {
-        font-size: 12px;
-    }
-}
-
-#exitpopup .modal-content {
-    box-shadow: none;
-    border: none;
-}
-
-.block-current-people {
-    font-size: 12px;
-    padding: 0px 25px 15px 25px;
-}
-
-#exitpopup .block-current-people img {
-    height: 20px;
-}

@@ -79,6 +79,10 @@ body.fe2 {
     background-color: white;
 }
 
+.fe2 .content > .row {
+    background: #000;
+}
+
 .modal .modal-dialog {
     position: absolute;
     top: 50%;
@@ -90,6 +94,7 @@ body.fe2 {
     -ms-transform: translate(-50%, -50%) !important;
     -o-transform: translate(-50%, -50%) !important;
     transform: translate(-50%, -50%) !important;
+    margin: 0;
 }
 
 .fe2 .header {
@@ -215,7 +220,7 @@ body.fe2 {
     margin: 0 auto;
     width: 90%;
 
-    font-size: 0.8em;
+    font-size: 0.9em;
     display: inline-block;
     outline: none;
 }
@@ -242,7 +247,7 @@ body.fe2 {
 }
 
 .fe2 .icons-block {
-    margin: 15px auto 15px auto;
+    margin: 5px auto 15px auto;
 }
 
 .icons-block .row {
@@ -371,6 +376,7 @@ body.fe2 {
     color: #b0b0b0;
     font-size: 0.9em;
     vertical-align: middle;
+    padding: 0 5px;
 }
 
 .warranty-text span, .warranty-text img {
@@ -387,7 +393,7 @@ body.fe2 {
 
 .fe2 .footer {
     margin-top: 30px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .footer .logo img {
@@ -429,6 +435,7 @@ body.fe2 {
 
 .fe2 .content .right_block {
     padding-top: 15px;
+    background-color: #fff;
 }
 
 .fe2 .main-arrow {
@@ -464,27 +471,35 @@ body.fe2 {
 /* md */
 @media (min-width: 992px) {
 
-    label, input[type=text], input[type=email] {
-        float: inherit;
-        width: auto;
+    .fe1 .action-form .form-fields label {
+        font-size: 0.8em;
+    }
+
+    .fe1 .action-form .form-fields {
+        padding: 3px 0 0 0;
+    }
+
+    .fe1 #main-form > div:first-child {
+        text-align: right;
+    }
+
+    .fe1 .action-form .form-fields label {
+        width: 40%;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .fe1 .action-form .form-fields input {
         margin: 0;
-        clear: inherit;
+        width: 55%;
     }
 
     .fe2 label, .fe2 input[type=text], .fe2 input[type=email] {
         float: none;
     }
 
-    .action-form input#name {
-        width: 60px;
-    }
-
     .fe2 .action-form input#name, .fe2 .action-form input#email {
         width: 100%;
-    }
-
-    .action-form .form-fields {
-        /*font-size: 0.8em;*/
     }
 
     .fe2 .action-form .form-fields {
@@ -503,18 +518,9 @@ body.fe2 {
         padding: 0;
     }
 
-    .action-form .form-fields label, .action-form .form-fields input {
-        margin-right: 15px;
-    }
-
     .fe2 .action-form .form-fields label, .fe2 .action-form .form-fields input {
         margin: 0;
         vertical-align: middle;
-    }
-
-    .fe2 .action-form .form-fields label {
-        /*width: 90%;*/
-        /*margin-right: 10px;*/
     }
 
     .fe2 .action-form .form-fields input {
@@ -584,7 +590,7 @@ body.fe2 {
     }
 
     .fe2 .action-form {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .icons-block .row {
@@ -636,6 +642,13 @@ body.fe2 {
     }
 }
 
+/* lg */
+@media (min-width: 1200px) {
+    .action-form .form-fields label {
+        font-size: 1em;
+    }
+}
+
 /* FullHD and higher */
 @media (min-width: 1800px) {
     .container, .fe2 .header, .fe2 .footer {
@@ -646,19 +659,43 @@ body.fe2 {
         font-size: 2em;
     }
 
-    .action-form .form-fields {
+    .fe1 .action-form .form-fields input {
+        width: auto;
+    }
+
+    .fe1 label, input[type=text], .fe1  input[type=email] {
+        float: inherit;
+        width: auto;
+        margin: 0;
+        clear: inherit;
+    }
+
+    .fe1 #main-form > div:first-child {
+        text-align: center;
+    }
+
+    .fe1 .action-form .form-fields label {
+        width: auto;
+    }
+
+    .fe1 .action-form input#name {
+        width: 60px;
+    }
+
+    .fe1 .action-form .form-fields label, .fe1 .action-form .form-fields input {
+        margin-right: 15px;
+    }
+
+    .fe1 .action-form .form-fields {
         font-size: 1.25em;
+        padding: 12px 0;
     }
 
-    .fe2 .action-form .form-fields {
-        font-size: 1.1em;
-    }
-
-    .action-form input#name {
+    .fe1 .action-form input#name {
         width: 100px;
     }
 
-    .action-form button {
+    .fe1 .action-form button {
         background-repeat: no-repeat;
         background-position: inherit;
         background-attachment: inherit;
@@ -668,19 +705,23 @@ body.fe2 {
         font-size: 1em;
     }
 
+    .fe1 .action-form button .row .arrow {
+        right: 20px;
+    }
+    .fe1 .action-form button .row .arrow img {
+        width: auto;
+    }
+
+    .fe2 .action-form .form-fields {
+        font-size: 1.1em;
+    }
+
     .fe2 .action-form .form-fields {
         width: 410px;
     }
 
     .fe2 .action-form button {
         width: 410px;
-    }
-
-    .action-form button .row .arrow {
-        right: 20px;
-    }
-    .action-form button .row .arrow img {
-        width: auto;
     }
 
     .icons-block {
