@@ -2056,3 +2056,9 @@ p.register-text {
         height: 554px;
     }
 }
+
+@media (min-width: 1097px) and (max-width: 1399px) {
+    body.laststep .membership-header {
+        margin-bottom: 80px;
+    }
+}
