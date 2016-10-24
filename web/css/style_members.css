@@ -1068,8 +1068,8 @@ li.active {
     }
 
     .last-chace-register .membership-block-text {
-        text-align: right;
-        width: 89%;
+        text-align: center;
+        width: 100%;
     }
 
     button .col-xs-9 {
@@ -1267,7 +1267,7 @@ li.active {
 
     .membership-boxIcon div.row {
         text-align: center;
-    } 
+    }
 
     .membership-welcome {
     font-size: 1.5em;
@@ -1275,7 +1275,7 @@ li.active {
 
     .membership-biz-area h2 {
     font-size: 1.9em;
-    }  
+    }
 
     .membership-header .container {
         width: 98%;
@@ -1333,7 +1333,7 @@ li.active {
     }
 
     .register-last-row {
-        margin-bottom: 0; 
+        margin-bottom: 0;
     }
 
     .mem-third-arrow-left {
@@ -1693,7 +1693,7 @@ li.active {
         background-position: inherit;
         background-attachment: inherit;
         letter-spacing: 0.25em;
-        font-size: 0.9em;
+        font-size: 0.85em;
         width: 470px;
     }
 

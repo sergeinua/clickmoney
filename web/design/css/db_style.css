@@ -94,52 +94,52 @@ body {
 }
 
 .dashboard .glyphicon2 {
-    background: url(../images/dashboard/positions1.png) no-repeat;
+    background: url(../images/svg/bullseye.svg) no-repeat;
 }
 
 .dashboard a:hover i.glyphicon2 {
-    background: url("../images/dashboard/positions.png") no-repeat;
+    background: url("../images/svg/bullseye-white.svg") no-repeat;
 }
 
 .dashboard .glyphicon3 {
-    background: url(../images/dashboard/user.png) no-repeat;
+    background: url(../images/svg/user_square.svg) no-repeat;
 }
 
 .dashboard a:hover i.glyphicon3 {
-    background: url("../images/dashboard/user1.png") no-repeat;
+    background: url("../images/svg/user_square_white.svg") no-repeat;
 }
 
 .dashboard .glyphicon4 {
     padding-top: 1%;
-    background: url(../images/dashboard/billing.png) no-repeat;
+    background: url(../images/svg/credit_card.svg) no-repeat;
 }
 
 .dashboard a:hover i.glyphicon4 {
-    background: url("../images/dashboard/billing1.png") no-repeat;
+    background: url("../images/svg/credit_card-white.svg") no-repeat;
 }
 
 .dashboard .glyphicon5 {
-    background: url(../images/dashboard/guide.png) no-repeat;
+    background: url(../images/svg/map.svg) no-repeat;
 }
 
 .dashboard a:hover i.glyphicon5 {
-    background: url("../images/dashboard/guide1.png") no-repeat;
+    background: url("../images/svg/mail-white.svg") no-repeat;
 }
 
 .dashboard .glyphicon6 {
-    background: url(../images/dashboard/list.png) no-repeat;
+    background: url(../images/svg/list_2.svg) no-repeat;
 }
 
 .dashboard a:hover i.glyphicon6 {
-    background: url("../images/dashboard/list1.png") no-repeat;
+    background: url("../images/svg/list_2_white.svg") no-repeat;
 }
 
 .dashboard .glyphicon7 {
-    background: url(../images/dashboard/letter.png) no-repeat;
+    background: url(../images/svg/map.svg) no-repeat;
 }
 
 .dashboard a:hover i.glyphicon7 {
-    background: url("../images/dashboard/letter1.png") no-repeat;
+    background: url("../images/svg/map-white.svg") no-repeat;
 }
 /*************************right block with table*********************/
 .dashboard .main {
