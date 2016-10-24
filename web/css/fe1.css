@@ -345,7 +345,7 @@ body.fe2 {
 }
 
 .action-form input#email {
-    font-size: 0.9em;
+    /*font-size: 0.9em;*/
     border: none;
     border-bottom: 2px dashed #b0b0b0;
 }
@@ -585,8 +585,10 @@ body.fe2 {
         position: absolute;
         /*top: -65px;*/
         right: -40px;
-        height: 97px;
-        top: -97px
+        /*height: 97px;*/
+        /*top: -97px;*/
+        height: 80px;
+        top: -70px;
     }
 
     .fe2 .action-form {
@@ -745,5 +747,103 @@ body.fe2 {
 
     .icons-block img.t {
         width: 80px;
+    }
+}
+
+/*adjustments for the video*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    body.fe2 .left_block img.img-responsive {
+        height: 371px;
+    }
+
+    body.fe2 span.main-text span.limited-spots + p {
+        margin: 0px auto;
+        font-size: 16px;
+    }
+
+    body.fe2 .content .right_block {
+        min-height: 371px;
+    }
+
+    body.fe2 #fe-2-form .form-fields {
+        font-size: 0.8em;
+    }
+
+    body.fe2 .action-form button {
+        font-size: 0.8em;
+    }
+
+    body.fe2 .action-form button .row {
+        margin: 13px 0;
+    }
+
+    body.fe2 .warranty-text {
+        font-size: 0.7em;
+    }
+
+    body.fe2 .action-form .form-fields > .row {
+        margin-bottom: 8px;
+    }
+
+    body.fe2 .main-arrow {
+        height: 80px;
+        top: -70px;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    body.fe2 .img-responsive {
+        height: 448px;
+    }
+
+    body.fe2 .limited-spots {
+        font-size: 0.6em;
+    }
+
+    body.fe2 span.main-text span.limited-spots + p {
+        margin: 12px auto;
+        font-size: 20px;
+    }
+
+    body.fe2 .content .right_block {
+        min-height: 371px;
+    }
+
+    body.fe2 #fe-2-form .form-fields {
+        font-size: 0.8em;
+    }
+
+    body.fe2 .action-form button {
+        font-size: 0.8em;
+    }
+
+    body.fe2 .action-form button .row {
+        margin: 16px 0;
+    }
+
+    body.fe2 .warranty-text {
+        font-size: 0.7em;
+    }
+
+    body.fe2 .action-form .form-fields > .row {
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 1800px) {
+    body.fe2 .left_block img.img-responsive {
+        height: 613px;
+    }
+
+    body.fe2 .main-text {
+        font-size: 2.1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    body.fe2 .main-arrow {
+        height: 97px;
+        top: -97px;
     }
 }

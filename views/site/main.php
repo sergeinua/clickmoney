@@ -54,7 +54,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
 <div class="container content">
     <div class="row">
         <div class="col-md-7 col-xs-12 video-through vcenter text-center left_block">
-            <img class="img-responsive" src="images/imagineForVideoLarge.jpg">
+            <img class="img-responsive" src="images/video(16-9).jpg">
             <img class="play" src="images/play.png" />
             <!--<img class="play_gd" src="images/gd_corner_fe1.png" />-->
             <!--<img class="play_logo" src="images/ClickMoneyLogo/Logo-green.svg" />-->
@@ -63,7 +63,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
             <div class="row text-uppercase text-center">
                 <div class="col-xs-12">
                             <span class="main-text">
-                                <span class="limited-spots">LIMITED SPOTS</span>
+                                <span class="limited-spots hidden-md">LIMITED SPOTS</span>
                                 <p>Enter your <u><strong>first name</strong></u> and <u><strong>best email address</strong></u>
                                 below to proceed</p>
                             </span>
