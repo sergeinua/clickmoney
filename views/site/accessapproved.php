@@ -37,7 +37,7 @@ $this->title = 'ClickMoney.com';
 <div class="container content">
     <div class="row content0">
         <div class="col-md-7 left_block left_block1">
-            <img class="img-responsive img-left-block1" src="/images/imagineForVideoLarge.jpg">
+            <img class="img-responsive img-left-block1" src="/images/video(16-9).jpg">
             <img class="img-responsive play-button" src="/images/play.png">
         </div>
         <div class="col-md-5 right_block right_block1">

@@ -6,6 +6,7 @@ use app\assets\LaststepAsset;
 
 /* @var $this yii\web\View */
 LaststepAsset::register($this);
+Yii::$app->params['bodyClass'] = 'laststep';
 
 $rd = 3;
 $gi = 409;
@@ -109,7 +110,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="container left-right-container">
             <div class="row">
                 <div class="col-md-7 left_block">
-                    <img class="img-responsive img-membership1" src="images/imagineForVideoLarge1.jpg">
+                    <img class="img-responsive img-membership1" src="images/video(16-9).jpg">
                     <img class="img-responsive play-button" src="images/play.png">
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
                     <p>Watch Video Now! Expires in: <span id="time-exit">00h : 05m : 00s</span></p>
@@ -1037,7 +1038,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="text-center">
                 <p class="grey">THIS OFFER CLOSES IN &nbsp;<span class= "count-down" id="minutes-mem">3m</span><span class="count-down" id="seconds-mem">35s</span></p>
                 <p class="register-text"><span class="green">Last chance,</span> Register your</p>
-                <p class="register-text">ClickMoney Biz Right Now</p>
+                <p class="register-text">ClickMoney Right Now</p>
             </div>
             <div class="container">
                 <div class="gaff middle-form" id="gaff">

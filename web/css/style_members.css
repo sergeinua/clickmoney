@@ -1801,3 +1801,64 @@ li.active {
 #accordion {
     margin: 20px auto;
 }
+
+/*adjustments for the video approved page*/
+.membership-wrapper .container.left-right-container {
+    background-color: black;
+}
+
+@media (min-width: 992px) and (max-width: 1109px){
+    .container.left-right-container {
+        width: 992px;
+    }
+
+    .img-membership1, .membership-header .right_block {
+        height: 344px;
+    }
+
+    .membership-block-text {
+        margin-top: 4px;
+    }
+
+    .membership-header {
+        margin-bottom: 74px;
+    }
+}
+
+@media (min-width: 1110px) and (max-width: 1399px) {
+    .container.left-right-container {
+        width: 992px;
+    }
+
+    .img-membership1, .membership-header .right_block {
+        height: 344px;
+    }
+
+    .membership-block-text {
+        margin-top: 4px;
+    }
+
+    .membership-header {
+        margin-bottom: 90px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1799px) {
+    .membership-header .right_block {
+        height: 405px;
+    }
+
+    .membership-block-text {
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .img-membership1 {
+        height: 554px;
+    }
+
+    .register-right-text {
+        font-size: 2.56em;
+    }
+}

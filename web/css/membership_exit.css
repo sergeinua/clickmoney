@@ -1696,7 +1696,7 @@ p.register-text {
     }
 
     .right_block {
-        height: 362px;
+        /*height: 362px;*/
     }
 
     .left_block {
@@ -1954,4 +1954,105 @@ p.register-text {
 
 #accordion {
     margin: 20px auto;
+}
+
+/*adjustments for the video laststep page*/
+.container.left-right-container {
+    background-color: black;
+}
+
+@media (min-width: 992px) and (max-width: 1109px){
+    .membership-header .container {
+        width: 992px;
+    }
+
+    body.laststep .img-membership1 {
+        height: 344px;
+    }
+
+    body.laststep .membership-block-text {
+        font-size: 0.6em;
+    }
+
+    body.laststep .register-right-text {
+        font-size: 1em;
+    }
+
+    body.laststep .gaff button {
+        font-size: 0.6em;
+    }
+
+    body.laststep .icons-block {
+        margin: 8% auto 1% auto;
+    }
+
+    body.laststep .left_block {
+        height: auto;
+    }
+
+    body.laststep .membership-header .right_block {
+        height: 344px;
+    }
+}
+
+@media (min-width: 1110px) and (max-width: 1399px) {
+    .membership-header .container {
+        width: 992px;
+    }
+
+    body.laststep .img-membership1 {
+        height: 344px;
+    }
+
+    body.laststep .membership-block-text {
+        font-size: 0.6em;
+    }
+
+    body.laststep .register-right-text {
+        font-size: 1em;
+    }
+
+    body.laststep .gaff button {
+        font-size: 0.6em;
+    }
+
+    body.laststep .icons-block {
+        margin: 8% auto 1% auto;
+    }
+
+    body.laststep .left_block {
+        height: auto;
+    }
+
+    body.laststep .membership-header .right_block {
+        height: 344px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1799px) {
+    body.laststep .membership-header .right_block {
+        height: 405px;
+    }
+
+    body.laststep .membership-block-text {
+        margin-top: 4px;
+    }
+
+    body.laststep .gaff button .row {
+        margin: 14px 0;
+    }
+}
+
+@media (min-width: 1800px) {
+    body.laststep .img-membership1 {
+        height: 554px;
+    }
+
+    body.laststep .register-right-text {
+        font-size: 2.11em;
+    }
+
+    body.laststep .membership-header .right_block {
+        height: 554px;
+    }
 }

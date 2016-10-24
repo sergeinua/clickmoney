@@ -81,7 +81,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
             </div>
             <div class="row">
                 <div class="col-lg-12 membership-biz-area">
-                    <h2>This is the CLICKMONEY Biz Members Area</h2>
+                    <h2>This is the CLICKMONEY Members Area</h2>
                 </div>
             </div>
             <div class="row header-last-mrow">
@@ -110,7 +110,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="container left-right-container">
             <div class="row">
                 <div class="col-md-7 left_block">
-                    <img class="img-responsive img-membership1" src="images/imagineForVideoLarge1.jpg">
+                    <img class="img-responsive img-membership1" src="images/video(16-9).jpg">
                     <img class="img-responsive play-button" src="images/play.png">
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
                     <p>Watch Video Now! Expires in: <span id="time-exit">00h : 05m : 00s</span></p>
@@ -118,7 +118,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 <div class="col-md-5 right_block">
                     <h2 class="register-right-text">Please
                         <span class="reg-bold">register</span> your clickmoney
-                        biz below</h2>
+                        below</h2>
                     <div class="gaff" id="gaff">
                         <script src="https://s3.amazonaws.com/caff/js/formhelpers.min.js"></script>
                         <input id="brokerName" type="hidden" value="brokenName">
@@ -1075,7 +1075,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <p class="blank-text">Join Our Successful</p>
                         <p class="blank-text">Members Club!</p>
                         <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY BIZ</p>
+                            <p>REGISTER YOUR CLICKMONEY</p>
                         </div>
                     </div>
                 </div>
@@ -1115,7 +1115,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <p class="blank-text">Join Our Successful</p>
                         <p class="blank-text">Members Club!</p>
                         <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY BIZ</p>
+                            <p>REGISTER YOUR CLICKMONEY</p>
                         </div>
                     </div>
                 </div>
@@ -1155,134 +1155,137 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <p class="blank-text">Join Our Successful</p>
                         <p class="blank-text">Members Club!</p>
                         <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY BIZ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 single-item">
-            <div class="row">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="images/girl.jpg">
-                    <img class="img-responsive play-button" src=
-                    "images/play.png">
-                    <h5>JOAN KOWALOWSKY</h5>
-                    <p>TESTIMONIAL</p>
-                </div>
-            </div>
-            <div class="row join-member-club">
-                <div class="col-md-10 col-md-offset-1 video-item">
-                    <h4>See How Joan Made<br> <span class="green-small-text">$1,344,521</span> in<span class="green-small-text">87 days</span></h4>
-                    <p class="grey-small-text">Clickmoney was a
-                        lifechanger for Joan. Watch her testimonial and
-                        prepare to be amazed. Clickmoney was a lifechanger
-                        for Joan. Watch her testimonial and prepare to be
-                        amazed</p>
-                </div>
-            </div>
-            <div class="col-md-4 hover-video">
-                <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
-                        <img class="img-responsive video-poster" src="images/greenGirl.jpg">
-                        <img class="img-responsive play-button" src="images/white-smile.png">
-                        <h5>THIS COULD BE YOUR SPOT</h5>
-                        <p>AMD YOUR SUCCESS STORY</p>
-                    </div>
-                </div>
-                <div class="row join-member-club">
-                    <div class="col-md-10 col-md-offset-1 video-item">
-                        <p class="blank-text">Join Our Successful</p>
-                        <p class="blank-text">Members Club!</p>
-                        <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY BIZ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 single-item">
-            <div class="row">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="images/girl.jpg">
-                    <img class="img-responsive play-button" src=
-                    "images/play.png">
-                    <h5>JOAN KOWALOWSKY</h5>
-                    <p>TESTIMONIAL</p>
-                </div>
-            </div>
-            <div class="row join-member-club">
-                <div class="col-md-10 col-md-offset-1 video-item">
-                    <h4>See How Joan Made<br> <span class="green-small-text">$1,344,521</span> in<span class="green-small-text">87 days</span></h4>
-                    <p class="grey-small-text">Clickmoney was a
-                        lifechanger for Joan. Watch her testimonial and
-                        prepare to be amazed. Clickmoney was a lifechanger
-                        for Joan. Watch her testimonial and prepare to be
-                        amazed</p>
-                </div>
-            </div>
-            <div class="col-md-4 hover-video">
-                <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
-                        <img class="img-responsive video-poster" src="images/greenGirl.jpg">
-                        <img class="img-responsive play-button" src="images/white-smile.png">
-                        <h5>THIS COULD BE YOUR SPOT</h5>
-                        <p>AMD YOUR SUCCESS STORY</p>
-                    </div>
-                </div>
-                <div class="row join-member-club">
-                    <div class="col-md-10 col-md-offset-1 video-item">
-                        <p class="blank-text">Join Our Successful</p>
-                        <p class="blank-text">Members Club!</p>
-                        <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY BIZ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 single-item">
-            <div class="row">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="images/girl.jpg">
-                    <img class="img-responsive play-button" src="images/play.png">
-                    <h5>JOAN KOWALOWSKY</h5>
-                    <p>TESTIMONIAL</p>
-                </div>
-            </div>
-            <div class="row join-member-club">
-                <div class="col-md-10 col-md-offset-1 video-item">
-                    <h4>See How Joan Made<br> <span class=
-                                                    "green-small-text">$1,344,521</span> in
-                        <span class="green-small-text">87 days</span></h4>
-                    <p class="grey-small-text">Clickmoney was a
-                        lifechanger for Joan. Watch her testimonial and
-                        prepare to be amazed. Clickmoney was a lifechanger
-                        for Joan. Watch her testimonial and prepare to be
-                        amazed</p>
-                </div>
-            </div>
-            <div class="col-md-4 hover-video">
-                <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
-                        <img class="img-responsive video-poster" src="images/greenGirl.jpg">
-                        <img class="img-responsive play-button" src="images/white-smile.png">
-                        <h5>THIS COULD BE YOUR SPOT</h5>
-                        <p>AMD YOUR SUCCESS STORY</p>
-                    </div>
-                </div>
-                <div class="row join-member-club">
-                    <div class="col-md-10 col-md-offset-1 video-item">
-                        <p class="blank-text">Join Our Successful</p>
-                        <p class="blank-text">Members Club!</p>
-                        <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY BIZ</p>
+                            <p>REGISTER YOUR CLICKMONEY</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="col-md-4 single-item hidden-lg">
+            <div class="row">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img class="img-responsive video-poster" src="images/girl.jpg">
+                    <img class="img-responsive play-button" src=
+                    "images/play.png">
+                    <h5>JOAN KOWALOWSKY</h5>
+                    <p>TESTIMONIAL</p>
+                </div>
+            </div>
+            <div class="row join-member-club">
+                <div class="col-md-10 col-md-offset-1 video-item">
+                    <h4>See How Joan Made<br> <span class="green-small-text">$1,344,521</span> in<span class="green-small-text">87 days</span></h4>
+                    <p class="grey-small-text">Clickmoney was a
+                        lifechanger for Joan. Watch her testimonial and
+                        prepare to be amazed. Clickmoney was a lifechanger
+                        for Joan. Watch her testimonial and prepare to be
+                        amazed</p>
+                </div>
+            </div>
+            <div class="col-md-4 hover-video">
+                <div class="row">
+                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
+                        <img class="img-responsive video-poster" src="images/greenGirl.jpg">
+                        <img class="img-responsive play-button" src="images/white-smile.png">
+                        <h5>THIS COULD BE YOUR SPOT</h5>
+                        <p>AMD YOUR SUCCESS STORY</p>
+                    </div>
+                </div>
+                <div class="row join-member-club">
+                    <div class="col-md-10 col-md-offset-1 video-item">
+                        <p class="blank-text">Join Our Successful</p>
+                        <p class="blank-text">Members Club!</p>
+                        <div class="register-btn">
+                            <p>REGISTER YOUR CLICKMONEY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+               <div class="col-md-4 single-item">
+                   <div class="row">
+                       <div class="embed-responsive embed-responsive-16by9">
+                           <img class="img-responsive video-poster" src="images/girl.jpg">
+                           <img class="img-responsive play-button" src=
+                           "images/play.png">
+                           <h5>JOAN KOWALOWSKY</h5>
+                           <p>TESTIMONIAL</p>
+                       </div>
+                   </div>
+                   <div class="row join-member-club">
+                       <div class="col-md-10 col-md-offset-1 video-item">
+                           <h4>See How Joan Made<br> <span class="green-small-text">$1,344,521</span> in<span class="green-small-text">87 days</span></h4>
+                           <p class="grey-small-text">Clickmoney was a
+                               lifechanger for Joan. Watch her testimonial and
+                               prepare to be amazed. Clickmoney was a lifechanger
+                               for Joan. Watch her testimonial and prepare to be
+                               amazed</p>
+                       </div>
+                   </div>
+                   <div class="col-md-4 hover-video">
+                       <div class="row">
+                           <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
+                               <img class="img-responsive video-poster" src="images/greenGirl.jpg">
+                               <img class="img-responsive play-button" src="images/white-smile.png">
+                               <h5>THIS COULD BE YOUR SPOT</h5>
+                               <p>AMD YOUR SUCCESS STORY</p>
+                           </div>
+                       </div>
+                       <div class="row join-member-club">
+                           <div class="col-md-10 col-md-offset-1 video-item">
+                               <p class="blank-text">Join Our Successful</p>
+                               <p class="blank-text">Members Club!</p>
+                               <div class="register-btn">
+                                   <p>REGISTER YOUR CLICKMONEY</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col-md-4 single-item">
+                   <div class="row">
+                       <div class="embed-responsive embed-responsive-16by9">
+                           <img class="img-responsive video-poster" src="images/girl.jpg">
+                           <img class="img-responsive play-button" src="images/play.png">
+                           <h5>JOAN KOWALOWSKY</h5>
+                           <p>TESTIMONIAL</p>
+                       </div>
+                   </div>
+                   <div class="row join-member-club">
+                       <div class="col-md-10 col-md-offset-1 video-item">
+                           <h4>See How Joan Made<br> <span class=
+                                                           "green-small-text">$1,344,521</span> in
+                               <span class="green-small-text">87 days</span></h4>
+                           <p class="grey-small-text">Clickmoney was a
+                               lifechanger for Joan. Watch her testimonial and
+                               prepare to be amazed. Clickmoney was a lifechanger
+                               for Joan. Watch her testimonial and prepare to be
+                               amazed</p>
+                       </div>
+                   </div>
+                   <div class="col-md-4 hover-video">
+                       <div class="row">
+                           <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
+                               <img class="img-responsive video-poster" src="images/greenGirl.jpg">
+                               <img class="img-responsive play-button" src="images/white-smile.png">
+                               <h5>THIS COULD BE YOUR SPOT</h5>
+                               <p>AMD YOUR SUCCESS STORY</p>
+                           </div>
+                       </div>
+                       <div class="row join-member-club">
+                           <div class="col-md-10 col-md-offset-1 video-item">
+                               <p class="blank-text">Join Our Successful</p>
+                               <p class="blank-text">Members Club!</p>
+                               <div class="register-btn">
+                                   <p>REGISTER YOUR CLICKMONEY</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               -->
     </div>
 </section>
 <section class="last-chace-register">
@@ -1291,7 +1294,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="text-center">
                 <p class="grey">THIS OFFER CLOSES IN &nbsp;<span class= "count-down" id="minutes-mem">3m</span><span class="count-down" id="seconds-mem">35s</span></p>
                 <p class="register-text"><span class="green">Last chance,</span> Register your</p>
-                <p class="register-text">ClickMoney Biz Right Now</p>
+                <p class="register-text">ClickMoney Right Now</p>
             </div>
             <div class="container">
                 <div class="gaff middle-form" id="gaff">
