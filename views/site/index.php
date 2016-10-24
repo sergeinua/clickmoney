@@ -84,7 +84,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                                     </div>
                                 </div>
                             </button>
-                            <div class="warranty-text"><img src="/images/block.png" /> <span>Guaranteed Secure Access Ensured by Trusted Companies</span></div>
+                            <div class="warranty-text"><img src="/images/svg/lock.svg" /> <span>Guaranteed Secure Access Ensured by Trusted Companies</span></div>
                         </div>
                     </form><!--
                                     --><div class="col-md-2 col-xs-12 icons-block">
@@ -150,7 +150,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                 </div>
             </div>
         </div>
-        <div class="close-btn"><a href="#"><img src="/images/ex.png"></a></div>
+        <div class="close-btn"><a href="#"><img src="/images/svg/circle_delete.svg"></a></div>
     </div>
 
 <?php

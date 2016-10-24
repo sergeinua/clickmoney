@@ -935,7 +935,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                     <button type="submit">
                                         <div class="row">
                                             <div class="arrow"><img src=
-                                                                    "images/gr.png"></div>
+                                                                    "images/svg/unlock-green.svg"></div>
                                             <div class="col-md-12 col-xs-9">
                                                 UNLOCK MY PERSONAL ACCOUNT NOW
                                             </div>
@@ -945,7 +945,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         </form>
                     </div>
                     <div class="col-md-11 col-md-offset-2 col-xs-12 membership-block-text">
-                        <img class="blockImg" src="images/wh.png">Guaranteed Secure Access Ensured by Trusted Companies
+                        <img class="blockImg" src="images/svg/lock-white.svg">Guaranteed Secure Access Ensured by Trusted Companies
                     </div>
                     <div class="row text-center icons-block">
                         <div class="col-xs-3 vtop">
@@ -1851,7 +1851,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                 <button type="submit">
                                     <div class="row">
                                         <div class="arrow"><img src=
-                                                                "images/Layer18.png"></div>
+                                                                "images/svg/unlock.svg"></div>
                                         <div class="col-md-12 col-xs-9">
                                             UNLOCK MY PERSONAL ACCOUNT NOW
                                         </div>
@@ -1862,7 +1862,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div>
                 <div class="row">
                     <div class= "col-md-12 col-xs-12 membership-block-text">
-                        <img class="blockImg" src="images/block.png">Guaranteed Secure Access Ensured by Trusted Companies
+                        <img class="blockImg" src="images/svg/lock.svg">Guaranteed Secure Access Ensured by Trusted Companies
                     </div>
                 </div>
                 <div class="row icons-block text-center">

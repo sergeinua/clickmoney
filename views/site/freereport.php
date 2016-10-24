@@ -239,7 +239,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                                 </div>
                                             </div>
                                         </button>
-                                        <div class="warranty-text"><img class="blockImg" src="images/block.png" />
+                                        <div class="warranty-text"><img class="blockImg" src="images/svg/lock.svg" />
                                             <span>The Last Spot Is Still Here. Grab it Before Someone Else Does!</span>
                                         </div>
                                     </div>

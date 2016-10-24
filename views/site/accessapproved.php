@@ -26,7 +26,7 @@ $this->title = 'ClickMoney.com';
 <div class="container header">
     <div class="row">
         <div class="col-md-7 col-xs-4 logo1">
-            <img class="img-responsive" src="/images/register/logoWhite.png">
+            <img class="img-responsive" src="/images/ClickMoneyLogo/Logo-white.svg">
         </div>
         <div class="col-md-5 col-md-offset-7 col-xs-8 lic">
             <div class="col-md-4 licenceRight"><span>Licence Left</span></div>
@@ -61,7 +61,7 @@ $this->title = 'ClickMoney.com';
 </div>
 <div class="container footer">
     <div class="row">
-        <div class="col-md-1 col-xs-2 logWhite"><a href=""><img class="img-responsive" src="/images/register/logoWhiteL.png"></a></div>
+        <div class="col-md-1 col-xs-2 logWhite"><a href=""><img class="img-responsive" src="images/ClickMoneyLogo/Logo-white.svg"></a></div>
         <div class="col-md-7">
             <ul class="fnavigation">
                 <li><a href="<?= Url::toRoute(['site/disclaimer']); ?>" target="_blank">Government Disclaimer</a></li>
