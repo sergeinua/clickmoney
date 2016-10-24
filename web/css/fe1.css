@@ -80,7 +80,7 @@ body.fe2 {
 }
 
 .fe2 .content > .row {
-    background: #000;
+    /*background: #000;*/
 }
 
 .modal .modal-dialog {
@@ -750,7 +750,7 @@ body.fe2 {
     }
 }
 
-/*adjustments for the video*/
+/*adjustments for the video: main page*/
 @media (min-width: 992px) and (max-width: 1199px) {
     body.fe2 .left_block img.img-responsive {
         height: 371px;
@@ -845,5 +845,97 @@ body.fe2 {
     body.fe2 .main-arrow {
         height: 97px;
         top: -97px;
+    }
+}
+
+/*adjustments for the video: freereport page*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body.fe2.freereport .left_block img.img-responsive {
+        height: 334px;
+    }
+
+    body.fe2.freereport .content .right_block {
+        min-height: 334px;
+        padding-top: 5px;
+    }
+
+    body.fe2.freereport .exitWarning {
+        font-size: 1.1em;
+    }
+
+    body.fe2.freereport .exitNotification {
+        font-size: 0.7em;
+        margin-top: 0;
+    }
+
+    body.fe2.freereport .action-form .form-fields {
+        font-size: 0.8em;
+    }
+
+    body.fe2.freereport .action-form .form-fields input {
+        padding: 2px;
+    }
+
+    body.fe2.freereport .action-form .form-fields > .row {
+        margin-bottom: 4px;
+    }
+
+    body.fe2.freereport .action-form button .row {
+        margin: 10px 0;
+    }
+
+    body.fe2.freereport .exitDown {
+        padding: 5px 15px;
+        margin-bottom: 5px;
+        font-size: 0.7em;
+    }
+
+    body.fe2.freereport .warranty-text {
+        font-size: 0.6em;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    body.fe2.freereport .left_block img.img-responsive {
+        height: 403px;
+    }
+
+    body.fe2.freereport .exitWarning {
+        font-size: 1.2em;
+    }
+
+    body.fe2.freereport .exitNotification {
+        font-size: 0.7em;
+    }
+
+    body.fe2.freereport .action-form .form-fields {
+        font-size: 0.9em;
+    }
+
+    body.fe2.freereport .action-form .form-fields input {
+        padding: 5px;
+    }
+
+    body.fe2.freereport .action-form button .row {
+        margin: 10px 0;
+    }
+
+    body.fe2.freereport .exitDown {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1800px) {
+    body.fe2.freereport .left_block img.img-responsive {
+        height: 551px;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1800px) {
+    body.fe2.freereport .main-arrow {
+        height: 60px;
+        top: -70px;
+        right: -24px;
     }
 }

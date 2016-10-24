@@ -231,7 +231,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-center">
-                                        <img class="main-arrow hidden-md hidden-sm hidden-xs" src="images/arfe3.png">
+                                        <img class="main-arrow hidden-sm hidden-xs" src="images/arfe3.png">
                                         <button type="submit">
                                             <div class="row">
                                                 <div class="col-md-12">

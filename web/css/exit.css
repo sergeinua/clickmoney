@@ -16,7 +16,7 @@ body.freereport {
 }
 
 .freereport .content > .row {
-    background: #000;
+    /*background: #000;*/
 }
 
 .freereport .header .logo, .freereport .header .lic {
