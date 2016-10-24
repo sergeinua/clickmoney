@@ -852,7 +852,7 @@ body.fe2 {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     body.fe2.freereport .left_block img.img-responsive {
-        height: 334px;
+        height: 448px;
     }
 
     body.fe2.freereport .content .right_block {
@@ -861,7 +861,7 @@ body.fe2 {
     }
 
     body.fe2.freereport .exitWarning {
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     body.fe2.freereport .exitNotification {
@@ -870,65 +870,70 @@ body.fe2 {
     }
 
     body.fe2.freereport .action-form .form-fields {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     body.fe2.freereport .action-form .form-fields input {
         padding: 2px;
     }
 
-    body.fe2.freereport .action-form .form-fields > .row {
-        margin-bottom: 4px;
-    }
-
     body.fe2.freereport .action-form button .row {
-        margin: 10px 0;
+        margin: 23px 0;
     }
 
     body.fe2.freereport .exitDown {
         padding: 5px 15px;
         margin-bottom: 5px;
-        font-size: 0.7em;
-    }
-
-    body.fe2.freereport .warranty-text {
-        font-size: 0.6em;
+        font-size: 1.2em;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1799px) {
     body.fe2.freereport .left_block img.img-responsive {
-        height: 403px;
+        height: 448px;
+    }
+
+    body.fe2.freereport .content .right_block {
+        min-height: 334px;
+        padding-top: 5px;
     }
 
     body.fe2.freereport .exitWarning {
-        font-size: 1.2em;
+        font-size: 1.95em;
     }
 
     body.fe2.freereport .exitNotification {
         font-size: 0.7em;
+        margin-top: 0;
     }
 
     body.fe2.freereport .action-form .form-fields {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     body.fe2.freereport .action-form .form-fields input {
-        padding: 5px;
+        padding: 2px;
     }
 
     body.fe2.freereport .action-form button .row {
-        margin: 10px 0;
+        margin: 23px 0;
     }
 
     body.fe2.freereport .exitDown {
-        font-size: 1.1em;
+        padding: 5px 15px;
+        margin-bottom: 5px;
+        font-size: 1.2em;
     }
 }
 
 @media (min-width: 1800px) {
     body.fe2.freereport .left_block img.img-responsive {
-        height: 551px;
+        height: 613px;
+    }
+
+    body.fe2.freereport .exitWarning {
+        font-size: 2.475em;
+        margin-top: 18px;
     }
 }
 

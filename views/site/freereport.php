@@ -194,7 +194,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="container content">
             <div class="row">
                 <div class="col-md-7 col-xs-12 video-through vcenter text-center left_block">
-                    <img class="img-responsive" src="images/imagineForVideoLarge.jpg">
+                    <img class="img-responsive" src="images/video(16-9).jpg">
                     <img class="play" src="images/play.png" />
                     <!--<img class="play_gd" src="images/gd_corner_fe1.png" />-->
                     <!--<img class="play_logo" src="images/ClickMoneyLogo/Logo-green.svg" />-->
