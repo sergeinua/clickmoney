@@ -332,7 +332,7 @@ button {
 }
 
 .gaff .row .arrow img {
-    width: 60%;
+    /*width: 60%;*/
 }
 
 .register-label {
@@ -1820,10 +1820,6 @@ li.active {
 }
 
 /*adjustments for the video approved page*/
-.membership-wrapper .container.left-right-container {
-    background-color: black;
-}
-
 @media (min-width: 992px) and (max-width: 1109px){
     .container.left-right-container {
         width: 992px;

@@ -1957,10 +1957,6 @@ p.register-text {
 }
 
 /*adjustments for the video laststep page*/
-.container.left-right-container {
-    background-color: black;
-}
-
 @media (min-width: 992px) and (max-width: 1109px){
     .membership-header .container {
         width: 992px;
