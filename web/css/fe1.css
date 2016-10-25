@@ -944,3 +944,20 @@ body.fe2 {
         right: -24px;
     }
 }
+
+@media (min-width: 1200px) {
+    body.fe1 .col-xs-12.video-through.vcenter.text-center img.img-responsive {
+        margin: auto;
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .video-through.vcenter.text-center .play_logo {
+        width: 80px;
+    }
+
+    .video-through.vcenter.text-center .play {
+        width: 80px;
+    }
+}
