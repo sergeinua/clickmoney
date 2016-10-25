@@ -1861,4 +1861,14 @@ li.active {
     .register-right-text {
         font-size: 2.56em;
     }
+
+    .membership-block-text {
+        margin-top: 2px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .hidden-md.col-lg-4.single-item {
+        display: none;
+    }
 }

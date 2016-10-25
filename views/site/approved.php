@@ -1081,7 +1081,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div>
             </div>
         </div>
-        <div class="col-md-4 single-item">
+        <div class="hidden-md col-lg-4 single-item">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
                     <img class="img-responsive video-poster" src="images/girl.jpg">
@@ -1161,7 +1161,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div>
             </div>
         </div>
-
+        <!--
         <div class="col-md-4 single-item hidden-lg">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
@@ -1202,6 +1202,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div>
             </div>
         </div>
+        -->
         <!--
                <div class="col-md-4 single-item">
                    <div class="row">
