@@ -2062,3 +2062,7 @@ p.register-text {
         margin-bottom: 80px;
     }
 }
+
+.membership-footer .container .content {
+    min-height: 430px;
+}

@@ -223,9 +223,18 @@ button {
     color: white;
     border: 2px solid yellow;
     position: absolute;
-    top: 25%;
-    right: 30%;
+    /*top: 25%;*/
+    /*right: 30%;*/
     padding: 1% 2%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .membership-header .yellow-arrow {
@@ -1871,4 +1880,31 @@ li.active {
     .hidden-md.col-lg-4.single-item {
         display: none;
     }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .membership-header .yellow-arrow {
+        top: -35px;
+        right: 50px;
+        width: 35px;
+    }
+
+    .membership-header .left_block p {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.img-responsive.video-poster {
+    width: 100%;
+}
+
+.membership-footer .container .content {
+    min-height: 430px;
 }
