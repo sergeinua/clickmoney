@@ -13,57 +13,40 @@
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#deposit">
-    Click here to see login popup
+    Click here to see deposit popup
 </button>
 
 <div id="deposit"  class="modal fade deposit-popup"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-header">
-            <img  class="deposit-video" src="images/shutterstock_374080492.jpg">
-<<<<<<< Updated upstream
-            <img src="images/play.png">
-            <p><span class="blBold">Set Your Initial Deposit</span> <span class="grey"> $250 Minimum DEPOSIT</span></p>
-
-            <div class="col-sm-12">
-                <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0;"></div>
-                    <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 49.4949%;">
-                        <label><span class="glyphicon glyphicon-chevron-left"></span> 500 <span class="glyphicon glyphicon-chevron-right"></span></label>
-                    </a>
-                </div>
-=======
+            <img  class="img-responsive deposit-video" src="images/shutterstock_374080492.jpg">
             <img class="deposit-play" src="images/play.png">
         </div>
         <div class="modal-content">
             <p class="set-deposit">Set Your Initial Deposit<span class="deposit-text-grey"> $250 Minimum DEPOSIT</span></p>
-
             <div class="col-sm-11">
                 <div id="slider"></div>
->>>>>>> Stashed changes
             </div>
-
-            <p class="set-risk">Set Risk Level<span class="deposit-text-grey">1 Lowest - 5 HIGHEST</span></p>
+            <p class="set-risk">Set Risk Level<span class="deposit-text-grey"> 1 Lowest - 5 HIGHEST</span></p>
             <div class="col-sm-11">
                 <div id="slider2" class="second-slider"></div>
             </div>
-
-            <input type="hidden" id="amount" class="form-control" value="0">
-            <input type="hidden" id="duration" class="form-control" value="0">
-
+            <input type="hidden" id="amount" class="form-control">
+            <input type="hidden" id="duration" class="form-control">
             <p class="profit-per-day">Profit Per Day:<span> $2752</span></p>
             <p class="dailyAverage">Daily average for 30 days</p>
-                    <div class="col-xs-12">
-                        <button type="submit">
-                            <div class="row">
-                                <div class="col-md-11 col-xs-9">
-                                    GO TO DEPOSIT PAGE
-                                </div>
-                                <div class="arrow">
-                                    <img src="images/arrow.png">
-                                </div>
-                            </div>
-                        </button>
+            <div class="col-xs-12">
+                <button type="submit">
+                    <div class="row">
+                        <div class="col-md-11 col-xs-9">
+                            GO TO DEPOSIT PAGE
+                        </div>
+                        <div class="arrow">
+                            <img src="images/arrow.png">
+                        </div>
                     </div>
+                 </button>
+            </div>
         </div>
     </div>
 </div>
@@ -91,15 +74,15 @@
             value:1,
             min: 1,
             max: 5,
-            step: 1,
+            step: 0.1,
             slide: function(event, ui) {
                 update(2,ui.value); //changed
             }
         });
 
         //Added, set initial value.
-        $("#amount").val(0);
-        $("#duration").val(0);
+        $("#amount").val(250);
+        $("#duration").val(1);
         $("#amount-label").text(0);
         $("#duration-label").text(0);
 
@@ -117,7 +100,13 @@
          $duration = $( "#slider2" ).slider( "value" );
          */
 
-
+        $total = "$" + ($amount * $duration);
+        $( "#amount" ).val($amount);
+        $( "#amount-label" ).text($amount);
+        $( "#duration" ).val($duration);
+        $( "#duration-label" ).text($duration);
+        $( "#total" ).val($total);
+        $( "#total-label" ).text($total);
 
         $('#slider a').html('<label><img class="leftArrow" src="images/arrowLeft.png"> '+'$'+$amount+' <img class="rightArrow" src="images/arrowRight.png"></label>');
         $('#slider2 a').html('<label><img class="leftArrow" src="images/arrowLeft.png"> '+$duration+' <img class="rightArrow" src="images/arrowRight.png"></label>');

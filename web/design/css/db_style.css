@@ -517,6 +517,11 @@ body {
         display: none;
     }
 
+    .dashboard .logoYellow {
+        width: 150px;
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
