@@ -17,13 +17,13 @@ return [
 //
 //        ],
 //        'aweber' => [
-//            'meta_web_form_id' => '740717029',
-//            'listname' => 'awlist4335773',
+//            'meta_web_form_id' => '969251005',
+//            'listname' => 'awlist4466731',
 //            'redirect_url' => 'https://www.aweber.com/thankyou.htm?m=default',
-//            'redirect_id' => 'redirect_9a6c3ca8343e08a00a4e50f8f6c914bf',
-//            'meta_adtracking' => 'My_New_Web_Form',
+//            'redirect_id' => 'redirect_5ebab7c26fbc3a03cf1dcd0bff6229ad',
+//            'meta_adtracking' => 'FE',
 //            'meta_message' => '1',
-//            'img_url' => 'https://forms.aweber.com/form/displays.htm?id=7CwM7IzsDEyc'
+//            'img_url' => 'https://forms.aweber.com/form/displays.htm?id=nGycTKyMDAys'
 //        ],
 //
 //        'ymlp' => [
