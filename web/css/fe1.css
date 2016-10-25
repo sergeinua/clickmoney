@@ -446,6 +446,10 @@ body.fe2 {
     width: 100px;
 }
 
+.fe1 .action-form .form-fields label {
+    font-size: 0.8em;
+}
+
 /* sm */
 @media (min-width: 768px) {
     .fe2 .action-form .form-fields label {
@@ -471,9 +475,9 @@ body.fe2 {
 /* md */
 @media (min-width: 992px) {
 
-    .fe1 .action-form .form-fields label {
-        font-size: 0.8em;
-    }
+    /*.fe1 .action-form .form-fields label {*/
+        /*font-size: 0.8em;*/
+    /*}*/
 
     .fe1 .action-form .form-fields {
         padding: 3px 0 0 0;
@@ -960,4 +964,16 @@ body.fe2 {
     .video-through.vcenter.text-center .play {
         width: 80px;
     }
+}
+
+@media (max-height: 660px) {
+    #exitpopup .modal-dialog {
+        top: 0;
+        transform: translate(-50%, 0) !important;
+    }
+
+    #exitpopup input#name, #exitpopup input#email {
+        padding: 1px;
+    }
+    
 }

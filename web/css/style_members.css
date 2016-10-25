@@ -653,7 +653,7 @@ top:40px;
 }
 
 .join-member-club {
-    height: 250px;
+    height: 325px;
 }
 
 .video-item {
@@ -714,7 +714,7 @@ top:40px;
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
     text-align: center;
     opacity: 0;
     transition: .5s;
@@ -1019,8 +1019,11 @@ li.active {
     width: 100%;
 }
     .membership-block-text {
-        text-align: right;
-        width: 89%;
+        /*text-align: right;*/
+        /*width: 89%;*/
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .membership-footer li {
@@ -1122,8 +1125,10 @@ li.active {
 
     .membership-wrapper {
         background-color: rgba(70, 194, 160, 0.8);
-        height: 1100px;
-        margin-bottom: 20px;
+        /*height: 1100px;*/
+        /*margin-bottom: 20px;*/
+        height: auto;
+        margin-bottom: 45px;
     }
 
     .text-lower {
@@ -1137,7 +1142,10 @@ li.active {
 
     .single-item {
         width: 90%;
-        height: 530px;
+        /*height: 530px;*/
+        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
         box-shadow: none;
     }
 
@@ -1359,7 +1367,7 @@ li.active {
     }
 
     .blockImg {
-        width: 1.6%;
+        /*width: 1.6%;*/
     }
 
     .m, .t, .v, .n {
@@ -1874,6 +1882,10 @@ li.active {
     .membership-block-text {
         margin-top: 2px;
     }
+
+    .right_block {
+        height: 554px;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -1907,4 +1919,15 @@ li.active {
 
 .membership-footer .container .content {
     min-height: 430px;
+}
+
+ul.info li a:hover {
+    text-decoration: none;
+    border-bottom: 2px dashed #b0ffed;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .gaff.middle-form button, .gaff button {
+        font-size: 0.5em;
+    }
 }
