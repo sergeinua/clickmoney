@@ -28,3 +28,4 @@ phpunit.phar
 
 # db settings
 /config/db.php
+/config/db-local.php
