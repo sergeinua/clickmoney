@@ -12,6 +12,10 @@ body {
     background: rgba(0, 0, 0, 0.6);
 }
 
+body.clickthrough {
+    padding: 30px 0;
+}
+
 input[type="text"]:focus, input[type="email"]:focus {
     border: 2px solid #21c0ac;
     outline: none;
@@ -343,6 +347,7 @@ span.button20 {
 .footer .row > div {
     margin-bottom: 15px;
     padding-left: 0;
+    padding-right: 0;
 }
 
 /*popup*/
@@ -1619,6 +1624,10 @@ p.welkOrange1 {
 
     .ClickMoney, .clickthrough {
         background-size: cover;
+    }
+
+    .footer ul {
+        padding-left: 15px;
     }
 
     .content, .header, .footer {
