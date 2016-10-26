@@ -1948,8 +1948,13 @@ p.register-text {
 }
 
 .panel-heading img {
-    float: right;
-    margin-top: -15px;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+
+.membership-footer .panel-title {
+    padding-right: 25px;
 }
 
 .membership-footer li a {
@@ -2046,6 +2051,10 @@ p.register-text {
     body.laststep .gaff button .row {
         margin: 14px 0;
     }
+
+    .last-chace-register button .col-md-12.col-xs-9 {
+        font-size: 1.2em;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -2101,21 +2110,39 @@ ul.info li a:hover {
         text-align: center !important;
         font-size: 1em;
     }
+
+    .last-chace-register button .col-md-12.col-xs-9 {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 365px) {
+    .membership-wrapper {
+        height: 1025px;
+    }
 }
 
 @media (min-width: 366px) and (max-width: 500px) {
     .membership-wrapper {
-        height: 900px;
+        height: 855px;
+    }
+
+    .last-chace-register button .col-md-12.col-xs-9 {
+        font-size: 1.0em;
     }
 }
 
 @media (min-width: 501px) and (max-width: 630px) {
     .membership-wrapper {
-        height: 1000px;
+        height: 970px;
     }
 
     .membership-header button .col-md-12.col-xs-9 {
         font-size: 1.3em;
+    }
+
+    .last-chace-register button .col-md-12.col-xs-9 {
+        font-size: 1.4em;
     }
 }
 
@@ -2123,8 +2150,16 @@ ul.info li a:hover {
     .membership-header button .col-md-12.col-xs-9 {
         font-size: 1.7em;
     }
+
+    .last-chace-register button .col-md-12.col-xs-9 {
+        font-size: 1.7em;
+    }
 }
 
 span#time-exit {
     white-space: nowrap;
+}
+
+.membership-footer .panel-heading {
+    position: relative;
 }
