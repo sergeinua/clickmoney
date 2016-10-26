@@ -373,6 +373,7 @@ body.fe2 {
 .warranty-text {
     font-family: 'Open Sans', sans-serif;
     margin-top: 5px;
+    margin-bottom: 5px;
     color: #b0b0b0;
     font-size: 0.9em;
     vertical-align: middle;
@@ -750,7 +751,7 @@ body.fe2 {
 /*adjustments for the video: main page*/
 @media (min-width: 992px) and (max-width: 1199px) {
     body.fe2 .left_block img.img-responsive {
-        height: 371px;
+        height: 381px;
     }
 
     body.fe2 span.main-text span.limited-spots + p {
@@ -791,7 +792,7 @@ body.fe2 {
 
 @media (min-width: 1200px) and (max-width: 1799px) {
     body.fe2 .img-responsive {
-        height: 448px;
+        height: 470px;
     }
 
     body.fe2 .limited-spots {
