@@ -1003,7 +1003,7 @@ li.active {
     content: '';
 }
 
-/**********************************************mobile/tablets/media screens***********************************************/
+/**********************************************mobile/tablets/middle screens***********************************************/
 
 @media (min-width: 591px) and (max-width: 990px) {
 .video-poster {
@@ -1468,7 +1468,7 @@ li.active {
     }
 
     .register-deposit-profit {
-    margin-bottom: 50px;
+        margin-bottom: 50px;
     }
 
     .blockIconsMob {
@@ -1624,7 +1624,7 @@ li.active {
     }
 
     .icons-block {
-        margin: 15px auto 0 auto;
+        margin: 35px auto 0 auto;
     }
 
     .membership-wrapper {
@@ -1748,25 +1748,6 @@ li.active {
 
     .blockImg {
         padding-right: 1%;
-    }
-
-    .quick-and-easy .container .right_item {
-        width: auto;
-        float: left;
-        margin-right: 3%;
-        width: 200px;
-    }
-
-    .quick-and-easy .container .left_item {
-        margin-left: 0;
-        width: auto;
-        width: 200px;
-        margin: 0 3% 1% 3%;
-    }
-
-    .quick-and-easy .container .left_item_not_stripped {
-        width: 200px;
-        margin: 0 3% 1% 6%;
     }
 
     .mem-second-arrow-left {
@@ -1944,3 +1925,4 @@ span#time-exit {
 .membership-footer .panel-heading {
     position: relative;
 }
+
