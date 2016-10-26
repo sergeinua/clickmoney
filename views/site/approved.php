@@ -945,7 +945,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-11 col-md-offset-2 col-xs-12 membership-block-text">
+                    <div class="col-md-12 col-xs-12 membership-block-text">
                         <img class="blockImg" src="images/svg/lock.svg">Guaranteed Secure Access Ensured by Trusted Companies
                     </div>
                     <div class="row text-center icons-block">
