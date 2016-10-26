@@ -714,7 +714,7 @@ top:40px;
     width: 100%;
     height: 100%;
     margin: 0;
-    /*padding: 0;*/
+    padding: 0;
     text-align: center;
     opacity: 0;
     transition: .5s;
@@ -1147,6 +1147,7 @@ li.active {
         padding-left: 15px;
         padding-right: 15px;
         box-shadow: none;
+        margin-bottom: 15%;
     }
 
     .membership-biz-area h2 {
@@ -1238,6 +1239,10 @@ li.active {
         margin-top: 0;
     }
 
+    .hover-video {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 }
 
@@ -1710,7 +1715,6 @@ li.active {
         background-position: inherit;
         background-attachment: inherit;
         letter-spacing: 0.25em;
-        font-size: 0.85em;
         width: 470px;
     }
 
@@ -1926,4 +1930,8 @@ ul.info li a:hover {
     .gaff.middle-form button, .gaff button {
         font-size: 0.5em;
     }
+}
+
+span#time-exit {
+    white-space: nowrap;
 }
