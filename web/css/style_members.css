@@ -1049,6 +1049,7 @@ li.active {
 
     .membership-text1 {
         padding-left: 0;
+        padding-right: 0;
     }
 
     .membership-footer ul {
@@ -1128,6 +1129,10 @@ li.active {
     }
 
     p.register-text {
+        font-size: 25px;
+    }
+
+    .qick-and-easy .green {
         font-size: 30px;
     }
 
@@ -1205,10 +1210,8 @@ li.active {
         width: 90%;
         /*height: 530px;*/
         height: auto;
-        padding-left: 15px;
-        padding-right: 15px;
         box-shadow: none;
-        margin-bottom: 15%;
+        margin: 0 auto 15% auto;
     }
 
     .membership-biz-area h2 {
@@ -1300,9 +1303,14 @@ li.active {
         margin-top: 0;
     }
 
-    .hover-video {
-        padding-left: 15px;
-        padding-right: 15px;
+    .count-down {
+        margin-right: 0;
+        margin-left: 4px;
+        padding: 8px 1px;
+    }
+
+    .qick-and-easy .grey {
+        font-size: 18px;
     }
 
 }
