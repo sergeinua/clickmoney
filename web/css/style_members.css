@@ -496,7 +496,7 @@ button {
 .arrow1 {
     position: absolute;
     right: 5%;
-    top: 35%;
+    top: 40px;
 }
 
 .arrow111 {
@@ -1340,7 +1340,7 @@ li.active {
     }
 
     .third-num {
-        left: 25px;
+        left: 30px;
         top: 35px;
     }
 }
@@ -1562,10 +1562,6 @@ li.active {
         top: 30px;
     }
 
-    .arrow111 {
-        top: 50px;
-    }
-
     .register-deposit-profit {
         margin-bottom: 50px;
     }
@@ -1660,7 +1656,7 @@ li.active {
    .membership-footer .content {
         padding: 30px 80px 92px;
         width: 80%;
-    }
+   }
 
     .membership-footer .content p {
         font-size: 12px;
@@ -1682,6 +1678,36 @@ li.active {
         width: 920px;
     }
 
+    /* fixing arrows */
+    .first-arrow {
+        left: -30%;
+        width: 110px;
+    }
+
+    .first-num {
+        top: 23px;
+        left: 27px;
+    }
+
+    .second-arrow {
+        left: 0;
+        top: 12px;
+    }
+
+    .second-num {
+        left: 35px;
+        top: 23px;
+    }
+
+    .third-arrow-add {
+        left: 0;
+        top: 7px;
+    }
+
+    .third-num {
+        left: 30px;
+        top: 23px;
+    }
 }
 
 @media (min-width: 1400px) and (max-width: 1799px) {
@@ -1971,6 +1997,10 @@ li.active {
     .right_block {
         height: 554px;
     }
+
+    .first-num {
+        left: 20px !important;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2025,3 +2055,66 @@ span#time-exit {
     position: relative;
 }
 
+/* fixing arrows */
+@media (min-width: 501px) and (max-width: 990px) {
+    .first-arrow {
+        width: 115px;
+        left: 0;
+    }
+
+    .first-num {
+        top: 35px;
+        left: 60px;
+    }
+
+    .second-arrow {
+        left: 0;
+    }
+
+    .second-num {
+        top: 35px;
+        left: 58px;
+    }
+
+    .third-num {
+        top: 45px;
+        left: 58px;
+    }
+}
+
+
+
+@media (min-width: 991px) and (max-width: 1399px) {
+
+}
+
+@media (min-width: 1400px) {
+    .first-arrow {
+        left: -30%;
+    }
+
+    .first-num {
+        top: 44px;
+        left: 35px;
+    }
+
+    .second-arrow {
+        left: 0;
+        top: 19px;
+    }
+
+    .second-num {
+        left: 50px;
+        top: 45px;
+    }
+
+    .third-arrow-add {
+        left: 0;
+        top: 8px;
+    }
+
+    .third-num {
+        left: 45px;
+        top: 45px;
+    }
+}
