@@ -526,6 +526,7 @@ button {
 .second-arrow {
     position: absolute;
     left: 10px;
+    top: 11px;
 }
 
 .second-arrow-add {
@@ -537,7 +538,7 @@ button {
     position: absolute;
     font-size: 30px;
     color: #686868;
-    top: 28px;
+    top: 35px;
     left: 63px;
 }
 
@@ -577,15 +578,15 @@ button {
 .third-arrow-add {
     position: absolute;
     left: 15px;
+    top: 2px;
 }
 
 .third-num {
     position: absolute;
     font-size: 30px;
     color: #686868;
-    top: 40px;
+    top: 35px;
     left: 57px;
-
 }
 
 
@@ -1457,7 +1458,7 @@ p.register-text {
     }
 
     .first-arrow {
-        width: 100%;
+        width: 110px;
     }
 
     .text-days {
@@ -1542,8 +1543,8 @@ p.register-text {
     }
 
     .first-num {
-        left: 20%;
-        top: 22px;
+        left: 25px;
+        top: 30px;
     }
 
     .arrow img {
@@ -1551,7 +1552,8 @@ p.register-text {
     }
 
     .second-arrow {
-        left: -8%;
+        left: 0;
+        top: 20px;
     }
 
     .second-arrow-add {
@@ -1560,8 +1562,8 @@ p.register-text {
     }
 
     .second-num {
-        left: 30%;
-        top: 24px;
+        left: 35px;
+        top: 30px;
     }
 
     .third-arrow {
@@ -1569,11 +1571,12 @@ p.register-text {
     }
 
     .third-arrow-add {
-        left: 15%;
+        left: 0;
+        top: 14px;
     }
 
     .third-num {
-        left: 48%;
+        left: 30px;
         top: 30px;
     }
 
@@ -1765,7 +1768,8 @@ p.register-text {
     }
 
     .first-arrow {
-        left: -10px;
+        left: -35px;
+        top: 5px;
     }
 
     .you-here .grey {
@@ -1793,7 +1797,8 @@ p.register-text {
     }
 
     .first-num {
-        left: 60px;
+        left: 35px;
+        top: 35px;
     }
 
     .single-item {
