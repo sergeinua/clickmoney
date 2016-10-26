@@ -2006,6 +2006,10 @@ p.register-text {
         margin: 1% auto 8% auto;
     }
 
+    body.laststep .membership-header .icons-block {
+        margin: 8% auto 1% auto;
+    }
+
     body.laststep .left_block {
         height: auto;
     }
@@ -2038,6 +2042,10 @@ p.register-text {
 
     body.laststep .icons-block {
         margin: 1% auto 8% auto;
+    }
+
+    body.laststep .membership-header .icons-block {
+        margin: 8% auto 1% auto;
     }
 
     body.laststep .left_block {
