@@ -252,10 +252,16 @@ button {
 .membership-header .left_block p {
     color: white;
     border: 2px solid yellow;
+    padding: 1% 2%;
     position: absolute;
     top: 25%;
-    right: 30%;
-    padding: 1% 2%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .membership-header .yellow-arrow {
@@ -350,7 +356,7 @@ button {
 }
 
 .gaff .row .arrow img {
-    width: 60%;
+    /*width: 60%;*/
 }
 
 .register-label {
@@ -1480,7 +1486,7 @@ p.register-text {
     }
 
     .blockImg {
-        width: 3%;
+        width: 4%;
     }
 
     .last-chace-register .blockImg {
@@ -1701,7 +1707,7 @@ p.register-text {
 
     .left_block {
         height: 362px;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
     .left_block .img-membership1 {
@@ -1818,6 +1824,9 @@ p.register-text {
         height: 400px;
     }
 
+    .membership-header button .col-md-12.col-xs-9 {
+        font-size: 1.3em;
+    }
 
 }
 
@@ -2087,4 +2096,35 @@ ul.info li a:hover {
         width: 70%;
         text-align: center  ;
     }
+
+    .membership-header button .col-md-12.col-xs-9 {
+        text-align: center !important;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 366px) and (max-width: 500px) {
+    .membership-wrapper {
+        height: 900px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 630px) {
+    .membership-wrapper {
+        height: 1000px;
+    }
+
+    .membership-header button .col-md-12.col-xs-9 {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 631px) and (max-width: 991px) {
+    .membership-header button .col-md-12.col-xs-9 {
+        font-size: 1.7em;
+    }
+}
+
+span#time-exit {
+    white-space: nowrap;
 }
