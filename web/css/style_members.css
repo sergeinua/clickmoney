@@ -1073,9 +1073,9 @@ li.active {
 }
 
 @media (min-width: 591px) and (max-width: 990px) {
-.video-poster {
-    height: 410px;
-}
+    .video-poster {
+        height: auto;
+    }
     .single-item {
         height: 660px !important;
     }
