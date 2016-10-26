@@ -199,7 +199,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <!--<img class="play_gd" src="images/gd_corner_fe1.png" />-->
                     <!--<img class="play_logo" src="images/ClickMoneyLogo/Logo-green.svg" />-->
                 </div><!--
-                --><div class="col-md-5 col-xs-12 vcenter right_block">
+                --><div class="container col-xs-12 vcenter right_block">
                     <div class="row text-center">
                         <div class="col-xs-12">
                             <h2 class="exitWarning"><span>WARNING:</span> Download Your <strong>Free ClickMoney Report</strong> Before This Exclusive Offer Expires!</h2>
