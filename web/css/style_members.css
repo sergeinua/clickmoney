@@ -353,7 +353,7 @@ button {
 .membership-block-text {
     color: #b0b0b0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.67em;
 }
 
 .last-chace-register .membership-block-text {
@@ -1016,7 +1016,7 @@ li.active {
     .membership-block-text {
         text-align: center;
         width: 100% !important;
-        font-size: 10px;
+        font-size: 7px;
     }
     .member-arrows, .top-arrow {
         display: none;
@@ -1426,7 +1426,7 @@ li.active {
 
     .gaff button {
         width: 97%;
-        font-size: 0.45em;
+        font-size: 0.6em;
     }
 
     .gaff button .row {
@@ -1992,6 +1992,7 @@ li.active {
 
     .membership-block-text {
         margin-top: 2px;
+        font-size: 0.9em;
     }
 
     .right_block {
@@ -2043,7 +2044,7 @@ ul.info li a:hover {
 
 @media (min-width: 320px) and (max-width: 450px) {
     .gaff.middle-form button, .gaff button {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
 }
 
@@ -2080,12 +2081,18 @@ span#time-exit {
         top: 45px;
         left: 58px;
     }
+
+    .membership-header .membership-block-text {
+        font-size: 0.9em;
+    }
 }
 
 
 
 @media (min-width: 991px) and (max-width: 1399px) {
-
+    .membership-header .membership-block-text {
+        font-size: 0.67em;
+    }
 }
 
 @media (min-width: 1400px) {
