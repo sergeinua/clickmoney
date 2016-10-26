@@ -2172,11 +2172,24 @@ ul.info li a:hover {
 
     .first-arrow {
         width: 115px;
+        left: 0;
     }
 
     .first-num {
         top: 35px;
-        left: 65px;
+        left: 52px;
+    }
+
+    .second-arrow, .third-arrow-add {
+        left: 0;
+    }
+
+    .second-num {
+        left: 50px;
+    }
+
+    .third-num {
+        left: 50px;
     }
 }
 
