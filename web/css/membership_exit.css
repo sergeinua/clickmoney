@@ -377,7 +377,7 @@ button {
 .membership-block-text {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .last-chace-register .membership-block-text {
@@ -1073,7 +1073,7 @@ p.register-text {
     .membership-block-text {
         text-align: center;
         width: 100% !important;
-        font-size: 10px;
+        font-size: 9px;
     }
     .member-arrows, .top-arrow {
         display: none;
@@ -2170,6 +2170,10 @@ ul.info li a:hover {
         font-size: 1.4em;
     }
 
+    .last-chace-register .membership-block-text {
+        font-size: 0.9em;
+    }
+
     .first-arrow {
         width: 115px;
         left: 0;
@@ -2209,6 +2213,10 @@ ul.info li a:hover {
     .first-num {
         top: 35px;
         left: 65px;
+    }
+
+    .last-chace-register .membership-block-text {
+        font-size: 1.1em;
     }
 }
 
