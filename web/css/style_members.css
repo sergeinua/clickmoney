@@ -1806,8 +1806,13 @@ li.active {
 }
 
 .panel-heading img {
-    float: right;
-    margin-top: -15px;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+
+.membership-footer .panel-title {
+    padding-right: 25px;
 }
 
 .membership-footer li a {
@@ -1934,4 +1939,8 @@ ul.info li a:hover {
 
 span#time-exit {
     white-space: nowrap;
+}
+
+.membership-footer .panel-heading {
+    position: relative;
 }
