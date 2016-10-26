@@ -1004,6 +1004,67 @@ li.active {
 }
 
 /**********************************************mobile/tablets/middle screens***********************************************/
+@media (max-width: 365px) {
+    .m, .t, .v, .n {
+        width: 35px;
+    }
+
+    .membership-block-text {
+        text-align: center;
+        width: 100% !important;
+        font-size: 10px;
+    }
+    .member-arrows, .top-arrow {
+        display: none;
+    }
+
+    .membership-header .left_block p {
+        /*width: 100% !important;*/
+    }
+
+    .gaff button {
+        font-size: 0.5em;
+        width: 100%;
+    }
+
+    .register-right-text {
+        font-size: 1.4625em;
+    }
+
+    .email-Reg0 {
+        font-size: 0.7em;
+    }
+
+    .right_block form .col-xs-6 {
+        width: 100%;
+    }
+
+    .you-here {
+        padding-left: 0 !important;
+    }
+
+    .single-item {
+        background-color: white;
+    }
+
+    .membership-text1 {
+        padding-left: 0;
+    }
+
+    .membership-footer ul {
+        padding-left: 0;
+    }
+
+    button .col-xs-9 {
+        text-align: right !important;
+    }
+
+    .membership-wrapper .membership-logo {
+        /*top: 20px !important;*/
+        /*width: 25%!important;*/
+    }
+
+}
 
 @media (min-width: 591px) and (max-width: 990px) {
 .video-poster {
@@ -1244,6 +1305,31 @@ li.active {
         padding-right: 15px;
     }
 
+}
+
+@media (min-width: 366px) and (max-width: 500px) {
+    .membership-wrapper {
+        height: 855px;
+    }
+
+    .last-chace-register button .col-md-12.col-xs-9 {
+        font-size: 1.0em;
+    }
+
+    .first-arrow, .second-arrow, .third-arrow-add {
+        width: 95px;
+        left: -15px;
+    }
+
+    .first-num, .second-num {
+        left: 30px;
+        top: 30px;
+    }
+
+    .third-num {
+        left: 25px;
+        top: 35px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1096px) {
