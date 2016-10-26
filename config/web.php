@@ -38,7 +38,7 @@ $config = [
                 ],
             ],
         ],
-        'db' => YII_DEBUG ? require(__DIR__ . '/db-local.php') : require(__DIR__ . '/db.php'),
+        'db' => require(__DIR__ . '/db-' . YII_ENV .'.php'),
 
 
         'urlManager' => [

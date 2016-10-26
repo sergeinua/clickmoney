@@ -8,6 +8,10 @@ if (!in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1'])) {
 if ($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.0.1') {
     defined('YII_DEBUG') or define('YII_DEBUG', true);
     defined('YII_ENV') or define('YII_ENV', 'test');
+} else if ($_SERVER['SERVER_NAME'] == 'dev.clickmoneysystem.com') {
+    defined('YII_ENV') or define('YII_ENV', 'dev');
+} else if ($_SERVER['SERVER_NAME'] == 'clickmoneysystem.com' || $_SERVER['SERVER_NAME'] == 'www.clickmoneysystem.com') {
+    defined('YII_ENV') or define('YII_ENV', 'prod');
 }
 
 require(__DIR__ . '/../vendor/autoload.php');
