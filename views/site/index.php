@@ -89,16 +89,16 @@ if ($mob->isTablet() || $mob->isMobile()) {
                     </form><!--
                                     --><div class="col-md-2 col-xs-12 icons-block">
                         <div class="row">
-                            <div class="col-md-4 col-xs-3">
+                            <div class="col-md-6 col-xs-3">
                                 <a href="#"><img class="m" src="/images/m-seal.png"></a>
                             </div><!--
-                                            --><div class="col-md-8 col-xs-3">
+                                            --><div class="col-md-6 col-xs-3">
                                 <a href="#"><img class="t" src="/images/t-seal.jpg"></a>
                             </div><!--
-                                            --><div class="col-md-4 col-xs-3">
+                                            --><div class="col-md-6 col-xs-3">
                                 <a href="#"><img class="v" src="/images/v-seal.png"></a>
                             </div><!--
-                                            --><div class="col-md-8 col-xs-3">
+                                            --><div class="col-md-6 col-xs-3">
                                 <a href="#"><img class="n" src="/images/n-seal.png"></a>
                             </div>
                         </div>
