@@ -516,7 +516,7 @@ button {
 .arrow1 {
     position: absolute;
     right: 5%;
-    top: 35%;
+    top: 40px;
 }
 
 .arrow111 {
@@ -1538,12 +1538,12 @@ p.register-text {
     .first-arrow {
         position: absolute;
         left: -30%;
-        top: 4px;
+        top: 10px;
     }
 
     .first-num {
         left: 20%;
-        top: 18px;
+        top: 22px;
     }
 
     .arrow img {
@@ -1578,7 +1578,7 @@ p.register-text {
     }
 
     .arrow111 {
-        top: 50px;
+        top: 40px;
     }
 
     .register-deposit-profit {
