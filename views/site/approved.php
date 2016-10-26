@@ -993,7 +993,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div>
                 <div class="col-md-8 you-here">
                     <p class="grey">YOU'RE HERE!</p>
-                    <p class="green">Register</p>
+                    <p class="green"><span class="num-for-small-res">1</span>Register</p>
                     <p class="green green-little-text">Sign up to the system,
                         choose<br>
                         a username and a password</p>
@@ -1007,7 +1007,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     </div>
                 </div>
                 <div class="col-md-8 you-here">
-                    <p class="steps-title">Deposit</p>
+                    <p class="steps-title"><span class="num-for-small-res">2</span>Deposit</p>
                     <p class="grey-small-text">Find your trading account with
                         a<br>
                         minimum investment of $250</p>
@@ -1021,7 +1021,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     </div>
                 </div>
                 <div class="col-md-8 you-here">
-                    <p class="steps-title">Profit!</p>
+                    <p class="steps-title"><span class="num-for-small-res">3</span>Profit!</p>
                     <p class="grey-small-text">Open a bottle of champagne
                         and<br> watch the money rain!</p>
                 </div>

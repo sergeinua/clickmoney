@@ -1003,6 +1003,10 @@ li.active {
     content: '';
 }
 
+.num-for-small-res {
+    display: none;
+}
+
 /**********************************************mobile/tablets/middle screens***********************************************/
 @media (max-width: 365px) {
     .m, .t, .v, .n {
@@ -1018,8 +1022,9 @@ li.active {
         display: none;
     }
 
-    .membership-header .left_block p {
-        /*width: 100% !important;*/
+    .num-for-small-res {
+        display: inline-block;
+        padding-right: 10px;
     }
 
     .gaff button {
