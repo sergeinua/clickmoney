@@ -1364,7 +1364,7 @@ li.active {
     }
 
     .membership-block-text {
-        font-size: 0.7em;
+        font-size: 0.5em;
         text-align: center;
     }
 
@@ -1427,6 +1427,10 @@ li.active {
     .gaff button {
         width: 97%;
         font-size: 0.6em;
+    }
+
+    .last-chace-register .gaff.middle-form button {
+        font-size: 0.5em;
     }
 
     .gaff button .row {
