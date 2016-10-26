@@ -2130,6 +2130,21 @@ ul.info li a:hover {
     .last-chace-register button .col-md-12.col-xs-9 {
         font-size: 1.0em;
     }
+
+    .first-arrow, .second-arrow, .third-arrow-add {
+        width: 95px;
+        left: -15px;
+    }
+
+    .first-num, .second-num {
+        left: 30px;
+        top: 30px;
+    }
+
+    .third-num {
+        left: 25px;
+        top: 35px;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 630px) {
@@ -2144,6 +2159,15 @@ ul.info li a:hover {
     .last-chace-register button .col-md-12.col-xs-9 {
         font-size: 1.4em;
     }
+
+    .first-arrow {
+        width: 115px;
+    }
+
+    .first-num {
+        top: 35px;
+        left: 65px;
+    }
 }
 
 @media (min-width: 631px) and (max-width: 991px) {
@@ -2153,6 +2177,15 @@ ul.info li a:hover {
 
     .last-chace-register button .col-md-12.col-xs-9 {
         font-size: 1.7em;
+    }
+
+    .first-arrow {
+        width: 115px;
+    }
+
+    .first-num {
+        top: 35px;
+        left: 65px;
     }
 }
 
