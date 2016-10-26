@@ -7,6 +7,8 @@ Class GetIp
     static function getIpAddr()
     {
         $ip_add = self::get_ip_address();
+        if ($ip_add == '::1')
+            $ip_add = '127.0.0.1';
 
         $loca_data = array();
         $cookie_name = 'pmaloc';

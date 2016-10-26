@@ -1985,7 +1985,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse"  href="#collapseFour">What is the success rate fo ClickMoney?</a>
+                                <a data-toggle="collapse"  href="#collapseFour">What is the success rate for ClickMoney?</a>
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
