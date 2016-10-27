@@ -923,7 +923,7 @@ body.fe2 {
     }
 
     body.fe2.freereport .action-form button .row {
-        margin: 23px 0;
+        /*margin: 23px 0;*/
     }
 
     body.fe2.freereport .exitDown {
@@ -940,7 +940,7 @@ body.fe2 {
 
     body.fe2.freereport .exitWarning {
         font-size: 2.4em;
-        margin-top: 18px;
+        margin-top: 17px;
     }
 }
 
