@@ -99,6 +99,8 @@ body.fe2 {
 
 .fe2 .header {
     margin-bottom: 30px;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .fe2 .header .lic {
@@ -395,6 +397,7 @@ body.fe2 {
 .fe2 .footer {
     margin-top: 30px;
     color: #fff;
+    padding-right: 0;
 }
 
 .footer .logo img {
