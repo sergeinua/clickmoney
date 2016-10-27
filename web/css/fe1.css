@@ -751,12 +751,12 @@ body.fe2 {
 /*adjustments for the video: main page*/
 @media (min-width: 992px) and (max-width: 1199px) {
     body.fe2 .left_block img.img-responsive {
-        height: 381px;
+        width: 100%;
     }
 
     body.fe2 span.main-text span.limited-spots + p {
         margin: 0px auto;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     body.fe2 .content .right_block {
@@ -764,7 +764,7 @@ body.fe2 {
     }
 
     body.fe2 #fe-2-form .form-fields {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     body.fe2 .action-form button {
@@ -776,7 +776,7 @@ body.fe2 {
     }
 
     body.fe2 .warranty-text {
-        font-size: 0.7em;
+        font-size: 0.65em;
     }
 
     body.fe2 .action-form .form-fields > .row {
@@ -792,7 +792,7 @@ body.fe2 {
 
 @media (min-width: 1200px) and (max-width: 1799px) {
     body.fe2 .img-responsive {
-        height: 470px;
+        width: 100%;
     }
 
     body.fe2 .limited-spots {
@@ -801,7 +801,7 @@ body.fe2 {
 
     body.fe2 span.main-text span.limited-spots + p {
         margin: 12px auto;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     body.fe2 .content .right_block {
@@ -831,11 +831,11 @@ body.fe2 {
 
 @media (min-width: 1800px) {
     body.fe2 .left_block img.img-responsive {
-        height: 613px;
+        width: 100%;
     }
 
     body.fe2 .main-text {
-        font-size: 2.1em;
+        font-size: 2.0em;
     }
 }
 
@@ -850,7 +850,11 @@ body.fe2 {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     body.fe2.freereport .left_block img.img-responsive {
-        height: 448px;
+        width: 100%;
+    }
+
+    body.fe2.freereport .action-form button {
+        font-size: 0.68em;
     }
 
     body.fe2.freereport .content .right_block {
@@ -859,16 +863,16 @@ body.fe2 {
     }
 
     body.fe2.freereport .exitWarning {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     body.fe2.freereport .exitNotification {
-        font-size: 0.7em;
+        font-size: 0.6em;
         margin-top: 0;
     }
 
     body.fe2.freereport .action-form .form-fields {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     body.fe2.freereport .action-form .form-fields input {
@@ -876,13 +880,13 @@ body.fe2 {
     }
 
     body.fe2.freereport .action-form button .row {
-        margin: 23px 0;
+        margin: 12px 0;
     }
 
     body.fe2.freereport .exitDown {
         padding: 5px 13px;
         margin-bottom: 5px;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
 
@@ -897,7 +901,7 @@ body.fe2 {
     }
 
     body.fe2.freereport .exitWarning {
-        font-size: 1.95em;
+        font-size: 1.85em;
     }
 
     body.fe2.freereport .exitNotification {
@@ -930,7 +934,7 @@ body.fe2 {
     }
 
     body.fe2.freereport .exitWarning {
-        font-size: 2.475em;
+        font-size: 2.4em;
         margin-top: 18px;
     }
 }
