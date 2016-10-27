@@ -58,6 +58,7 @@ input[type=text], input[type=email] {
     display: inline-block;
     vertical-align: middle;
     float: none;
+    padding-left: 0;
 }
 
 .vtop {
@@ -99,14 +100,13 @@ body.fe2 {
 
 .fe2 .header {
     margin-bottom: 30px;
-    padding-right: 0;
-    padding-left: 0;
 }
 
 .fe2 .header .lic {
     vertical-align: middle;
     white-space: nowrap;
     font-size: 0.8em;
+    padding-right: 0;
 }
 
 .fe2 .header .lic span.licenceLeft {
@@ -132,6 +132,10 @@ body.fe2 {
     text-align: center;
     padding: 9px 13px 7px 13px;
     vertical-align: middle;
+}
+
+.copyright {
+    padding-right: 0;
 }
 
 .video-through {
@@ -397,7 +401,6 @@ body.fe2 {
 .fe2 .footer {
     margin-top: 30px;
     color: #fff;
-    padding-right: 0;
 }
 
 .footer .logo img {
