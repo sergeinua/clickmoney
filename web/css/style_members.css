@@ -1208,7 +1208,7 @@ li.active {
     }
 
     .membership-text {
-        min-height: 150px;
+        min-height: 175px;
     }
 
     .single-item {
@@ -2142,6 +2142,6 @@ span#time-exit {
     }
 }
 
-a[href$="#top-form"]:hover {
+a[href$="#bottom-form"]:hover {
     text-decoration: none;
 }
