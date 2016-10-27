@@ -1322,7 +1322,8 @@ li.active {
 
 @media (min-width: 366px) and (max-width: 500px) {
     .membership-wrapper {
-        height: 855px;
+        /*height: 855px;*/
+        height: auto;
     }
 
     .last-chace-register button .col-md-12.col-xs-9 {
@@ -2097,8 +2098,6 @@ span#time-exit {
     }
 }
 
-
-
 @media (min-width: 991px) and (max-width: 1399px) {
     .membership-header .membership-block-text {
         font-size: 0.67em;
@@ -2133,5 +2132,12 @@ span#time-exit {
     .third-num {
         left: 45px;
         top: 45px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .membership-wrapper {
+        height: 950px;
+        margin-bottom: 150px;
     }
 }

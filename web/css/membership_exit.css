@@ -1252,8 +1252,10 @@ p.register-text {
     }
 
     .membership-wrapper {
-        height: 1100px;
-        margin-bottom: 20px;
+        /*height: 1100px;*/
+        /*margin-bottom: 20px;*/
+        height: auto;
+        margin-bottom: 40px;
     }
 
     .text-lower {
@@ -2136,13 +2138,13 @@ ul.info li a:hover {
 
 @media (min-width: 320px) and (max-width: 365px) {
     .membership-wrapper {
-        height: 1025px;
+        /*height: 1025px;*/
     }
 }
 
 @media (min-width: 366px) and (max-width: 500px) {
     .membership-wrapper {
-        height: 855px;
+        /*height: 855px;*/
     }
 
     .last-chace-register button .col-md-12.col-xs-9 {
@@ -2167,7 +2169,7 @@ ul.info li a:hover {
 
 @media (min-width: 501px) and (max-width: 630px) {
     .membership-wrapper {
-        height: 970px;
+        /*height: 970px;*/
     }
 
     .membership-header button .col-md-12.col-xs-9 {
@@ -2234,4 +2236,11 @@ span#time-exit {
 
 .membership-footer .panel-heading {
     position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .membership-wrapper {
+        height: 950px;
+        margin-bottom: 160px;
+    }
 }
