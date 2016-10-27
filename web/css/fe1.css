@@ -885,7 +885,7 @@ body.fe2 {
     }
 
     body.fe2.freereport .action-form button .row {
-        margin: 12px 0;
+        /*margin: 12px 0;*/
     }
 
     body.fe2.freereport .exitDown {
