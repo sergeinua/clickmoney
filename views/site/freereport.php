@@ -188,22 +188,17 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 --><div class="col-xs-12 lic text-right vcenter col-lg-2">
                     <span class="licenceLeft">1</span><span class="licenceRight">Report Left</span>
                 </div>
-
             </div>
         </div>
         <div class="container content">
             <div class="row">
                 <div class="col-md-7 col-xs-12 video-through vcenter text-center left_block">
-<!--                    <img class="img-responsive" src="images/video(16-9).jpg">-->
-<!--                    <img class="play" src="images/play.png" />-->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe id="vim-video" class="embed-responsive-item" src="https://player.vimeo.com/video/189146409?title=0&byline=0&portrait=0&autoplay=true" width="auto"
+                        <iframe id="vim-video" class="embed-responsive-item"
+                                src="https://player.vimeo.com/video/189146409?&background=1&autoplay=true" width="auto"
                                 height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen
                                 allowfullscreen></iframe>
                     </div>
-
-                    <!--<img class="play_gd" src="images/gd_corner_fe1.png" />-->
-                    <!--<img class="play_logo" src="images/ClickMoneyLogo/Logo-green.svg" />-->
                 </div><!--
                 --><div class="container col-xs-12 vcenter right_block">
                     <div class="row text-center">
