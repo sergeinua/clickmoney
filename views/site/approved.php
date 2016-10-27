@@ -107,7 +107,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div>
             </div>
         </div>
-        <div class="container left-right-container">
+        <div class="container left-right-container" id="top-form">
             <div class="row">
                 <div class="col-md-7 left_block">
                     <img class="img-responsive img-membership1" src="images/video(16-9).jpg">
@@ -1073,7 +1073,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <p class="blank-text">Join Our Successful</p>
                         <p class="blank-text">Members Club!</p>
                         <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY</p>
+                            <a href="#top-form"><p>REGISTER YOUR CLICKMONEY</p></a>
                         </div>
                     </div>
                 </div>
@@ -1113,7 +1113,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <p class="blank-text">Join Our Successful</p>
                         <p class="blank-text">Members Club!</p>
                         <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY</p>
+                            <a href="#top-form"><p>REGISTER YOUR CLICKMONEY</p></a>
                         </div>
                     </div>
                 </div>
@@ -1153,7 +1153,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <p class="blank-text">Join Our Successful</p>
                         <p class="blank-text">Members Club!</p>
                         <div class="register-btn">
-                            <p>REGISTER YOUR CLICKMONEY</p>
+                            <a href="#top-form"><p>REGISTER YOUR CLICKMONEY</p></a>
                         </div>
                     </div>
                 </div>

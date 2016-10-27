@@ -2141,3 +2141,7 @@ span#time-exit {
         margin-bottom: 150px;
     }
 }
+
+a[href$="#top-form"]:hover {
+    text-decoration: none;
+}
