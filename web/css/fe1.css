@@ -232,7 +232,7 @@ body.fe2 {
 }
 
 .action-form button .row {
-    margin: 25px 0;
+    margin: 0;
     position: relative;
 }
 
@@ -332,7 +332,7 @@ body.fe2 {
 }
 
 .action-form button .row {
-    padding: 0;
+    padding: 24px 0;
 }
 
 .action-form .form-fields {
@@ -778,7 +778,8 @@ body.fe2 {
     }
 
     body.fe2 .action-form button .row {
-        margin: 13px 0;
+        margin: 0;
+        padding: 13px 0;
     }
 
     body.fe2 .warranty-text {
@@ -823,9 +824,7 @@ body.fe2 {
         font-size: 0.8em;
     }
 
-    body.fe2 .action-form button .row {
-        margin: 16px 0;
-    }
+
 
     body.fe2 .warranty-text {
         font-size: 0.7em;

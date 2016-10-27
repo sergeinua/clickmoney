@@ -87,6 +87,7 @@ button {
     bottom: auto;
     right: auto;
     transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
 }
 
 .video-popup h5 {
@@ -96,6 +97,7 @@ button {
      color: white;
     text-align: center;
     transform: translate(-50%);
+    -webkit-transform: translate(-50%);
     font-size: 26px;
     letter-spacing: 1px;
  }
@@ -106,6 +108,7 @@ button {
      color: white;
     left: 50%;
     transform: translate(-50%);
+    -webkit-transform: translate(-50%);
     font-size: 18px;
     letter-spacing: 2px;
  }
@@ -310,12 +313,9 @@ button {
 }
 
 .gaff button .row {
-    margin: 25px 0;
+    margin: 0;
     position: relative;
-}
-
-.gaff button .row {
-    padding: 0;
+    padding: 25px 0;
 }
 
 .gaff .row .arrow {
@@ -572,6 +572,7 @@ top:40px;
 /****************days**************/
 .days{
     background: linear-gradient(45deg, rgb(30,192,177) 0%,rgb(39,191,164) 69%,rgb(58,189,138) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(30,192,177) 0%,rgb(39,191,164) 69%,rgb(58,189,138) 100%);
     height: auto;
     padding-bottom: 90px;
 }
@@ -589,6 +590,7 @@ top:40px;
     font-weight: bold;
     font-size: 180px;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .text-lower {
@@ -598,6 +600,7 @@ top:40px;
     font-size: 38px;
     letter-spacing: 4px;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
@@ -628,6 +631,7 @@ top:40px;
     color: white;
     letter-spacing: 2px;
     transform: translate(-50%);
+    -webkit-transform: translate(-50%);
     font-size: 17px;
 }
 
@@ -648,6 +652,7 @@ top:40px;
     letter-spacing: 2px;
     font-size: 14px;
     transform: translate(-50%);
+    -webkit-transform: translate(-50%);
     width: 100%;
     text-align: center;
 }
@@ -732,6 +737,7 @@ top:40px;
 .last-chace-register .qick-and-easy {
     padding-top: 150px;
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.96) 72%,rgba(255,255,255,0.93) 79%,rgba(255,255,255,0.85) 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.96) 72%,rgba(255,255,255,0.93) 79%,rgba(255,255,255,0.85) 100%);
 }
 
 .qick-and-easy .grey {
@@ -759,6 +765,7 @@ top:40px;
 
 .last-chace-register .row.quick-and-easy {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 45%, rgba(255,255,255,0.5) 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(255,255,255,1) 45%, rgba(255,255,255,0.5) 100%);
 }
 
 .last-chace-register .container {
@@ -882,6 +889,7 @@ p.register-text {
 
 .membership-footer {
     background: linear-gradient(45deg, rgb(30,192,177) 0%,rgb(39,191,164) 69%,rgb(58,189,138) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(30,192,177) 0%,rgb(39,191,164) 69%,rgb(58,189,138) 100%);
     height: auto;
     padding-bottom: 20px;
 }
@@ -1172,6 +1180,7 @@ li.active {
         left: 50%;
         padding: 1% 2%;
         transform: translate(-50%);
+        -webkit-transform: translate(-50%);
     }
 
     .membership-footer .content {
@@ -1281,6 +1290,7 @@ li.active {
         color: white;
         text-align: center;
         transform: translate(-50%);
+        -webkit-transform: translate(-50%);
         font-size: 20px;
         width: 100%;
         letter-spacing: 1px;
@@ -1435,7 +1445,7 @@ li.active {
     }
 
     .gaff button .row {
-         margin: 15px 0;
+        padding: 15px 0;
     }
 
     span.green {
@@ -1622,6 +1632,7 @@ li.active {
         left: 50%;
         width: 80% !important;
         transform: translate(-50%);
+       -webkit-transform: translate(-50%);
    }
 
     .embed-responsive-16by10 p {
@@ -1727,10 +1738,6 @@ li.active {
 
     .membership-text {
         min-height: 245px;
-    }
-
-    .gaff button .row {
-        margin: 20px 0;
     }
 
     .gaff button {
@@ -1914,6 +1921,7 @@ li.active {
 
 .arrow-img-active {
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 .panel-heading img {
