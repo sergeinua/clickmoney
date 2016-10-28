@@ -69,10 +69,11 @@
 .freereport .exitWarning {
     margin: 0 15px;
     text-transform: capitalize;
-    font-size: 1.8em;
+    font-size: 2em;
     color: #3e3e3e;
     text-align: center;
     font-weight: normal;
+    line-height: 1.42857143;
 }
 
 .freereport .exitWarning span {

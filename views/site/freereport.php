@@ -183,10 +183,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 --><div class="col-xs-12 col-lg-8 vcenter text-white">
                     <img src="images/nn.png">There are currently
                     <span class="feExitRed" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.
-                    <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Report</span> Right Now. <span class="feExitBold">Act Quickly!</span>
+                    <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Spot</span> Right Now. <span class="feExitBold">Act Quickly!</span>
                 </div><!--
                 --><div class="col-xs-12 lic text-right vcenter col-lg-2">
-                    <span class="licenceLeft">1</span><span class="licenceRight">Report Left</span>
+                    <span class="licenceLeft">1</span><span class="licenceRight">Spot Left</span>
                 </div>
             </div>
         </div>
@@ -203,7 +203,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 --><div class="container col-xs-12 vcenter right_block">
                     <div class="row text-center">
                         <div class="col-xs-12">
-                            <h2 class="exitWarning"><span>WARNING:</span> Download Your <strong>Free ClickMoney Report</strong> Before This Exclusive Offer Expires!</h2>
+                            <h2 class="exitWarning"><span>WARNING:</span> Unlock Your <strong>Free Click Money System</strong> Before This Exclusive Offer Expires!</h2>
                         </div>
                         <div class="col-xs-12">
                             <p class="exitNotification">Enter your first name and best email address below to proceed:</p>
@@ -236,7 +236,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                         <button type="submit">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    FAST! CLICK HERE TO GET THE REPORT
+                                                    HURRY! CLICK MONEY FOR FREE
                                                 </div>
                                             </div>
                                         </button>

@@ -44,7 +44,8 @@ body.freereport {
 .freereport .exitWarning {
     margin: 0 15px;
     text-transform: capitalize;
-    font-size: 1.8em;
+    font-size: 1.5em;
+    line-height: 1.42857143;
     color: #3e3e3e;
     text-align: center;
     font-weight: normal;
@@ -53,6 +54,15 @@ body.freereport {
 .freereport .exitWarning span {
     color: #fd442b;
     font-weight: bold;
+}
+
+.freereport .right_block {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.freereport .exitWarning strong {
+    border-bottom: 2px dashed #e4e4e4;
 }
 
 .freereport .exitNotification {
@@ -99,10 +109,6 @@ body.freereport {
         text-align: left;
     }
 
-    .freereport .header .text-white {
-        text-align: right;
-    }
-
     .freereport .header .lic {
         text-align: right;
     }
@@ -112,6 +118,7 @@ body.freereport {
 @media (min-width: 1800px) {
     .freereport .header .logo {
         width: 10%;
+        padding-left: 0;
     }
 
     .freereport .header .text-white {

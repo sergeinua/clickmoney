@@ -58,7 +58,6 @@ input[type=text], input[type=email] {
     display: inline-block;
     vertical-align: middle;
     float: none;
-    padding-left: 0;
 }
 
 .close-btn-block .vcenter {
@@ -136,6 +135,10 @@ body.fe2 {
     text-align: center;
     padding: 9px 13px 7px 13px;
     vertical-align: middle;
+}
+
+.fe2 .header .logo {
+    padding-left: 0;
 }
 
 .copyright {
@@ -884,20 +887,20 @@ body.fe2 {
     }
 
     body.fe2.freereport .exitWarning {
-        font-size: 1.2em;
+        font-size: 14px;
     }
 
     body.fe2.freereport .exitNotification {
-        font-size: 0.6em;
+        font-size: 0.65em;
         margin-top: 0;
     }
 
     body.fe2.freereport .action-form .form-fields {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 
     body.fe2.freereport .action-form .form-fields input {
-        padding: 2px;
+        padding: 8px;
     }
 
     body.fe2.freereport .action-form button .row {
@@ -905,9 +908,21 @@ body.fe2 {
     }
 
     body.fe2.freereport .exitDown {
-        padding: 5px 13px;
+        padding: 3px 13px;
         margin-bottom: 5px;
-        font-size: 1.1em;
+        font-size: 12px;
+    }
+
+    .warranty-text img {
+        width: 4%;
+    }
+
+    .footer {
+        font-size: 0.8em;
+    }
+
+    .footer .menu ul {
+        padding-left: 25px;
     }
 }
 
@@ -922,8 +937,9 @@ body.fe2 {
     }
 
     body.fe2.freereport .exitWarning {
-        font-size: 1.85em;
-    }
+        font-size: 18px;
+        text-transform: uppercase;
+}
 
     body.fe2.freereport .exitNotification {
         font-size: 0.7em;
@@ -955,8 +971,9 @@ body.fe2 {
     }
 
     body.fe2.freereport .exitWarning {
-        font-size: 2.4em;
-        margin-top: 17px;
+        font-size: 2em;
+        margin-top: 7px;
+        text-transform: uppercase;
     }
 }
 
@@ -996,7 +1013,7 @@ body.fe2 {
     }
 
     #exitpopup input#name, #exitpopup input#email {
-        padding: 1px;
+        padding: 10px;
     }
 
 }
