@@ -67,6 +67,11 @@ body.fe2.clickthrough .content .right_block > div.row:last-child {
 
 /* md */
 @media (min-width: 992px) {
+
+    body.fe2.clickthrough .action-form {
+        padding-bottom: 0;
+    }
+
     body.fe2.clickthrough .content .right_block {
         padding-top: 0;
         margin-top: 0;
