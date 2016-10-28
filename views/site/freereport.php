@@ -195,7 +195,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 <div class="col-md-7 col-xs-12 video-through vcenter text-center left_block">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe id="vim-video" class="embed-responsive-item"
-                                src="https://player.vimeo.com/video/189146409?&background=1&autoplay=true" width="auto"
+                                src="https://player.vimeo.com/video/189146409?&autoplay=true" width="auto"
                                 height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen
                                 allowfullscreen></iframe>
                     </div>
