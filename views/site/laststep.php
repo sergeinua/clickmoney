@@ -62,14 +62,6 @@ $script = <<< JS
        $('.last-chace-register #gaff.gaff.middle-form form#caffForm').on('submit', function() {
             $('#loading_sec').modal('show');
        });
-       var top_iframe = $('#vim-video-top');
-       var top_player = new Vimeo.Player(top_iframe);
-       var yellow_arrow = $('img.img-responsive.yellow-arrow');
-       var text_label = $('img.img-responsive.yellow-arrow + p');
-       top_player.on('play', function() {         
-            yellow_arrow.hide();
-            text_label.hide();
-       });
    });
 JS;
 
@@ -1018,10 +1010,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </div>
                 <div class="col-md-8 you-here">
                     <p class="steps-title"><span class="num-for-small-res">2</span>Deposit</p>
-                    <p class="grey-small-text">Find your trading account with
-                        a<br>
-                        minimum investment of $250</p>
-                </div><img class="hidden-xs hidden-sm arrow arrow1 " src=
+                    <p class="grey-small-text">Fund your new account with $250<br>
+                        or more to unlock the Click Money System</p>
+                </div>
+                <img class="hidden-xs hidden-sm arrow arrow1 " src=
                 "images/arrowLittleGreen.png"></div>
             <div class="col-md-4">
                 <div class="col-md-4 member-arrows">
@@ -1033,7 +1025,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 <div class="col-md-8 you-here">
                     <p class="steps-title"><span class="num-for-small-res">3</span>Profit!</p>
                     <p class="grey-small-text">Open a bottle of champagne
-                        and<br> watch the money rain!</p>
+                        and<br> watch the money flood your account!</p>
                 </div>
             </div>
         </div>
@@ -1048,7 +1040,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="text-center">
                 <p class="grey">THIS OFFER CLOSES IN &nbsp;<span class= "count-down" id="minutes-mem">3m</span><span class="count-down" id="seconds-mem">35s</span></p>
                 <p class="register-text"><span class="green">Last chance,</span> Register your</p>
-                <p class="register-text">ClickMoney Right Now</p>
+                <p class="register-text">Click Money Account Now</p>
             </div>
             <div class="container">
                 <div class="gaff middle-form" id="gaff">
@@ -1063,12 +1055,12 @@ $this->registerJs($script, yii\web\View::POS_READY);
                             <div class="col-md-4 hidden-xs hidden-sm mem-first-arrow-left">
                                 <img src="images/arrowleft1.png">
                             </div>
-                            <div class="col-md-2 form-group">
+                            <div class="col-md-2 col-sm-6 form-group">
                                 <label class="register-label">First Name</label>
                                 <input class="form-control email-reg-name email-Reg0" name="firstname" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" placeholder="First Name" required="" title="Please enter 3-15 characters (alphabets only)"
                                        type="text" value="">
                             </div>
-                            <div class="col-md-2 form-group">
+                            <div class="col-md-2 col-sm-6 form-group">
                                 <label class="register-label">Last Name</label>
                                 <input class="form-control email-reg-name email-Reg0 email-Reg2"
                                        name="lastname" pattern=
@@ -1086,7 +1078,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                  "col-md-4 mem-second-arrow-left hidden-xs hidden-sm">
                                 <img src="images/arrowLittleGreen.png">
                             </div>
-                            <div class="col-md-2 form-group">
+                            <div class="col-md-2 col-sm-6 form-group">
                                 <label class="register-label">Country</label>
                                 <select class=
                                         "form-control bfh-countries select-register email-reg-name email-Reg0 email-Reg3" data-country="UA" id="countryData_gaff2"
@@ -1819,7 +1811,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                     </option>
                                 </select>
                             </div>
-                            <div class="col-md-2 form-group">
+                            <div class="col-md-2 col-sm-6 form-group">
                                 <label class="register-label">Phone</label>
                                 <input class= "form-control bfh-phone email-reg-name email-Reg0 email-Reg4" data-content=
                                 "You have to use a VALID number in order to continue."
@@ -1836,7 +1828,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                             <div class= "col-md-4 mem-third-arrow-left hidden-xs hidden-sm ">
                                 <img src="images/arrowleft1.png">
                             </div>
-                            <div class="col-md-2 form-group">
+                            <div class="col-md-2 col-sm-6 form-group">
                                 <label class="register-label">Email</label>
                                 <input class="form-control email-Reg0 email-Reg5 email-reg-bestem"
                                        data-error=
@@ -1844,7 +1836,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                                        "email" placeholder="Your Best Email"
                                        required="" type="email" value="">
                             </div>
-                            <div class="col-md-2 form-group">
+                            <div class="col-md-2 col-sm-6 form-group">
                                 <label class="register-label">Password</label>
                                 <input class=
                                        "col-xs-12 form-control email-Reg0 email-Reg6 email-reg-name"
@@ -1910,20 +1902,25 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <li data-class="item-3"><a>What if I already have account?</a></li>
                         <li data-class="item-4"><a>What is the success rate fo ClickMoney?</a></li>
                         <li data-class="item-5"><a>How much money can I earn per day?</a></li>
-                        <li data-class="item-6"><a>How many people have found success so far?</a></li>
+                        <li data-class="item-6"><a>Do I get support with the Click Money System?</a></li>
                     </ul>
                 </div>
                 <div class="col-md-7">
                     <div class="content">
                         <div class="item-1 active">
                             <h3>What is ClickMoney?</h3>
-                            <p>It is a state-of-the-art cash generating system that legally taps into a 50 Billion dollar
-                                global market and leverages it to make millions for its users.</p>
+                            <p>The Click Money System is a custom coded software that trades on the Binary Options
+                                market. It's a unique strategy which traders use to win up to 90% trades. These same
+                                strategies have been automated by the Click Money System. Now everyday people with zero
+                                experience in making money online can use the system to earn profits within minutes of
+                                activation.</p>
                         </div>
                         <div class="item-2">
                             <h3></h3>
-                            <p>You will need to open a new account and fund it in order to get free access to the ClickMoney
-                                software.</p>
+                            <p>The cost of the Click Money System is zero, zelch, nada! The software inside the system
+                                has no up front cost. In order to unlock the system you must fund your broker account
+                                with a minimum of $250 or more. The only way the software works if it has money to trade
+                                with to earn profits.</p>
                         </div>
                         <div class="item-3">
                             <h3></h3>
@@ -1932,7 +1929,12 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         </div>
                         <div class="item-4">
                             <h3></h3>
-                            <p>The average success rate for ClickMoney members is 99%.</p>
+                            <p>The success rate of the Click Money System varies on the end user. Due to the fact we
+                                have no control over what you will do with this system once in your hands the typical
+                                success rate is not recorded. So for this reason the success rate is solely depended on
+                                your commitment to the system. It can be 0-90% depending on the end user. See legal
+                                disclaimers in footer links of this page for more information of Click Money Terms Of
+                                Service.</p>
                         </div>
                         <div class="item-5">
                             <h3></h3>
@@ -1944,7 +1946,9 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         </div>
                         <div class="item-6">
                             <h3></h3>
-                            <p>Millions.</p>
+                            <p>Yes the Click Money System has a very solid support staff. Any questions you have you can
+                                contact us any time. Our contact info is on this page. We can be reach by email and
+                                skype. You may also contact your broker.</p>
                         </div>
                     </div>
                 </div>
@@ -1961,8 +1965,11 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <p>It is a state-of-the-art cash generating system that legally taps into a 50 Billion dollar
-                                    global market and leverages it to make millions for its users.</p>
+                                <p>The Click Money System is a custom coded software that trades on the Binary Options
+                                    market. It's a unique strategy which traders use to win up to 90% trades. These same
+                                    strategies have been automated by the Click Money System. Now everyday people with
+                                    zero experience in making money online can use the system to earn profits within
+                                    minutes of activation.</p>
                             </div>
                         </div>
                     </div>
@@ -1974,8 +1981,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <p>You will need to open a new account and fund it in order to get free access to the ClickMoney
-                                    software.</p>
+                                <p>The cost of the Click Money System is zero, zelch, nada! The software inside the
+                                    system has no up front cost. In order to unlock the system you must fund your broker
+                                    account with a minimum of $250 or more. The only way the software works if it has
+                                    money to trade with to earn profits.</p>
                             </div>
                         </div>
                     </div>
@@ -2000,7 +2009,12 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <p>The average success rate for ClickMoney members is 99%.</p>
+                                <p>The success rate of the Click Money System varies on the end user. Due to the fact we
+                                    have no control over what you will do with this system once in your hands the
+                                    typical success rate is not recorded. So for this reason the success rate is solely
+                                    depended on your commitment to the system. It can be 0-90% depending on the end
+                                    user. See legal disclaimers in footer links of this page for more information of
+                                    Click Money Terms Of Service.</p>
                             </div>
                         </div>
                     </div>
@@ -2023,12 +2037,14 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse"  href="#collapseSix">How many people have found success so far?</a>
+                                <a data-toggle="collapse"  href="#collapseSix">Do I get support with the Click Money System?</a>
                             </h4>
                         </div>
                         <div id="collapseSix" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <p>Millions</p>
+                                <p>Yes the Click Money System has a very solid support staff. Any questions you have you
+                                    can contact us any time. Our contact info is on this page. We can be reach by email
+                                    and skype. You may also contact your broker.</p>
                             </div>
                         </div>
                     </div>
@@ -2052,18 +2068,3 @@ $this->registerJs($script, yii\web\View::POS_READY);
         </div>
     </div>
 </section>
-
-<!-- Modal -->
-<div id="myVideo" class="modal fade video-popup" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <h5>JOAN KOWALOWSKY</h5>
-            <p>TESTIMONIAL</p>
-            <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close"><img src="images/close-video.png"></a>
-            <div class="embed-responsive embed-responsive-16by9">
-                <img class="img-responsive" src="images/girl-popup.png">
-                <img class="img-responsive play-button" src="images/stop.png">
-            </div>
-        </div>
-    </div>
-</div>
