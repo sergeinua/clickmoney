@@ -12,6 +12,7 @@ Yii::$app->params['bodyClass'] = 'fe2';
 $script_init = <<< JS
     var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
     var exitsplashpage = '/freereport';
+    sessionStorage.setItem('show_exit_popup', 'true');
 JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
@@ -22,6 +23,8 @@ $script = <<< JS
         sessionStorage.setItem('show_joined_popup', 'false');
         return false;
     });
+    var iframe = $('#vim-video');
+    var player = new Vimeo.Player(iframe);
 })(jQuery);
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
@@ -54,8 +57,14 @@ if ($mob->isTablet() || $mob->isMobile()) {
 <div class="container content">
     <div class="row">
         <div class="col-md-7 col-xs-12 video-through vcenter text-center left_block">
-            <img class="img-responsive" src="images/video(16-9).jpg">
-            <img class="play" src="images/play.png" />
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="vim-video" class="embed-responsive-item"
+                        src="https://player.vimeo.com/video/189163304?autoplay=true"
+                        width="auto" height="auto" frameborder="0"
+                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+<!--            <img class="img-responsive" src="images/video(16-9).jpg">-->
+<!--            <img class="play" src="images/play.png" />-->
             <!--<img class="play_gd" src="images/gd_corner_fe1.png" />-->
             <!--<img class="play_logo" src="images/ClickMoneyLogo/Logo-green.svg" />-->
         </div><!--
