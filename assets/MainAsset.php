@@ -30,7 +30,8 @@ class MainAsset extends AssetBundle
             'js/people_filling.js',
             'js/counter.js',
             'validate?form=' . \Yii::$app->controller->action->id,
-            'exitsplash'
+            'exitsplash',
+            'https://player.vimeo.com/api/player.js'
         ];
 
         parent::init();

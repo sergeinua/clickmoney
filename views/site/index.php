@@ -23,6 +23,8 @@ $script = <<< JS
         sessionStorage.setItem('show_joined_popup', 'false');
         return false;
     });
+    var iframe = $('#vim-video');
+    var player = new Vimeo.Player(iframe);
 })(jQuery);
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
@@ -42,10 +44,10 @@ if ($mob->isTablet() || $mob->isMobile()) {
 </script>
 <div class="container content">
     <div class="row">
-        <div class="col-xs-12 video-through vcenter text-center">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 video-through vcenter text-center">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                        src="https://player.vimeo.com/video/189163304?autoplay=true&background=1"
+                <iframe id="vim-video" class="embed-responsive-item"
+                        src="https://player.vimeo.com/video/189163304?autoplay=true"
                         width="auto" height="auto" frameborder="0"
                         webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>

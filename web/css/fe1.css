@@ -575,6 +575,10 @@ body.fe2 {
         width: auto;
     }
 
+    body.fe1 .col-xs-12.video-through {
+        padding-top: 30px;
+    }
+
     .fe2 .content .right_block {
         background-color: white;
         width: 32%;

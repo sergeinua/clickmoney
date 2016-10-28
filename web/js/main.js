@@ -62,6 +62,10 @@ $(document).ready(function(){
     //     return false;
     // };
 
+    var iframe = $('#vim-video');
+    var player = new Vimeo.Player(iframe);
+    // setTimeout(function(){player.pause()}, 3000);
+
     setTimeout(function(){
         //console.log("times up");
         $(document).mousemove(function (e) {
@@ -73,12 +77,12 @@ $(document).ready(function(){
 
     $('.modal').on('show.bs.modal', function() {
         // stop playing video on modal showing
-        // wistiaEmbed.pause();
+        player.pause();
     });
 
     $('.modal').on('hide.bs.modal', function() {
         // start playing video on modal hiding
-        // wistiaEmbed.play();
+        player.play();
     });
 
     $('.modal').on('shown.bs.modal', function() {
