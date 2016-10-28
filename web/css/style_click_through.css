@@ -1991,8 +1991,11 @@ p.welkOrange1 {
     }
 
     .welkGreen {
-        margin: 0 auto 60px;
         width: 35%;
+    }
+
+    .welkText {
+        margin: 60px 0;
     }
 }
 

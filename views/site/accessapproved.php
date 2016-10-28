@@ -48,14 +48,13 @@ $this->title = 'ClickMoney.com';
             <!--<img class="play_logo" src="images/ClickMoneyLogo/Logo-green.svg" />-->
         </div><!--
                 --><div class="col-md-5 col-xs-12 vcenter right_block">
-            <div class="row text-uppercase text-center">
+            <div class="row text-uppercase text-center main-text">
                 <div class="col-xs-12">
-                            <span class="main-text">
                                  <p class="welkGreen">WELCOME ABOARD!</p>
-                                <p><u><strong>Click The Button Below</strong></u><br>
+                                <p class="welkText"><u><strong>Click The Button Below</strong></u><br>
                                  To <u><strong>Secure </strong></u><span class="orange">1</span><u><strong> of the</strong></u> <span class="orange">10</span>
                                      CLICK MONEY LICENSES</p>
-                            </span>
+
                 </div>
             </div><!--
                     --><div class="row action-form">
