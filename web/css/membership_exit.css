@@ -44,7 +44,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .embed-responsive-16by9 {
-    padding-bottom: 66.25%;
+    /*padding-bottom: 66.25%;*/
 }
 
 .nav>li>a:hover {
@@ -245,7 +245,7 @@ button {
 .membership-header .left_block{
     padding-right: 0;
     padding-left: 0;
-    width: 61.5%;
+    /*width: 61.5%;*/
     position: relative;
 }
 
@@ -289,7 +289,7 @@ button {
 }
 
 .membership-header .right_block {
-    width: 38.5%;
+    /*width: 38.5%;*/
     padding: 1% 2%;
     border: 4px solid #e9f16a;
     background-color: #09b6a0;
@@ -297,8 +297,8 @@ button {
 
 .register-right-text {
     width: 80%;
-    padding-top: 3%;
-    padding-bottom: 4%;
+    padding-top: 0;
+    padding-bottom: 1%;
     text-transform: uppercase;
     font-size: 1.5625em;
     color: white;
@@ -406,7 +406,7 @@ button {
 }
 
 .register-last-row {
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 
 .right-block .arrow {
@@ -1767,7 +1767,7 @@ p.register-text {
     }
 
     .icons-block {
-        margin: 15px auto 0 auto;
+        margin: 38px auto 0 auto;
     }
 
     .membership-wrapper {
@@ -1849,7 +1849,7 @@ p.register-text {
     }
 
     .membership-header .right_block {
-        min-height: 547px;
+        min-height: 525px;
     }
 
     .embed-responsive-16by10 {
@@ -2018,7 +2018,7 @@ p.register-text {
     }
 
     body.laststep .membership-header .right_block {
-        height: 344px;
+        height: 325px;
     }
 }
 
@@ -2056,13 +2056,13 @@ p.register-text {
     }
 
     body.laststep .membership-header .right_block {
-        height: 344px;
+        height: 325px;
     }
 }
 
 @media (min-width: 1400px) and (max-width: 1799px) {
     body.laststep .membership-header .right_block {
-        height: 405px;
+        height: 384px;
     }
 
     body.laststep .membership-block-text {
@@ -2088,7 +2088,7 @@ p.register-text {
     }
 
     body.laststep .membership-header .right_block {
-        height: 554px;
+        height: auto;
     }
 }
 
@@ -2244,4 +2244,8 @@ span#time-exit {
         height: 950px;
         margin-bottom: 160px;
     }
+}
+
+.container.left-right-container {
+    background: transparent;
 }

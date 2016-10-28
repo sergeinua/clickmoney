@@ -62,6 +62,14 @@ $script = <<< JS
        $('.last-chace-register #gaff.gaff.middle-form form#caffForm').on('submit', function() {
             $('#loading_sec').modal('show');
        });
+       var top_iframe = $('#vim-video-top');
+       var top_player = new Vimeo.Player(top_iframe);
+       var yellow_arrow = $('img.img-responsive.yellow-arrow');
+       var text_label = $('img.img-responsive.yellow-arrow + p');
+       top_player.on('play', function() {         
+            yellow_arrow.hide();
+            text_label.hide();
+       });
    });
 JS;
 
@@ -110,8 +118,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="container left-right-container">
             <div class="row">
                 <div class="col-md-7 left_block">
-                    <img class="img-responsive img-membership1" src="images/video(16-9).jpg">
-                    <img class="img-responsive play-button" src="images/play.png">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="vim-video-top" class="embed-responsive-item" src="https://player.vimeo.com/video/189163307" width="auto" height="auto"
+                                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
                     <p>Watch Video Now! Expires in: <span id="time-exit">00h : 05m : 00s</span></p>
                 </div>

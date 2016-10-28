@@ -28,6 +28,7 @@ class LaststepAsset extends AssetBundle
             'js/jquery.animateNumber.min.js',
             'js/jquery.cookie.js',
             'js/counter.js',
+            'https://player.vimeo.com/api/player.js'
         ];
 
         parent::init();
