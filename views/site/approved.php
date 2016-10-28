@@ -1067,8 +1067,8 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599403150_640.jpg"></div>
                     </div>
                     <img class="img-responsive play-button" src="images/play.png">
-                    <h5>JOAN KOWALOWSKY</h5>
-                    <p>TESTIMONIAL</p>
+                    <h5>JAMES</h5>
+                    <p>CASE STUDY</p>
                 </div>
             </div>
             <div class="row join-member-club">
@@ -1110,8 +1110,8 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599400700_640.jpg"></div>
                     </div>
                     <img class="img-responsive play-button" src="images/play.png">
-                    <h5>JOAN KOWALOWSKY</h5>
-                    <p>TESTIMONIAL</p>
+                    <h5>STEPHEN AND HELEN</h5>
+                    <p>CASE STUDY</p>
                 </div>
             </div>
             <div class="row join-member-club">
@@ -1153,8 +1153,8 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599401145_640.jpg"></div>
                     </div>
                     <img class="img-responsive play-button" src="images/play.png">
-                    <h5>JOAN KOWALOWSKY</h5>
-                    <p>TESTIMONIAL</p>
+                    <h5>SARA</h5>
+                    <p>CASE STUDY</p>
                 </div>
             </div>
             <div class="row join-member-club">
