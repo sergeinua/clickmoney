@@ -39,7 +39,7 @@ $this->title = 'ClickMoney.com';
         <div class="col-md-7 left_block left_block1">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                        src="https://player.vimeo.com/video/189163302?autoplay=true&background=1" width="auto"
+                        src="https://player.vimeo.com/video/189163302?autoplay=true" width="auto"
                         height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
