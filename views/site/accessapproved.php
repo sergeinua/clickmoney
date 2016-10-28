@@ -29,7 +29,7 @@ $this->title = 'ClickMoney.com';
             <img src="images/ClickMoneyLogo/Logo-white.svg">
     </div><!--
     --><div class="col-xs-6 lic text-right vcenter">
-            <span class="licenceLeft">1</span><span class="licenceRight">Licence Left</span>
+            <span class="licenceLeft">10</span><span class="licenceRight">Licence Left</span>
         </div>
     </div>
 </div>
@@ -46,9 +46,12 @@ $this->title = 'ClickMoney.com';
             <div class="row text-uppercase text-center main-text">
                 <div class="col-xs-12">
                     <span class="welcome-plate">WELCOME ABOARD!</span>
-                    <p class="welcome-text"><u><strong>Click The Button Below</strong></u><br />
-                        To <u><strong>Secure </strong></u><span class="orange">1</span><u><strong> of the</strong></u> <span class="orange">10</span>
-                                     CLICK MONEY LICENSES</p>
+                    <p class="welcome-text">
+                        <u><strong>Click The Button Below</strong></u>
+                        <br class="hidden-sm hidden-xs" />
+                        To <u><strong>Secure </strong><span class="orange">1</span><strong> of the</strong> <span class="orange">10</span></u>
+                        CLICK MONEY LICENSES
+                    </p>
 
                 </div>
             </div>
