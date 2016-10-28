@@ -10,7 +10,7 @@ body.fe2.clickthrough .stop {
     color: #979797;
     border: 2px dashed #e4e4e4;
     margin: 15px;
-    padding: 15px;
+    padding: 5px 15px;
     position: relative;
     font-size: 0.7em;
 }
@@ -96,6 +96,10 @@ body.fe2.clickthrough .content .right_block > div.row:last-child {
 
 /* lg */
 @media (min-width: 1200px) {
+    body.fe2.clickthrough .stop {
+        padding: 15px;
+    }
+
     body.fe2.clickthrough .main-text p.welcome-text {
         font-size: 1em;
         width: auto;
