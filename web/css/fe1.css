@@ -1015,9 +1015,6 @@ body.fe2 {
         padding: 8px 13px 7px 13px;
     }
 
-    .freereport .header .logo {
-        padding-right: 0;
-    }
 }
 
 @media (max-height: 660px) {
@@ -1030,4 +1027,10 @@ body.fe2 {
         padding: 10px;
     }
 
+}
+
+@media (max-width: 991px) {
+    .freereport .header .logo {
+        padding-right: 0;
+    }
 }
