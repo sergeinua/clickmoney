@@ -2193,7 +2193,7 @@ span#time-exit {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .membership-wrapper {
-        height: 950px;
+        height: 850px;
         margin-bottom: 150px;
     }
 }
