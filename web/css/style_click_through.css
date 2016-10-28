@@ -1989,6 +1989,11 @@ p.welkOrange1 {
     .clickthrough button {
         width: 410px;
     }
+
+    .welkGreen {
+        margin: 0 auto 60px;
+        width: 35%;
+    }
 }
 
 /*adjustments for the video*/
