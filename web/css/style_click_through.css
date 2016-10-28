@@ -87,6 +87,9 @@ body.fe2.clickthrough .content .right_block > div.row:last-child {
         width: auto;
         margin: 0;
     }
+    body.fe2.clickthrough .reminder {
+        font-size: 1.2em;
+    }
 }
 
 /* lg */
