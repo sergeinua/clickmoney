@@ -28,7 +28,8 @@ class MembersAsset extends AssetBundle
             'js/jquery.animateNumber.min.js',
             'js/jquery.cookie.js',
             'js/counter.js',
-            'exitsplash'
+            'exitsplash',
+            'https://player.vimeo.com/api/player.js'
         ];
 
         parent::init();

@@ -1,6 +1,7 @@
 <?php
 use Mobile_Detect;
 use yii\helpers\Url;
+use yii\bootstrap\Modal;
 
 use app\assets\MembersAsset;
 
@@ -63,13 +64,31 @@ $script = <<< JS
        $('.last-chace-register #gaff.gaff.middle-form form#caffForm').on('submit', function() {
             $('#loading_sec').modal('show');
        });
+       var top_iframe = $('#vim-video-top');
+       var top_player = new Vimeo.Player(top_iframe);
+       var yellow_arrow = $('img.img-responsive.yellow-arrow');
+       var text_label = $('img.img-responsive.yellow-arrow + p');
+       top_player.on('play', function() {         
+            yellow_arrow.hide();
+            text_label.hide();
+       });
+       $('.embed-responsive.embed-responsive-16by9.embed-responsive-16by10').on('click', function() {
+            var target = $(this).data('target');
+            var iframe = $(target);
+            var player = new Vimeo.Player(iframe);
+            player.setCurrentTime(0);
+            player.play();
+       });
+       $('.pull-right.login-close').on('click', function() {
+            var iframe = $(this).data('iframe');
+            var player = new Vimeo.Player(iframe);
+            player.pause();
+       });
    });
 JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);
 ?>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <header class="membership-header">
     <div class="membership-wrapper">
@@ -110,8 +129,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="container left-right-container">
             <div class="row">
                 <div class="col-md-7 left_block">
-                    <img class="img-responsive img-membership1" src="images/video(16-9).jpg">
-                    <img class="img-responsive play-button" src="images/play.png">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="vim-video-top" class="embed-responsive-item" src="https://player.vimeo.com/video/189163307" width="auto" height="auto"
+                                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
                     <p>Watch Video Now! Expires in: <span id="time-exit">00h : 05m : 00s</span></p>
                 </div>
@@ -1042,7 +1063,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="col-md-4 single-item">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="images/girl.jpg">
+                    <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599403150_640.jpg">
                     <img class="img-responsive play-button" src=
                     "images/play.png">
                     <h5>JOAN KOWALOWSKY</h5>
@@ -1061,8 +1082,11 @@ $this->registerJs($script, yii\web\View::POS_READY);
             </div>
             <div class="col-md-4 hover-video">
                 <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
-                        <img class="img-responsive video-poster" src="images/greenGirl.jpg">
+                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#video-case-1">
+                        <div class="img-responsive video-poster" style="background: url('https://i.vimeocdn.com/video/599403150_640.jpg');height: 265px;background-size: cover;">
+                            <div class="has-background-case" style=""></div>
+                        </div>
+                        <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599403150_640.jpg">
                         <img class="img-responsive play-button" src="images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT</h5>
                         <p>AMD YOUR SUCCESS STORY</p>
@@ -1082,7 +1106,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="hidden-md col-lg-4 single-item">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="images/girl.jpg">
+                    <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599400700_640.jpg">
                     <img class="img-responsive play-button" src=
                     "images/play.png">
                     <h5>JOAN KOWALOWSKY</h5>
@@ -1101,8 +1125,11 @@ $this->registerJs($script, yii\web\View::POS_READY);
             </div>
             <div class="col-md-4 hover-video">
                 <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
-                        <img class="img-responsive video-poster" src="images/greenGirl.jpg">
+                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#video-case-2">
+                        <div class="img-responsive video-poster" style="background: url('https://i.vimeocdn.com/video/599400700_640.jpg');height: 265px;background-size: cover;">
+                            <div class="has-background-case" style=""></div>
+                        </div>
+                        <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599400700_640.jpg">
                         <img class="img-responsive play-button" src="images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT</h5>
                         <p>AMD YOUR SUCCESS STORY</p>
@@ -1122,7 +1149,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="col-md-4 single-item">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="images/girl.jpg">
+                    <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599401145_640.jpg">
                     <img class="img-responsive play-button" src=
                     "images/play.png">
                     <h5>JOAN KOWALOWSKY</h5>
@@ -1141,8 +1168,11 @@ $this->registerJs($script, yii\web\View::POS_READY);
             </div>
             <div class="col-md-4 hover-video">
                 <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#myVideo">
-                        <img class="img-responsive video-poster" src="images/greenGirl.jpg">
+                    <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#video-case-3">
+                        <div class="img-responsive video-poster" style="background: url('https://i.vimeocdn.com/video/599401145_640.jpg');height: 265px;background-size: cover;">
+                            <div class="has-background-case" style=""></div>
+                        </div>
+                        <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599401145_640.jpg">
                         <img class="img-responsive play-button" src="images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT</h5>
                         <p>AMD YOUR SUCCESS STORY</p>
@@ -2298,16 +2328,84 @@ $this->registerJs($script, yii\web\View::POS_READY);
     </div>
 </section>
 <!-- Modal -->
-<div id="myVideo" class="modal fade video-popup" tabindex="-1" role="dialog" aria-labelledby="my-modal-box-l" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <h5>JOAN KOWALOWSKY</h5>
-            <p>TESTIMONIAL</p>
-            <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close"><img src="images/close-video.png"></a>
-            <div class="embed-responsive embed-responsive-16by9">
-                <img class="img-responsive" src="images/girl-popup.png">
-                <img class="img-responsive play-button" src="images/stop.png">
-            </div>
-        </div>
+<?php
+$header_case_1 = <<<HEA
+    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="images/close-video.png"></a>
+    <h5>JOAN KOWALOWSKY</h5>
+    <p>TESTIMONIAL</p>
+HEA;
+Modal::begin([
+    'options' => [
+    'id' => 'video-case-1',
+    'class' => 'video-popup',
+    'tabindex' => "-1",
+    'role' => "dialog",
+    'aria-labelledby' => "my-modal-box-l",
+    'aria-hidden' => "true"
+    ],
+    'closeButton' => false,
+    'header' => $header_case_1,
+    'size' => Modal::SIZE_LARGE,
+]); ?>
+
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="vim-video-case-1" class="embed-responsive-item"
+                src="https://player.vimeo.com/video/189163308" width="auto" height="auto"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-</div>
+
+<?php Modal::end(); ?>
+
+<?php
+$header_case_2 = <<<HEA
+    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="images/close-video.png"></a>
+    <h5>JOAN KOWALOWSKY</h5>
+    <p>TESTIMONIAL</p>
+HEA;
+Modal::begin([
+    'options' => [
+        'id' => 'video-case-2',
+        'class' => 'video-popup',
+        'tabindex' => "-1",
+        'role' => "dialog",
+        'aria-labelledby' => "my-modal-box-l",
+        'aria-hidden' => "true"
+    ],
+    'closeButton' => false,
+    'header' => $header_case_1,
+    'size' => Modal::SIZE_LARGE,
+]); ?>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="vim-video-case-1" class="embed-responsive-item"
+                src="https://player.vimeo.com/video/189163313" width="auto" height="auto"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+<?php Modal::end(); ?>
+
+<?php
+$header_case_3 = <<<HEA
+    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="images/close-video.png"></a>
+    <h5>JOAN KOWALOWSKY</h5>
+    <p>TESTIMONIAL</p>
+HEA;
+Modal::begin([
+    'options' => [
+        'id' => 'video-case-3',
+        'class' => 'video-popup',
+        'tabindex' => "-1",
+        'role' => "dialog",
+        'aria-labelledby' => "my-modal-box-l",
+        'aria-hidden' => "true"
+    ],
+    'closeButton' => false,
+    'header' => $header_case_1,
+    'size' => Modal::SIZE_LARGE,
+]); ?>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="vim-video-case-1" class="embed-responsive-item"
+                src="https://player.vimeo.com/video/189163311" width="auto" height="auto"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+<?php Modal::end(); ?>
