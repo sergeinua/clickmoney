@@ -793,7 +793,7 @@ body.fe2 {
     }
 
     body.fe2 .action-form button {
-        font-size: 0.8em;
+        font-size: 0.68em;
     }
 
     body.fe2 .action-form button .row {
@@ -894,6 +894,7 @@ body.fe2 {
 
     body.fe2.freereport .exitWarning {
         font-size: 14px;
+        text-transform: uppercase;
     }
 
     body.fe2.freereport .exitNotification {
@@ -903,6 +904,7 @@ body.fe2 {
 
     body.fe2.freereport .action-form .form-fields {
         font-size: 0.7em;
+        padding: 12px 20px;
     }
 
     body.fe2.freereport .action-form .form-fields input {
@@ -1011,6 +1013,10 @@ body.fe2 {
 
     .fe2 .header .lic span.licenceRight {
         padding: 8px 13px 7px 13px;
+    }
+
+    .freereport .header .logo {
+        padding-right: 0;
     }
 }
 
