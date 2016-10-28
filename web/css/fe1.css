@@ -109,7 +109,6 @@ body.fe2 {
     vertical-align: middle;
     white-space: nowrap;
     font-size: 0.8em;
-    padding-right: 0;
 }
 
 .fe2 .header .lic span.licenceLeft {
@@ -129,7 +128,7 @@ body.fe2 {
     font-weight: bold;
     color: #858585;
     text-transform: uppercase;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.25em;
     line-height: 1.8em;
     font-size: 0.7em;
     text-align: center;
@@ -137,12 +136,8 @@ body.fe2 {
     vertical-align: middle;
 }
 
-.fe2 .header .logo {
-    padding-left: 0;
-}
-
 .copyright {
-    padding-right: 0;
+    padding: 0;
 }
 
 .video-through {
@@ -470,12 +465,20 @@ body.fe2 {
         /*text-align: right;*/
     }
 
+    .fe2 .header .logo {
+        padding-left: 0;
+    }
+
     .fe2 .header .logo img {
         width: 150px;
     }
 
     .fe2 .header .lic {
+        padding-right: 0;
         font-size: inherit;
+    }
+    .fe2 .header .lic .licenceRight {
+        letter-spacing: 0.35em;
     }
 }
 
