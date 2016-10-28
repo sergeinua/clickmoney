@@ -1063,9 +1063,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="col-md-4 single-item">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599403150_640.jpg">
-                    <img class="img-responsive play-button" src=
-                    "images/play.png">
+                    <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599403150_640.jpg'); background-size: cover;">
+                        <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599403150_640.jpg"></div>
+                    </div>
+                    <img class="img-responsive play-button" src="images/play.png">
                     <h5>JOAN KOWALOWSKY</h5>
                     <p>TESTIMONIAL</p>
                 </div>
@@ -1083,10 +1084,9 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="col-md-4 hover-video">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#video-case-1">
-                        <div class="img-responsive video-poster" style="background: url('https://i.vimeocdn.com/video/599403150_640.jpg');height: 265px;background-size: cover;">
-                            <div class="has-background-case" style=""></div>
+                        <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599403150_640.jpg'); background-size: cover;">
+                            <div class="green-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599403150_640.jpg"></div>
                         </div>
-                        <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599403150_640.jpg">
                         <img class="img-responsive play-button" src="images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT</h5>
                         <p>AMD YOUR SUCCESS STORY</p>
@@ -1106,9 +1106,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="hidden-md col-lg-4 single-item">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599400700_640.jpg">
-                    <img class="img-responsive play-button" src=
-                    "images/play.png">
+                    <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599400700_640.jpg'); background-size: cover;">
+                        <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599400700_640.jpg"></div>
+                    </div>
+                    <img class="img-responsive play-button" src="images/play.png">
                     <h5>JOAN KOWALOWSKY</h5>
                     <p>TESTIMONIAL</p>
                 </div>
@@ -1126,10 +1127,9 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="col-md-4 hover-video">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#video-case-2">
-                        <div class="img-responsive video-poster" style="background: url('https://i.vimeocdn.com/video/599400700_640.jpg');height: 265px;background-size: cover;">
-                            <div class="has-background-case" style=""></div>
+                        <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599400700_640.jpg'); background-size: cover;">
+                            <div class="green-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599400700_640.jpg"></div>
                         </div>
-                        <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599400700_640.jpg">
                         <img class="img-responsive play-button" src="images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT</h5>
                         <p>AMD YOUR SUCCESS STORY</p>
@@ -1149,9 +1149,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="col-md-4 single-item">
             <div class="row">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599401145_640.jpg">
-                    <img class="img-responsive play-button" src=
-                    "images/play.png">
+                    <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599401145_640.jpg'); background-size: cover;">
+                        <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599401145_640.jpg"></div>
+                    </div>
+                    <img class="img-responsive play-button" src="images/play.png">
                     <h5>JOAN KOWALOWSKY</h5>
                     <p>TESTIMONIAL</p>
                 </div>
@@ -1169,10 +1170,9 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="col-md-4 hover-video">
                 <div class="row">
                     <div class="embed-responsive embed-responsive-16by9 embed-responsive-16by10" data-toggle="modal" data-target="#video-case-3">
-                        <div class="img-responsive video-poster" style="background: url('https://i.vimeocdn.com/video/599401145_640.jpg');height: 265px;background-size: cover;">
-                            <div class="has-background-case" style=""></div>
+                        <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599401145_640.jpg'); background-size: cover;">
+                            <div class="green-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599401145_640.jpg"></div>
                         </div>
-                        <img class="img-responsive video-poster" src="https://i.vimeocdn.com/video/599401145_640.jpg">
                         <img class="img-responsive play-button" src="images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT</h5>
                         <p>AMD YOUR SUCCESS STORY</p>

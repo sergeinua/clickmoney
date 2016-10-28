@@ -2176,11 +2176,17 @@ a[href$="#bottom-form"]:hover {
     border: none;
 }
 
-.has-background-case {
-    height: 100%;
-    width: 100%;
+.green-background-case {
     background: rgba(6, 182, 164, 0.8);
     background: -webkit-linear-gradient(left, rgba(6, 182, 164, 0.8) 0%, rgba(39,179, 120, 0.8) 100%);
     background: -moz-linear-gradient(left, rgba(6, 182, 164, 0.8) 0%, rgba(39,179, 120, 0.8) 100%);
     background: linear-gradient(to right, rgba(6, 182, 164, 0.8) 0%,rgba(39,179, 120, 0.8) 100%);
+}
+
+.black-background-case {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.green-background-case img, .black-background-case img {
+    opacity: 0;
 }
