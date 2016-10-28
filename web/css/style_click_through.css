@@ -1,3 +1,8 @@
+
+body.clickthrough {
+    padding: 0 0 30px 0;
+}
+
 input[type="text"]:focus, input[type="email"]:focus {
     border: 2px solid #21c0ac;
     outline: none;
@@ -274,61 +279,6 @@ span.button20 {
     font-weight: lighter;
 }
 
-/*footer*/
-
-.footer {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 0.9em;
-    margin-bottom: 30px;
-    position: relative;
-    margin-top: 30px;
-}
-
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-
-.footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.footer ul > li {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-.footer ul > li > a {
-    color: inherit;
-    font-size: inherit;
-}
-
-.footer .logo img {
-    width: 100px;
-}
-
-.footer .copyright {
-    text-align: right;
-}
-
-.footer ul > li:after {
-    content: ' | ';
-}
-
-.footer ul > li:last-child:after {
-    content: '';
-}
-
-.footer .row > div {
-    margin-bottom: 15px;
-    padding-left: 0;
-    padding-right: 0;
-}
 
 /*popup*/
 .videoP {
