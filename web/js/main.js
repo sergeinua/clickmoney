@@ -51,25 +51,12 @@ $(document).ready(function(){
         window.onbeforeunload = null;
     });
 
-
-
-    var is_shown = false;
-    //
-    // window.onbeforeunload = function () {
-    //     if (!is_shown) {
-    //         $("#myModal").modal('show');
-    //     }
-    //     return false;
-    // };
-
     var iframe = $('#vim-video');
     var player = new Vimeo.Player(iframe);
-    // setTimeout(function(){player.pause()}, 3000);
 
     setTimeout(function(){
-        //console.log("times up");
         $(document).mousemove(function (e) {
-            if (e.pageY <= 20 && !is_shown) {
+            if (e.pageY <= 20 && sessionStorage.getItem('show_exit_popup') == 'true') {
                 $("#exitpopup").modal('show');
             }
         });

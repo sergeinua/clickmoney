@@ -4,13 +4,20 @@ use app\assets\AppAsset;
 
 $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/exit-popup.css', ['depends' => [AppAsset::className()]]);
 
+$script_init = <<< JS
+    function disableExitPopup() {
+        sessionStorage.setItem('show_exit_popup', 'false');
+    }
+JS;
+$this->registerJs($script_init, yii\web\View::POS_BEGIN);
+
 $oheader = <<<HEA
         <div class="row close-btn-block">
             <div class="col-xs-9 col-md-6 vcenter">
                 <span class="licenceLeft">1</span><span class="licenceRight">SPOT LEFT</span>
             </div><!--
             --><div class="col-xs-3 col-md-6 vcenter">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="hidden-xs hidden-sm">Click here To Close Sign Up Form</span> | ×</button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="disableExitPopup();"><span class="hidden-xs hidden-sm">Click here To Close Sign Up Form</span> | ×</button>
             </div>
         </div>
 HEA;
@@ -27,11 +34,6 @@ Modal::begin([
     'closeButton' => false,
     'header' => $oheader,
     'size' => Modal::SIZE_DEFAULT,
-//    'clientOptions' => [
-//        'show' => true,
-//        'backdrop' => 'static',
-//        'keyboard' => 'false'
-//    ]
 ]); ?>
 
 <div class="container-fluid">
