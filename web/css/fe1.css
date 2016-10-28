@@ -181,7 +181,7 @@ body.fe2 {
 }
 
 .main-block .row {
-    padding-bottom: 40px;
+    padding-bottom: 15px;
 }
 
 .main-text {
@@ -398,7 +398,7 @@ body.fe2 {
     font-family: 'Open Sans', sans-serif;
     color: #b0b0b0;
     font-size: 0.9em;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -540,6 +540,10 @@ body.fe2 {
     .footer .logo, .footer .menu {
         text-align: left;
         padding-left: 0;
+    }
+
+    .container-fluid.footer .vcenter.menu {
+        padding-left: 25px;
     }
 
     .footer .copyright {
@@ -759,6 +763,10 @@ body.fe2 {
 
     .icons-block img.t {
         width: 80px;
+    }
+
+    .container-fluid.footer .vcenter.menu {
+        padding-left: 0;
     }
 }
 
