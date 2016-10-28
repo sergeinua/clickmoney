@@ -7,7 +7,7 @@ $this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/exit-popup.css', ['
 $oheader = <<<HEA
         <div class="row close-btn-block">
             <div class="col-xs-9 col-md-6 vcenter">
-                <span class="licenceLeft">1</span><span class="licenceRight">Report Left</span>
+                <span class="licenceLeft">1</span><span class="licenceRight">SPOT LEFT</span>
             </div><!--
             --><div class="col-xs-3 col-md-6 vcenter">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="hidden-xs hidden-sm">Click here To Close Sign Up Form</span> | ×</button>
@@ -37,7 +37,7 @@ Modal::begin([
 <div class="container-fluid">
     <div class="row text-center">
         <div class="col-xs-12">
-            <h2 class="exitWarning"><span>WARNING:</span> Download Your <strong>Free ClickMoney Report</strong> Before This Exclusive Offer Expires!</h2>
+            <h2 class="exitWarning"><span>WARNING:</span> Unlock Your <strong>Free Click Money System</strong> Before This Exclusive Offer Expires!</h2>
         </div>
         <div class="col-xs-12">
             <p class="exitNotification">Enter your first name and best email address below to proceed:</p>
@@ -70,7 +70,7 @@ Modal::begin([
                         <button type="submit" id="exit-send-btn">
                             <div class="row">
                                 <div class="col-md-12">
-                                    FAST! CLICK HERE TO GET THE REPORT
+                                    HURRY! CLICK MONEY FOR FREE
                                 </div>
                             </div>
                         </button>
@@ -91,7 +91,7 @@ Modal::begin([
         <div class="col-lg-10 col-lg-offset-1 block-current-people text-center">
             <img src="images/orangeStop.png">There are currently
             <span class="feExitRed" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.
-            <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Report</span> Right Now. <span class="feExitBold">Act Quickly!</span>
+            <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Spot</span> Right Now. <span class="feExitBold">Act Quickly!</span>
         </div>
     </div>
 </div>

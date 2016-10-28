@@ -61,6 +61,10 @@ input[type=text], input[type=email] {
     padding-left: 0;
 }
 
+.close-btn-block .vcenter {
+    padding-left: 15px;
+}
+
 .vtop {
     display: inline-block;
     vertical-align: top;
