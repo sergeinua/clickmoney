@@ -101,7 +101,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                             LICENCE LEFT
                         </div>
                         <div class="col-lg-12 membership-updated">
-                            UPDATED SEP 20 2016
+                            UPDATED <?= strtoupper(date('M d Y')); ?>
                         </div>
                     </div>
                 </div>
@@ -980,7 +980,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
     <div class="container memebership_content">
         <p class="text1"><span class="green">3</span> Quick and Easy
             Steps</p>
-        <p class="text">TO START YOUR BUSINESS</p>
+        <p class="text">TO START MAKING MONEY</p>
     </div>
 </section>
 <section class="membership02 register-deposit-profit">
