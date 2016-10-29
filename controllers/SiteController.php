@@ -214,7 +214,9 @@ class SiteController extends Controller
      */
     public function actionLaststep()
     {
-        return $this->render('laststep');
+        return $this->render('laststep', [
+            'video_id' => '189163312'
+        ]);
     }
 
     /**
@@ -228,6 +230,17 @@ class SiteController extends Controller
 
         return $this->render('main', [
             'forms' => $forms
+        ]);
+    }
+
+    /**
+     * Members 3 page
+     * @return string
+     */
+    public function actionFinaloffer()
+    {
+        return $this->render('laststep', [
+            'video_id' => '189163303'
         ]);
     }
 }

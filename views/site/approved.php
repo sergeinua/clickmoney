@@ -31,72 +31,63 @@ JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
 $script = <<< JS
-    $(document).ready(function () {
-       $('.membership-footer ul.info li').on('click', function(){
-           var item_class = $(this).data('class');
-           $('.membership-footer .content div.active').removeClass('active');
-           $('.membership-footer .' + item_class).addClass('active');
-           $('.membership-footer .' + item_class + ' h3').text($(this).text());
-           $('.membership-footer li').removeClass('active');
-           $(this).addClass('active');
-       });
-       $('.panel-default a').on('click', function () {
-           if ($(this).attr('aria-expanded') == 'true') {
-               $(this).parent().next().remove();
-           } else {
-               $('.arrow-img').remove();
-               $(this).parent().parent().append('<img class="arrow-img-active" src="/images/down.png">');
+   $('.membership-footer ul.info li').on('click', function(){
+       var item_class = $(this).data('class');
+       $('.membership-footer .content div.active').removeClass('active');
+       $('.membership-footer .' + item_class).addClass('active');
+       $('.membership-footer .' + item_class + ' h3').text($(this).text());
+       $('.membership-footer li').removeClass('active');
+       $(this).addClass('active');
+   });
+   $('.panel-default a').on('click', function () {
+       if ($(this).attr('aria-expanded') == 'true') {
+           $(this).parent().next().remove();
+       } else {
+           $('.arrow-img').remove();
+           $(this).parent().parent().append('<img class="arrow-img-active" src="/images/down.png">');
+       }
+   });
+   $('.panel-default a').hover(
+       function () {
+           if ($(this).parent().next().hasClass('arrow-img-active') == false) {
+               $(this).parent().parent().append('<img class="arrow-img" src="/images/down.png">');
            }
-       });
-       $('.panel-default a').hover(
-           function () {
-               if ($(this).parent().next().hasClass('arrow-img-active') == false) {
-                   $(this).parent().parent().append('<img class="arrow-img" src="/images/down.png">');
-               }
-           },
-           function () {
-               $('.arrow-img').remove();
-           }
-       );
-       $('.membership-header #gaff.gaff form#caffForm').on('submit', function() {
-            $('#loading_sec').modal('show');
-       });
-       $('.last-chace-register #gaff.gaff.middle-form form#caffForm').on('submit', function() {
-            $('#loading_sec').modal('show');
-       });
-       var top_iframe = $('#vim-video-top');
-       var top_player = new Vimeo.Player(top_iframe);
-       var yellow_arrow = $('img.img-responsive.yellow-arrow');
-       var text_label = $('img.img-responsive.yellow-arrow + p');
-       top_player.on('play', function() {         
-            yellow_arrow.hide();
-            text_label.hide();
-       });
-       $('.embed-responsive.embed-responsive-16by9.embed-responsive-16by10').on('click', function() {
-            var target = $(this).data('target');
-            var iframe = $(target);
-            var player = new Vimeo.Player(iframe);
-            player.setCurrentTime(0);
-            player.play();
-       });
-       $('.pull-right.login-close').on('click', function() {
-            var iframe = $(this).data('iframe');
-            var player = new Vimeo.Player(iframe);
-            player.pause();
-       });
-       $('.modal').on('hidden.bs.modal', function () {
-            var iframe = $('iframe[id^=vim-video]').each(function() {
-              var player = new Vimeo.Player(this);
-              player.pause();
-            });        
-            // var i = 1;
-            // for (i = 1; i <= 3; i++) {
-            //     var iframe = $('#vim-video-case-' + i);
-            //     var player = new Vimeo.Player(iframe);
-            //     player.pause();
-            // }
-       });
-
+       },
+       function () {
+           $('.arrow-img').remove();
+       }
+   );
+   $('.membership-header #gaff.gaff form#caffForm').on('submit', function() {
+        $('#loading_sec').modal('show');
+   });
+   $('.last-chace-register #gaff.gaff.middle-form form#caffForm').on('submit', function() {
+        $('#loading_sec').modal('show');
+   });
+   var top_iframe = $('#vim-video-top');
+   var top_player = new Vimeo.Player(top_iframe);
+   var yellow_arrow = $('img.img-responsive.yellow-arrow');
+   var text_label = $('img.img-responsive.yellow-arrow + p');
+   top_player.on('play', function() {         
+        yellow_arrow.hide();
+        text_label.hide();
+   });
+   $('.embed-responsive.embed-responsive-16by9.embed-responsive-16by10').on('click', function() {
+        var target = $(this).data('target');
+        var iframe = $(target);
+        var player = new Vimeo.Player(iframe);
+        player.setCurrentTime(0);
+        player.play();
+   });
+   $('.pull-right.login-close').on('click', function() {
+        var iframe = $(this).data('iframe');
+        var player = new Vimeo.Player(iframe);
+        player.pause();
+   });
+   $('.modal').on('hidden.bs.modal', function () {
+        var iframe = $('iframe[id^=vim-video]').each(function() {
+          var player = new Vimeo.Player(this);
+          player.pause();
+        });        
    });
 JS;
 

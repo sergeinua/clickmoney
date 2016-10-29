@@ -19,6 +19,8 @@ if ($mob->isTablet() || $mob->isMobile()) {
 $this->title = 'ClickMoney.com';
 
 $script_init = <<< JS
+    var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
+    var exitsplashpage = '/finaloffer';
     if(top.location != self.location)
     {
         top.location.assign(self.location);
@@ -29,39 +31,45 @@ JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
 $script = <<< JS
-    $(document).ready(function () {
-       $('.membership-footer ul.info li').on('click', function(){
-           var item_class = $(this).data('class');
-           $('.membership-footer .content div.active').removeClass('active');
-           $('.membership-footer .' + item_class).addClass('active');
-           $('.membership-footer .' + item_class + ' h3').text($(this).text());
-           $('.membership-footer li').removeClass('active');
-           $(this).addClass('active');
-       });
-       $('.panel-default a').on('click', function () {
-           if ($(this).attr('aria-expanded') == 'true') {
-               $(this).parent().next().remove();
-           } else {
-               $('.arrow-img').remove();
-               $(this).parent().parent().append('<img class="arrow-img-active" src="/images/down.png">');
+   $('.membership-footer ul.info li').on('click', function(){
+       var item_class = $(this).data('class');
+       $('.membership-footer .content div.active').removeClass('active');
+       $('.membership-footer .' + item_class).addClass('active');
+       $('.membership-footer .' + item_class + ' h3').text($(this).text());
+       $('.membership-footer li').removeClass('active');
+       $(this).addClass('active');
+   });
+   $('.panel-default a').on('click', function () {
+       if ($(this).attr('aria-expanded') == 'true') {
+           $(this).parent().next().remove();
+       } else {
+           $('.arrow-img').remove();
+           $(this).parent().parent().append('<img class="arrow-img-active" src="/images/down.png">');
+       }
+   });
+   $('.panel-default a').hover(
+       function () {
+           if ($(this).parent().next().hasClass('arrow-img-active') == false) {
+               $(this).parent().parent().append('<img class="arrow-img" src="/images/down.png">');
            }
-       });
-       $('.panel-default a').hover(
-           function () {
-               if ($(this).parent().next().hasClass('arrow-img-active') == false) {
-                   $(this).parent().parent().append('<img class="arrow-img" src="/images/down.png">');
-               }
-           },
-           function () {
-               $('.arrow-img').remove();
-           }
-       );
-       $('.membership-header #gaff.gaff form#caffForm').on('submit', function() {
-            $('#loading_sec').modal('show');
-       });
-       $('.last-chace-register #gaff.gaff.middle-form form#caffForm').on('submit', function() {
-            $('#loading_sec').modal('show');
-       });
+       },
+       function () {
+           $('.arrow-img').remove();
+       }
+   );
+   $('.membership-header #gaff.gaff form#caffForm').on('submit', function() {
+        $('#loading_sec').modal('show');
+   });
+   $('.last-chace-register #gaff.gaff.middle-form form#caffForm').on('submit', function() {
+        $('#loading_sec').modal('show');
+   });
+   var top_iframe = $('#vim-video-top');
+   var top_player = new Vimeo.Player(top_iframe);
+   var yellow_arrow = $('img.img-responsive.yellow-arrow');
+   var text_label = $('img.img-responsive.yellow-arrow + p');
+   top_player.on('play', function() {         
+        yellow_arrow.hide();
+        text_label.hide();
    });
 JS;
 
@@ -111,7 +119,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="row">
                 <div class="col-md-7 left_block">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe id="vim-video-top" class="embed-responsive-item" src="https://player.vimeo.com/video/189163307" width="auto" height="auto"
+                        <iframe id="vim-video-top" class="embed-responsive-item" src="https://player.vimeo.com/video/<?= $video_id; ?>" width="auto" height="auto"
                                 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
