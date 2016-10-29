@@ -80,7 +80,7 @@ body.fe2 {
 
 .content {
     box-shadow: 0 15px 45px 15px rgba(0, 0, 0, .3);
-    /*background-color: white;*/
+    background-color: white;
 }
 
 .fe2 .content > .row {
@@ -978,7 +978,7 @@ body.fe2 {
     }
 
     body.fe2 .content .right_block {
-        min-height: 448px;
+        min-height: 447.52px;
     }
 }
 
@@ -994,7 +994,7 @@ body.fe2 {
     }
 
     body.fe2 .content .right_block {
-        min-height: 611px;
+        min-height: 612px;
     }
 }
 
@@ -1044,4 +1044,9 @@ body.fe2 {
     .freereport .header .logo {
         padding-right: 0;
     }
+}
+
+body.fe2 .content {
+    background: transparent;
+
 }
