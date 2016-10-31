@@ -591,14 +591,15 @@ body.fe2 {
 
     .fe2 .content .right_block {
         background-color: white;
-        width: 32%;
-        min-height: 550px;
+        /*width: 32%;*/
+        /*min-height: 550px;*/
     }
 
     .fe2 .content .left_block {
         padding-right:0;
         padding-left:0;
-        width: 68%;
+        height: 428px;
+        width: 760px;
         position: relative;
     }
 
@@ -935,6 +936,16 @@ body.fe2 {
     .footer .menu ul {
         padding-left: 25px;
     }
+
+    body.fe2.freereport .video-through.vcenter.text-center.left_block {
+        height: 371px;
+        width: 661px;
+    }
+
+    body.fe2.freereport .content .right_block {
+        height: 371px;
+        width: 309px;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1799px) {
@@ -943,8 +954,9 @@ body.fe2 {
     }
 
     body.fe2.freereport .content .right_block {
-        min-height: 447.52px;
-        padding-top: 5px;
+        padding-top: 15px;
+        height: 428px;
+        width: 410px;
     }
 
     body.fe2.freereport .exitWarning {
@@ -978,7 +990,7 @@ body.fe2 {
     }
 
     body.fe2 .content .right_block {
-        min-height: 447.52px;
+        /*min-height: 447.52px;*/
     }
 }
 
@@ -994,7 +1006,17 @@ body.fe2 {
     }
 
     body.fe2 .content .right_block {
-        min-height: 612px;
+        /*min-height: 612px;*/
+    }
+
+    body.fe2.freereport .video-through.vcenter.text-center.left_block {
+        height: 602px;
+        width: 1070px;
+    }
+
+    body.fe2.freereport .content .right_block {
+        height: 602px;
+        width: 530px;
     }
 }
 
