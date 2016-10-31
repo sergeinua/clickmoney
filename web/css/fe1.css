@@ -789,7 +789,7 @@ body.fe2 {
     }
 
     body.fe2 .content .right_block {
-        min-height: 371px;
+        /*min-height: 371px;*/
     }
 
     body.fe2 #fe-2-form .form-fields {
@@ -836,7 +836,7 @@ body.fe2 {
     }
 
     body.fe2 .content .right_block {
-        min-height: 371px;
+        /*min-height: 371px;*/
     }
 
     body.fe2 #fe-2-form .form-fields {
@@ -892,7 +892,7 @@ body.fe2 {
     }
 
     body.fe2.freereport .content .right_block {
-        min-height: 371.02px;
+        /*min-height: 371.02px;*/
         padding-top: 5px;
     }
 
@@ -938,13 +938,27 @@ body.fe2 {
     }
 
     body.fe2.freereport .video-through.vcenter.text-center.left_block {
-        height: 371px;
-        width: 661px;
+        height: 370px;
+        width: 658px;
     }
 
     body.fe2.freereport .content .right_block {
-        height: 371px;
+        height: 369px;
         width: 309px;
+    }
+
+    body.fe2 .video-through.vcenter.text-center.left_block {
+        height: 370px;
+        width: 657px;
+    }
+
+    body.fe2 .content .right_block {
+        width: 309px;
+    }
+
+    body.fe2 .content > .row {
+        background: white;
+        height: 370px;
     }
 }
 
@@ -955,7 +969,7 @@ body.fe2 {
 
     body.fe2.freereport .content .right_block {
         padding-top: 15px;
-        height: 428px;
+        height: 427px;
         width: 410px;
     }
 
@@ -992,6 +1006,31 @@ body.fe2 {
     body.fe2 .content .right_block {
         /*min-height: 447.52px;*/
     }
+
+    body.fe2 .content > .row {
+        background: white;
+        height: 602px;
+    }
+
+
+    body.fe2 .video-through.vcenter.text-center.left_block {
+        height: 428px;
+        width: 760px;
+    }
+
+    body.fe2 .content .right_block {
+        height: 427px;
+        width: 410px;
+    }
+
+    body.fe2 .icons-block {
+        margin: -4px auto 15px auto;
+    }
+
+    body.fe2 .content > .row {
+        background: white;
+        height: 428px;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -1015,8 +1054,23 @@ body.fe2 {
     }
 
     body.fe2.freereport .content .right_block {
-        height: 602px;
+        /*height: 602px;*/
         width: 530px;
+    }
+
+    body.fe2 .video-through.vcenter.text-center.left_block {
+        height: 602px;
+        width: 1070px;
+    }
+
+    body.fe2 .content .right_block {
+        height: 601px;
+        width: 530px;
+    }
+
+    body.fe2 .content > .row {
+        background: white;
+        height: 602px;
     }
 }
 
