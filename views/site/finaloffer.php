@@ -6,7 +6,7 @@ use app\assets\LaststepAsset;
 
 /* @var $this yii\web\View */
 LaststepAsset::register($this);
-Yii::$app->params['bodyClass'] = 'laststep';
+Yii::$app->params['bodyClass'] = 'laststep finaloffer';
 
 $rd = 3;
 $gi = 409;
