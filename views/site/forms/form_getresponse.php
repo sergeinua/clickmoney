@@ -1,4 +1,4 @@
-<form id="squeeze_form<?= $item; ?>" name="squeeze_form<?= $item; ?>" target="squeeze_iframe<?= $item; ?>" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+<form target="squeeze_iframe<?= $item; ?>" id="squeeze_form<?= $item; ?>" name="squeeze_form<?= $item; ?>" target="squeeze_iframe<?= $item; ?>" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
     <div style="display: none;">
         email: <input name="email" id="squeeze_form<?= $item; ?>_email" type="text"><br>
         <input name="first_name" id="squeeze_form<?= $item; ?>_fname" type="text"><br>

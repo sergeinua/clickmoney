@@ -1,4 +1,4 @@
-<form method="post" id="squeeze_form<?= $item; ?>" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl" style="display: none;" >
+<form target="squeeze_iframe<?= $item; ?>" method="post" id="squeeze_form<?= $item; ?>" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl" style="display: none;" >
     <div style="display: none;">
         <input type="hidden" name="meta_web_form_id" value="<?= $params['meta_web_form_id']; ?>" />
         <input type="hidden" name="meta_split_id" value="" />
