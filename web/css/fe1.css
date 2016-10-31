@@ -465,7 +465,9 @@ body.fe2 {
 .fe1 .action-form .form-fields label {
     font-size: 0.8em;
 }
-
+.fe2 .content .left_block {
+    padding: 0;
+}
 /* sm */
 @media (min-width: 768px) {
     .fe2 .action-form .form-fields label {
