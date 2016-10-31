@@ -180,10 +180,24 @@ button {
 }
 
 .membership-wrapper{
-    background-color: rgba(217, 73, 87, 0.95);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d50000+0,ff3d00+100&0.9+0,0.9+100 */
+    background: -moz-linear-gradient(left,  rgba(213,0,0,0.9) 0%, rgba(255,61,0,0.9) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(213,0,0,0.9) 0%,rgba(255,61,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(213,0,0,0.9) 0%,rgba(255,61,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6d50000', endColorstr='#e6ff3d00',GradientType=1 ); /* IE6-9 */
+    /*background-color: rgba(217, 73, 87, 0.95);*/
     height: 600px;
     margin-bottom: 250px;
 }
+
+.finaloffer .membership-wrapper{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef6c00+0,ff9800+100&0.9+0,0.9+100 */
+    background: -moz-linear-gradient(left,  rgba(239,108,0,0.9) 0%, rgba(255,152,0,0.9) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(239,108,0,0.9) 0%,rgba(255,152,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(239,108,0,0.9) 0%,rgba(255,152,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ef6c00', endColorstr='#e6ff9800',GradientType=1 ); /* IE6-9 */
+}
+
 
 .membership-welcome{
     color: #fffa69;
@@ -944,9 +958,21 @@ p.register-text {
 }
 
 .membership-footer {
-    background: linear-gradient(45deg, rgb(30,192,177) 0%,rgb(39,191,164) 69%,rgb(58,189,138) 100%);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d50000+0,ff3d00+100&0.9+0,0.9+100 */
+    background: -moz-linear-gradient(left,  rgba(213,0,0,0.9) 0%, rgba(255,61,0,0.9) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(213,0,0,0.9) 0%,rgba(255,61,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(213,0,0,0.9) 0%,rgba(255,61,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6d50000', endColorstr='#e6ff3d00',GradientType=1 ); /* IE6-9 */
     height: auto;
     padding-bottom: 20px;
+}
+
+.finaloffer .membership-footer {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef6c00+0,ff9800+100&0.9+0,0.9+100 */
+    background: -moz-linear-gradient(left,  rgba(239,108,0,0.9) 0%, rgba(255,152,0,0.9) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(239,108,0,0.9) 0%,rgba(255,152,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(239,108,0,0.9) 0%,rgba(255,152,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ef6c00', endColorstr='#e6ff9800',GradientType=1 ); /* IE6-9 */
 }
 
 .membership-footer .content {
@@ -965,7 +991,7 @@ p.register-text {
 .membership-footer .footer {
     padding-top: 50px;
     font-size: 12px;
-    color:#bffff4;
+    color:#fff;
 }
 
 .membership-footer .col-md-5 {
@@ -982,7 +1008,7 @@ p.register-text {
 
 .membership-footer .active a {
     color: #fff;
-    border-bottom: 2px dashed #b0ffed;
+    border-bottom: 2px dashed #fff;
     padding-bottom: 6px;
 }
 
@@ -991,7 +1017,7 @@ p.register-text {
     font-size: 20px;
     font-family: 'MontserratLight', sans-serif;
     margin: 1.2em 0 1.2em 0;
-    color: #bffff4;
+    color: #fff;
 }
 
 /*footer*/
@@ -1053,7 +1079,7 @@ p.register-text {
 
 .footer ul > li:after {
     content: ' | ';
-    color: #bffff4;;
+    color: #fff;;
 }
 
 .footer ul > li:last-child:after {
@@ -2151,7 +2177,7 @@ p.register-text {
 
 ul.info li a:hover {
     text-decoration: none;
-    border-bottom: 2px dashed #b0ffed;
+    border-bottom: 2px dashed #fff;
 }
 
 @media (min-width: 320px) and (max-width: 768px){
