@@ -167,7 +167,7 @@ function widgetEarnings()
 {
     widget_earning_html();
     (function loop() {
-        var rand = getRandomArbitrary(5000, 10000);
+        var rand = getRandomArbitrary(15000, 20000);
         setTimeout(function () {
             if (sessionStorage.getItem('show_joined_popup') == 'true') {
                 widget_earning_html();
@@ -203,7 +203,7 @@ function widget_earning_html() {
         $(".join-popup").addClass('showed');
         setTimeout(function(){
             $(".join-popup").removeClass('showed');
-        }, 3000);
+        }, 4000);
 
         var rand_arr_index = Math.floor(Math.random() * myArrayemail.length) + 1;
         var randemail = myArrayemail[rand_arr_index];
