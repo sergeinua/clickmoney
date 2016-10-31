@@ -65,7 +65,7 @@ function processnow(semail, prefix, fname)
                         ufame = 'cmfriend';
 
                         jQuery('#squeeze_form<?= $i; ?><?= $prefix ? '_'.$prefix : ''; ?>_email').val(email);
-                        jQuery('#squeeze_form<?= $i; ?><?= $prefix ? '_'.$prefix : ''; ?>_fname').val(ufame);
+                        jQuery('#squeeze_form<?= $i; ?><?= $prefix ? '_'.$prefix : ''; ?>_name').val(ufame);
                         jQuery('#squeeze_form<?= $i; ?><?= $prefix ? '_'.$prefix : ''; ?>').submit();
                         },<?= $time; ?>);
                     <?php $time += $step; ?>
