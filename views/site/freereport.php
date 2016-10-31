@@ -181,12 +181,12 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <img src="images/ClickMoneyLogo/Logo-white.svg">
                 </div><!--
                 --><div class="col-xs-12 col-lg-8 vcenter text-white">
-                    <img src="images/nn.png" width="30px">There are currently
+                    <img src="images/nn.png" width="26px">There are currently
                     <span class="feExitRed" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.<br>
                     <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Spot</span> Right Now. <span class="feExitBold">Act Quickly!</span>
                 </div><!--
                 --><div class="col-xs-12 lic text-right vcenter col-lg-2">
-                    <span class="licenceLeft">1</span><span class="licenceRight">Spot Left</span>
+                    <span class="licenceLeft"><span>1</span><span class="licenceRight">Spot Left</span></span>
                 </div>
             </div>
         </div>

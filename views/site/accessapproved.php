@@ -29,7 +29,7 @@ $this->title = 'ClickMoney.com';
             <img src="images/ClickMoneyLogo/Logo-white.svg">
     </div><!--
     --><div class="col-xs-6 lic text-right vcenter">
-            <span class="licenceLeft">10</span><span class="licenceRight">Licence Left</span>
+            <span class="licenceLeft"><span>10</span><span class="licenceRight">Licence Left</span></span>
         </div>
     </div>
 </div>
