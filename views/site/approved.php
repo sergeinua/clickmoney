@@ -96,38 +96,25 @@ $this->registerJs($script, yii\web\View::POS_READY);
 
 <header class="membership-header">
     <div class="membership-wrapper">
-        <div class="container">
+        <div class="container container-header">
             <div class="row">
-                <div class="col-lg-12 membership-welcome">
-                    WELCOME
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 membership-biz-area">
-                    <h2>This is the CLICK MONEY Members Area</h2>
-                </div>
-            </div>
-            <div class="row header-last-mrow">
-                <div class="col-md-1 col-xs-12 membership-logo">
-                    <img src="images/ClickMoneyLogo/Logo-yellow.svg">
-                </div>
-                <div class="col-md-10 col-xs-12">
-                    Please Watch The <span class="text-dashed">Video
-                        Below</span> For Further Instructions
-                </div>
-                <div class="col-md-2 col-xs-12 membership-boxIcon">
-                    <div class="col-md-2">
-                        <img src="images/elipsOne.png">
-                    </div>
-                    <div class="col-md-11 row membership-right-box">
-                        <div class="col-lg-12 membership-licence-left">
-                            LICENCE LEFT
+                    <p class="membership-welcome">WELCOME</p>
+                    <h2 class="membership-biz-area">This is the CLICK MONEY Members Area</h2>
+                    <img class="membership-logo" src="images/ClickMoneyLogo/Logo-yellow.svg">
+                    <div class="col-md-2 col-xs-12 membership-boxIcon">
+                        <div class="col-xs-2">
+                            <img src="images/elipsOne.png">
                         </div>
-                        <div class="col-lg-12 membership-updated">
-                            UPDATED <?= strtoupper(date('M d Y')); ?>
+                        <div class="col-xs-11 row membership-right-box">
+                            <div class="col-lg-12 membership-licence-left">
+                                LICENCE LEFT
+                            </div>
+                            <div class="col-lg-12 membership-updated">
+                                UPDATED <?= strtoupper(date('M d Y')); ?>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <p class="membership-please-watch">Please Watch The <span class="text-dashed">Video Below</span> For Further Instructions</p>
             </div>
         </div>
         <div class="container left-right-container">
