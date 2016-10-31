@@ -181,8 +181,8 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <img src="images/ClickMoneyLogo/Logo-white.svg">
                 </div><!--
                 --><div class="col-xs-12 col-lg-8 vcenter text-white">
-                    <img src="images/nn.png">There are currently
-                    <span class="feExitRed" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.
+                    <img src="images/nn.png" width="30px">There are currently
+                    <span class="feExitRed" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.<br>
                     <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Spot</span> Right Now. <span class="feExitBold">Act Quickly!</span>
                 </div><!--
                 --><div class="col-xs-12 lic text-right vcenter col-lg-2">
@@ -192,65 +192,66 @@ $this->registerJs($script, yii\web\View::POS_READY);
         </div>
         <div class="container content">
             <div class="row">
-                <div class="col-md-7 col-xs-12 video-through vcenter text-center left_block">
+                <div class="col-xs-12 video-through left_block">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe id="vim-video" class="embed-responsive-item"
-                                src="https://player.vimeo.com/video/189146409?&autoplay=true" width="auto"
-                                height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                                allowfullscreen></iframe>
+                        <iframe id="vim-video"
+                                src="https://player.vimeo.com/video/189146409?&autoplay=true"
+                                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
-                </div><!--
-                --><div class="container col-xs-12 vcenter right_block">
-                    <div class="row text-center">
-                        <div class="col-xs-12">
-                            <h2 class="exitWarning"><span>WARNING:</span> Unlock Your <strong>Free Click Money System</strong> Before This Exclusive Offer Expires!</h2>
+                </div>
+                <div class="col-xs-12 right_block">
+                    <div class="container-fluid">
+                        <div class="row text-center">
+                            <div class="col-xs-12">
+                                <h2 class="exitWarning"><span>WARNING:</span> Unlock Your <strong>Free Click Money System</strong> Before This Exclusive Offer Expires!</h2>
+                            </div>
+                            <div class="col-xs-12">
+                                <p class="exitNotification">Enter your first name and best email address below to proceed:</p>
+                            </div>
                         </div>
-                        <div class="col-xs-12">
-                            <p class="exitNotification">Enter your first name and best email address below to proceed:</p>
-                        </div>
-                    </div><!--
-                    --><div class="row action-form">
-                        <div class="col-xs-12">
-                            <form method="post" id="freereport-form" action="javascript:;">
-                                <div class="form-fields">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <label for="name">My name's</label>
-                                        </div><!--
-                                        --><div class="col-xs-12">
-                                            <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Enter your name here" title="Please enter 3-15 characters (alphabets only)">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <label for="email">My best email is</label>
-                                        </div><!--
-                                        --><div class="col-xs-12">
-                                            <input type="email" id="email" name="email" required placeholder="Enter your email here">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 text-center">
-                                        <img class="main-arrow hidden-sm hidden-xs" src="images/arfe3.png">
-                                        <button type="submit">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    HURRY! CLICK MONEY FOR FREE
-                                                </div>
+                        <div class="row action-form">
+                            <div class="col-xs-12">
+                                <form method="post" id="freereport-form" action="javascript:;">
+                                    <div class="form-fields">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <label for="name">My name's</label>
+                                            </div><!--
+                                            --><div class="col-xs-12">
+                                                <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Enter your name here" title="Please enter 3-15 characters (alphabets only)">
                                             </div>
-                                        </button>
-                                        <div class="warranty-text"><img class="blockImg" src="images/svg/lock.svg" />
-                                            <span>The Last Spot Is Still Here. Grab it Before Someone Else Does!</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <label for="email">My best email is</label>
+                                            </div><!--
+                                            --><div class="col-xs-12">
+                                                <input type="email" id="email" name="email" required placeholder="Enter your email here">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                    <div class="row">
+                                        <div class="col-xs-12 text-center">
+                                            <img class="main-arrow hidden-sm hidden-xs" src="images/arfe3.png">
+                                            <button type="submit">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        HURRY! CLICK MONEY FOR FREE
+                                                    </div>
+                                                </div>
+                                            </button>
+                                            <div class="warranty-text"><img class="blockImg" src="images/svg/lock.svg" />
+                                                <span>The Last Spot Is Still Here. Grab it Before Someone Else Does!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </div><!--
-                    --><div class="row">
-                        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 exitDown">
-                            <span>HURRY!</span> Download Link Expires in: <span id="time-exit">00h : 03m : 27s</span>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 exitDown">
+                                <span>HURRY!</span> Download Link Expires in: <span id="time-exit">00h : 03m : 27s</span>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -34,11 +34,12 @@ body.freereport {
     font-size: 1.2em;
     text-align: center;
     margin: 10px 0;
+    line-height: 1.7em;
 }
 .freereport .feExitRed {
     background-color: #fd442b;
     font-weight: bold;
-    padding: 5px;
+    padding: 2px 5px;
 }
 
 .freereport .exitWarning {

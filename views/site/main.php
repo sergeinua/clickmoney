@@ -56,80 +56,77 @@ if ($mob->isTablet() || $mob->isMobile()) {
 </div>
 <div class="container content">
     <div class="row">
-        <div class="col-md-7 col-xs-12 video-through vcenter text-center left_block">
+        <div class="col-md-7 col-xs-12 text-center left_block">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="vim-video" class="embed-responsive-item"
+                <iframe id="vim-video"
                         src="https://player.vimeo.com/video/189163304?autoplay=true"
-                        width="auto" height="auto" frameborder="0"
-                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
-<!--            <img class="img-responsive" src="images/video(16-9).jpg">-->
-<!--            <img class="play" src="images/play.png" />-->
-            <!--<img class="play_gd" src="images/gd_corner_fe1.png" />-->
-            <!--<img class="play_logo" src="images/ClickMoneyLogo/Logo-green.svg" />-->
-        </div><!--
-                --><div class="col-md-5 col-xs-12 vcenter right_block">
-            <div class="row text-uppercase text-center">
-                <div class="col-xs-12">
-                            <span class="main-text">
-                                <span class="limited-spots hidden-md">LIMITED SPOTS</span>
-                                <p>Enter your <u><strong>first name</strong></u> and <u><strong>best email address</strong></u>
-                                below to proceed</p>
-                            </span>
+        </div>
+        <div class="col-md-5 col-xs-12 right_block">
+            <div class="container-fluid">
+                <div class="row text-uppercase text-center">
+                    <div class="col-xs-12">
+                        <span class="main-text">
+                            <span class="limited-spots hidden-md">LIMITED SPOTS</span>
+                            <p>Enter your <u><strong>first name</strong></u> and <u><strong>best email address</strong></u>
+                            below to proceed</p>
+                        </span>
+                    </div>
                 </div>
-            </div><!--
-                    --><div class="row action-form">
-                <div class="col-xs-12">
-                    <img class="main-arrow" src="images/arfe2.png">
-                    <form method="post" action="javascript:;" id="fe-2-form">
-                        <div class="form-fields">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <label for="name">My name's</label>
-                                </div><!--
+                <div class="row action-form">
+                    <div class="col-xs-12">
+                        <img class="main-arrow" src="images/arfe2.png">
+                        <form method="post" action="javascript:;" id="fe-2-form">
+                            <div class="form-fields">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label for="name">My name's</label>
+                                    </div><!--
                                     --><div class="col-xs-12">
-                                    <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Enter your name here" title="Please enter 3-15 characters (alphabets only)">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <label for="email">My best email is</label>
-                                </div><!--
-                                    --><div class="col-xs-12">
-                                    <input type="email" id="email" name="email" required placeholder="Enter your email here">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 text-center">
-                                <button type="submit">
-                                    <div class="row">
-                                        <div class="col-md-11 col-xs-9">
-                                            OPEN MY CLICKMONEY ACCOUNT
-                                        </div>
-                                        <div class="arrow">
-                                            <img src="images/arrow-fe-1.png" />
-                                        </div>
+                                        <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Enter your name here" title="Please enter 3-15 characters (alphabets only)">
                                     </div>
-                                </button>
-                                <div class="warranty-text"><img class="blockImg" src="images/svg/lock.svg" /> <span>Guaranteed Secure Access Ensured by Trusted Companies</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label for="email">My best email is</label>
+                                    </div><!--
+                                    --><div class="col-xs-12">
+                                        <input type="email" id="email" name="email" required placeholder="Enter your email here">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                            <div class="row">
+                                <div class="col-xs-12 text-center">
+                                    <button type="submit">
+                                        <div class="row">
+                                            <div class="col-md-11 col-xs-9">
+                                                OPEN MY CLICKMONEY ACCOUNT
+                                            </div>
+                                            <div class="arrow">
+                                                <img src="images/arrow-fe-1.png" />
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <div class="warranty-text"><img class="blockImg" src="images/svg/lock.svg" /> <span>Guaranteed Secure Access Ensured by Trusted Companies</span></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div><!--
-                    --><div class="row icons-block text-center">
-                <div class="col-xs-3 vtop">
-                    <a href="#"><img class="m" src="images/m-seal.png"></a>
-                </div><!--
-                        --><div class="col-xs-3 vtop">
-                    <a href="#"><img class="t" src="images/t-seal.jpg"></a>
-                </div><!--
-                        --><div class="col-xs-3 vtop">
-                    <a href="#"><img class="v" src="images/v-seal.png"></a>
-                </div><!--
-                        --><div class="col-xs-3 vtop">
-                    <a href="#"><img class="n" src="images/n-seal.png"></a>
+                <div class="row icons-block text-center">
+                    <div class="col-xs-3 vtop">
+                        <a href="#"><img class="m" src="images/m-seal.png"></a>
+                    </div><!--
+                    --><div class="col-xs-3 vtop">
+                        <a href="#"><img class="t" src="images/t-seal.jpg"></a>
+                    </div><!--
+                    --><div class="col-xs-3 vtop">
+                        <a href="#"><img class="v" src="images/v-seal.png"></a>
+                    </div><!--
+                    --><div class="col-xs-3 vtop">
+                        <a href="#"><img class="n" src="images/n-seal.png"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,7 +147,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                 <li><a href="mailto: <?= Yii::$app->params['support_email']; ?>">Support</a></li>
             </ul>
         </div><!--
-                --><div class="col-md-4 col-xs-12 text-right vcenter copyright">
+        --><div class="col-md-4 col-xs-12 text-right vcenter copyright">
             &copy; <?= date('Y'); ?> ClickMoney. All Rights Reserved.
         </div>
     </div>
