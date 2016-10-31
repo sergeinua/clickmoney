@@ -1341,13 +1341,29 @@ li.active {
 
 }
 
-@media (min-width: 366px) and (max-width: 500px) {
+@media (min-width: 250px) and (max-width: 500px) {
     .membership-wrapper {
         height: auto;
     }
 
     h2.membership-biz-area {
         font-size: 2em;
+    }
+
+    .membership-header .left_block p {
+        width: 100%;
+        top: 15%;
+    }
+
+    .membership-header .yellow-arrow {
+        position: absolute;
+        top: -10%;
+        right: 14%;
+        width: 10%;
+    }
+
+    .text-days {
+        font-size: 40px;
     }
 
     .membership-please-watch {
