@@ -1400,12 +1400,12 @@ p.register-text {
     }
 
     .membership-header {
-        height: 500px;
+        height: 470px;
         margin-bottom: 210px;
     }
 
     .membership-wrapper {
-        height: 500px;
+        height: 470px;
     }
 
     .membership-header .blockMob .licence {
@@ -1733,6 +1733,25 @@ p.register-text {
         top: 30px;
     }
 
+    .membership-wrapper .container.left-right-container {
+        background: transparent;
+    }
+
+    .membership-wrapper .container.left-right-container .left_block {
+        width: 576px;
+        height: 324px;
+    }
+
+    .membership-wrapper .container.left-right-container .right_block {
+        width: 416px;
+        height: 324px;
+    }
+
+    .membership-wrapper .container.left-right-container .left_block .embed-responsive.embed-responsive-16by9 {
+        width: 576px;
+        height: 324px;
+        padding: 0;
+    }
 
 }
 
@@ -1847,6 +1866,26 @@ p.register-text {
 
     .membership-header button .col-md-12.col-xs-9 {
         font-size: 1.3em;
+    }
+
+    .membership-wrapper .container.left-right-container {
+        background: transparent;
+    }
+
+    .membership-wrapper .container.left-right-container .left_block {
+        width: 720px;
+        height: 405px;
+    }
+
+    .membership-wrapper .container.left-right-container .right_block {
+        width: 450px;
+        height: 405px;
+    }
+
+    .membership-wrapper .container.left-right-container .left_block .embed-responsive.embed-responsive-16by9 {
+        width: 720px;
+        height: 405px;
+        padding: 0;
     }
 
 }
