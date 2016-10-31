@@ -20,7 +20,7 @@ class Subscriber extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'sf_all_adds';
+        return 'cm_all_adds';
     }
 
     /**
