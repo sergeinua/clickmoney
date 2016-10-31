@@ -1995,7 +1995,7 @@ li.active {
     }
 
     .membership-wrapper .container.left-right-container .right_block {
-        width: 416px;
+        width: 394px;
         height: 324px;
     }
 
@@ -2006,7 +2006,7 @@ li.active {
     }
 }
 
-@media (min-width: 1221px) and (max-width: 1399px) {
+@media (min-width: 1201px) and (max-width: 1399px) {
     .img-membership1, .membership-header .right_block {
         height: auto;
     }
@@ -2024,18 +2024,18 @@ li.active {
     }
 
     .membership-wrapper .container.left-right-container .left_block {
-        width: 576px;
-        height: 324px;
+        width: 650px;
+        height: 361px;
     }
 
     .membership-wrapper .container.left-right-container .right_block {
-        width: 416px;
-        height: 324px;
+        width: 520px;
+        height: 361px;
     }
 
     .membership-wrapper .container.left-right-container .left_block .embed-responsive.embed-responsive-16by9 {
-        width: 576px;
-        height: 324px;
+        width: 650px;
+        height: 361px;
         padding: 0;
     }
 
