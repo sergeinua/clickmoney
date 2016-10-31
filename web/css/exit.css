@@ -25,9 +25,10 @@ body.freereport {
 
 .freereport .header .lic span.licenceLeft {
     background-color: #fd442b;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1.18em;
+    padding-left: 15px;
+}
+.freereport .header .lic span.licenceRight {
+    margin-left: 15px;
 }
 
 .freereport .text-white {
