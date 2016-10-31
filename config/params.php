@@ -1,9 +1,6 @@
 <?php
 
 $forms = [
-    'ymlp' => [
-        'action' => 'https://ymlp.com/subscribe.php?id=gwbqjmugmgb'
-    ],
     'aweber' => [
         'meta_web_form_id' => '180194731',
         'listname' => 'awlist4472749',
@@ -12,6 +9,9 @@ $forms = [
         'meta_adtracking' => 'CM_form',
         'meta_message' => '1',
         'img_url' => 'https://forms.aweber.com/form/displays.htm?id=jBwMjJws7MyM'
+    ],
+    'ymlp' => [
+        'action' => 'https://ymlp.com/subscribe.php?id=gwbqjmugmgb'
     ],
 ];
 
