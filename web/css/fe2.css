@@ -47,6 +47,17 @@ body.main2 .header .lic span.licenceRight {
     vertical-align: middle;
 }
 
+body.main2 .content {
+    position: relative;
+}
+
+body.main2 .content .corner-rectangle {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 0;
+}
+
 body.main2 .form-title {
     font-size: 1.5em;
     padding: 5px 5px 0 5px;
@@ -57,9 +68,6 @@ body.main2 .form-title {
     text-align: center;
 }
 
-body.main2 .container.content {
-    background-color: white;
-}
 
 body.main2 .top-info-block .text-white.row {
     margin: 10px auto 10px auto;
@@ -67,14 +75,16 @@ body.main2 .top-info-block .text-white.row {
 
 body.main2 .to-uppercase {
     text-transform: uppercase;
+    color: #616161;
 }
 
 body.main2 .text-bold {
     font-weight: 900;
+    color: #424242;
 }
 
-body.main2 .form {
-    background-color: white;
+body.main2 .content {
+    background-color: #fafafa;
 }
 
 body.main2 .form-fields {
@@ -86,6 +96,10 @@ body.main2 .form-fields {
 body.main2 input[type="text"], input[type="email"] {
     padding: 10px;
     width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 2px;
+    color: #bdbdbd;
+    font-size: 1em;
 }
 
 body.main2 .form-fields .row {
@@ -95,14 +109,37 @@ body.main2 .form-fields .row {
 body.main2 .lock-text {
     font-size: 0.75em;
     font-family: 'Open Sans', sans-serif;
-    color: #b0b0b0
+    color: #b0b0b0;
 }
 
 body.main2 button {
     white-space: nowrap;
     padding: 15px 0px 15px 0px;
-    font-size: 0.75em;
-    width: 95%;
+    font-size: 1.0625em;
+    width: 410px;
+    background: #06b6a4;
+    background: -webkit-linear-gradient(45deg, #00bfa5 0%, #1de9b6 100%);
+    background: -moz-linear-gradient(45deg, #00bfa5 0%, #1de9b6 100%);
+    background: linear-gradient(45deg, #00bfa5 0%, #1de9b6 100%);
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 0;
+    border-radius: 4px;
+    cursor: hand;
+    color: white;
+}
+
+body.main2 button:hover{
+    background: #1de9b6;
+}
+
+body.main2 button:active{
+    background: #00bfa5;
 }
 
 body.main2 .lock-text {
@@ -178,7 +215,7 @@ body.main2 .vtop {
 /* md */
 @media (min-width: 992px) {
     body.main2 .right-block {
-        background-color: white;
+        background-color: #fafafa;
         height: 378px;
         width: 298px;
     }
@@ -318,8 +355,8 @@ body.main2 .vtop {
     }
 
     body.main2 button {
-        font-size: 1.3em;
-        padding: 15px 50px 15px 50px;
+        font-size: 1.8em;
+        padding: 15px 20px 15px 20px;
     }
 
     body.main2 .lock-text {
