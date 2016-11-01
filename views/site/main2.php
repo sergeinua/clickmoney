@@ -55,6 +55,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
 </div>
 <div class="container content">
     <img class="corner-rectangle" src="images/rectangle.png">
+    <img class="corner-rectangle-mobile" src="images/rectangle-for-mobiles.png">
     <p class="corner-rectangle-text">LIMITED</br> SPOTS</p>
     <div class="row">
         <div class="col-xs-12 video">
