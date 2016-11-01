@@ -216,6 +216,62 @@ body.main2 .col-xs-12.col-md-3 {
     margin-bottom: 10px;
 }
 
+.join-popup {
+    /* This timing applies on the way OUT */
+    transition-timing-function: ease-in;
+
+    /* Quick on the way out */
+    transition: 0.4s;
+
+    background-color: white;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    width: 90%;
+    top: -180px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    -webkit-box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
+}
+
+.join-popup.showed {
+    /* This timing applies on the way IN */
+    transition-timing-function: ease-out;
+
+    /* A litttttle slower on the way in */
+    transition: 0.5s;
+
+    top: 15px;
+}
+
+.join-popup .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.join-popup .time-text {
+    color: #989898;
+    font-size: 10px;
+}
+
+.join-popup .email-text {
+    color: #d4d4d4;
+    font-size: 10px;
+}
+
 /* sm */
 @media (min-width: 768px) {
 
@@ -307,6 +363,32 @@ body.main2 .col-xs-12.col-md-3 {
 
     body.main2 .video {
         padding: 10px;
+    }
+
+    .join-popup {
+        width: 375px;
+        bottom: -375px;
+        right: 20px;
+        top: auto;
+        left: auto;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .join-popup.showed {
+        top: auto;
+        width: 375px;
+        bottom: 20px;
+        right: 20px;
+        left: auto;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
     }
 }
 

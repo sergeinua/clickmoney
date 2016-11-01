@@ -242,6 +242,11 @@ class SiteController extends Controller
 
     public function actionMain2()
     {
-        return $this->render('main2');
+        $forms[] = ['forms' => Yii::$app->params['esp_forms']];
+        $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
+
+        return $this->render('main2', [
+            'forms' => $forms
+        ]);
     }
 }

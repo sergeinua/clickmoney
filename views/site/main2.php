@@ -15,7 +15,7 @@ $script_init = <<< JS
     var exitsplashpage = '/freereport';
     sessionStorage.setItem('show_exit_popup', 'true');
 JS;
-//$this->registerJs($script_init, yii\web\View::POS_BEGIN);
+$this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
 $script = <<< JS
 (function($) {
@@ -43,37 +43,6 @@ if ($mob->isTablet() || $mob->isMobile()) {
     var from_page = '<?= $from_page; ?>';
     <?php endif; ?>
 </script>
-
-<!--<div class="fixed-top top-info-block">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-xs-4 col-md-2 logo">-->
-<!--                <img src="images/ClickMoneyLogo/Logo-white.svg">-->
-<!--            </div>-->
-<!--            <div class="col-xs-8 col-md-2 pull-right reports-left-block row">-->
-<!--                <div class="col-xs-8">-->
-<!--                    <span class="reports-left-text">Reports Left</span>-->
-<!--                    <p class="hidden-xs">Updated OCT 24 2106</p>-->
-<!--                </div>-->
-<!--                <div class="col-xs-4 quantity-block">-->
-<!--                    <span class="quantity">10</span>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-xs-12 col-md-8 text-white row">-->
-<!--                <div class="col-xs-12">-->
-<!--                    <img src="images/alert.png" width="26px">There are currently-->
-<!--                </div>-->
-<!--                <div class="col-xs-12">-->
-<!--                    <span class="filling-text-red" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.<br>-->
-<!--                </div>-->
-<!--                <div class="col-xs-12">-->
-<!--                    <span class="filling-text-red" id="try_to_take_spot">104</span> of Them Trying To Take <span-->
-<!--                        class="feExitBold">Your Spot</span> Right Now. <span class="feExitBold">Act Quickly!</span>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 <div class="container header">
     <div class="row">
         <div class="col-xs-4 logo vcenter">
@@ -157,8 +126,8 @@ if ($mob->isTablet() || $mob->isMobile()) {
     <div class="row">
         <div class="col-xs-12 col-md-1 vcenter logo">
             <a href=""><img src="images/ClickMoneyLogo/Logo-white.svg"></a>
-        </div><!--
-                --><div class="col-xs-12 col-md-7 vcenter menu">
+        </div>
+        <div class="col-xs-12 col-md-7 vcenter menu">
             <ul>
                 <li><a href="<?= Url::toRoute(['site/disclaimer']); ?>" target="_blank">Government Disclaimer</a></li>
                 <li><a href="<?= Url::toRoute(['site/privacy-policy']); ?>" target="_blank">Privacy Policy</a></li>
@@ -167,52 +136,45 @@ if ($mob->isTablet() || $mob->isMobile()) {
                 <li><a href="<?= Url::toRoute(['site/spam-policy']); ?>" target="_blank">Spam Policy</a></li>
                 <li><a href="mailto: <?= Yii::$app->params['support_email']; ?>">Support</a></li>
             </ul>
-        </div><!--
-        --><div class="col-md-4 col-xs-12 text-right vcenter copyright">
+        </div>
+        <div class="col-md-4 col-xs-12 text-right vcenter copyright">
             &copy; <?= date('Y'); ?> ClickMoney. All Rights Reserved.
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
 <!-- Just joined popup -->
-<!--<div class="join-popup">-->
-<!--    <div class="container-fluid">-->
-<!--        <div class="row">-->
-<!--            <div class="col-xs-2">-->
-<!--                <img src="/images/smile.png">-->
-<!--            </div>-->
-<!--            <div class="col-xs-10">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-12">-->
-<!--                        <span class="green-lighter-text">John</span> has just joined ClickMoney!-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-12">-->
-<!--                        <span class="time-text">4 minutes ago</span>-->
-<!--                        <span class="email-text">john***@gmail.com</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="close-btn"><a href="#"><img src="/images/svg/circle_delete.svg"></a></div>-->
-<!--</div>-->
+<div class="join-popup">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2">
+                <img src="/images/smile.png">
+            </div>
+            <div class="col-xs-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="green-lighter-text">John</span> has just joined ClickMoney!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="time-text">4 minutes ago</span>
+                        <span class="email-text">john***@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="close-btn"><a href="#"><img src="/images/svg/circle_delete.svg"></a></div>
+</div>
 
 <?php
-//foreach ($forms as $form) {
-//    $i = 0;
-//    foreach ($form['forms'] as $key => $value) {
-//        echo \Yii::$app->view->renderFile('@app/views/site/forms/form_' . $key . '.php', ['item' => ($i + 1) . (empty($form['prefix']) ? '' : '_' . $form['prefix']), 'params' => $value]);
-//        $i++;
-//    }
-//}
+foreach ($forms as $form) {
+    $i = 0;
+    foreach ($form['forms'] as $key => $value) {
+        echo \Yii::$app->view->renderFile('@app/views/site/forms/form_' . $key . '.php', ['item' => ($i + 1) . (empty($form['prefix']) ? '' : '_' . $form['prefix']), 'params' => $value]);
+        $i++;
+    }
+}
 ?>
 
 <?= \Yii::$app->view->renderFile('@app/views/site/popups/exit.php'); ?>
