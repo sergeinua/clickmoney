@@ -67,6 +67,7 @@ body.main2 .content .corner-rectangle-text {
     z-index: 2;
     color: white;
     transform: rotate(44deg);
+    -webkit-transform: rotate(44deg);
     right: 6px;
     top: 12px;
     font-size: 11px;
@@ -359,6 +360,10 @@ body.main2 .col-xs-12.col-md-3 {
     padding: 0 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#exitpopup .modal-content {
+    background-color: #fafafa;
 }
 
 #exitpopup .modal-dialog {
