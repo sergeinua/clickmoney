@@ -760,6 +760,10 @@ body.fe2 {
         -o-transform: translate(-50%, -50%) !important;
         transform: translate(-50%, -50%) !important;
     }
+
+    .footer ul {
+        padding-left: 25px;
+    }
 }
 
 /* lg */
@@ -858,6 +862,9 @@ body.fe2 {
         margin: -4px auto 15px auto;
     }
 
+    .footer ul {
+        padding: 0;
+    }
 }
 
 /* FullHD and higher */
