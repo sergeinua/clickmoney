@@ -325,9 +325,7 @@ body.main2 .col-xs-12.col-md-3 {
     border-radius: 5px;
     border: none;
     color: white;
-    font-size: 1em;
-    letter-spacing: 0.2em;
-    font-weight: bold;
+    font-size: 1.4em;;
     background:#d50000; /* Old browsers */
     background: -moz-linear-gradient(45deg, #d50000 0%, #ff3d00 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(45deg, #d50000 0%, #ff3d00 100%); /* Chrome10-25,Safari5.1-6 */
