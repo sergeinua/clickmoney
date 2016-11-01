@@ -239,4 +239,9 @@ class SiteController extends Controller
     {
         return $this->render('finaloffer');
     }
+
+    public function actionMain2()
+    {
+        return $this->render('main2');
+    }
 }

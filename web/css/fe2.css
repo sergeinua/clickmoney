@@ -1,0 +1,320 @@
+html {
+    height: 100%;
+    background: url(../images/bg_dollar.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+body.main2 .container.header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+body.main2 .container.header .logo.vcenter img, body.main2 .container.footer .vcenter.logo a img {
+    width: 100px;
+}
+
+body.main2 .header .lic span.licenceLeft {
+    display: inline-block;
+    background-color: #fd842b;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 7px;
+    vertical-align: middle;
+}
+
+body.main2 .header .lic span.licenceRight {
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+    color: #858585;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    line-height: 2em;
+    font-size: 0.65em;
+    text-align: center;
+    padding: 8px 12px;
+    margin-left: 7px;
+    vertical-align: middle;
+}
+
+body.main2 .form-title {
+    font-size: 1.5em;
+    padding: 5px 5px 0 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+
+body.main2 .top-info-block .text-white.row {
+    margin: 10px auto 10px auto;
+}
+
+body.main2 .to-uppercase {
+    text-transform: uppercase;
+}
+
+body.main2 .text-bold {
+    font-weight: 900;
+}
+
+body.main2 .form {
+    background-color: white;
+}
+
+body.main2 .form-fields {
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 12px 0;
+}
+
+body.main2 input[type="text"], input[type="email"] {
+    padding: 10px;
+    width: 100%;
+}
+
+body.main2 .form-fields .row {
+    margin-bottom: 10px;
+}
+
+body.main2 .lock-text {
+    font-size: 0.75em;
+    font-family: 'Open Sans', sans-serif;
+    color: #b0b0b0
+}
+
+body.main2 button {
+    white-space: nowrap;
+    padding: 15px 0px 15px 0px;
+    font-size: 0.75em;
+    width: 95%;
+}
+
+body.main2 .lock-text {
+    margin: 10px auto 10px auto;
+}
+
+body.main2 .vtop img {
+    max-width: 60px;
+}
+
+body.main2 .icons-block {
+    margin-bottom: 10px;
+}
+
+body.main2 .footer {
+    margin-top: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+body.main2 .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body.main2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body.main2 ul > li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+body.main2 .footer ul > li:after {
+    content: ' | ';
+}
+
+body.main2 .footer ul > li:last-child:after {
+    content: '';
+}
+
+body.main2 ul > li a {
+    color: white;
+}
+
+body.main2 .container.footer .vcenter.logo {
+    margin-bottom: 15px;
+}
+
+body.main2 .container.footer .text-right.vcenter.copyright {
+    text-align: center;
+}
+
+body.main2 .container.content .left-block {
+    padding: 0;
+}
+
+/* sm */
+@media (min-width: 768px) {
+
+}
+
+/* md */
+@media (min-width: 992px) {
+    body.main2 .right-block {
+        background-color: white;
+        height: 378px;
+        width: 298px;
+    }
+
+    body.main2 .content .left-block,
+    body.main2 .content .left-block .embed-responsive.embed-responsive-16by9 {
+        padding:0;
+        height: 378px;
+        width: 672px;
+    }
+
+    body.main2 .form-title {
+        font-size: 1em;
+        margin-top: 40px;
+    }
+
+    body.main2 input[type="text"], input[type="email"] {
+        padding: 3px;
+    }
+
+    body.main2 form {
+        font-size: 0.75em;
+    }
+
+    body.main2 button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    body.main2 .form-fields {
+        padding: 0;
+    }
+
+    body.main2 .vtop img {
+        max-width: 50px;
+    }
+
+    body.main2 .lock-text {
+        font-size: 0.95em;
+    }
+
+    body.main2 .container.header .logo.vcenter img {
+        width: 150px;
+    }
+
+    body.main2 .container.footer .vcenter.menu {
+        text-align: left;
+    }
+
+    body.main2 ul > li a, body.main2 .vcenter.copyright {
+        font-size: 0.85em;
+    }
+
+    body.main2 .container.footer .vcenter.menu {
+        padding-left: 40px;
+    }
+
+    body.main2 .container.header .logo.vcenter, body.main2 .container.header .text-right.vcenter,
+    body.main2 .container.footer .vcenter.logo, body.main2 .container.footer .text-right.vcenter.copyright {
+        padding: 0;
+    }
+
+    body.main2 .container.footer .vcenter.logo {
+        text-align: left;
+    }
+
+    body.main2 .container.footer .text-right.vcenter.copyright {
+        text-align: right;
+    }
+}
+
+/* lg */
+@media (min-width: 1200px) {
+    body.main2 .right-block {
+        height: 432px;
+        width: 402px;
+    }
+
+    body.main2 .content .left-block,
+    body.main2 .content .left-block .embed-responsive.embed-responsive-16by9 {
+        height: 432px;
+        width: 768px;
+    }
+
+    body.main2 .form-title {
+        font-size: 1.3em;
+        margin-top: 45px;
+    }
+
+    body.main2 input[type="text"], input[type="email"] {
+        padding: 10px;
+    }
+
+    body.main2 button {
+        padding: 15px 30px 15px 30px;
+        font-size: 1.4em;
+    }
+}
+
+/* FullHD and higher */
+@media (min-width: 1800px) {
+    .container, body.main2 .header, body.main2 .footer {
+        width: 1600px;
+    }
+    body.main2 .right-block {
+        height: 612px;
+        width: 512px;
+    }
+
+    body.main2 .content .left-block,
+    body.main2 .content .left-block .embed-responsive.embed-responsive-16by9 {
+        height: 612px;
+        width: 1088px;
+    }
+
+    body.main2 .form-title {
+        font-size: 2em;
+        margin-top: 60px;
+    }
+
+    body.main2 input[type="text"], input[type="email"] {
+        padding: 15px;
+    }
+
+    body.main2 .form-fields {
+        font-size: 1.5em;
+        margin-top: 25px;
+    }
+
+    body.main2 button {
+        font-size: 1.8em;
+        padding: 15px 50px 15px 50px;
+    }
+
+    body.main2 .lock-text {
+        font-size: 1.2em;
+    }
+
+    body.main2 .vtop img {
+        max-width: 75px;
+    }
+
+    body.main2 .icons-block {
+        margin-top: 25px;
+    }
+}
