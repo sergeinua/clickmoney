@@ -86,7 +86,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
 </div>
 <div class="container content">
     <div class="row">
-        <div class="col-xs-12 col-md-7 left-block">
+        <div class="col-xs-12 video">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe id="vim-video" class="embed-responsive-item"
                         src="https://player.vimeo.com/video/189163304?autoplay=true"
@@ -94,59 +94,61 @@ if ($mob->isTablet() || $mob->isMobile()) {
                         webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
-        <div class="col-xs-12 col-md-5 form right-block">
-            <div class="form-title to-uppercase">
-                <p>Enter Your <span class="text-bold">FIRST NAME</span> and <span class="text-bold">BEST EMAIL ADDRESS</span> below to proceed</p>
-            </div>
-            <form method="post" action="javascript:;" id="fe-2-form">
-                <div class="form-fields">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <label for="name">My name's</label>
-                        </div>
-                        <div class="col-xs-12">
-                            <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Enter your name here" title="Please enter 3-15 characters (alphabets only)">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <label for="email">My best email is</label>
-                        </div>
-                        <div class="col-xs-12">
-                            <input type="email" id="email" name="email" required placeholder="Enter your email here">
-                        </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-title to-uppercase">
+                        <p>Enter Your <span class="text-bold">FIRST NAME</span> and <span class="text-bold">BEST EMAIL ADDRESS</span> below to proceed</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <button type="submit">
+                <div class="col-xs-12">
+                    <form method="post" action="javascript:;" id="fe-2-form">
+                        <div class="form-fields">
                             <div class="row">
-                                <div class="col-xs-12">
-                                    OPEN MY CLICK MONEY ACCOUNT
+                                <div class="col-xs-12 col-md-3">
+                                    <label for="name">My name's</label>
+                                    <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Enter your name here" title="Please enter 3-15 characters (alphabets only)">
+                                </div>
+                                <div class="col-xs-12 col-md-3">
+                                    <label for="email">My best email is</label>
+                                    <input type="email" id="email" name="email" required placeholder="Enter your email here">
+                                </div>
+                                <div class="col-xs-12 col-md-4 text-center">
+                                    <button type="submit">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                OPEN MY CLICK MONEY ACCOUNT
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <div class="lock-text">
+                                        <img class="lock-img" src="images/svg/lock.svg" />
+                                        <span>Guaranteed Secure Access Ensured by Trusted Companies</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-2">
+                                    <div class="row">
+                                        <div class="row icons-block text-center">
+                                            <div class="col-xs-3 col-md-6 vtop">
+                                                <a href="#"><img class="m" src="images/m-seal.png"></a>
+                                            </div>
+                                            <div class="col-xs-3 col-md-6 vtop">
+                                                <a href="#"><img class="t" src="images/t-seal.jpg"></a>
+                                            </div>
+                                            <div class="col-xs-3 col-md-6 vtop">
+                                                <a href="#"><img class="v" src="images/v-seal.png"></a>
+                                            </div>
+                                            <div class="col-xs-3 col-md-6 vtop">
+                                                <a href="#"><img class="n" src="images/n-seal.png"></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </button>
-                        <div class="lock-text">
-                            <img class="lock-img" src="images/svg/lock.svg" />
-                            <span>Guaranteed Secure Access Ensured by Trusted Companies</span>
                         </div>
-                    </div>
+                    </form>
                 </div>
-                <div class="row icons-block text-center">
-                    <div class="col-xs-3 vtop">
-                        <a href="#"><img class="m" src="images/m-seal.png"></a>
-                    </div>
-                    <div class="col-xs-3 vtop">
-                        <a href="#"><img class="t" src="images/t-seal.jpg"></a>
-                    </div>
-                    <div class="col-xs-3 vtop">
-                        <a href="#"><img class="v" src="images/v-seal.png"></a>
-                    </div>
-                    <div class="col-xs-3 vtop">
-                        <a href="#"><img class="n" src="images/n-seal.png"></a>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>

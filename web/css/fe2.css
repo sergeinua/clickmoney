@@ -57,6 +57,9 @@ body.main2 .form-title {
     text-align: center;
 }
 
+body.main2 .container.content {
+    background-color: white;
+}
 
 body.main2 .top-info-block .text-white.row {
     margin: 10px auto 10px auto;
@@ -163,6 +166,10 @@ body.main2 .container.content .left-block {
     padding: 0;
 }
 
+body.main2 .vtop {
+    padding: 0;
+}
+
 /* sm */
 @media (min-width: 768px) {
 
@@ -184,7 +191,7 @@ body.main2 .container.content .left-block {
     }
 
     body.main2 .form-title {
-        font-size: 1em;
+        font-size: 1.7em;
         margin-top: 40px;
     }
 
@@ -206,7 +213,12 @@ body.main2 .container.content .left-block {
     }
 
     body.main2 .vtop img {
-        max-width: 50px;
+        max-width: unset;
+        max-height: 22px;
+    }
+
+    body.main2 .vtop {
+        margin-bottom: 10px;
     }
 
     body.main2 .lock-text {
@@ -240,6 +252,10 @@ body.main2 .container.content .left-block {
 
     body.main2 .container.footer .text-right.vcenter.copyright {
         text-align: right;
+    }
+
+    body.main2 .video {
+        padding-top: 10px;
     }
 }
 
@@ -302,7 +318,7 @@ body.main2 .container.content .left-block {
     }
 
     body.main2 button {
-        font-size: 1.8em;
+        font-size: 1.3em;
         padding: 15px 50px 15px 50px;
     }
 
