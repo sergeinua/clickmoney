@@ -551,4 +551,12 @@ body.main2 .corner-rectangle-mobile {
         padding: 18px 0px 15px 0px;
         font-size: 1.4em;
     }
+
+    body.main2 .container.footer .text-right.vcenter.copyright {
+        padding-top: 20px;
+    }
+
+    body.main2 .container.footer .vcenter.menu {
+        padding-top: 15px;
+    }
 }
