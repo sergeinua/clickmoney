@@ -53,9 +53,19 @@ body.main2 .content {
 
 body.main2 .content .corner-rectangle {
     position: absolute;
-    right: 0;
+    right: -4px;
     z-index: 1;
-    top: 0;
+    top: -4px;
+}
+
+body.main2 .content .corner-rectangle-text {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    right: 10px;
+    transform: rotate(44deg);
+    top: 25px;
+    font-size: 18px;
 }
 
 body.main2 .form-title {
