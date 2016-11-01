@@ -90,7 +90,7 @@ body.main2 .content {
 body.main2 .form-fields {
     margin: 0 15px;
     font-size: 1.1em;
-    padding: 12px 0;
+    /*padding: 12px 0;*/
 }
 
 body.main2 input[type="text"], input[type="email"] {
@@ -114,8 +114,8 @@ body.main2 .lock-text {
 
 body.main2 button {
     white-space: nowrap;
-    padding: 15px 0px 15px 0px;
-    font-size: 1.0625em;
+    padding: 15px 0px 10px 0px;
+    font-size: 0.85em;
     width: 410px;
     background: #06b6a4;
     background: -webkit-linear-gradient(45deg, #00bfa5 0%, #1de9b6 100%);
@@ -132,6 +132,7 @@ body.main2 button {
     border-radius: 4px;
     cursor: hand;
     color: white;
+    width: 100%;
 }
 
 body.main2 button:hover{
@@ -155,9 +156,9 @@ body.main2 .icons-block {
 }
 
 body.main2 .footer {
-    margin-top: 30px;
+    padding-top: 30px;
     color: #fff;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     text-align: center;
 }
 
@@ -207,6 +208,14 @@ body.main2 .vtop {
     padding: 0;
 }
 
+body.main2 .video {
+    padding: 0;
+}
+
+body.main2 .col-xs-12.col-md-3 {
+    margin-bottom: 10px;
+}
+
 /* sm */
 @media (min-width: 768px) {
 
@@ -243,6 +252,7 @@ body.main2 .vtop {
     body.main2 button {
         padding-top: 10px;
         padding-bottom: 10px;
+        font-size: 1.3em;
     }
 
     body.main2 .form-fields {
@@ -294,6 +304,10 @@ body.main2 .vtop {
     body.main2 .video {
         padding-top: 10px;
     }
+
+    body.main2 .video {
+        padding: 10px;
+    }
 }
 
 /* lg */
@@ -310,7 +324,7 @@ body.main2 .vtop {
     }
 
     body.main2 .form-title {
-        font-size: 1.3em;
+        font-size: 1.9em;
         margin-top: 45px;
     }
 
@@ -319,7 +333,7 @@ body.main2 .vtop {
     }
 
     body.main2 button {
-        padding: 15px 30px 15px 30px;
+        padding: 18px 0px 15px 0px;
         font-size: 1.4em;
     }
 }
@@ -355,8 +369,8 @@ body.main2 .vtop {
     }
 
     body.main2 button {
-        font-size: 1.8em;
-        padding: 15px 20px 15px 20px;
+        font-size: 1.6em;
+        padding: 15px 5px 15px 5px;
     }
 
     body.main2 .lock-text {
@@ -364,10 +378,6 @@ body.main2 .vtop {
     }
 
     body.main2 .vtop img {
-        max-width: 75px;
-    }
-
-    body.main2 .icons-block {
-        margin-top: 25px;
+        max-height: 30px;
     }
 }

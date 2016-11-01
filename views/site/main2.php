@@ -85,7 +85,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
     </div>
 </div>
 <div class="container content">
-    <img class="corner-rectangle" src="images/elemets/rectangle.png">
+    <img class="corner-rectangle" src="images/rectangle.png">
     <div class="row">
         <div class="col-xs-12 video">
             <div class="embed-responsive embed-responsive-16by9">
