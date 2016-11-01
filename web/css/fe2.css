@@ -292,7 +292,7 @@ body.main2 .col-xs-12.col-md-3 {
 
 #exitpopup .form-fields {
     font-size: 1.1em !important;
-    width: 410px;
+    max-width: 410px;
     margin: 15px auto;
     padding: 12px 0;
 }
@@ -320,7 +320,8 @@ body.main2 .col-xs-12.col-md-3 {
 }
 
 #exitpopup .action-form button {
-    width: 410px;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 65px;
     border-radius: 5px;
     border: none;
