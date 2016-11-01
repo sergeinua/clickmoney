@@ -77,7 +77,7 @@ class SiteController extends Controller
      */
     public function actionValidate($form)
     {
-        if ($form == 'index' || $form == 'main') {
+        if ($form == 'index' || $form == 'main'|| $form == 'main2') {
             $forms[] = ['forms' => Yii::$app->params['esp_forms']];
             $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
         } else if ($form == 'freereport') {

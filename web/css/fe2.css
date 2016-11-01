@@ -87,13 +87,13 @@ body.main2 .content {
     background-color: #fafafa;
 }
 
-body.main2 .form-fields {
+body.main2 form#fe-3-form .form-fields {
     margin: 0 15px;
     font-size: 1.1em;
     /*padding: 12px 0;*/
 }
 
-body.main2 input[type="text"], input[type="email"] {
+body.main2 form#fe-3-form input[type="text"], input[type="email"] {
     padding: 10px;
     width: 100%;
     border: 1px solid #bdbdbd;
@@ -102,7 +102,7 @@ body.main2 input[type="text"], input[type="email"] {
     font-size: 1em;
 }
 
-body.main2 .form-fields .row {
+body.main2 form#fe-3-form .form-fields .row {
     margin-bottom: 10px;
 }
 
@@ -112,7 +112,7 @@ body.main2 .lock-text {
     color: #b0b0b0;
 }
 
-body.main2 button {
+body.main2 form#fe-3-form button {
     white-space: nowrap;
     padding: 15px 0px 10px 0px;
     font-size: 0.85em;
@@ -135,11 +135,11 @@ body.main2 button {
     width: 100%;
 }
 
-body.main2 button:hover{
+body.main2 form#fe-3-form button:hover{
     background: #1de9b6;
 }
 
-body.main2 button:active{
+body.main2 form#fe-3-form button:active{
     background: #00bfa5;
 }
 
@@ -272,6 +272,64 @@ body.main2 .col-xs-12.col-md-3 {
     font-size: 10px;
 }
 
+#exitpopup .form-fields {
+    font-size: 1.1em !important;
+    width: 410px;
+    margin: 15px auto;
+    padding: 12px 0;
+}
+
+#exitpopup .action-form input[type=text], #exitpopup .action-form input[type=email] {
+    font-family: 'Open Sans', sans-serif;
+    color: #b0b0b0;
+    border: 2px dashed #e4e4e4;
+    padding: 10px;
+}
+
+#exitpopup .action-form .form-fields label {
+    font-size: 0.8em;
+}
+
+#exitpopup .action-form button {
+    width: 410px;
+    height: 65px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+#exitpopup .warranty-text {
+    color: #b0b0b0;
+    font-size: 0.8em;
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#exitpopup .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    -o-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0;
+}
+
+@media (max-height: 660px) {
+    #exitpopup .modal-dialog {
+        top: 0;
+        transform: translate(-50%, 0) !important;
+    }
+}
+
 /* sm */
 @media (min-width: 768px) {
 
@@ -301,17 +359,17 @@ body.main2 .col-xs-12.col-md-3 {
         padding: 3px;
     }
 
-    body.main2 form {
+    body.main2 form#fe-3-form {
         font-size: 0.75em;
     }
 
-    body.main2 button {
+    body.main2 form#fe-3-form button {
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 1.3em;
     }
 
-    body.main2 .form-fields {
+    body.main2 form#fe-3-form .form-fields {
         padding: 0;
     }
 
@@ -410,11 +468,11 @@ body.main2 .col-xs-12.col-md-3 {
         margin-top: 45px;
     }
 
-    body.main2 input[type="text"], input[type="email"] {
+    body.main2 form#fe-3-form input[type="text"], body.main2 form#fe-3-form input[type="email"] {
         padding: 10px;
     }
 
-    body.main2 button {
+    body.main2 form#fe-3-form button {
         padding: 18px 0px 15px 0px;
         font-size: 1.4em;
     }
@@ -422,44 +480,44 @@ body.main2 .col-xs-12.col-md-3 {
 
 /* FullHD and higher */
 @media (min-width: 1800px) {
-    .container, body.main2 .header, body.main2 .footer {
-        width: 1600px;
-    }
-    body.main2 .right-block {
-        height: 612px;
-        width: 512px;
-    }
+    /*.container, body.main2 .header, body.main2 .footer {*/
+        /*width: 1600px;*/
+    /*}*/
+    /*body.main2 .right-block {*/
+        /*height: 612px;*/
+        /*width: 512px;*/
+    /*}*/
 
-    body.main2 .content .left-block,
-    body.main2 .content .left-block .embed-responsive.embed-responsive-16by9 {
-        height: 612px;
-        width: 1088px;
-    }
+    /*body.main2 .content .left-block,*/
+    /*body.main2 .content .left-block .embed-responsive.embed-responsive-16by9 {*/
+        /*height: 612px;*/
+        /*width: 1088px;*/
+    /*}*/
 
-    body.main2 .form-title {
-        font-size: 2em;
-        margin-top: 60px;
-    }
+    /*body.main2 .form-title {*/
+        /*font-size: 2em;*/
+        /*margin-top: 60px;*/
+    /*}*/
 
-    body.main2 input[type="text"], input[type="email"] {
-        padding: 15px;
-    }
+    /*body.main2 input[type="text"], input[type="email"] {*/
+        /*padding: 15px;*/
+    /*}*/
 
-    body.main2 .form-fields {
-        font-size: 1.5em;
-        margin-top: 25px;
-    }
+    /*body.main2 form#fe-3-form .form-fields {*/
+        /*font-size: 1.5em;*/
+        /*margin-top: 25px;*/
+    /*}*/
 
-    body.main2 button {
-        font-size: 1.6em;
-        padding: 15px 5px 15px 5px;
-    }
+    /*body.main2 form#fe-3-form button {*/
+        /*font-size: 1.6em;*/
+        /*padding: 15px 5px 15px 5px;*/
+    /*}*/
 
-    body.main2 .lock-text {
-        font-size: 1.2em;
-    }
+    /*body.main2 .lock-text {*/
+        /*font-size: 1.2em;*/
+    /*}*/
 
-    body.main2 .vtop img {
-        max-height: 30px;
-    }
+    /*body.main2 .vtop img {*/
+        /*max-height: 30px;*/
+    /*}*/
 }
