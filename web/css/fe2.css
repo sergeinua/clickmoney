@@ -57,9 +57,10 @@ body.main2 .content {
 
 body.main2 .content .corner-rectangle {
     position: absolute;
-    right: -4px;
+    right: 0;
     z-index: 1;
     top: -4px;
+    width: 100px;
 }
 
 body.main2 .content .corner-rectangle-text {
@@ -68,9 +69,9 @@ body.main2 .content .corner-rectangle-text {
     color: white;
     transform: rotate(44deg);
     -webkit-transform: rotate(44deg);
-    right: 6px;
-    top: 12px;
-    font-size: 11px;
+    right: 12px;
+    top: 14px;
+    font-size: 12px;
 }
 
 body.main2 .form-title {
@@ -391,36 +392,24 @@ body.main2 .t {
     }
 }
 
-body.main2 .corner-rectangle {
-    display: none;
-}
-
-body.main2 .corner-rectangle-mobile {
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    top: -3px;
-}
-
 /* sm */
 @media (min-width: 768px) {
     body.main2 .corner-rectangle {
         display: block;
+        width: 120px !important;
+        right: -4px !important;
     }
 
     body.main2 .content .corner-rectangle-text {
-        right: 10px;
-        top: 25px;
-        font-size: 18px;
-    }
-
-    body.main2 .corner-rectangle-mobile {
-        display: none;
+        right: 9px;
+        top: 20px;
+        font-size: 14px;
     }
 
     body.main2 .form-title {
         font-size: 1.7em;
     }
+
 }
 
 /* md */
@@ -511,6 +500,17 @@ body.main2 .corner-rectangle-mobile {
         padding: 10px;
     }
 
+    body.main2 .content .corner-rectangle {
+        width: 150px !important;
+        right: -4px
+    }
+
+    body.main2 .content .corner-rectangle-text {
+        right: 14px;
+        top: 30px;
+        font-size: 16px;
+    }
+
     .join-popup {
         width: 375px;
         bottom: -375px;
@@ -572,5 +572,11 @@ body.main2 .corner-rectangle-mobile {
 
     body.main2 .container.footer .vcenter.menu {
         padding-top: 15px;
+    }
+
+    body.main2 .content .corner-rectangle-text {
+        right: 10px;
+        top: 30px;
+        font-size: 16px;
     }
 }
