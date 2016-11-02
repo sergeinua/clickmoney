@@ -8,7 +8,7 @@ ExitAsset::register($this);
 
 Yii::$app->params['bodyClass'] = 'fe2 freereport';
 
-$this->title = 'ClickMoney.com';
+$this->title = '#1 Click Money System';
 
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {

@@ -16,7 +16,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
 }
 
-$this->title = 'ClickMoney.com';
+$this->title = '#1 Click Money System';
 
 $script_init = <<< JS
     var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";

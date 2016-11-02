@@ -29,7 +29,7 @@ $script = <<< JS
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
 
-$this->title = 'ClickMoney.com';
+$this->title = '#1 Click Money System';
 
 
 $mob = new Mobile_Detect();
