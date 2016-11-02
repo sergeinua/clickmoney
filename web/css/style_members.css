@@ -1988,7 +1988,7 @@ li.active {
 }
 
 /*adjustments for the video approved page*/
-@media (min-width: 992px) and (max-width: 1200px){
+@media (min-width: 992px) and (max-width: 1199px){
     .img-membership1, .membership-header .right_block {
         height: auto;
     }
@@ -2026,7 +2026,7 @@ li.active {
     }
 }
 
-@media (min-width: 1201px) and (max-width: 1399px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
     .img-membership1, .membership-header .right_block {
         height: auto;
     }
