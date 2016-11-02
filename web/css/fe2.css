@@ -216,10 +216,6 @@ body.main2 ul > li a {
     color: white;
 }
 
-body.main2 .container.footer .vcenter.logo {
-    /*margin-bottom: 15px;*/
-}
-
 body.main2 .container.footer .text-right.vcenter.copyright {
     text-align: center;
 }
@@ -247,10 +243,8 @@ body.main2 .t {
 .join-popup {
     /* This timing applies on the way OUT */
     transition-timing-function: ease-in;
-
     /* Quick on the way out */
     transition: 0.4s;
-
     background-color: white;
     position: fixed;
     padding-top: 20px;
@@ -259,7 +253,6 @@ body.main2 .t {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-
     width: 90%;
     top: -180px;
     left: 50%;
@@ -268,7 +261,6 @@ body.main2 .t {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-
     -webkit-box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
     -moz-box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
     box-shadow: 0 6px 18px 1px rgba(0,0,0,0.3);
@@ -277,10 +269,8 @@ body.main2 .t {
 .join-popup.showed {
     /* This timing applies on the way IN */
     transition-timing-function: ease-out;
-
     /* A litttttle slower on the way in */
     transition: 0.5s;
-
     top: 15px;
 }
 
@@ -395,7 +385,7 @@ body.main2 .t {
 }
 
 .spots-left-text {
-    color: red;
+    color: white;
     text-transform: uppercase;
     line-height: 1.4em;
 }
@@ -439,7 +429,6 @@ body.main2 .t {
         font-size: 1.6em;
         padding: 10px 0 0 0;
     }
-
 }
 
 /* md */
@@ -522,10 +511,6 @@ body.main2 .t {
         text-align: right;
     }
 
-    /*body.main2 .video {*/
-        /*padding-top: 10px;*/
-    /*}*/
-
     body.main2 .video {
         padding: 10px;
     }
@@ -599,14 +584,6 @@ body.main2 .t {
     body.main2 form#fe-3-form button {
         padding: 15px 0px 15px 0px;
         font-size: 1.4em;
-    }
-
-    body.main2 .container.footer .text-right.vcenter.copyright {
-        /*padding-top: 20px;*/
-    }
-
-    body.main2 .container.footer .vcenter.menu {
-        /*padding-top: 15px;*/
     }
 
     body.main2 .content .corner-rectangle-text {
