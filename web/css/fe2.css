@@ -100,6 +100,7 @@ body.main2 .text-bold {
 
 body.main2 .content {
     background-color: #fafafa;
+    border-radius: 2px;
 }
 
 body.main2 form#fe-3-form .form-fields {
