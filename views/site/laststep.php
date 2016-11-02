@@ -81,30 +81,21 @@ $this->registerJs($script, yii\web\View::POS_READY);
 
 <header class="membership-header">
     <div class="membership-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 membership-welcome">
+        <div class="container container-header">
+            <div class="row container-header-row">
+                <p class="col-lg-12 membership-welcome">
                     WAIT! THIS OFFER WILL BE GONE IF YOU LEAVE THE PAGE
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 membership-biz-area">
-                    <h2>LAST CHANCE TO CHANGE YOUR LIFE</h2>
-                </div>
-            </div>
-            <div class="row header-last-mrow">
-                <div class="col-md-1 col-xs-12 membership-logo">
-                    <img src="images/ClickMoneyLogo/Logo-yellow.svg">
-                </div>
-                <div class="col-md-12 col-xs-12">
+                </p>
+                <h2 class="membership-biz-area">LAST CHANCE TO CHANGE YOUR LIFE</h2>
+                <p class="exit-header-text">
                     Please Watch The <span class="text-dashed">Video
                         Below</span> For Further Instructions
-                </div>
-                <div class="col-md-2 col-xs-12 membership-boxIcon">
-                    <div class="col-md-2">
+                </p>
+                <div class="col-xs-2 col-xs-12 membership-boxIcon">
+                    <div class="col-xs-2">
                         <img src="images/elipsOne.png">
                     </div>
-                    <div class="col-md-11 row membership-right-box">
+                    <div class="col-xs-11 row membership-right-box">
                         <div class="col-lg-12 membership-licence-left">
                             LICENCE LEFT
                         </div>
@@ -113,6 +104,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         </div>
                     </div>
                 </div>
+                <img class="membership-logo" src="images/ClickMoneyLogo/Logo-yellow.svg">
             </div>
         </div>
         <div class="container left-right-container">

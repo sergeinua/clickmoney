@@ -320,7 +320,6 @@ h2.membership-biz-area {
 .gaff button .row {
     margin: 0;
     position: relative;
-    /*padding: 25px 0;*/
     padding: 13px 0;
 }
 
@@ -1101,6 +1100,11 @@ li.active {
     .membership-header .left_block, .membership-header .right_block {
         width: 100%;
     }
+
+    .gaff button .row {
+        padding: 26px 0;
+    }
+
     .membership-block-text {
         text-align: center;
         padding-left: 40px;
@@ -1338,16 +1342,20 @@ li.active {
         bottom: 15px;
     }
 
+    h2.membership-biz-area {
+        font-size: 2em;
+    }
+
+    .membership-please-watch {
+        font-size: 1.2em;
+    }
+
 
 }
 
 @media (min-width: 250px) and (max-width: 500px) {
     .membership-wrapper {
         height: auto;
-    }
-
-    h2.membership-biz-area {
-        font-size: 2em;
     }
 
     .membership-header .left_block p {
@@ -1364,10 +1372,6 @@ li.active {
 
     .text-days {
         font-size: 40px;
-    }
-
-    .membership-please-watch {
-        font-size: 1.2em;
     }
 
     .last-chace-register button .col-md-12.col-xs-9 {
@@ -2275,12 +2279,8 @@ span#time-exit {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .membership-wrapper {
-        height: 850px;
+        height: 950px;
         margin-bottom: 350px;
-    }
-
-    .container {
-        width: 710px;
     }
 }
 
