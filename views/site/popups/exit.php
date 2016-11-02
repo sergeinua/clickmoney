@@ -2,7 +2,7 @@
 use yii\bootstrap\Modal;
 use app\assets\AppAsset;
 
-$this->registerCssFile(Yii::$app->request->baseUrl.'/web/css/exit-popup.css', ['depends' => [AppAsset::className()]]);
+$this->registerCssFile(Yii::$app->request->baseUrl.'/css/exit-popup.css', ['depends' => [AppAsset::className()]]);
 
 $script_init = <<< JS
     function disableExitPopup() {
