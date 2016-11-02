@@ -69,7 +69,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
             <div class="row">
                 <div class="col-xs-12">
                     <div class="form-title to-uppercase">
-                        <p>Enter Your <span class="text-bold">FIRST NAME</span> and <span class="text-bold">BEST EMAIL ADDRESS</span> below to proceed</p>
+                        <p>Enter Your <span class="text-bold">FIRST NAME</span> and <span class="text-bold">BEST EMAIL ADDRESS</span><br class="visible-md visible-lg"> below to proceed</p>
                     </div>
                 </div>
                 <div class="col-xs-12">
