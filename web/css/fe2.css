@@ -503,7 +503,7 @@ body.main2 ul > li a:visited {
     }
 
     body.main2 .container.footer .vcenter.menu {
-        padding-left: 40px;
+        text-align: center;
     }
 
     body.main2 .container.header .logo.vcenter, body.main2 .container.header .text-right.vcenter,

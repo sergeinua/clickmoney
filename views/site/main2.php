@@ -134,7 +134,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
         <div class="col-xs-12 col-md-1 vcenter logo">
             <a href=""><img src="images/ClickMoneyLogo/Logo-white.svg"></a>
         </div><!--
-        --><div class="col-xs-12 col-md-7 vcenter menu">
+        --><div class="col-xs-12 col-md-9 vcenter menu">
             <ul>
                 <li><a href="<?= Url::toRoute(['site/disclaimer']); ?>" target="_blank">Government Disclaimer</a></li>
                 <li><a href="<?= Url::toRoute(['site/privacy-policy']); ?>" target="_blank">Privacy Policy</a></li>
@@ -144,8 +144,8 @@ if ($mob->isTablet() || $mob->isMobile()) {
                 <li><a href="mailto: <?= Yii::$app->params['support_email']; ?>">Support</a></li>
             </ul>
         </div><!--
-        --><div class="col-md-4 col-xs-12 text-right vcenter copyright">
-            &copy; <?= date('Y'); ?> ClickMoney. <br class="visible-md visible-lg"> All Rights Reserved.
+        --><div class="col-md-2 col-xs-12 text-right vcenter copyright">
+            &copy; <?= date('Y'); ?> ClickMoney.<br class="visible-md visible-lg"> All Rights Reserved.
         </div>
     </div>
 </div>
