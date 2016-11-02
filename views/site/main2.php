@@ -145,7 +145,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
             </ul>
         </div><!--
         --><div class="col-md-2 col-xs-12 text-right vcenter copyright">
-            &copy; <?= date('Y'); ?> ClickMoney.<br class="visible-md visible-lg"> All Rights Reserved.
+            &copy; <?= date('Y'); ?> ClickMoney.<br class="visible-md-inline visible-lg-inline"> All Rights Reserved.
         </div>
     </div>
 </div>
