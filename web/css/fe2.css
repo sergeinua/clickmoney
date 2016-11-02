@@ -133,7 +133,7 @@ body.main2 .lock-text {
 
 body.main2 form#fe-3-form button {
     white-space: nowrap;
-    padding: 15px 0px 10px 0px;
+    padding: 15px 0px 15px 0px;
     font-size: 0.85em;
     width: 410px;
     background: #06b6a4;
@@ -393,9 +393,9 @@ body.main2 .corner-rectangle {
 
 body.main2 .corner-rectangle-mobile {
     position: absolute;
-    right: -4px;
+    right: 0;
     z-index: 1;
-    top: -4px;
+    top: -3px;
 }
 
 /* sm */
@@ -412,6 +412,10 @@ body.main2 .corner-rectangle-mobile {
 
     body.main2 .corner-rectangle-mobile {
         display: none;
+    }
+
+    body.main2 .form-title {
+        font-size: 1.7em;
     }
 }
 
@@ -431,8 +435,8 @@ body.main2 .corner-rectangle-mobile {
     }
 
     body.main2 .form-title {
-        font-size: 1.7em;
-        margin-top: 40px;
+        font-size: 2.3em;
+        margin-top: 0;
     }
 
     body.main2 input[type="text"], input[type="email"] {
@@ -544,8 +548,9 @@ body.main2 .corner-rectangle-mobile {
     }
 
     body.main2 .form-title {
-        font-size: 1.9em;
-        margin-top: 45px;
+        font-size: 2.6em;
+        margin-top: 0;
+        margin-bottom: 30px;
     }
 
     body.main2 form#fe-3-form input[type="text"], body.main2 form#fe-3-form input[type="email"] {
@@ -553,7 +558,7 @@ body.main2 .corner-rectangle-mobile {
     }
 
     body.main2 form#fe-3-form button {
-        padding: 18px 0px 15px 0px;
+        padding: 15px 0px 15px 0px;
         font-size: 1.4em;
     }
 
