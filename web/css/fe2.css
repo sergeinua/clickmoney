@@ -605,8 +605,9 @@ body.main2 ul > li a:hover {
     }
 
     body.main2 .content .corner-rectangle-text {
-        right: 10px;
+        right: 14px;
         top: 30px;
         font-size: 16px;
+        text-align: center;
     }
 }
