@@ -105,7 +105,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                                                 <a href="#"><img class="m" src="images/m-seal.png"></a>
                                             </div>
                                             <div class="col-xs-3 col-md-6 vtop">
-                                                <a href="#"><img class="t" src="images/t-seal.jpg"></a>
+                                                <a href="#"><img class="t" src="images/truste.png"></a>
                                             </div>
                                             <div class="col-xs-3 col-md-6 vtop">
                                                 <a href="#"><img class="v" src="images/v-seal.png"></a>
