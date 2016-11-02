@@ -408,10 +408,6 @@ body.main2 ul > li a:hover {
     color: #1de9b6;
 }
 
-body.main2 ul > li a:visited {
-    color: #00bfa5;
-}
-
 @media (max-height: 660px) {
     #exitpopup .modal-dialog {
         top: 0;
