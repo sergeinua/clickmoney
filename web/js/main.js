@@ -51,6 +51,19 @@ $(document).ready(function(){
         window.onbeforeunload = null;
     });
 
+    $('#fe-3-form').on('submit', function () {
+        var name = $('#fe-3-form #name').val(),
+            email = $('#fe-3-form #email').val();
+        if (typeof from_page == 'undefined') {
+            from_page = 'fe';
+        }
+        if (from_page == 'mobile') {
+            from_page = 'fe_mobile';
+        }
+        validateEmail(email, from_page, name);
+        window.onbeforeunload = null;
+    });
+
     var iframe = $('#vim-video');
     var player = new Vimeo.Player(iframe);
 
