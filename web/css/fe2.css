@@ -408,6 +408,20 @@ body.main2 ul > li a:hover {
     color: #1de9b6;
 }
 
+.modal .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    -o-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0;
+}
+
 @media (max-height: 660px) {
     #exitpopup .modal-dialog {
         top: 0;
