@@ -26,6 +26,11 @@ $script = <<< JS
     });
     var iframe = $('#vim-video');
     var player = new Vimeo.Player(iframe);
+    $('#fe-3-form input').change(function() {
+        if ($(this).val().length > 0) {
+            $(this).addClass('filled-input');
+        }
+    });
 })(jQuery);
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);

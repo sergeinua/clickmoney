@@ -388,6 +388,11 @@ body.main2 .t {
     margin: 0;
 }
 
+.filled-input {
+    color: #424242!important;
+    border: 1px solid #9e9e9e!important;
+}
+
 @media (max-height: 660px) {
     #exitpopup .modal-dialog {
         top: 0;
