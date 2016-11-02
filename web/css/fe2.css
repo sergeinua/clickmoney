@@ -440,7 +440,7 @@ body.main2 .corner-rectangle-mobile {
     }
 
     body.main2 input[type="text"], input[type="email"] {
-        padding: 3px;
+        padding: 10px;
     }
 
     body.main2 form#fe-3-form {
