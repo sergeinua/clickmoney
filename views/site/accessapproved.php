@@ -86,7 +86,7 @@ $this->title = 'ClickMoney.com';
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-xs-12 text-center reminder">REMINDER: <span class="orange"><span class="big-number">1</span> LICENSE LEFT</span></div>
+                    <div class="col-md-12 col-xs-12 text-center reminder">REMINDER: <span class="orange"><span class="big-number">10</span> LICENSE LEFT</span></div>
                 </div>
             </div>
         </div>
