@@ -84,7 +84,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                             <div class="row">
                                 <div class="col-xs-12 col-md-3">
                                     <label for="name">My name's</label>
-                                    <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Enter your name here" title="Please enter 3-15 characters (alphabets only)">
+                                    <input type="text" id="name" name="name" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="My name is" title="Please enter 3-15 characters (alphabets only)">
                                 </div>
                                 <div class="col-xs-12 col-md-3">
                                     <label for="email">My best email is</label>
