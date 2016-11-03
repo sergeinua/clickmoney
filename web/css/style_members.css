@@ -87,24 +87,14 @@ button {
 }
 
 .video-popup h5 {
-     /*position: absolute;*/
-     /*top: -18%;*/
-    /*left: 50%;*/
      color: white;
     text-align: center;
-    /*transform: translate(-50%);*/
-    /*-webkit-transform: translate(-50%);*/
     font-size: 26px;
     letter-spacing: 1px;
  }
 
 .video-popup p {
-     /*position: absolute;*/
-     /*top: -10%;*/
      color: white;
-    /*left: 50%;*/
-    /*transform: translate(-50%);*/
-    /*-webkit-transform: translate(-50%);*/
     font-size: 18px;
     letter-spacing: 2px;
     text-align: center;
@@ -222,7 +212,6 @@ h2.membership-biz-area {
 .membership-header .left_block{
     padding-right: 0;
     padding-left: 0;
-    /*width: 61.5%;*/
     position: relative;
 }
 
@@ -230,8 +219,6 @@ h2.membership-biz-area {
     color: white;
     border: 2px solid yellow;
     position: absolute;
-    /*top: 25%;*/
-    /*right: 30%;*/
     padding: 1% 2%;
     position: absolute;
     top: 25%;
@@ -270,14 +257,12 @@ h2.membership-biz-area {
 
 .membership-header .right_block {
     background-color: white;
-    /*width: 38.5%;*/
     padding: 1% 2%;
     float: right;
 }
 
 .register-right-text {
     width: 80%;
-    /*padding-top: 3%;*/
     padding-bottom: 2%;
     text-transform: uppercase;
     font-size: 1.5625em;
@@ -294,7 +279,6 @@ h2.membership-biz-area {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
 }
-
 
 .gaff {
     padding: 0 7% 1% 7%;
@@ -336,10 +320,6 @@ h2.membership-biz-area {
     transform: translateY(-50%);
 }
 
-.gaff .row .arrow img {
-    /*width: 60%;*/
-}
-
 .register-label {
     font-size: 12px;
     display: none;
@@ -375,7 +355,6 @@ h2.membership-biz-area {
 
 .email-Reg0 {
     font-size: 0.85em;
-    /*margin-left: 5%;*/
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -402,7 +381,6 @@ h2.membership-biz-area {
     display: inline-block;
     vertical-align: top;
 }
-
 
 /**************quick and easy***************/
 
@@ -447,8 +425,6 @@ h2.membership-biz-area {
 .you-here .grey {
     font-size: 14px;
 }
-
-
 
 /*************regiter deposit profit*************/
 
@@ -505,7 +481,7 @@ h2.membership-biz-area {
 }
 
 .arrow111 {
-top:40px;
+    top:40px;
 }
 
 .second-arrow {
@@ -550,6 +526,7 @@ top:40px;
     transform: rotate(75deg);
     width: 180%;
 }
+
 .third-arrow {
     -ms-transform: rotate(75deg); /* IE 9 */
     -webkit-transform: rotate(75deg); /* Chrome, Safari, Opera */
@@ -572,7 +549,6 @@ top:40px;
     left: 57px;
 
 }
-
 
 /****************days**************/
 .days{
@@ -732,15 +708,16 @@ top:40px;
     transition: .5s;
 }
 
-
-.single-item:hover .hover-video {  opacity:1; z-index:10;
-    -webkit-animation-duration:1s; animation-duration:1s;
-    -webkit-animation-fill-mode:both; animation-fill-mode:both; }
-
-
+.single-item:hover .hover-video {
+    opacity: 1;
+    z-index: 10;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 
 /*****************last chance register*************/
-
 .last-chace-register .qick-and-easy {
     padding-top: 150px;
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.96) 72%,rgba(255,255,255,0.93) 79%,rgba(255,255,255,0.85) 100%);
@@ -757,12 +734,12 @@ top:40px;
     line-height: 1.6;
 }
 
-    .last-chace-register .icons-block {
-        width: 20%;
+.last-chace-register .icons-block {
+    width: 20%;
 }
 
-    .last-chace-register .icons-block {
-        margin: 15px auto 180px auto;
+.last-chace-register .icons-block {
+    margin: 15px auto 180px auto;
  }
 
 .last-chace-register {
@@ -860,9 +837,7 @@ p.register-text {
     left: 50px;
 }
 
-
 /***********footer*******************/
-
 .membership-footer ul {
     list-style-type: none;
     text-align: right;
@@ -946,21 +921,17 @@ p.register-text {
     color: #bffff4;
 }
 
-li.active {
-    /*border-bottom: 3px dashed white;*/
-    /*text-decoration-style: dashed;*/
-    /*text-decoration-line: underline;*/
-}
-
 /*footer*/
 .fnavigation li a{
     color:white;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .fnavigation li{
     display:inline;
 }
+
 .fnavigation{
     padding-top:10px;
     padding-left: 0px;
@@ -1022,6 +993,95 @@ li.active {
     display: none;
 }
 
+.modal-dialog, .modal-header, .modal-content, .modal-body {
+    background: transparent;
+    box-shadow: none;
+}
+
+.modal-header {
+    border: none;
+}
+
+.green-background-case {
+    background: rgba(6, 182, 164, 0.8);
+    background: -webkit-linear-gradient(left, rgba(6, 182, 164, 0.8) 0%, rgba(39,179, 120, 0.8) 100%);
+    background: -moz-linear-gradient(left, rgba(6, 182, 164, 0.8) 0%, rgba(39,179, 120, 0.8) 100%);
+    background: linear-gradient(to right, rgba(6, 182, 164, 0.8) 0%,rgba(39,179, 120, 0.8) 100%);
+}
+
+.black-background-case {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.green-background-case img, .black-background-case img {
+    opacity: 0;
+}
+
+.hover-video .embed-responsive-16by9 h5 {
+    top: 5px;
+}
+
+span#time-exit {
+    white-space: nowrap;
+}
+
+.membership-footer .panel-heading {
+    position: relative;
+}
+
+.img-responsive.video-poster {
+    width: 100%;
+}
+
+.membership-footer .container .content {
+    min-height: 430px;
+}
+
+ul.info li a:hover {
+    text-decoration: none;
+    border-bottom: 2px dashed #b0ffed;
+}
+
+a[href$="#bottom-form"]:hover {
+    text-decoration: none;
+}
+
+.membership-footer .container .content div.active {
+    display: block;
+}
+
+.membership-footer .container .content div {
+    display: none;
+}
+
+.arrow-img-active {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.panel-heading img {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+
+.membership-footer .panel-title {
+    padding-right: 25px;
+}
+
+.membership-footer li a {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.membership-footer #accordion a {
+    color: rgb(30,192,177);
+}
+
+#accordion {
+    margin: 20px auto;
+}
+
 /**********************************************mobile/tablets/middle screens***********************************************/
 @media (max-width: 365px) {
     .m, .t, .v, .n {
@@ -1079,12 +1139,6 @@ li.active {
     button .col-xs-9 {
         text-align: right !important;
     }
-
-    .membership-wrapper .membership-logo {
-        /*top: 20px !important;*/
-        /*width: 25%!important;*/
-    }
-
 }
 
 @media (min-width: 591px) and (max-width: 990px) {
@@ -1255,7 +1309,7 @@ li.active {
     .membership-boxIcon {
         position: absolute;
         left: 50%;
-        transform: translate (-50%);
+        transform: translate(-50%);
         -webkit-transform: translate(-50%);
         padding-right: 0;
         width: 190px;
@@ -1275,13 +1329,8 @@ li.active {
     }
 
     .video-popup h5 {
-        /*position: absolute;*/
-        /*top: -25%;*/
-        /*left: 50%;*/
         color: white;
         text-align: center;
-        /*transform: translate(-50%);*/
-        /*-webkit-transform: translate(-50%);*/
         font-size: 16px;
         width: 100%;
         letter-spacing: 1px;
@@ -1289,10 +1338,6 @@ li.active {
 
     .video-popup p {
         font-size: 12px;
-    }
-
-    .video-popup a {
-        /*top: -18%;*/
     }
 
     .video-popup a img{
@@ -1330,7 +1375,7 @@ li.active {
     .membership-wrapper .membership-logo {
         bottom: 60px;
         left: 50%;
-        transform: translate (-50%);
+        transform: translate(-50%);
         -webkit-transform: translate(-50%);
     }
 
@@ -1349,8 +1394,6 @@ li.active {
     .membership-please-watch {
         font-size: 1.2em;
     }
-
-
 }
 
 @media (min-width: 250px) and (max-width: 500px) {
@@ -1395,9 +1438,6 @@ li.active {
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
-
-    /*********************header********/
-
     h2.membership-biz-area {
         font-size: 2em;
     }
@@ -1423,11 +1463,11 @@ li.active {
     .membership-header {
         height: 430px;
         margin-bottom: 210px;
-     }
+    }
 
-     .membership-wrapper {
+    .membership-wrapper {
         height: 430px;
-     }
+    }
 
     .membership-header .right_block {
         min-height: 490px;
@@ -1443,15 +1483,11 @@ li.active {
     }
 
     .membership-welcome {
-    font-size: 1.5em;
+        font-size: 1.5em;
     }
 
     .membership-biz-area h2 {
-    font-size: 1.9em;
-    }
-
-    .membership-header .container {
-        /*width: auto;*/
+        font-size: 1.9em;
     }
 
     .membership-wrapper .membership-logo {
@@ -1517,13 +1553,9 @@ li.active {
         top: -10px;
     }
 
-     .middle-form .membership-block-text {
+    .middle-form .membership-block-text {
         font-size: 10px;
         text-align: center;
-    }
-
-    .blockImg {
-        /*width: 1.6%;*/
     }
 
     .m, .t, .v, .n {
@@ -1555,7 +1587,7 @@ li.active {
     }
 
     .memebership_content {
-    font-size: 35px;
+        font-size: 35px;
     }
 
     .text-lower {
@@ -1653,67 +1685,67 @@ li.active {
         margin-bottom: 60px;
         box-shadow: 0 16px 30px 6px rgba(0, 0, 0, .2);
         height: 520px;
-   }
+    }
 
     .embed-responsive-16by9 h5 {
         width: 100%;
         text-align: center;
     }
 
-   .embed-responsive-16by9 h5 {
+    .embed-responsive-16by9 h5 {
         width: 70%;
-   }
+    }
 
-   .embed-responsive-16by10 h5 {
+    .embed-responsive-16by10 h5 {
         left: 50%;
         width: 80% !important;
         transform: translate(-50%);
        -webkit-transform: translate(-50%);
-   }
+    }
 
     .embed-responsive-16by10 p {
-        /*bottom: 12%;*/
         width: 70%;
-   }
+    }
 
     .last-chace-register .icons-block {
         width: 27%;
     }
 
-   .last-chace-register .qick-and-easy {
+    .last-chace-register .qick-and-easy {
         padding-top: 80px;
         padding-bottom: 0;
-   }
+    }
 
-   .qick-and-easy .grey {
+    .qick-and-easy .grey {
         margin-bottom: 10px;
         font-size: 15px;
 
-   }
+    }
 
-   p.register-text {
+    p.register-text {
         font-size: 25px;
         line-height: 1;
-   }
+    }
 
-   .qick-and-easy .green {
+    .qick-and-easy .green {
         font-size: 25px;
         color: #3cb982;
-   }
+    }
 
-   .middle-form .vtop {
+    .middle-form .vtop {
         width: 15%;
-   }
+    }
 
-   .membership-footer .content {
+    .membership-footer .content {
         padding: 30px 80px 92px;
         width: 80%;
-   }
+    }
 
     .membership-footer .content p {
         font-size: 12px;
         line-height: 2.2;
     }
+
     .membership-footer h3 {
          margin-bottom: 30px;
     }
@@ -1860,8 +1892,6 @@ li.active {
     .last-chace-register .qick-and-easy {
         padding-top: 100px;
     }
-
-
 }
 
 @media (min-width: 1800px) {
@@ -1875,10 +1905,9 @@ li.active {
 
     .register-right-text {
             font-size: 1.9em;
-     }
+    }
 
     .gaff .text-center {
-        /*margin-left: 3px;*/
         padding-right: 0;
         padding-left: 0;
     }
@@ -1893,7 +1922,6 @@ li.active {
 
     .gaff button .row .arrow {
         left: 30px;
-        /*font-siz*/
     }
 
     .gaff button .row .arrow img {
@@ -1949,52 +1977,59 @@ li.active {
     .gaff button .row {
         padding: 25px 0;
     }
-}
 
-.membership-footer .container .content div.active {
-    display: block;
-}
+    .img-membership1 {
+        height: 554px;
+    }
 
-.membership-footer .container .content div {
-    display: none;
-}
+    .register-right-text {
+        font-size: 2.3em;
+    }
 
-.arrow-img-active {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-}
+    .membership-block-text {
+        margin-top: 2px;
+        font-size: 0.9em;
+        text-align: center;
+    }
 
-.panel-heading img {
-    position: absolute;
-    top: 12px;
-    right: 8px;
-}
+    .membership-header .membership-block-text {
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
 
-.membership-footer .panel-title {
-    padding-right: 25px;
-}
+    .right_block {
+        height: auto;
+    }
 
-.membership-footer li a {
-    cursor: pointer;
-    cursor: hand;
-}
+    .first-num {
+        left: 20px !important;
+    }
 
-.membership-footer #accordion a {
-    color: rgb(30,192,177);
-}
+    .join-member-club {
+        height: 295px;
+    }
 
-#accordion {
-    margin: 20px auto;
+    .membership-wrapper .container.left-right-container .left_block {
+        width: 928px;
+        height: 522px;
+    }
+
+    .membership-wrapper .container.left-right-container .right_block {
+        width: 672px;
+        height: 522px;
+    }
+
+    .membership-wrapper .container.left-right-container .left_block .embed-responsive.embed-responsive-16by9 {
+        width: 928px;
+        height: 522px;
+        padding: 0;
+    }
 }
 
 /*adjustments for the video approved page*/
 @media (min-width: 992px) and (max-width: 1199px){
     .img-membership1, .membership-header .right_block {
         height: auto;
-    }
-
-    .membership-block-text {
-        /*margin-top: 4px;*/
     }
 
     .membership-header {
@@ -2029,10 +2064,6 @@ li.active {
 @media (min-width: 1200px) and (max-width: 1399px) {
     .img-membership1, .membership-header .right_block {
         height: auto;
-    }
-
-    .membership-block-text {
-        /*margin-top: 4px;*/
     }
 
     .join-member-club {
@@ -2094,39 +2125,6 @@ li.active {
     }
 }
 
-@media (min-width: 1800px) {
-    .img-membership1 {
-        height: 554px;
-    }
-
-    .register-right-text {
-        font-size: 2.3em;
-    }
-
-    .membership-block-text {
-        margin-top: 2px;
-        font-size: 0.9em;
-        text-align: center;
-    }
-
-    .membership-header .membership-block-text {
-        margin-top: 1%;
-        margin-bottom: 2%;
-    }
-
-    .right_block {
-        height: auto;
-    }
-
-    .first-num {
-        left: 20px !important;
-    }
-
-    .join-member-club {
-        height: 295px;
-    }
-}
-
 @media (min-width: 1200px) and (max-width: 1399px) {
     .hidden-md.col-lg-4.single-item {
         display: none;
@@ -2150,19 +2148,6 @@ li.active {
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
-}
-
-.img-responsive.video-poster {
-    width: 100%;
-}
-
-.membership-footer .container .content {
-    min-height: 430px;
-}
-
-ul.info li a:hover {
-    text-decoration: none;
-    border-bottom: 2px dashed #b0ffed;
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
@@ -2195,14 +2180,6 @@ ul.info li a:hover {
         transform: unset;
         -webkit-transform: unset;
     }
-}
-
-span#time-exit {
-    white-space: nowrap;
-}
-
-.membership-footer .panel-heading {
-    position: relative;
 }
 
 /* fixing arrows */
@@ -2280,12 +2257,8 @@ span#time-exit {
 @media (min-width: 768px) and (max-width: 991px) {
     .membership-wrapper {
         height: 950px;
-        margin-bottom: 350px;
+        margin-bottom: 185px;
     }
-}
-
-a[href$="#bottom-form"]:hover {
-    text-decoration: none;
 }
 
 @media (max-height: 660px) {
@@ -2294,32 +2267,4 @@ a[href$="#bottom-form"]:hover {
         transform: translate(-50%, 0) !important;
         padding-bottom: 30px;
     }
-}
-
-.modal-dialog, .modal-header, .modal-content, .modal-body {
-    background: transparent;
-    box-shadow: none;
-}
-
-.modal-header {
-    border: none;
-}
-
-.green-background-case {
-    background: rgba(6, 182, 164, 0.8);
-    background: -webkit-linear-gradient(left, rgba(6, 182, 164, 0.8) 0%, rgba(39,179, 120, 0.8) 100%);
-    background: -moz-linear-gradient(left, rgba(6, 182, 164, 0.8) 0%, rgba(39,179, 120, 0.8) 100%);
-    background: linear-gradient(to right, rgba(6, 182, 164, 0.8) 0%,rgba(39,179, 120, 0.8) 100%);
-}
-
-.black-background-case {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.green-background-case img, .black-background-case img {
-    opacity: 0;
-}
-
-.hover-video .embed-responsive-16by9 h5 {
-    top: 5px;
 }
