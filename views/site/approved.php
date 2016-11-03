@@ -8,12 +8,13 @@ use app\assets\MembersAsset;
 /* @var $this yii\web\View */
 MembersAsset::register($this);
 
-$rd = 3;
-$gi = 409;
+//$rd = 3;
+$gi = 4850;
 
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
+    $gi = '4851';
 }
 
 $this->title = '#1 Click Money System';
@@ -26,12 +27,12 @@ $script_init = <<< JS
         top.location.assign(self.location);
         window.stop();
     }
-    var gvars = {'gi': $gi, 'wl': 90,'rd': $rd, 'sb': 0};
+    var gvars = {'gi': $gi, 'wl': 114};
 JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
-$this->registerJs('http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', yii\web\View::POS_BEGIN);
-$this->registerJs('https://s3-eu-west-1.amazonaws.com/gaff/js/gaff.js', yii\web\View::POS_BEGIN);
+$this->registerJsFile('http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
+$this->registerJsFile('https://s3-eu-west-1.amazonaws.com/gaff/js/gaff.js');
 
 $script = <<< JS
    $('.membership-footer ul.info li').on('click', function(){
