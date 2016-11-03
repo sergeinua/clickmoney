@@ -64,7 +64,7 @@ class SiteController extends Controller
     {
         $forms[] = ['forms' => Yii::$app->params['esp_forms']];
         $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
-        return $this->render('main2', [
+        return $this->render('index', [
             'model' => new Subscriber(),
             'forms' => $forms
         ]);
