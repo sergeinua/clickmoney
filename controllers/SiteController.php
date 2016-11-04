@@ -240,7 +240,10 @@ class SiteController extends Controller
      */
     public function actionFinaloffer()
     {
-        return $this->render('finaloffer');
+        return $this->render('finaloffer', [
+            'email' => Yii::$app->session->get('email'),
+            'fname' => Yii::$app->session->get('fname')
+        ]);
     }
 
     public function actionMain2()
