@@ -110,9 +110,15 @@ $script = <<< JS
     $("#gaff, #gaff2").bind("DOMSubtreeModified", function() {
         formModifcation('$fname', '$email');
     });
-    $('form').on('submit', function() {
+    
+   $(document).on('submit','form#caffForm',function(){
         window.onbeforeunload = null;
     });
+    // $('#caffForm').onFirst('submit', function() {
+    //     alert(1);
+    //     return false;
+    //     window.onbeforeunload = null;
+    // });
 JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);
