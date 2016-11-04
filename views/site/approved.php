@@ -32,8 +32,8 @@ $script_init = <<< JS
 JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
-$this->registerJsFile('http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
-$this->registerJsFile('https://gaff.s3.amazonaws.com/js/gaff.js');
+//$this->registerJsFile('http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
+//$this->registerJsFile('https://gaff.s3.amazonaws.com/js/gaff.js');
 
 $script = <<< JS
     $('.membership-footer ul.info li').on('click', function(){
@@ -109,31 +109,44 @@ $script = <<< JS
     left_bottom_arrow += '<img src="images/arrowleft1.png"></div>';
     var right_bottom_arrow = '<div class="col-md-4 mem-third-arrow-right hidden-xs hidden-sm">';
     right_bottom_arrow += '<img src="images/arrowleft1.png"></div>';
-    setTimeout(function() {
-        $('input[name="firstname"]').addClass('email-reg-name email-Reg0');
-        $('input[name="lastname"]').addClass('email-reg-name email-Reg0 email-Reg2');
-        $('select[name="countryabbr"]').addClass('bfh-countries select-register email-reg-name email-Reg0');
-        $('.form-control.bfh-phone').addClass('email-reg-name email-Reg0 email-Reg4');
-        $('input[name="email"]').addClass('email-Reg0 email-reg-bestem');
-        $('input[name="password"]').addClass('col-xs-12 email-Reg0 email-Reg6 email-reg-name');
-        $('label.control-label').css('display', 'none');
-        $('div.checkbox').css('display', 'none');
-        $('button.btn.btn-danger.btn-lg.tradeBtn').remove();
-        $('div.checkbox').parent().append(button);
-        var first_row = $('.gaff.middle-form').find('.row').eq(0);
-        var second_row = $('.gaff.middle-form').find('.row').eq(1);
-        var third_row = $('.gaff.middle-form').find('.row').eq(2);
-        first_row.prepend(left_top_arrow);
-        first_row.find('.col-md-6.form-group').removeClass('col-md-6').addClass('col-md-2 col-sm-6 form-group');
-        first_row.append(right_top_arrow);
-        second_row.prepend(left_middle_arrow);
-        second_row.find('.col-md-6.form-group').removeClass('col-md-6').addClass('col-md-2 col-sm-6 form-group');
-        second_row.append(right_middle_arrow);
-        third_row.prepend(left_bottom_arrow);
-        third_row.find('.col-md-6.form-group').removeClass('col-md-6').addClass('col-md-2 col-sm-6 form-group');
-        third_row.append(right_bottom_arrow);
-        $('.gaff, .gaff.middle-form').css('display', 'block')
-    }, 500);
+    var country_code = $('#countryData_gaff').data('country');
+    
+    // setTimeout(function() {
+    //     $('input[name="firstname"]').addClass('email-reg-name email-Reg0');
+    //     $('input[name="lastname"]').addClass('email-reg-name email-Reg0 email-Reg2');
+    //     $('select[name="countryabbr"]').addClass('bfh-countries select-register email-reg-name email-Reg0');
+    //     $('.form-control.bfh-phone').addClass('email-reg-name email-Reg0 email-Reg4');
+    //     $('input[name="email"]').addClass('email-Reg0 email-reg-bestem');
+    //     $('input[name="password"]').addClass('col-xs-12 email-Reg0 email-Reg6 email-reg-name');
+    //     $('label.control-label').css('display', 'none');
+    //     $('div.checkbox').css('display', 'none');
+    //     $('button.btn.btn-danger.btn-lg.tradeBtn').remove();
+    //     $('div.checkbox').parent().append(button);
+    //     var first_row = $('.gaff.middle-form').find('.row').eq(0);
+    //     var second_row = $('.gaff.middle-form').find('.row').eq(1);
+    //     var third_row = $('.gaff.middle-form').find('.row').eq(2);
+    //     first_row.prepend(left_top_arrow);
+    //     first_row.find('.col-md-6.form-group').removeClass('col-md-6').addClass('col-md-2 col-sm-6 form-group');
+    //     first_row.append(right_top_arrow);
+    //     second_row.prepend(left_middle_arrow);
+    //     second_row.find('.col-md-6.form-group').removeClass('col-md-6').addClass('col-md-2 col-sm-6 form-group');
+    //     second_row.append(right_middle_arrow);
+    //     third_row.prepend(left_bottom_arrow);
+    //     third_row.find('.col-md-6.form-group').removeClass('col-md-6').addClass('col-md-2 col-sm-6 form-group');
+    //     third_row.append(right_bottom_arrow);
+    //     $('.gaff, .gaff.middle-form').css('display', 'block')
+    //     $.each(BFHCountriesList, function(key, value) {
+    //         var selected = '';
+    //         if (key == country_code) {
+    //             selected = 'selected';
+    //         }
+    //         $('select#countryData_gaff').append('<option value="' + key + '"' + selected +'>' + value + '</option>'); 
+    //     });
+    //     $('#phoneOrig_gaff').val(BFHPhoneFormatList[country_code]);
+    // }, 1000);
+    $('form').on('submit', function() {
+         window.onbeforeunload = null;
+    })
 JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);
