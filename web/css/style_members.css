@@ -1082,6 +1082,18 @@ a[href$="#bottom-form"]:hover {
     margin: 20px auto;
 }
 
+.membership-header .row.text-center.icons-block, .membership-header .membership-block-text {
+    display: none;
+}
+
+.last-chace-register .membership-block-text, .last-chace-register .icons-block.text-center {
+    display: none;
+}
+
+.gaff, .gaff.middle-form {
+    display: none;
+}
+
 /**********************************************mobile/tablets/middle screens***********************************************/
 @media (max-width: 365px) {
     .m, .t, .v, .n {
@@ -1402,7 +1414,7 @@ a[href$="#bottom-form"]:hover {
     }
 
     .membership-header .left_block p {
-        width: 100%;
+        width: 90%;
         top: 15%;
     }
 
@@ -2133,9 +2145,9 @@ a[href$="#bottom-form"]:hover {
 
 @media (min-width: 320px) and (max-width: 768px){
     .membership-header .yellow-arrow {
-        top: -35px;
-        right: 90px;
-        width: 45px;
+        top: -30px;
+        right: 40px;
+        width: 35px;
     }
 
     .membership-header .left_block p {
@@ -2168,7 +2180,7 @@ a[href$="#bottom-form"]:hover {
         position: static;
         left: auto;
         top: auto;
-        font-size: 47px;
+        font-size: 46px;
         transform: unset;
         -webkit-transform: unset;
     }
@@ -2257,7 +2269,7 @@ a[href$="#bottom-form"]:hover {
 @media (min-width: 768px) and (max-width: 991px) {
     .membership-wrapper {
         height: 950px;
-        margin-bottom: 185px;
+        margin-bottom: 355px;
     }
 }
 
