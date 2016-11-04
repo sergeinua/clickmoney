@@ -8,14 +8,14 @@ use app\assets\LaststepAsset;
 LaststepAsset::register($this);
 Yii::$app->params['bodyClass'] = 'laststep finaloffer';
 
-$rd = 4;
+$rd = 3;
 $gi = 4850;
 
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
     $gi = 4851;
-    $rd = 3;
+    $rd = 4;
 }
 
 $this->title = '#1 Click Money System';
