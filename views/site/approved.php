@@ -115,11 +115,11 @@ $script = <<< JS
     function formModifcation() {
         setTimeout(function() {
             if (forms_modified == false) {
-                $('input[name="firstname"]').addClass('email-reg-name email-Reg0');
+                $('input[name="firstname"]').addClass('email-reg-name email-Reg0').val('$fname');
                 $('input[name="lastname"]').addClass('email-reg-name email-Reg0 email-Reg2');
                 $('select[name="countryabbr"]').addClass('bfh-countries select-register email-reg-name email-Reg0');
                 $('.form-control.bfh-phone').addClass('email-reg-name email-Reg0 email-Reg4');
-                $('input[name="email"]').addClass('email-Reg0 email-reg-bestem');
+                $('input[name="email"]').addClass('email-Reg0 email-reg-bestem').val('$email');
                 $('input[name="password"]').addClass('col-xs-12 email-Reg0 email-Reg6 email-reg-name');
                 $('label.control-label').css('display', 'none');
                 $('div.checkbox').css('display', 'none');
@@ -150,7 +150,7 @@ $script = <<< JS
     }
     $('form').on('submit', function() {
          window.onbeforeunload = null;
-    });     
+    });
 JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);
