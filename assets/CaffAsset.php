@@ -10,6 +10,7 @@ class CaffAsset extends AssetBundle
     public $baseUrl = '@web';
     public $js = [
         'https://gaff.s3.amazonaws.com/js/gaff.js',
+        'js/members_forms.js'
     ];
     public $depends = [
         'yii\web\JqueryAsset'
