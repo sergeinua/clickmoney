@@ -93,6 +93,7 @@ $script = <<< JS
         formModifcation('$fname', '$email');
     });
     $(document).on('submit','form#caffForm',function(){
+        $('#loading_sec').modal('show');
         window.onbeforeunload = null;
     });
 JS;
@@ -444,3 +445,5 @@ $this->registerJs($script, yii\web\View::POS_READY);
         </div>
     </div>
 </section>
+
+<?= \Yii::$app->view->renderFile('@app/views/site/popups/thankYou.php'); ?>
