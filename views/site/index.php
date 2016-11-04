@@ -3,9 +3,9 @@ use Mobile_Detect;
 
 use yii\helpers\Url;
 use yii\bootstrap\Modal;
-use app\assets\MainAsset;
+use app\assets\Main2Asset;
 
-MainAsset::register($this);
+Main2Asset::register($this);
 
 /* @var $this yii\web\View */
 Yii::$app->params['bodyClass'] = 'main2';

@@ -14,8 +14,8 @@ class MainAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/exit-popup.css',
-        'css/fe2.css'
+        'css/fe1.css',
+        'css/exit-popup.css'
     ];
     public $js;
     public $depends = [
