@@ -111,7 +111,7 @@ $script = <<< JS
         formModifcation('$fname', '$email');
     });
     $(document).on('submit','form#caffForm',function(){
-        $('#loading_sec').modal('show');
+        // $('#loading_sec').modal('show');
         window.onbeforeunload = null;
     });
 JS;
