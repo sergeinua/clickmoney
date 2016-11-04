@@ -214,7 +214,10 @@ class SiteController extends Controller
      */
     public function actionLaststep()
     {
-        return $this->render('laststep');
+        return $this->render('laststep', [
+            'email' => Yii::$app->session->get('email'),
+            'fname' => Yii::$app->session->get('fname')
+        ]);
     }
 
     /**

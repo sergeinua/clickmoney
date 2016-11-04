@@ -1092,6 +1092,18 @@ p.register-text {
     display: none;
 }
 
+.membership-header .row.text-center.icons-block, .membership-header .membership-block-text {
+    display: none;
+}
+
+.last-chace-register .membership-block-text, .last-chace-register .icons-block.text-center {
+    display: none;
+}
+
+.gaff, .gaff.middle-form {
+    display: none;
+}
+
 /**********************************************mobile/tablets/media screens***********************************************/
 
 @media (max-width: 365px) {
@@ -2324,7 +2336,7 @@ span#time-exit {
 @media (min-width: 768px) and (max-width: 991px) {
     .membership-wrapper {
         height: 950px;
-        margin-bottom: 170px;
+        margin-bottom: 360px;
     }
 }
 
