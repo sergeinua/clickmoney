@@ -90,7 +90,7 @@ $script = <<< JS
     $("#gaff, #gaff2").bind("DOMSubtreeModified", function() {
         formModifcation('$fname', '$email');
     });
-    $('form').on('submit', function() {
+    $(document).on('submit','form#caffForm',function(){
         window.onbeforeunload = null;
     });
 JS;

@@ -111,14 +111,9 @@ $script = <<< JS
         formModifcation('$fname', '$email');
     });
     
-   $(document).on('submit','form#caffForm',function(){
+    $(document).on('submit','form#caffForm',function(){
         window.onbeforeunload = null;
     });
-    // $('#caffForm').onFirst('submit', function() {
-    //     alert(1);
-    //     return false;
-    //     window.onbeforeunload = null;
-    // });
 JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);
