@@ -132,7 +132,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="row">
                 <div class="col-md-7 left_block">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe id="vim-video-top" class="embed-responsive-item" src="https://player.vimeo.com/video/189163312" width="auto" height="auto"
+                        <iframe id="vim-video-top" class="embed-responsive-item" src="https://player.vimeo.com/video/189163312?autoplay=true" width="auto" height="auto"
                                 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                     <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">

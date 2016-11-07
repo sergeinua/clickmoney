@@ -1094,6 +1094,10 @@ a[href$="#bottom-form"]:hover {
     display: none;
 }
 
+.img-responsive.yellow-arrow, .membership-header .left_block p {
+    display: none;
+}
+
 /**********************************************mobile/tablets/middle screens***********************************************/
 @media (max-width: 365px) {
     .m, .t, .v, .n {
