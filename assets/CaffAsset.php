@@ -4,7 +4,7 @@ namespace app\assets;
 
 use yii\web\AssetBundle;
 
-class CaffAsset extends AssetBundle
+class CaffAsset extends AppAssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';

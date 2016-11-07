@@ -9,7 +9,7 @@ namespace app\assets;
 
 use yii\web\AssetBundle;
 
-class ClickthroughtAsset extends AssetBundle
+class ClickthroughtAsset extends AppAssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';

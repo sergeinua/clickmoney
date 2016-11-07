@@ -9,7 +9,7 @@ namespace app\assets;
 
 use yii\web\AssetBundle;
 
-class LaststepAsset extends AssetBundle
+class LaststepAsset extends AppAssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
