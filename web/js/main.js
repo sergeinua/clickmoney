@@ -95,6 +95,13 @@ $(document).ready(function(){
         is_shown = false;
     });
 
+    $('#exitpopup').on('hidden.bs.modal', function() {
+        // reset flag when modal is hidden
+        sessionStorage.setItem('show_exit_popup', 'false');
+    });
+
+
+
 
 
 });
