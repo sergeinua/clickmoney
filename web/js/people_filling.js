@@ -166,11 +166,13 @@ var widget_close_decision = 0 ;
 function widgetEarnings()
 {
     widget_earning_html();
+    var showed_times = 0;
     (function loop() {
-        var rand = getRandomArbitrary(15000, 20000);
+        var rand = getRandomArbitrary(4*60*1000, 6*60*1000);
         setTimeout(function () {
-            if (sessionStorage.getItem('show_joined_popup') == 'true') {
+            if (sessionStorage.getItem('show_joined_popup') == 'true' && showed_times < 4) {
                 widget_earning_html();
+                showed_times++;
             }
             loop();
         }, rand);
@@ -203,7 +205,7 @@ function widget_earning_html() {
         $(".join-popup").addClass('showed');
         setTimeout(function(){
             $(".join-popup").removeClass('showed');
-        }, 4000);
+        }, 8000);
 
         var rand_arr_index = Math.floor(Math.random() * myArrayemail.length) + 1;
         var randemail = myArrayemail[rand_arr_index];
@@ -259,5 +261,7 @@ function countdown4(cminutes)
 
 $(document).ready(function(){
     sessionStorage.setItem('show_joined_popup', 'true');
-    widgetEarnings();
+    setTimeout(function(){
+        widgetEarnings();
+    }, 2*60*1000);
 });
