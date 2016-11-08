@@ -91,7 +91,10 @@ $script = <<< JS
         formModifcation('$fname', '$email');
     });
     $(document).on('submit','form#caffForm',function(){
-        // $('#loading_sec').modal('show');
+        if ($('div.popover-content').length == 0) {
+            top_player.pause();
+            $('#loading_sec').modal('show');
+        }
         window.onbeforeunload = null;
     });
 JS;
