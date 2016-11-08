@@ -1,9 +1,4 @@
 <?php
-
-namespace Aweber;
-
-use Aweber\OAuthServiceProvider;
-
 require_once('exceptions.php');
 require_once('oauth_adapter.php');
 require_once('oauth_application.php');

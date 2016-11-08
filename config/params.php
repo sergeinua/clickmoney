@@ -22,7 +22,13 @@ return [
     'support_email' => 'support@clickmoneysystem.com',
     'esp_forms' => $forms,
     'esp_forms_exit' => $forms,
-    'esp_forms_overlay' => $forms
+    'esp_forms_overlay' => $forms,
+    'ymlp_api_key' => 'JQNPR3Q5MY6U13U8VV2Q',
+    'ymlp_api_username' => 'tygt',
+    'aweber_consumer_key' => 'Ak3LThTlhZqImFoBjU3nC7CD',
+    'aweber_consumer_secret' => 'huTlp5roJ4zb8jjH5haOZw0LZND2AQZJQelNp54D',
+    'aweber_account_id' => '1187404',
+    'aweber_list_id' => '4444369'
 //        [
 //        'mailminion' => [
 //            'action' => 'https://dashboard.mailminion.com/lists/vb520bcxxo880/subscribe'

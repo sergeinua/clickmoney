@@ -1,6 +1,6 @@
 <?php
 
-namespace  app\controllers\YMLP;
+namespace  app\controllers;
 
 class YMLP_API {
     var $ErrorMessage;

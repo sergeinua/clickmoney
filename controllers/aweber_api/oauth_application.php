@@ -1,9 +1,4 @@
 <?php
-
-namespace Aweber;
-
-use AWeberOAuthAdapter;
-
 if (!class_exists('CurlObject')) require_once('curl_object.php');
 if (!class_exists('CurlResponse')) require_once('curl_response.php');
 
@@ -93,7 +88,7 @@ class OAuthApplication implements AWeberOAuthAdapter {
     public function __construct($parentApp = false) {
         if ($parentApp) {
             if (!is_a($parentApp, 'OAuthServiceProvider')) {
-                throw new \Exception('Parent App must be a valid OAuthServiceProvider!');
+                throw new Exception('Parent App must be a valid OAuthServiceProvider!');
             }
             $this->app = $parentApp;
         }

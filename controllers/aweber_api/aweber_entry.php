@@ -1,9 +1,5 @@
 <?php
 
-namespace Aweber;
-
-use Aweber\AWeberResponse;
-
 class AWeberEntry extends AWeberResponse {
 
     /**

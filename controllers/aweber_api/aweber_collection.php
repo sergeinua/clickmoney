@@ -1,10 +1,5 @@
 <?php
-
-namespace Aweber;
-
-use Aweber\AWeberResponse;
-
-class AWeberCollection extends AWeberResponse implements \ArrayAccess, \Iterator, \Countable {
+class AWeberCollection extends AWeberResponse implements ArrayAccess, Iterator, Countable {
 
     protected $pageSize = 100;
     protected $pageStart = 0;

@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\controllers\YMLP_API;
 use app\models\Subscriber;
 use Yii;
 use yii\filters\AccessControl;
@@ -10,6 +11,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use AWeberAPI;
 
 class SiteController extends Controller
 {
@@ -97,6 +99,54 @@ class SiteController extends Controller
         $model->ip = $_SERVER['REMOTE_ADDR'];
         $model->created_at = date("Y-m-d G:i:s");
         $model->save(false);
+
+//        /* ymlp api */
+//        $ymlp_api_key = Yii::$app->params['ymlp_api_key'];
+//        $ymlp_api_username = Yii::$app->params['ymlp_api_username'];
+//        $ymlp = new YMLP_API($ymlp_api_key, $ymlp_api_username);
+//        $ymlp->ContactsAdd($Email = $email, $OtherFields = '', $GroupID = '1', $OverruleUnsubscribedBounced = '1');
+//
+//        /* aweber api */
+//        require_once('aweber_api/aweber_api.php');
+//        $consumerKey = Yii::$app->params['aweber_consumer_key'];
+//        $consumerSecret = Yii::$app->params['aweber_consumer_secret'];
+//        $account_id = Yii::$app->params['aweber_account_id'];
+//        $list_id = Yii::$app->params['aweber_list_id'];
+//        $aweber = new AWeberAPI($consumerKey, $consumerSecret);
+//        if (empty($_COOKIE['accessToken'])) {
+//            if (empty($_GET['oauth_token'])) {
+//                $callbackUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+//                list($requestToken, $requestTokenSecret) = $aweber->getRequestToken($callbackUrl);
+//                setcookie('requestTokenSecret', $requestTokenSecret);
+//                setcookie('callbackUrl', $callbackUrl);
+//                header("Location: {$aweber->getAuthorizeUrl()}");
+//                exit();
+//            }
+//            $aweber->user->tokenSecret = $_COOKIE['requestTokenSecret'];
+//            $aweber->user->requestToken = $_GET['oauth_token'];
+//            $aweber->user->verifier = $_GET['oauth_verifier'];
+//            list($accessToken, $accessTokenSecret) = $aweber->getAccessToken();
+//            setcookie('accessToken', $accessToken);
+//            setcookie('accessTokenSecret', $accessTokenSecret);
+//            header('Location: '.$_COOKIE['callbackUrl']);
+//            exit();
+//        }
+//        $aweber->adapter->debug = false;
+//        $account = $aweber->getAccount($_COOKIE['accessToken'], $_COOKIE['accessTokenSecret']);
+//        try {
+//            $list = $account->lists[0];
+//            $params = array(
+//                'email' => $email,
+//                'name' => $name,
+//            );
+//            $subscribers = $list->subscribers;
+//            $new_subscriber = $subscribers->create($params);
+//        } catch(AWeberAPIException $exc) {
+//            print "<h3>AWeberAPIException:</h3>";
+//            print " <li> Type: $exc->type              <br>";
+//            print " <li> Docs: $exc->documentation_url <br>";
+//            print "<hr>";
+//        }
 
         Yii::$app->session->set('email', $email);
         Yii::$app->session->set('fname', $name);
