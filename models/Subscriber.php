@@ -11,7 +11,7 @@ use Yii;
  * @property string $info_user
  * @property string $page_type
  * @property string $ip
- * @property integer $created_at
+ * @property string $created_at
  */
 class Subscriber extends \yii\db\ActiveRecord
 {
