@@ -6,7 +6,7 @@ use yii\console\Controller;
 use app\models\SubscriberApi;
 use app\models\Apis;
 use app\models\Subscriber;
-use app\controllers\YMLP_API;
+use app\helpers\YmlpApi;
 use app\helpers\MainAweberApi;
 use Yii;
 use app\models\AweberExistingSubscribers;
@@ -53,11 +53,12 @@ class AutoresponderController extends Controller
 
         /* updating aweber subscribers if needed */
         $this->updateAweberSubscribers();
-        /* aweber + ymlp apis*/
-//        $this->Check();
+
         /* getresponse api
         $this->processGetresponse();*/
+
         $this->processYmlp();
+
         $this->processAweber();
     }
 
@@ -226,7 +227,7 @@ class AutoresponderController extends Controller
         /* ymlp api */
         $ymlp_api_key = Yii::$app->params['ymlp_api_key'];
         $ymlp_api_username = Yii::$app->params['ymlp_api_username'];
-        $ymlp = new YMLP_API($ymlp_api_key, $ymlp_api_username);
+        $ymlp = new YmlpApi($ymlp_api_key, $ymlp_api_username);
 
         foreach ($ymlp_models as $model) {
             $email = Subscriber::find()->where(['id' => $model['subscriber_id']])->one()['info_user'];

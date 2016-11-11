@@ -1,8 +1,8 @@
 <?php
 
-namespace  app\controllers;
+namespace  app\helpers;
 
-class YMLP_API {
+class YmlpApi {
     var $ErrorMessage;
     var $ApiUrl = "www.ymlp.com/api/";
     var $ApiUsername;
