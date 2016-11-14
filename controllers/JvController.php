@@ -11,7 +11,6 @@ class JvController extends \yii\web\Controller
         return $this->render('index');
     }
 
-
     public function actionWeekendClick()
     {
         $headers = apache_request_headers();
@@ -22,37 +21,16 @@ class JvController extends \yii\web\Controller
         else if((isset($headers['x-requested-with']) && $headers['x-requested-with'] == 'XMLHttpRequest' ))
             $is_ajax = 1;
 
-//$is_ajax = ( (isset($headers['X-Requested-With']) && $headers['X-Requested-With'] == 'XMLHttpRequest' ) ? 1 : 0);
-
-        if((!$is_ajax))
-        {
-//            $data = array();
-//
-//            echo json_encode($data);
-//            exit;
+        if((!$is_ajax)) {
+            $data = array();
+            echo json_encode($data);
+            exit;
         }
 
         $server = $_SERVER['SERVER_NAME'];
 
-        if($server=='clickmoneysystem.com' || $server=='www.clickmoneysystem.com' || $server == 'localhost')
-        {
-//            require_once 'db.class.php';
-//            require_once 'group1.php';
-
+        if($server=='clickmoneysystem.com' || $server=='www.clickmoneysystem.com') {
             date_default_timezone_set("America/New_York");
-
-            $day = date('d');
-            $hour = date('H');
-
-            $from_date = '2016-08-08 03:00';
-            $to_date = '2016-08-15 03:00';
-            //datetime >= '".$from_date."' AND
-
-            $query1 = "SELECT aff, aff_id ,count(*) AS counter FROM trans WHERE datetime <= '".$to_date."' AND aff!='Tim Atkinson' AND aff!='Jordan B' AND aff!='Dave R' AND aff!='Tal & Itay' AND aff!='Jordan' GROUP BY aff HAVING count(*) >0 order by counter desc";
-
-            //$query1 = "SELECT aff ,count(*) AS counter FROM trans WHERE datetime >= '".$from_date."' AND datetime <= '".$to_date."' AND aff!='Tim Atkinson' AND aff!='Jordan B' GROUP BY aff HAVING count(*) >0 order by counter desc";
-
-            // $arrSalesStats = DB::instance()->fetchArray($query1);
             $i=1;
             $html='';
             $class = array('first','second','third','');
@@ -77,28 +55,15 @@ class JvController extends \yii\web\Controller
             $arrSalesStats[8] = '0****9';
             $arrSalesStats[9] = 'j****c';
             $arrSalesStats[10] = 'j****m';
-            for($j=0; $j <count($arrSalesStats); $j++)
-            {
 
+            for($j=0; $j <count($arrSalesStats); $j++) {
                 $html .= "<tr><td class='text-center'>{$i}</td><td class='text-center'>" . $arrSalesStats[$i] . "</td><td class='text-center'>" . $prizeArray[$i] . "</td></tr>";
-
                 $i++;
             }
-
-            /*if($i < 11)
-            {
-                for($j=$i; $j <11; $j++)
-                {
-
-                    $html .= "<tr><td class='text-center'>{$i}</td><td class='text-center'>-----</td><td class='text-center'>".$prizeArray[$i]."</td></tr>";
-                    $i++;
-                }
-            }*/
 
             $html .= "<tr><td class='text-center' colspan='3'>&nbsp;</td></tr>";
             header('Content-Type: application/json');
             echo $html;
         }
     }
-
 }
