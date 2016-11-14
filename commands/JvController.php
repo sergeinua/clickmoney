@@ -132,10 +132,10 @@ class JvController extends Controller
     {
         (new Trans([
             'aff_id' => (string)$aff_id,
-            'aff' => $aff,
+            'aff' => (string)$aff,
             'actionid' => (string)$actionsid,
             'datetime' => $timestamp,
-            'offer_name' => $offer_name
+            'offer_name' => (string)$offer_name
         ]))->save();
     }
 }
