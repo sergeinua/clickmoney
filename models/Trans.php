@@ -7,12 +7,12 @@ use Yii;
 /**
  * This is the model class for table "trans".
  *
- * @property string $trans
- * @property string $aff_if
  * @property string $actionid
  * @property string $datetime
  * @property string $offer_name
  * @property integer $id
+ * @property string $aff_id
+ * @property string $aff
  */
 class Trans extends \yii\db\ActiveRecord
 {
@@ -30,12 +30,10 @@ class Trans extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['trans'], 'required'],
             [['datetime'], 'safe'],
-            [['trans'], 'string', 'max' => 256],
-            [['aff_if'], 'string', 'max' => 255],
             [['actionid'], 'string', 'max' => 30],
             [['offer_name'], 'string', 'max' => 5],
+            [['aff_id', 'aff'], 'string', 'max' => 255],
         ];
     }
 
@@ -45,12 +43,12 @@ class Trans extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'trans' => 'Trans',
-            'aff_if' => 'Aff If',
             'actionid' => 'Actionid',
             'datetime' => 'Datetime',
             'offer_name' => 'Offer Name',
             'id' => 'ID',
+            'aff_id' => 'Aff ID',
+            'aff' => 'Aff',
         ];
     }
 }
