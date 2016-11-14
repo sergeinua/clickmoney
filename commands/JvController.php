@@ -48,7 +48,6 @@ class JvController extends Controller
 
             $i++;
             $result = $this->getStats(date("Y-m-d", time() - 84600), date("Y-m-d", time()), $i);
-            var_dump($result); die;
         }
     }
 
