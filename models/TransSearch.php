@@ -18,7 +18,8 @@ class TransSearch extends Trans
     public function rules()
     {
         return [
-            [['trans', 'aff_if', 'actionid', 'datetime', 'offer_name'], 'safe'],
+            [['actionid', 'datetime', 'offer_name', 'aff_id', 'aff'], 'safe'],
+            [['id'], 'integer'],
         ];
     }
 
@@ -59,12 +60,13 @@ class TransSearch extends Trans
         // grid filtering conditions
         $query->andFilterWhere([
             'datetime' => $this->datetime,
+            'id' => $this->id,
         ]);
 
-        $query->andFilterWhere(['like', 'trans', $this->trans])
-            ->andFilterWhere(['like', 'aff_if', $this->aff_if])
-            ->andFilterWhere(['like', 'actionid', $this->actionid])
-            ->andFilterWhere(['like', 'offer_name', $this->offer_name]);
+        $query->andFilterWhere(['like', 'actionid', $this->actionid])
+            ->andFilterWhere(['like', 'offer_name', $this->offer_name])
+            ->andFilterWhere(['like', 'aff_id', $this->aff_id])
+            ->andFilterWhere(['like', 'aff', $this->aff]);
 
         return $dataProvider;
     }
