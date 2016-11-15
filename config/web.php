@@ -45,6 +45,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'jv' => 'jv/index',
                 '<action>' => 'site/<action>',
                 '<controller>/<action>' => '<controller>/<action>'
             ],
