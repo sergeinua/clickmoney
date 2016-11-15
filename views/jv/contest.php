@@ -51,7 +51,7 @@ $css = <<< CSS
         .slider-wrapper {  margin: 30px 0 20px;}
         .top_earners_img {
             /*margin: 0 0 -147px;*/
-            max-width: 755px;
+            max-width: 500px;
             position: relative;
             z-index: 3;
             left:-31px;
@@ -129,13 +129,14 @@ $css = <<< CSS
             .inner_prize_wrap .table .ylw span {font-size:20px;}
             .inner_prize_wrap .table .gray span {font-size:15px;}
             .top_earners_img {
-                bottom: -120px;
+                bottom: 55px;
                 left: -8px;
                 margin: 0;
                 max-width: 755px;
                 position: relative;
                 width: 100%;
                 z-index: 3;
+                max-width: 430px;
             }
             .total_prize p { font-size:14px;}
             .total_prize h2 { font-size:38px;}
@@ -145,11 +146,20 @@ $css = <<< CSS
         }
         @media(max-width:479px){
             .section-1{ padding: 30px 0 50px;}
-            .top_earners_img{bottom:30px;}
+            .top_earners_img{
+                bottom:5px;
+                max-width: 260px;
+            }
+            .outer_prize_wrap {
+                margin-top: 60px;
+            }
         }
         @media(max-width:600px){
             .table-1-heading h1 { font-size:26px !important;}
         }
+        /*@media(max-width:600px){*/
+        
+        /*}*/
 CSS;
 
 $this->registerCss($css);
