@@ -1749,3 +1749,10 @@ td.tleft {
         font-size: 26px !important;
     }
 }
+
+@media (min-width: 600px) {
+    .grabinput {
+        width: unset;
+        min-width: 375px;
+    }
+}
