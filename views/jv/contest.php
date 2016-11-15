@@ -198,7 +198,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                             </table>
                         </div>
                         <div class="table-1-heading">
-                            <h2>NEW 4th Week CF/PMA MAIN Contest Winners</h2>
+                            <h2>NEW 1st Week CM MAIN Contest Winners</h2>
                             <h4>MONDAY, Nov 14th at 3am EST - Monday, Nov 21st at 3am EST</h4>
                         </div>
                         <div class="table-1-body">
