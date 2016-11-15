@@ -10,8 +10,6 @@ JvMainAsset::register($this);
 /* @var $this yii\web\View */
 
 $script_init = <<< JS
-    // var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
-    // var exitsplashpage = '/freereport';
     sessionStorage.setItem('show_exit_popup', 'true');
 JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
@@ -38,132 +36,6 @@ $script = <<< JS
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
 
-$css = <<< CSS
-    .top_earners_img{
-            margin: 0 0 50px;
-        }
-        .table-1-wrapper{
-            margin-top: 80px !important;
-        }
-        td.tleft {text-align: left;padding-left: 25% !important;}
-        .table-1-heading h2{color:#fff;}
-        /***********************Amir 08-03-16*************************/
-        .slider-wrapper {  margin: 30px 0 20px;}
-        .top_earners_img {
-            /*margin: 0 0 -147px;*/
-            max-width: 500px;
-            position: relative;
-            z-index: 3;
-            left:-31px;
-        }
-
-        .top_earners_img2 {
-            left: -45px;
-            margin: 0 0 -159px;
-            max-width: 942px;
-            position: relative;
-            z-index: 3;
-        }
-        .prize_con { margin:-108px 0 40px 0}
-        .outer_prize_wrap{ background:#FEA321; border:2px solid #e7e1c8; padding:15px 10px 15px; margin-bottom:20px;}
-        .inner_prize_wrap{ background:#fff; border:3px solid #d6d3bd; padding:15px 0px 0}
-        .total_cash_con {padding:0 5%;}
-        .total_cash_con .total_cash { width:100%;}
-        .total_cash_con p{/* background: url(assets/heading-bg2.jpg) repeat-x top center; */ text-align:center; margin:15px 0;}
-        .total_cash_con p span { font-family: 'montserratlight'; text-transform: uppercase; display:inline-block; font-size:43px; color:#535048;/* background:#f0edd8;  */padding:0 20px;}
-
-        .inner_prize_wrap .table { margin-bottom:0px;}
-        .inner_prize_wrap .table tr{ background: rgba(0, 0, 0, 0) url("/contest/assets/duble_line.png") repeat-x scroll center bottom;}
-        .inner_prize_wrap .table .red span{color:#7e0000; font-size:40px;font-family: 'Montserrat', sans-serif; font-weight:700;}
-        .inner_prize_wrap .table .org span{color:#ff9c1d; font-size:35px;font-family: 'Montserrat', sans-serif; font-weight:700;}
-        .inner_prize_wrap .table .ylw span{color:#fec20e; font-size:30px;font-family: 'Montserrat', sans-serif; font-weight:700;}
-        .inner_prize_wrap .table tbody tr:nth-child(2n) {
-            background-color: #fff !important;}
-        .inner_prize_wrap .table tbody tr:nth-child(2n+1) {
-            background-color: #fff !important;
-        }
-        .inner_prize_wrap .table tr td{ color:#535048; vertical-align:middle;}
-        .inner_prize_wrap .table .gray span{color:#535048; font-size:25px;font-family: 'Montserrat', sans-serif; font-weight:700;}
-        .inner_prize_wrap .table tr td span { vertical-align:middle;}
-        .table-1-wrapper.nn { margin:0 0 40px 0;}
-        .total_prize_wrap { background:#fff; padding:0px 0; position:relative;}
-        .total_prize_con {/*  border:5px solid #c9c4b0;  */background:#fff; padding:10px;}
-        .total_prize{padding:10px; background: url("/contest/assets/chance_header.jpg") repeat-x top center;
-            background-size: cover; text-align:center;font-family: 'Montserrat', sans-serif; }
-        .total_prize p{padding:0 0 0 0;color:#fff;margin:0px; line-height:32px; font-size:32px;font-weight:700;}
-        .total_prize h2{padding:0 0 5px 0; text-shadow: 1px 1px 1px #999;color:#fff; margin:0px; font-size:88px;font-weight:700;}
-        .inner_prize_wrap .table tr:last-child {background:none;}
-        .grabinput {
-            border-radius: 10px;
-            height: 45px;
-            padding: 10px 15px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 10px 15px;
-            height: 55px;
-            width: 50%;
-        }
-        .afflink_tbl tbody tr:nth-child(2n+1){background-color:#fff !important;}
-        .section-1 .afflink_tbl p{margin-top:10px;}
-        .email_swip_wrap a, .email_swip_wrap button, .email_swip_wrap input[type="submit"] {
-            background: rgba(0, 0, 0, 0) url("/contest/assets/images/login_bg.jpg") no-repeat scroll 0 0 / 100% auto;
-            border: 0 none;
-            border-radius: 5px;
-            color: #fff;
-            display: inline-block;
-            font-family: "Montserrat",sans-serif;
-            font-size: 20px;
-            letter-spacing: 3px;
-            margin: 30px 0 40px;
-            padding: 24px 30px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        @media(max-width:600px){
-            .slider-wrapper { margin:30px auto 20px;}
-            .inner_prize_wrap .table tr td {display:block; text-align:center;}
-            .total_cash_con p span { font-size:14px;}
-            .inner_prize_wrap .table .red span {font-size:30px;}
-            .inner_prize_wrap .table .org span {font-size:25px;}
-            .inner_prize_wrap .table .ylw span {font-size:20px;}
-            .inner_prize_wrap .table .gray span {font-size:15px;}
-            .top_earners_img {
-                bottom: 55px;
-                left: -8px;
-                margin: 0;
-                max-width: 755px;
-                position: relative;
-                width: 100%;
-                z-index: 3;
-                max-width: 430px;
-            }
-            .total_prize p { font-size:14px;}
-            .total_prize h2 { font-size:38px;}
-            .prize_black_bodr {margin: 3% 2% 0;}
-            .prize_logo img{width:100%;}
-            .section-1{max-height: none;}
-        }
-        @media(max-width:479px){
-            .section-1{ padding: 30px 0 50px;}
-            .top_earners_img{
-                bottom:5px;
-                max-width: 260px;
-            }
-            .outer_prize_wrap {
-                margin-top: 60px;
-            }
-        }
-        @media(max-width:600px){
-            .table-1-heading h1 { font-size:26px !important;}
-        }
-        /*@media(max-width:600px){*/
-        
-        /*}*/
-CSS;
-
-$this->registerCss($css);
-
 $this->title = '#1 Click Money System';
 
 $mob = new Mobile_Detect();
@@ -172,10 +44,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
 }
 ?>
-    <style>
 
-    </style>
-<!-- /.top-logo -->
 <div class="section-1">
     <div class="container">
         <div class="row">
