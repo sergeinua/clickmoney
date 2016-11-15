@@ -13,10 +13,16 @@ $forms = [
     'ymlp' => [
         'action' => 'https://ymlp.com/subscribe.php?id=gwbqjmugmgb'
     ],
+//    'mailminion' => [
+//        'action' => 'https://dashboard.mailminion.com/lists/vb520bcxxo880/subscribe'
+//    ],
+//    'getresponse' => [
+//        'campaign_token' => 'nciX6',
+//    ],
 ];
 
 return [
-    'adminEmail' => 'admin@example.com',
+    'adminEmail' => 'admin@clickmoneysystem.com',
     'domain_name' => 'ClickMoneySystem.com',
     'company_name' => 'ClickMoneySystem',
     'support_email' => 'support@clickmoneysystem.com',
@@ -29,12 +35,4 @@ return [
     'aweber_consumer_secret' => 'huTlp5roJ4zb8jjH5haOZw0LZND2AQZJQelNp54D',
     'aweber_account_id' => '1187404',
     'aweber_list_id' => '4444369'
-//        [
-//        'mailminion' => [
-//            'action' => 'https://dashboard.mailminion.com/lists/vb520bcxxo880/subscribe'
-//        ],
-//        'getresponse' => [
-//            'campaign_token' => 'nciX6',
-//        ],
-//    ]
 ];
