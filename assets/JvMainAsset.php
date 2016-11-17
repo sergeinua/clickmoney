@@ -28,7 +28,6 @@ class JvMainAsset extends AppAssetBundle
     public function init()
     {
         $this->js = [
-//            'js/main.js',
             'contest/js/bootstrap.min.js',
             'contest/js/contest-2.js?v=4',
             'contest/js/powerange.js',

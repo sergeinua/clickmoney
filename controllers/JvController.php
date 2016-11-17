@@ -6,6 +6,10 @@ use app\models\Trans;
 
 class JvController extends \yii\web\Controller
 {
+    /**
+     * Index page
+     * @return string
+     */
     public function actionIndex()
     {
         return $this->render('index');
@@ -65,5 +69,14 @@ class JvController extends \yii\web\Controller
             header('Content-Type: application/json');
             echo $html;
         }
+    }
+
+    /**
+     * Contest page
+     * @return string
+     */
+    public function actionContest()
+    {
+        return $this->render('contest');
     }
 }

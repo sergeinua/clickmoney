@@ -2,13 +2,15 @@ Options +FollowSymLinks
 IndexIgnore */*
 RewriteEngine on
 
+RewriteRule ^/?$ "/main" [R=301,L]
+
 RewriteCond %{REQUEST_URI} !^/(web)
 RewriteRule ^assets/(.*)$ /web/assets/$1 [L]
-RewriteRule ^css/(.*)$ web/css/$1 [L]
-RewriteRule ^js/(.*)$ web/js/$1 [L]
-RewriteRule ^images/(.*)$ web/images/$1 [L]
-RewriteRule ^design/(.*)$ web/design/$1 [L]
-RewriteRule ^contest/(.*)$ web/contest/$1 [L]
+RewriteRule ^css/(.*)$ /web/css/$1 [L]
+RewriteRule ^js/(.*)$ /web/js/$1 [L]
+RewriteRule ^images/(.*)$ /web/images/$1 [L]
+RewriteRule ^design/(.*)$ /web/design/$1 [L]
+RewriteRule ^contest/(.*)$ /web/contest/$1 [L]
 RewriteRule (.*) /web/$1
 
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -5,17 +5,29 @@ use app\assets\AppAsset;
 $this->registerCssFile(Yii::$app->request->baseUrl.'/css/thank-you.css?v=' . filemtime(Yii::getAlias('@app/web/css/thank-you.css')), ['depends' => [AppAsset::className()]]);
 
 $script = <<< JS
-    $(function(){
-        (function rotate () {
-            $(".thank-you .arrow").addClass('rotated');
-            setTimeout(function(){
-                $(".thank-you .arrow").removeClass('rotated');
-                setTimeout(function() {
-                    rotate();
-                }, 200);
-            }, 4000);
-        })();
-    });
+    (function($){
+        var tshow = false;
+        $('.thank-you').on('shown.bs.modal', function() {
+            tshow = true;
+            function rotate () {
+                if (tshow) {
+                    $(".thank-you .arrow").addClass('rotated');
+                    setTimeout(function(){
+                        $(".thank-you .arrow").removeClass('rotated');
+                        setTimeout(function() {
+                            rotate();
+                        }, 200);
+                    }, 4000);
+                }
+            };
+            rotate();
+        });
+    
+        $('.thank-you').on('hidden.bs.modal', function() {
+            tshow = false;
+            $(".thank-you .arrow").removeClass('rotated');
+        });
+    })(jQuery);
 JS;
 
 $this->registerJs($script, yii\web\View::POS_READY);

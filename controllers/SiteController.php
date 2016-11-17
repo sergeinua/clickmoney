@@ -162,6 +162,7 @@ class SiteController extends Controller
 
     /**
      * Disclaimer page
+     *
      * @return string
      */
     public function actionDisclaimer()
@@ -171,6 +172,7 @@ class SiteController extends Controller
 
     /**
      * Privacy Policy page
+     *
      * @return string
      */
     public function actionPrivacyPolicy()
@@ -180,6 +182,7 @@ class SiteController extends Controller
 
     /**
      * Terms page
+     *
      * @return string
      */
     public function actionTerms()
@@ -189,6 +192,7 @@ class SiteController extends Controller
 
     /**
      * Earnings Disclaimer page
+     *
      * @return string
      */
     public function actionEarningsDisclaimer()
@@ -198,6 +202,7 @@ class SiteController extends Controller
 
     /**
      * Spam Policy page
+     *
      * @return string
      */
     public function actionSpamPolicy()
@@ -207,6 +212,7 @@ class SiteController extends Controller
 
     /**
      * Support page
+     *
      * @return string
      */
     public function actionSupport()
@@ -215,7 +221,8 @@ class SiteController extends Controller
     }
 
     /**
-     * Exit page for the members page
+     * Laststep page - exit page for the members page
+     *
      * @return string
      */
     public function actionLaststep()
@@ -228,6 +235,7 @@ class SiteController extends Controller
 
     /**
      * FE2 page
+     *
      * @return string
      */
     public function actionMain()
@@ -242,6 +250,7 @@ class SiteController extends Controller
 
     /**
      * Members 3 page
+     *
      * @return string
      */
     public function actionFinaloffer()
@@ -253,7 +262,7 @@ class SiteController extends Controller
     }
 
     /**
-     * FE3 page, not in use for now
+     * FE3 page - not in use for now
      *
      * @return string
      */
