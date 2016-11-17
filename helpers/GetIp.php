@@ -3,7 +3,6 @@ namespace app\helpers;
 
 Class GetIp
 {
-
     static function getIpAddr()
     {
         $ip_add = self::get_ip_address();
@@ -17,18 +16,9 @@ Class GetIp
         }
 
         if ((!empty($loca_data[0])) && (!empty($loca_data[1]))) {
-//            define('UCOUNTRY', $loca_data[0]);
-//            define('UCITY', $loca_data[1]);
         } else {
             $ipno = self::Dot2LongIP($ip_add);
 
-    //    $mcache = new MemCache();
-    //    $mcache->init();
-
-    //    $res = $mcache->get($ipno);
-
-    //            $query = "SELECT country_name,city_name FROM geoip2_citylegacy WHERE ip_to >= '$ip_add' order by ip_to limit 1";
-    //            $res = $db->select($query);
             $res = (new \yii\db\Query())
                 ->select(['country_name', 'city_name'])
                 ->from('geoip2_citylegacy')
@@ -37,34 +27,20 @@ Class GetIp
                 ->limit(1)
                 ->all();
 
-
-//            \Yii::$app->params['UCOUNTRY'] = str_replace('"', "", $res[0]['country_name']);
-//            \Yii::$app->params['UCITY'] = str_replace('"', "", $res[0]['city_name']);
-
-//            define('UCOUNTRY', str_replace('"', "", $res[0]['country_name']));
-//            define('UCITY', str_replace('"', "", $res[0]['city_name']));
-    //    var_dump(UCOUNTRY);die;
-//            if (UCOUNTRY && UCITY) {
-//                $cookie_val = (UCOUNTRY . '|||' . UCITY);
-//    //setcookie($cookie_name, ($cookie_val), (time() + (86400 * 7)), "/");
-//
-//            }
             return ['UCOUNTRY' => str_replace('"', "", $res[0]['country_name']), 'UCITY' => str_replace('"', "", $res[0]['city_name'])];
         }
     }
 
-
+    /**
+     * @return bool|string
+     */
     static function get_ip_address()
     {
         $ip_keys = array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'REMOTE_ADDR');
         foreach ($ip_keys as $key) {
             if (array_key_exists($key, $_SERVER) === true) {
                 foreach (explode(',', $_SERVER[$key]) as $ip) {
-    // trim for safety measures
                     $ip = trim($ip);
-    //var_dump($ip);
-    //echo '<br/>';
-    // attempt to validate IP
                     if (self::validate_ip($ip)) {
                         return $ip;
                     }
@@ -86,6 +62,10 @@ Class GetIp
         return true;
     }
 
+    /**
+     * @param $loc_url
+     * @return mixed
+     */
     static function sendCurl($loc_url)
     {
         $client = curl_init($loc_url);
@@ -96,7 +76,12 @@ Class GetIp
         return $res = json_decode(curl_exec($client));
     }
 
-    // Function to convert IP address (xxx.xxx.xxx.xxx) to IP number (0 to 256^4-1)
+    /**
+     * Function to convert IP address (xxx.xxx.xxx.xxx) to IP number (0 to 256^4-1)
+     *
+     * @param $IPaddr
+     * @return int
+     */
     static function Dot2LongIP($IPaddr)
     {
         if ($IPaddr == "") {

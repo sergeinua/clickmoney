@@ -20,12 +20,4 @@ class JvAsset extends AppAssetBundle
     public $depends = [
         'app\assets\AppAsset'
     ];
-
-    public function init()
-    {
-        $this->js = [
-        ];
-
-        parent::init();
-    }
 }
