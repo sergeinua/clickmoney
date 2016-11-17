@@ -33,6 +33,12 @@ class JvController extends Controller
                         $offer_name = 'cf';
                     else if ($transaction->campaignID == 328873 || $transaction->campaignID == 332613) //pma
                         $offer_name = 'pma';
+                    else if ($transaction->campaignID == 388678 || $transaction->campaignID == 388688) //clickmoney
+                        $offer_name = 'cm';
+                    else if ($transaction->campaignID == 328873 || $transaction->campaignID == 332613) //pma
+                        $offer_name = 'pma';
+                    else if ($transaction->campaignID == 344423) //jv
+                        $offer_name = 'jv';
 
                     if ($offer_name) {
                         $UTC = new \DateTimeZone("Asia/Jerusalem");
