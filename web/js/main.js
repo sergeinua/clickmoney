@@ -60,7 +60,7 @@ $(document).ready(function(){
         if (from_page == 'mobile') {
             from_page = 'fe_mobile';
         }
-        validateEmail(email, from_page, name);
+        validateEmail(email, from_page, name, cm_redirect);
         window.onbeforeunload = null;
     });
 

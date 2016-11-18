@@ -17,6 +17,9 @@ $script_init = <<< JS
 JS;
 if ($exitSplAndPopup) {
     $this->registerJs($script_init, yii\web\View::POS_BEGIN);
+}else {
+    /* add redirect for the C2mController */
+    $cm_redirect = true;
 }
 
 $script = <<< JS
@@ -48,6 +51,11 @@ if ($mob->isTablet() || $mob->isMobile()) {
 <script>
     <?php if (isset($from_page)) : ?>
     var from_page = '<?= $from_page; ?>';
+    <?php endif; ?>
+    <?php if (isset($cm_redirect)) : ?>
+    var cm_redirect = true;
+    <?php else : ?>
+    var cm_redirect = false;
     <?php endif; ?>
 </script>
 <div class="container header">

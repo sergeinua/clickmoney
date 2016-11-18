@@ -15,6 +15,22 @@ class C2mController extends \yii\web\Controller
         $forms[] = ['forms' => Yii::$app->params['esp_forms']];
         $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
 
+        return $this->render('@app/views/site/index', [
+            'forms' => $forms,
+            'exitSplAndPopup' => false
+        ]);
+    }
+
+    /**
+     * FE2 page
+     *
+     * @return string
+     */
+    public function actionMain()
+    {
+        $forms[] = ['forms' => Yii::$app->params['esp_forms']];
+        $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
+
         return $this->render('@app/views/site/main', [
             'forms' => $forms,
             'exitSplAndPopup' => false
