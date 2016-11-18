@@ -66,9 +66,11 @@ class SiteController extends Controller
     {
         $forms[] = ['forms' => Yii::$app->params['esp_forms']];
         $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
+
         return $this->render('index', [
             'model' => new Subscriber(),
-            'forms' => $forms
+            'forms' => $forms,
+            'exitSplAndPopup' => true
         ]);
     }
 
@@ -121,7 +123,9 @@ class SiteController extends Controller
      */
     public function actionAccessapproved()
     {
-        return $this->render('accessapproved');
+        return $this->render('accessapproved', [
+            'exitSplAndPopup' => true
+        ]);
     }
 
     /**
@@ -131,9 +135,15 @@ class SiteController extends Controller
      */
     public function actionApproved()
     {
+        $gi = '4850';
+        $gi_mobile = '4851';
+
         return $this->render('approved', [
             'email' => Yii::$app->session->get('email'),
-            'fname' => Yii::$app->session->get('fname')
+            'fname' => Yii::$app->session->get('fname'),
+            'exitSplAndPopup' => true,
+            'gi' => $gi,
+            'gi_mobile' => $gi_mobile
         ]);
     }
 
@@ -244,7 +254,8 @@ class SiteController extends Controller
         $forms[] = ['prefix' => 'overlay', 'forms' => Yii::$app->params['esp_forms_overlay']];
 
         return $this->render('main', [
-            'forms' => $forms
+            'forms' => $forms,
+            'exitSplAndPopup' => true
         ]);
     }
 

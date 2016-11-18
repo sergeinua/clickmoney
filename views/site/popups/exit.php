@@ -68,7 +68,7 @@ Modal::begin([
                 </div>
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <img class="main-arrow hidden-md hidden-sm hidden-xs" src="images/arfe3.png">
+                        <img class="main-arrow hidden-md hidden-sm hidden-xs" src="/images/arfe3.png">
                         <button type="submit" id="exit-send-btn">
                             <div class="row">
                                 <div class="col-md-12">
@@ -76,7 +76,7 @@ Modal::begin([
                                 </div>
                             </div>
                         </button>
-                        <div class="warranty-text"><img class="blockImg" src="images/svg/lock.svg" />
+                        <div class="warranty-text"><img class="blockImg" src="/images/svg/lock.svg" />
                             <span>The Last Spot Is Still Here. Grab it Before Someone Else Does!</span>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ Modal::begin([
     </div><!--
         --><div class="row">
         <div class="col-lg-10 col-lg-offset-1 block-current-people text-center">
-            <img src="images/orangeStop.png">There are currently
+            <img src="/images/orangeStop.png">There are currently
             <span class="feExitRed" id="people_filling_nd_spot">416</span> People On This Very Page Right Now.
             <span class="feExitRed" id="try_to_take_spot">104</span> of Them Trying To Take <span class="feExitBold">Your Spot</span> Right Now. <span class="feExitBold">Act Quickly!</span>
         </div>

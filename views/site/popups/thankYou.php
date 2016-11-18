@@ -54,9 +54,9 @@ $this->registerJs($script, yii\web\View::POS_READY);
             YOU'RE ALMOST THERE!
         </p>
         <p class="arrow">
-            <img src="images/thankYou/backAr3a.png">
-            <img src="images/thankYou/backAr3a.png">
-            <img src="images/thankYou/backAr3a.png">
+            <img src="/images/thankYou/backAr3a.png">
+            <img src="/images/thankYou/backAr3a.png">
+            <img src="/images/thankYou/backAr3a.png">
         </p>
         <p class="thank-you-block">
             <span>THANK YOU!</span>

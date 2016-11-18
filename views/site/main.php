@@ -14,7 +14,12 @@ $script_init = <<< JS
     var exitsplashpage = '/freereport';
     sessionStorage.setItem('show_exit_popup', 'true');
 JS;
-$this->registerJs($script_init, yii\web\View::POS_BEGIN);
+if ($exitSplAndPopup) {
+    $this->registerJs($script_init, yii\web\View::POS_BEGIN);
+} else {
+    /* add redirect for the C2mController */
+    $cm_redirect = true;
+}
 
 $script = <<< JS
 (function($) {
@@ -42,12 +47,17 @@ if ($mob->isTablet() || $mob->isMobile()) {
     <?php if (isset($from_page)) : ?>
     var from_page = '<?= $from_page; ?>';
     <?php endif; ?>
+    <?php if (isset($cm_redirect)) : ?>
+    var cm_redirect = true;
+    <?php else : ?>
+    var cm_redirect = false;
+    <?php endif; ?>
 </script>
 
 <div class="container header">
     <div class="row">
         <div class="col-xs-6 logo vcenter">
-            <img src="images/ClickMoneyLogo/Logo-white.svg">
+            <img src="/images/ClickMoneyLogo/Logo-white.svg">
         </div><!--
                 --><div class="col-xs-6 lic text-right vcenter">
             <span class="licenceLeft"><span>10</span><span class="licenceRight">Spots Left</span></span>
@@ -76,7 +86,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                 </div>
                 <div class="row action-form">
                     <div class="col-xs-12">
-                        <img class="main-arrow" src="images/arfe2.png">
+                        <img class="main-arrow" src="/images/arfe2.png">
                         <form method="post" action="javascript:;" id="fe-2-form">
                             <div class="form-fields">
                                 <div class="row">
@@ -104,11 +114,11 @@ if ($mob->isTablet() || $mob->isMobile()) {
                                                 OPEN MY CLICKMONEY ACCOUNT
                                             </div>
                                             <div class="arrow">
-                                                <img src="images/arrow-fe-1.png" />
+                                                <img src="/images/arrow-fe-1.png" />
                                             </div>
                                         </div>
                                     </button>
-                                    <div class="warranty-text"><img class="blockImg" src="images/svg/lock.svg" /> <span>Guaranteed Secure Access Ensured by Trusted Companies</span></div>
+                                    <div class="warranty-text"><img class="blockImg" src="/images/svg/lock.svg" /> <span>Guaranteed Secure Access Ensured by Trusted Companies</span></div>
                                 </div>
                             </div>
                         </form>
@@ -116,16 +126,16 @@ if ($mob->isTablet() || $mob->isMobile()) {
                 </div>
                 <div class="row icons-block text-center">
                     <div class="col-xs-3 vtop">
-                        <a href="#"><img class="m" src="images/m-seal.png"></a>
+                        <a href="#"><img class="m" src="/images/m-seal.png"></a>
                     </div><!--
                     --><div class="col-xs-3 vtop">
-                        <a href="#"><img class="t" src="images/t-seal.jpg"></a>
+                        <a href="#"><img class="t" src="/images/t-seal.jpg"></a>
                     </div><!--
                     --><div class="col-xs-3 vtop">
-                        <a href="#"><img class="v" src="images/v-seal.png"></a>
+                        <a href="#"><img class="v" src="/images/v-seal.png"></a>
                     </div><!--
                     --><div class="col-xs-3 vtop">
-                        <a href="#"><img class="n" src="images/n-seal.png"></a>
+                        <a href="#"><img class="n" src="/images/n-seal.png"></a>
                     </div>
                 </div>
             </div>
@@ -135,7 +145,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
 <div class="container footer">
     <div class="row">
         <div class="col-xs-12 col-md-1 vcenter logo">
-            <a href=""><img src="images/ClickMoneyLogo/Logo-white.svg"></a>
+            <a href=""><img src="/images/ClickMoneyLogo/Logo-white.svg"></a>
         </div><!--
                 --><div class="col-xs-12 col-md-7 vcenter menu">
             <ul>
@@ -158,7 +168,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-3">
-                <img src="images/smile.png">
+                <img src="/images/smile.png">
             </div>
             <div class="col-xs-9">
                 <div class="row">
@@ -175,7 +185,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
             </div>
         </div>
     </div>
-    <div class="close-btn"><a href="#"><img src="images/svg/circle_delete.svg"></a></div>
+    <div class="close-btn"><a href="#"><img src="/images/svg/circle_delete.svg"></a></div>
 </div>
 <?php
 foreach ($forms as $form) {

@@ -12,7 +12,9 @@ $script_init = <<< JS
     var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
     var exitsplashpage = '/approved';
 JS;
-$this->registerJs($script_init, yii\web\View::POS_BEGIN);
+if ($exitSplAndPopup) {
+    $this->registerJs($script_init, yii\web\View::POS_BEGIN);
+}
 
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {
@@ -20,12 +22,15 @@ if ($mob->isTablet() || $mob->isMobile()) {
 }
 
 $this->title = '#1 Click Money System';
+$cont_pref = '';
+if (Yii::$app->controller->id == 'c2m')
+    $cont_pref = '/c2m';
 ?>
 
 <div class="container header">
     <div class="row">
         <div class="col-xs-6 logo vcenter">
-            <img src="images/ClickMoneyLogo/Logo-white.svg">
+            <img src="/images/ClickMoneyLogo/Logo-white.svg">
     </div><!--
     --><div class="col-xs-6 lic text-right vcenter">
             <span class="licenceLeft"><span>10</span><span class="licenceRight">Licence Left</span></span>
@@ -72,13 +77,13 @@ $this->title = '#1 Click Money System';
                 </div>
                 <div class="row action-form">
                     <div class="col-xs-12 text-center">
-                        <button type="submit" onclick="window.onbeforeunload = null; window.location='/approved';">
+                        <button type="submit" onclick="window.onbeforeunload = null; window.location='<?= $cont_pref; ?>/approved';">
                             <div class="row">
                                 <div class="col-sm-11 col-xs-10">
                                     CLICK HERE TO PROCEED
                                 </div>
                                 <div class="arrow">
-                                    <img src="images/arrow-fe-1.png" />
+                                    <img src="/images/arrow-fe-1.png" />
                                 </div>
                             </div>
                         </button>
@@ -94,7 +99,7 @@ $this->title = '#1 Click Money System';
 <div class="container footer">
     <div class="row">
         <div class="col-xs-12 col-md-1 vcenter logo">
-            <a href=""><img src="images/ClickMoneyLogo/Logo-white.svg"></a>
+            <a href=""><img src="/images/ClickMoneyLogo/Logo-white.svg"></a>
         </div><!--
         --><div class="col-xs-12 col-md-7 vcenter menu">
             <ul>

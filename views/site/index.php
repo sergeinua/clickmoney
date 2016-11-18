@@ -15,7 +15,9 @@ $script_init = <<< JS
     var exitsplashpage = '/freereport';
     sessionStorage.setItem('show_exit_popup', 'true');
 JS;
-$this->registerJs($script_init, yii\web\View::POS_BEGIN);
+if ($exitSplAndPopup) {
+    $this->registerJs($script_init, yii\web\View::POS_BEGIN);
+}
 
 $script = <<< JS
 (function($) {
@@ -51,7 +53,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
 <div class="container header">
     <div class="row">
         <div class="col-xs-4 logo vcenter">
-            <img src="images/ClickMoneyLogo/Logo-white.svg">
+            <img src="/images/ClickMoneyLogo/Logo-white.svg">
         </div><!--
         --><div class="col-xs-8 lic text-right vcenter">
             <span class="spots-left-text">SPOTS LEFT</span>
@@ -60,7 +62,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
     </div>
 </div>
 <div class="container content">
-    <img class="corner-rectangle" src="images/rectangle.png">
+    <img class="corner-rectangle" src="/images/rectangle.png">
     <p class="corner-rectangle-text">LIMITED</br> SPOTS</p>
     <div class="row">
         <div class="col-xs-12 video">
@@ -99,7 +101,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                                         </div>
                                     </button>
                                     <div class="lock-text">
-                                        <img class="lock-img" src="images/svg/lock.svg" />
+                                        <img class="lock-img" src="/images/svg/lock.svg" />
                                         <span>Guaranteed Secure Access Ensured by Trusted Companies</span>
                                     </div>
                                 </div>
@@ -107,16 +109,16 @@ if ($mob->isTablet() || $mob->isMobile()) {
                                     <div class="row">
                                         <div class="row icons-block text-center">
                                             <div class="col-xs-3 col-md-6 vtop">
-                                                <a href="#"><img class="m" src="images/m-seal.png"></a>
+                                                <a href="#"><img class="m" src="/images/m-seal.png"></a>
                                             </div>
                                             <div class="col-xs-3 col-md-6 vtop">
-                                                <a href="#"><img class="t" src="images/truste.png"></a>
+                                                <a href="#"><img class="t" src="/images/truste.png"></a>
                                             </div>
                                             <div class="col-xs-3 col-md-6 vtop">
-                                                <a href="#"><img class="v" src="images/v-seal.png"></a>
+                                                <a href="#"><img class="v" src="/images/v-seal.png"></a>
                                             </div>
                                             <div class="col-xs-3 col-md-6 vtop">
-                                                <a href="#"><img class="n" src="images/n-seal.png"></a>
+                                                <a href="#"><img class="n" src="/images/n-seal.png"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -132,7 +134,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
 <div class="container footer">
     <div class="row">
         <div class="col-xs-12 col-md-1 vcenter logo">
-            <a href=""><img src="images/ClickMoneyLogo/Logo-white.svg"></a>
+            <a href=""><img src="/images/ClickMoneyLogo/Logo-white.svg"></a>
         </div><!--
         --><div class="col-xs-12 col-md-9 vcenter menu">
             <ul>

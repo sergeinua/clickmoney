@@ -9,12 +9,11 @@ use app\assets\MembersAsset;
 MembersAsset::register($this);
 
 $rd = 3;
-$gi = 4850;
 
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
-    $gi = 4851;
+    $gi = $gi_mobile;
     $rd = 4;
 }
 
@@ -28,6 +27,12 @@ $script_init = <<< JS
         top.location.assign(self.location);
         window.stop();
     }
+JS;
+if ($exitSplAndPopup) {
+    $this->registerJs($script_init, yii\web\View::POS_BEGIN);
+}
+
+$script_init = <<< JS
     var gvars = {'gi': $gi, 'wl': 114, 'rd': $rd, 'sb': 0}
     var forms_modified = false;
     var button = '<div class="row"><div class="col-xs-12 text-center"><button type="submit"><div class="row">';
@@ -128,10 +133,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
             <div class="row">
                     <p class="membership-welcome">WELCOME</p>
                     <h2 class="membership-biz-area">This is the CLICK MONEY Members Area</h2>
-                    <img class="membership-logo" src="images/ClickMoneyLogo/Logo-yellow.svg">
+                    <img class="membership-logo" src="/images/ClickMoneyLogo/Logo-yellow.svg">
                     <div class="col-md-2 col-xs-12 membership-boxIcon">
                         <div class="col-xs-2">
-                            <img src="images/elipsOne.png">
+                            <img src="/images/elipsOne.png">
                         </div>
                         <div class="col-xs-11 row membership-right-box">
                             <div class="col-lg-12 membership-licence-left">
@@ -152,7 +157,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <iframe id="vim-video-top" class="embed-responsive-item" src="https://player.vimeo.com/video/189312811?autoplay=true" width="auto" height="auto"
                                 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
-                    <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
+                    <img class="img-responsive yellow-arrow" src="/images/yellowArrow1.png">
                     <p>Watch Video Now! Expires in: <span id="time-exit">00h : 05m : 00s</span></p>
                 </div>
                 <div class="col-md-5 right_block">
@@ -160,27 +165,27 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <span class="reg-bold">register</span> your click money account below</h2>
                     <div class="gaff" id="gaff"></div>
                     <div class="col-md-12 col-xs-12 membership-block-text">
-                        <img class="blockImg" src="images/svg/lock.svg">Guaranteed Secure Access Ensured by Trusted Companies
+                        <img class="blockImg" src="/images/svg/lock.svg">Guaranteed Secure Access Ensured by Trusted Companies
                     </div>
                     <div class="row text-center icons-block">
                         <div class="col-xs-3 vtop">
                             <a href="#"><img class="m" src=
-                                "images/mcafee.png"></a>
+                                "/images/mcafee.png"></a>
                         </div><!--
                                             -->
                         <div class="col-xs-3 vtop">
                             <a href="#"><img class="t" src=
-                                "images/truste.png"></a>
+                                "/images/truste.png"></a>
                         </div><!--
                                             -->
                         <div class="col-xs-3 vtop">
                             <a href="#"><img class="v" src=
-                                "images/red.png"></a>
+                                "/images/red.png"></a>
                         </div><!--
                                             -->
                         <div class="col-xs-3 vtop">
                             <a href="#"><img class="n" src=
-                                "images/norton.png"></a>
+                                "/images/norton.png"></a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +205,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="row">
             <div class="col-md-4">
                 <div class="col-md-4 member-arrows">
-                    <img class="first-arrow" src="images/arrow-3-active.png">
+                    <img class="first-arrow" src="/images/arrow-3-active.png">
                     <div class="first-num">
                         1
                     </div>
@@ -212,10 +217,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         choose<br>
                         a username and a password</p>
                 </div><img class="hidden-xs hidden-sm arrow arrow1 arrow111 "
-                           src="images/arrowLittleGreen.png"></div>
+                           src="/images/arrowLittleGreen.png"></div>
             <div class="col-md-4">
                 <div class="col-md-4 member-arrows">
-                    <img class="second-arrow" src="images/arrow-4.png">
+                    <img class="second-arrow" src="/images/arrow-4.png">
                     <div class="second-num">
                         2
                     </div>
@@ -226,10 +231,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         or more to unlock the Click Money System</p>
 
                 </div><img class="hidden-xs hidden-sm arrow arrow1 " src=
-                "images/arrowLittleGreen.png"></div>
+                "/images/arrowLittleGreen.png"></div>
             <div class="col-md-4">
                 <div class="col-md-4 member-arrows">
-                    <img class="third-arrow-add" src="images/arrow-5.png">
+                    <img class="third-arrow-add" src="/images/arrow-5.png">
                     <div class="third-num">
                         3
                     </div>
@@ -259,7 +264,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599403150_640.jpg'); background-size: cover;">
                         <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599403150_640.jpg"></div>
                     </div>
-                    <img class="img-responsive play-button" src="images/play.png">
+                    <img class="img-responsive play-button" src="/images/play.png">
                     <h5>James'</h5>
                     <p>Testimonial</p>
                 </div>
@@ -278,7 +283,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599403150_640.jpg'); background-size: cover;">
                             <div class="green-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599403150_640.jpg"></div>
                         </div>
-                        <img class="img-responsive play-button" src="images/white-smile.png">
+                        <img class="img-responsive play-button" src="/images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT AND SUCCESS STORY</h5>
                         <p>JOIN OUR CLICK MONEY SYSTEM TODAY</p>
                     </div>
@@ -300,7 +305,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599401145_640.jpg'); background-size: cover;">
                         <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599401145_640.jpg"></div>
                     </div>
-                    <img class="img-responsive play-button" src="images/play.png">
+                    <img class="img-responsive play-button" src="/images/play.png">
                     <h5>Sarah's</h5>
                     <p>Testimonial</p>
                 </div>
@@ -319,7 +324,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599401145_640.jpg'); background-size: cover;">
                             <div class="green-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599401145_640.jpg"></div>
                         </div>
-                        <img class="img-responsive play-button" src="images/white-smile.png">
+                        <img class="img-responsive play-button" src="/images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT AND SUCCESS STORY</h5>
                         <p>JOIN OUR CLICK MONEY SYSTEM TODAY</p>
                     </div>
@@ -341,7 +346,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599400700_640.jpg'); background-size: cover;">
                         <div class="black-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599400700_640.jpg"></div>
                     </div>
-                    <img class="img-responsive play-button" src="images/play.png">
+                    <img class="img-responsive play-button" src="/images/play.png">
                     <h5>Stephen & Helen</h5>
                     <p>Testimonial</p>
                 </div>
@@ -360,7 +365,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <div class="video-poster" style="background: url('https://i.vimeocdn.com/video/599400700_640.jpg'); background-size: cover;">
                             <div class="green-background-case"><img class="img-responsive" src="https://i.vimeocdn.com/video/599400700_640.jpg"></div>
                         </div>
-                        <img class="img-responsive play-button" src="images/white-smile.png">
+                        <img class="img-responsive play-button" src="/images/white-smile.png">
                         <h5>THIS COULD BE YOUR SPOT AND SUCCESS STORY</h5>
                         <p>JOIN OUR CLICK MONEY SYSTEM TODAY</p>
                     </div>
@@ -390,25 +395,25 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 <div class="gaff middle-form" id="gaff2"></div>
                 <div class="row">
                     <div class= "col-md-12 col-xs-12 membership-block-text">
-                        <img class="blockImg" src="images/svg/lock.svg">Guaranteed Secure Access Ensured by Trusted Companies
+                        <img class="blockImg" src="/images/svg/lock.svg">Guaranteed Secure Access Ensured by Trusted Companies
                     </div>
                 </div>
                 <div class="row icons-block text-center">
                     <div class="col-xs-3 vtop">
                         <a href="#"><img class="m" src=
-                            "images/mcafee.png"></a>
+                            "/images/mcafee.png"></a>
                     </div>
                     <div class="col-xs-3 vtop">
                         <a href="#"><img class="t" src=
-                            "images/truste.png"></a>
+                            "/images/truste.png"></a>
                     </div>
                     <div class="col-xs-3 vtop">
                         <a href="#"><img class="v" src=
-                            "images/red.png"></a>
+                            "/images/red.png"></a>
                     </div>
                     <div class="col-xs-3 vtop">
                         <a href="#"><img class="n" src=
-                            "images/norton.png"></a>
+                            "/images/norton.png"></a>
                     </div>
                 </div>
             </div>
@@ -596,7 +601,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
 <!-- Modal -->
 <?php
 $header_case_1 = <<<HEA
-    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="images/close-video.png"></a>
+    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="/images/close-video.png"></a>
     <h5>James'</h5>
     <p>TESTIMONIAL</p>
 HEA;
@@ -624,7 +629,7 @@ Modal::begin([
 
 <?php
 $header_case_2 = <<<HEA
-    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="images/close-video.png"></a>
+    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="/images/close-video.png"></a>
     <h5>Stephen & Helen</h5>
     <p>TESTIMONIAL</p>
 HEA;
@@ -651,7 +656,7 @@ Modal::begin([
 
 <?php
 $header_case_3 = <<<HEA
-    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="images/close-video.png"></a>
+    <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close" data-iframe="video-case-1"><img src="/images/close-video.png"></a>
     <h5>Sarah's</h5>
     <p>TESTIMONIAL</p>
 HEA;

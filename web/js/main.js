@@ -8,7 +8,7 @@ $(document).ready(function(){
             from_page = 'fe_mobile';
         }
         var fname = $('#name').val();
-        validateEmail(email_value, from_page, fname);
+        validateEmail(email_value, from_page, fname, cm_redirect);
         window.onbeforeunload = null;
     });
 
@@ -21,7 +21,7 @@ $(document).ready(function(){
         if (from_page == 'mobile') {
             from_page = 'exit_mobile';
         }
-        validateEmail(email, from_page, name);
+        validateEmail(email, from_page, name, cm_redirect);
         window.onbeforeunload = null;
     });
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
         if (from_page == 'mobile') {
             from_page = 'overlay_mobile';
         }
-        validateEmail(email, from_page, name);
+        validateEmail(email, from_page, name, cm_redirect);
         window.onbeforeunload = null;
     });
 
@@ -47,7 +47,7 @@ $(document).ready(function(){
         if (from_page == 'mobile') {
             from_page = 'fe_mobile';
         }
-        validateEmail(email, from_page, name);
+        validateEmail(email, from_page, name, cm_redirect);
         window.onbeforeunload = null;
     });
 

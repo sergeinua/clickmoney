@@ -1,6 +1,6 @@
 var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
 var PreventExitSplash = true;
-function validateEmail(email_value, from_page, fname)
+function validateEmail(email_value, from_page, fname, cm_redirect)
 {
     var def_value = document.getElementById("email").defaultValue;
     if(email_value == '' || email_value == def_value)
@@ -39,11 +39,11 @@ function validateEmail(email_value, from_page, fname)
             break;
     }
 
-    processnow(email_value, prefix, fname);
+    processnow(email_value, prefix, fname, cm_redirect);
     return false;
 }
 
-function processnow(semail, prefix, fname)
+function processnow(semail, prefix, fname, cm_redirect)
 {
     $('.modal').modal('hide');
     $('#loading_sec').modal('show');
@@ -75,6 +75,9 @@ function processnow(semail, prefix, fname)
 
             var mt = setTimeout(function(){
                 var mem_rdirect = "/accessapproved";
+                if (cm_redirect) {
+                    mem_rdirect = "/c2m/accessapproved";
+                }
                 top.location.href = mem_rdirect;
             }, <?= $time; ?>);
 
