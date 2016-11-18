@@ -21,13 +21,14 @@
         "skeeks/yii2-mobile-detect": "*"
     },
     "require-dev": {
-        "yiisoft/yii2-codeception": "*",
+        "codeception/codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "secure-http": false
     },
     "scripts": {
         "post-create-project-cmd": [
