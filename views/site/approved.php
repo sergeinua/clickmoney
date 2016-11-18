@@ -38,20 +38,20 @@ $script_init = <<< JS
     var gvars = {'gi': $gi, 'wl': 114, 'rd': $rd, 'sb': 0}
     var forms_modified = false;
     var button = '<div class="row"><div class="col-xs-12 text-center"><button type="submit"><div class="row">';
-    button += '<div class="arrow"><img src="images/svg/unlock.svg"></div>';
+    button += '<div class="arrow"><img src="/images/svg/unlock.svg"></div>';
     button += '<div class="col-md-12 col-xs-9">UNLOCK MY PERSONAL ACCOUNT NOW</div></div></button></div></div>';
     var left_top_arrow = '<div class="col-md-4 hidden-xs hidden-sm mem-first-arrow-left">';
-    left_top_arrow += '<img src="images/arrowleft1.png"></div>';
+    left_top_arrow += '<img src="/images/arrowleft1.png"></div>';
     var right_top_arrow = '<div class="col-md-4 hidden-xs hidden-sm">';
-    right_top_arrow += '<img class="mem-first-arrow-right" src="images/arrowleft1.png"></div>';
+    right_top_arrow += '<img class="mem-first-arrow-right" src="/images/arrowleft1.png"></div>';
     var left_middle_arrow = '<div class="col-md-4 mem-second-arrow-left hidden-xs hidden-sm">';
-    left_middle_arrow += '<img src="images/arrowLittleGreen.png"></div>';
+    left_middle_arrow += '<img src="/images/arrowLittleGreen.png"></div>';
     var right_middle_arrow = '<div class="col-md-4 mem-second-arrow-right hidden-xs hidden-sm">';
-    right_middle_arrow += '<img class="arrow-reversed" src="images/arrowLittleGreen.png"></div>';
+    right_middle_arrow += '<img class="arrow-reversed" src="/images/arrowLittleGreen.png"></div>';
     var left_bottom_arrow = '<div class="col-md-4 mem-third-arrow-left hidden-xs hidden-sm ">';
-    left_bottom_arrow += '<img src="images/arrowleft1.png"></div>';
+    left_bottom_arrow += '<img src="/images/arrowleft1.png"></div>';
     var right_bottom_arrow = '<div class="col-md-4 mem-third-arrow-right hidden-xs hidden-sm">';
-    right_bottom_arrow += '<img src="images/arrowleft1.png"></div>';
+    right_bottom_arrow += '<img src="/images/arrowleft1.png"></div>';
 JS;
 $this->registerJs($script_init, yii\web\View::POS_BEGIN);
 
