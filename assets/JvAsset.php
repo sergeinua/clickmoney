@@ -9,14 +9,14 @@ namespace app\assets;
 
 use yii\web\AssetBundle;
 
-class JvAsset extends AppAssetBundle
+class JvAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
         'css/jv.css'
     ];
-    public $js;
+    public $js = [];
     public $depends = [
         'app\assets\AppAsset'
     ];
