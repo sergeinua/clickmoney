@@ -19,10 +19,12 @@ if ($mob->isTablet() || $mob->isMobile()) {
 }
 
 $this->title = '#1 Click Money System';
-
+$controller = '';
+if (Yii::$app->controller->id == 'c2m')
+    $controller = '/c2m';
 $script_init = <<< JS
     var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
-    var exitsplashpage = '/finaloffer';
+    var exitsplashpage = '{$controller}/finaloffer';
     if(top.location != self.location)
     {
         top.location.assign(self.location);
@@ -117,7 +119,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 </p>
                 <div class="col-xs-2 col-xs-12 membership-boxIcon">
                     <div class="col-xs-2">
-                        <img src="images/elipsOne.png">
+                        <img src="/images/elipsOne.png">
                     </div>
                     <div class="col-xs-11 row membership-right-box">
                         <div class="col-lg-12 membership-licence-left">
@@ -128,7 +130,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         </div>
                     </div>
                 </div>
-                <img class="membership-logo" src="images/ClickMoneyLogo/Logo-yellow.svg">
+                <img class="membership-logo" src="/images/ClickMoneyLogo/Logo-yellow.svg">
             </div>
         </div>
         <div class="container left-right-container">
@@ -138,7 +140,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         <iframe id="vim-video-top" class="embed-responsive-item" src="https://player.vimeo.com/video/189163312?autoplay=true" width="auto" height="auto"
                                 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
-                    <img class="img-responsive yellow-arrow" src="images/yellowArrow1.png">
+                    <img class="img-responsive yellow-arrow" src="/images/yellowArrow1.png">
                     <p>Watch Video Now! Expires in: <span id="time-exit">00h : 05m : 00s</span></p>
                 </div>
                 <div class="col-md-5 right_block">
@@ -147,27 +149,27 @@ $this->registerJs($script, yii\web\View::POS_READY);
                     </h2>
                     <div class="gaff" id="gaff"></div>
                     <div class="col-md-11 col-md-offset-2 col-xs-12 membership-block-text">
-                        <img class="blockImg" src="images/svg/lock-white.svg">Guaranteed Secure Access Ensured by Trusted Companies
+                        <img class="blockImg" src="/images/svg/lock-white.svg">Guaranteed Secure Access Ensured by Trusted Companies
                     </div>
                     <div class="row text-center icons-block">
                         <div class="col-xs-3 vtop">
                             <a href="#"><img class="m" src=
-                                "images/mcafee.png"></a>
+                                "/images/mcafee.png"></a>
                         </div><!--
                                             -->
                         <div class="col-xs-3 vtop">
                             <a href="#"><img class="t" src=
-                                "images/truste.png"></a>
+                                "/images/truste.png"></a>
                         </div><!--
                                             -->
                         <div class="col-xs-3 vtop">
                             <a href="#"><img class="v" src=
-                                "images/red.png"></a>
+                                "/images/red.png"></a>
                         </div><!--
                                             -->
                         <div class="col-xs-3 vtop">
                             <a href="#"><img class="n" src=
-                                "images/norton.png"></a>
+                                "/images/norton.png"></a>
                         </div>
                     </div>
                 </div>
@@ -187,7 +189,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
         <div class="row">
             <div class="col-md-4">
                 <div class="col-md-4 member-arrows">
-                    <img class="first-arrow" src="images/arrow-3-active.png">
+                    <img class="first-arrow" src="/images/arrow-3-active.png">
                     <div class="first-num">
                         1
                     </div>
@@ -199,10 +201,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         choose<br>
                         a username and a password</p>
                 </div><img class="hidden-xs hidden-sm arrow arrow1 arrow111 "
-                           src="images/arrowLittleGreen.png"></div>
+                           src="/images/arrowLittleGreen.png"></div>
             <div class="col-md-4">
                 <div class="col-md-4 member-arrows">
-                    <img class="second-arrow" src="images/arrow-4.png">
+                    <img class="second-arrow" src="/images/arrow-4.png">
                     <div class="second-num">
                         2
                     </div>
@@ -213,10 +215,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
                         or more to unlock the Click Money System</p>
                 </div>
                 <img class="hidden-xs hidden-sm arrow arrow1 " src=
-                "images/arrowLittleGreen.png"></div>
+                "/images/arrowLittleGreen.png"></div>
             <div class="col-md-4">
                 <div class="col-md-4 member-arrows">
-                    <img class="third-arrow-add" src="images/arrow-5.png">
+                    <img class="third-arrow-add" src="/images/arrow-5.png">
                     <div class="third-num">
                         3
                     </div>
@@ -234,7 +236,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
     <div class="container">
         <div class="row qick-and-easy">
             <div class="border-for-arrow">
-                <img class="top-arrow" src="images/arrow-for-exit.png">
+                <img class="top-arrow" src="/images/arrow-for-exit.png">
             </div>
             <div class="text-center">
                 <p class="grey">THIS OFFER CLOSES IN &nbsp;<span class= "count-down" id="minutes-mem">3m</span><span class="count-down" id="seconds-mem">35s</span></p>
@@ -245,25 +247,25 @@ $this->registerJs($script, yii\web\View::POS_READY);
                 <div class="gaff middle-form" id="gaff2"></div>
                 <div class="row">
                     <div class= "col-md-12 col-xs-12 membership-block-text">
-                        <img class="blockImg" src="images/svg/lock.svg">Guaranteed Secure Access Ensured by Trusted Companies
+                        <img class="blockImg" src="/images/svg/lock.svg">Guaranteed Secure Access Ensured by Trusted Companies
                     </div>
                 </div>
                 <div class="row icons-block text-center">
                     <div class="col-xs-3 vtop">
                         <a href="#"><img class="m" src=
-                            "images/mcafee.png"></a>
+                            "/images/mcafee.png"></a>
                     </div>
                     <div class="col-xs-3 vtop">
                         <a href="#"><img class="t" src=
-                            "images/truste.png"></a>
+                            "/images/truste.png"></a>
                     </div>
                     <div class="col-xs-3 vtop">
                         <a href="#"><img class="v" src=
-                            "images/red.png"></a>
+                            "/images/red.png"></a>
                     </div>
                     <div class="col-xs-3 vtop">
                         <a href="#"><img class="n" src=
-                            "images/norton.png"></a>
+                            "/images/norton.png"></a>
                     </div>
                 </div>
             </div>

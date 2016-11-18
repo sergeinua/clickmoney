@@ -46,9 +46,35 @@ class C2mController extends \yii\web\Controller
         return $this->render('@app/views/site/approved', [
             'email' => Yii::$app->session->get('email'),
             'fname' => Yii::$app->session->get('fname'),
-            'exitSplAndPopup' => false,
+            'exitSplAndPopup' => true,
             'gi' => $gi,
             'gi_mobile' => $gi_mobile
+        ]);
+    }
+
+    /**
+     * Laststep page - exit page for the members page
+     *
+     * @return string
+     */
+    public function actionLaststep()
+    {
+        return $this->render('@app/views/site/laststep', [
+            'email' => Yii::$app->session->get('email'),
+            'fname' => Yii::$app->session->get('fname')
+        ]);
+    }
+
+    /**
+     * Members 3 page
+     *
+     * @return string
+     */
+    public function actionFinaloffer()
+    {
+        return $this->render('@app/views/site/finaloffer', [
+            'email' => Yii::$app->session->get('email'),
+            'fname' => Yii::$app->session->get('fname')
         ]);
     }
 
