@@ -8,9 +8,20 @@ ClickthroughtAsset::register($this);
 
 Yii::$app->params['bodyClass'] = 'fe2 clickthrough';
 
+/* adding redirect for the C2mController and C3mController */
+$cm_redirect = false;
+/* redirect is not needed for site controller */
+if (Yii::$app->controller->id != 'site')
+    $cm_redirect = Yii::$app->controller->id;
+/* exitsplash page */
+$exitsplash_page = "/approved";
+/* setting correct controller */
+if ($cm_redirect)
+    $exitsplash_page = "/$cm_redirect" . $exitsplash_page;
+
 $script_init = <<< JS
     var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
-    var exitsplashpage = '/approved';
+    var exitsplashpage = '$exitsplash_page';
 JS;
 if ($exitSplAndPopup) {
     $this->registerJs($script_init, yii\web\View::POS_BEGIN);
@@ -22,9 +33,6 @@ if ($mob->isTablet() || $mob->isMobile()) {
 }
 
 $this->title = '#1 Click Money System';
-$cont_pref = '';
-if (Yii::$app->controller->id == 'c2m')
-    $cont_pref = '/c2m';
 ?>
 
 <div class="container header">
@@ -77,7 +85,7 @@ if (Yii::$app->controller->id == 'c2m')
                 </div>
                 <div class="row action-form">
                     <div class="col-xs-12 text-center">
-                        <button type="submit" onclick="window.onbeforeunload = null; window.location='<?= $cont_pref; ?>/approved';">
+                        <button type="submit" onclick="window.onbeforeunload = null; window.location='<?= $exitsplash_page; ?>'">
                             <div class="row">
                                 <div class="col-sm-11 col-xs-10">
                                     CLICK HERE TO PROCEED
