@@ -75,9 +75,14 @@ class C2mController extends \yii\web\Controller
      */
     public function actionLaststep()
     {
+        $gi = '4850';
+        $gi_mobile = '4851';
+
         return $this->render('@app/views/site/laststep', [
             'email' => Yii::$app->session->get('email'),
-            'fname' => Yii::$app->session->get('fname')
+            'fname' => Yii::$app->session->get('fname'),
+            'gi' => $gi,
+            'gi_mobile' => $gi_mobile
         ]);
     }
 
@@ -88,9 +93,14 @@ class C2mController extends \yii\web\Controller
      */
     public function actionFinaloffer()
     {
+        $gi = '4850';
+        $gi_mobile = '4851';
+
         return $this->render('@app/views/site/finaloffer', [
             'email' => Yii::$app->session->get('email'),
-            'fname' => Yii::$app->session->get('fname')
+            'fname' => Yii::$app->session->get('fname'),
+            'gi' => $gi,
+            'gi_mobile' => $gi_mobile
         ]);
     }
 

@@ -9,12 +9,11 @@ LaststepAsset::register($this);
 Yii::$app->params['bodyClass'] = 'laststep finaloffer';
 
 $rd = 3;
-$gi = 4850;
 
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
-    $gi = 4851;
+    $gi = $gi_mobile;
     $rd = 4;
 }
 

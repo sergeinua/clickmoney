@@ -237,9 +237,14 @@ class SiteController extends Controller
      */
     public function actionLaststep()
     {
+        $gi = '4850';
+        $gi_mobile = '4851';
+
         return $this->render('laststep', [
             'email' => Yii::$app->session->get('email'),
-            'fname' => Yii::$app->session->get('fname')
+            'fname' => Yii::$app->session->get('fname'),
+            'gi' => $gi,
+            'gi_mobile' => $gi_mobile
         ]);
     }
 
@@ -266,9 +271,14 @@ class SiteController extends Controller
      */
     public function actionFinaloffer()
     {
+        $gi = '4850';
+        $gi_mobile = '4851';
+
         return $this->render('finaloffer', [
             'email' => Yii::$app->session->get('email'),
-            'fname' => Yii::$app->session->get('fname')
+            'fname' => Yii::$app->session->get('fname'),
+            'gi' => $gi,
+            'gi_mobile' => $gi_mobile
         ]);
     }
 

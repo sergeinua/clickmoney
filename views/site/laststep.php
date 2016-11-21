@@ -9,22 +9,28 @@ LaststepAsset::register($this);
 Yii::$app->params['bodyClass'] = 'laststep';
 
 $rd = 3;
-$gi = 4850;
 
 $mob = new Mobile_Detect();
 if ($mob->isTablet() || $mob->isMobile()) {
     $is_mobile = true;
-    $gi = 4851;
+    $gi = $gi_mobile;
     $rd = 4;
 }
 
 $this->title = '#1 Click Money System';
-$controller = '';
-if (Yii::$app->controller->id == 'c2m')
-    $controller = '/c2m';
+/* adding redirect for the C2mController and C3mController */
+$cm_redirect = false;
+/* redirect is not needed for site controller */
+if (Yii::$app->controller->id != 'site')
+    $cm_redirect = Yii::$app->controller->id;
+/* exitsplash page */
+$exitsplash_page = "/finaloffer";
+/* setting correct controller */
+if ($cm_redirect)
+    $exitsplash_page = "/$cm_redirect" . $exitsplash_page;
 $script_init = <<< JS
     var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
-    var exitsplashpage = '{$controller}/finaloffer';
+    var exitsplashpage = '$exitsplash_page';
     if(top.location != self.location)
     {
         top.location.assign(self.location);
