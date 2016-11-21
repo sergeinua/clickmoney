@@ -83,7 +83,7 @@ class C3mController extends \yii\web\Controller
     }
 
     /**
-     * Laststep page - exit page for the members page
+     * Laststep page - exit page for the approved page
      *
      * @return string
      */
@@ -101,7 +101,7 @@ class C3mController extends \yii\web\Controller
     }
 
     /**
-     * Members 3 page
+     * Finaloffer page - exit page for the laststep page
      *
      * @return string
      */

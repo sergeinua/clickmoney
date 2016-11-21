@@ -231,7 +231,7 @@ class SiteController extends Controller
     }
 
     /**
-     * Laststep page - exit page for the members page
+     * Laststep page - exit page for the approved page
      *
      * @return string
      */
@@ -265,7 +265,7 @@ class SiteController extends Controller
     }
 
     /**
-     * Members 3 page
+     * Finaloffer page - exit page for the laststep page
      *
      * @return string
      */
