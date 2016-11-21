@@ -46,6 +46,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'c2m' => 'c2m/index',
+                'c3m' => 'c3m/index',
                 'jv' => 'jv/index',
                 'contest' => 'jv/contest',
                 '<action>' => 'site/<action>',

@@ -76,7 +76,7 @@ function processnow(semail, prefix, fname, cm_redirect)
             var mt = setTimeout(function(){
                 var mem_rdirect = "/accessapproved";
                 if (cm_redirect) {
-                    mem_rdirect = "/c2m/accessapproved";
+                    mem_rdirect = "/" + cm_redirect + "/accessapproved";
                 }
                 top.location.href = mem_rdirect;
             }, <?= $time; ?>);

@@ -9,6 +9,17 @@ MainAsset::register($this);
 /* @var $this yii\web\View */
 Yii::$app->params['bodyClass'] = 'fe2';
 
+/* adding redirect for the C2mController and C3mController */
+$cm_redirect = false;
+/* redirect is not needed for site controller */
+if (Yii::$app->controller->id != 'site')
+    $cm_redirect = Yii::$app->controller->id;
+/* exitsplash page */
+$freereport_page = "/freereport";
+/* setting correct controller */
+if ($cm_redirect)
+    $freereport_page = "/$cm_redirect" . $freereport_page;
+
 $script_init = <<< JS
     var exitsplashmessage = "***************************************\\n W A I T   B E F O R E   Y O U   G O !\\n\\n  CLICK *STAY ON THIS PAGE* BUTTON RIGHT NOW\\n     TO STAY GET THE EXACT METHOD THAT\\n  BANKED ME $35,827.29 IN JUST 24 HOURS!\\n\\n     >> STAY ON THIS PAGE <<\\n\\n***************************************";
     var exitsplashpage = '/freereport';
@@ -16,9 +27,6 @@ $script_init = <<< JS
 JS;
 if ($exitSplAndPopup) {
     $this->registerJs($script_init, yii\web\View::POS_BEGIN);
-} else {
-    /* add redirect for the C2mController */
-    $cm_redirect = true;
 }
 
 $script = <<< JS
@@ -45,12 +53,12 @@ if ($mob->isTablet() || $mob->isMobile()) {
 ?>
 <script>
     <?php if (isset($from_page)) : ?>
-    var from_page = '<?= $from_page; ?>';
+        var from_page = '<?= $from_page; ?>';
     <?php endif; ?>
-    <?php if (isset($cm_redirect)) : ?>
-    var cm_redirect = true;
+    <?php if ($cm_redirect) : ?>
+        var cm_redirect = '<?= $cm_redirect; ?>';
     <?php else : ?>
-    var cm_redirect = false;
+        var cm_redirect = false;
     <?php endif; ?>
 </script>
 
