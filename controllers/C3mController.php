@@ -70,8 +70,8 @@ class C3mController extends \yii\web\Controller
      */
     public function actionApproved()
     {
-        $gi = '4850';
-        $gi_mobile = '4851';
+        $gi = '5179';
+        $gi_mobile = '5179';
 
         return $this->render('@app/views/site/approved', [
             'email' => Yii::$app->session->get('email'),
@@ -89,8 +89,8 @@ class C3mController extends \yii\web\Controller
      */
     public function actionLaststep()
     {
-        $gi = '4850';
-        $gi_mobile = '4851';
+        $gi = '5179';
+        $gi_mobile = '5179';
 
         return $this->render('@app/views/site/laststep', [
             'email' => Yii::$app->session->get('email'),
@@ -107,8 +107,8 @@ class C3mController extends \yii\web\Controller
      */
     public function actionFinaloffer()
     {
-        $gi = '4850';
-        $gi_mobile = '4851';
+        $gi = '5179';
+        $gi_mobile = '5179';
 
         return $this->render('@app/views/site/finaloffer', [
             'email' => Yii::$app->session->get('email'),
