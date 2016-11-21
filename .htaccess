@@ -5,6 +5,7 @@ RewriteEngine on
 # redirect to main
 RewriteRule ^/?$ "/main" [R=301,L]
 RewriteRule ^c2m/?$ "/c2m/main" [R=301,L]
+RewriteRule ^c3m(/?.*)$ "/c2m$1" [R=301,L]
 
 RewriteCond %{REQUEST_URI} !^/(web)
 RewriteRule ^assets/(.*)$ /web/assets/$1 [L]
