@@ -117,7 +117,7 @@ body.fe2 {
 
 .fe2 .header .lic span.licenceLeft {
     display: inline-block;
-    background-color: #fd842b;
+    /*background-color: #fd842b;*/
     color: white;
     font-size: 1.2em;
     text-align: center;

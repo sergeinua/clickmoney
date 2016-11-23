@@ -68,7 +68,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
             <img src="/images/ClickMoneyLogo/Logo-white.svg">
         </div><!--
                 --><div class="col-xs-6 lic text-right vcenter">
-            <span class="licenceLeft"><span>10</span><span class="licenceRight">Spots Left</span></span>
+            <span class="licenceLeft"><span class="licenceRight">LIMITED SPOTS</span></span>
         </div>
     </div>
 </div>
@@ -86,7 +86,7 @@ if ($mob->isTablet() || $mob->isMobile()) {
                 <div class="row text-uppercase text-center">
                     <div class="col-xs-12">
                         <span class="main-text">
-                            <span class="limited-spots hidden-md">LIMITED SPOTS</span>
+                            <span class="limited-spots hidden">LIMITED SPOTS</span>
                             <p>Enter your <u><strong>first name</strong></u> and <u><strong>best email address</strong></u>
                             below to proceed</p>
                         </span>
