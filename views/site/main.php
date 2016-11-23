@@ -75,6 +75,8 @@ if ($mob->isTablet() || $mob->isMobile()) {
 <div class="container content">
     <div class="row">
         <div class="col-md-7 col-xs-12 text-center left_block">
+            <img class="corner-rectangle-sm hidden-md hidden-lg" src="/images/rectangle.png">
+            <p class="corner-rectangle-text-sm hidden-md hidden-lg">LIMITED<br> SPOTS</p>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe id="vim-video"
                         src="https://player.vimeo.com/video/189163304?autoplay=true"
@@ -82,6 +84,8 @@ if ($mob->isTablet() || $mob->isMobile()) {
             </div>
         </div>
         <div class="col-md-5 col-xs-12 right_block">
+            <img class="corner-rectangle-md hidden-xs hidden-sm" src="/images/rectangle.png">
+            <p class="corner-rectangle-text-md hidden-xs hidden-sm">LIMITED<br> SPOTS</p>
             <div class="container-fluid">
                 <div class="row text-uppercase text-center">
                     <div class="col-xs-12">

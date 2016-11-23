@@ -468,9 +468,59 @@ body.fe2 {
 .fe1 .action-form .form-fields label {
     font-size: 0.8em;
 }
+
 .fe2 .content .left_block {
     padding: 0;
 }
+
+.fe2 .corner-rectangle-sm {
+    position: absolute;
+    right: -3px;
+    z-index: 1;
+    height: 80px;
+    top: -2px;
+}
+
+.fe2 .corner-rectangle-text-sm {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    transform: rotate(44deg);
+    -webkit-transform: rotate(44deg);
+    right: 3px;
+    top: 13px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.fe2 .text-center.left_block {
+    overflow: hidden;
+}
+
+.fe2 .corner-rectangle-md {
+    position: absolute;
+    right: -2px;
+    z-index: 1;
+    height: 60px;
+    top: -2px;
+}
+
+.fe2 .corner-rectangle-text-md {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    transform: rotate(44deg);
+    -webkit-transform: rotate(44deg);
+    right: 4px;
+    top: 9px;
+    font-size: 8px;
+    text-align: center;
+}
+
+.fe2 .header .lic span.licenceLeft {
+    display: none;
+}
+
 /* sm */
 @media (min-width: 768px) {
     .fe2 .header .logo {
@@ -865,6 +915,17 @@ body.fe2 {
     .footer ul {
         padding: 0;
     }
+
+    .fe2 .corner-rectangle-md {
+        right: -2px;
+        height: 85px;
+        top: -2px;
+    }
+
+    .fe2 .corner-rectangle-text-md {
+        font-size: 12px;
+        top: 13px;
+    }
 }
 
 /* FullHD and higher */
@@ -1010,6 +1071,18 @@ body.fe2 {
     body.fe2 .warranty-text {
         font-size: 0.95em;
         margin-bottom: 15px;
+    }
+
+    .fe2 .corner-rectangle-md {
+        right: -3px;
+        height: 115px;
+        top: -3px;
+    }
+
+    .fe2 .corner-rectangle-text-md {
+        right: 4px;
+        top: 16px;
+        font-size: 17px;
     }
 }
 
